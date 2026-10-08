@@ -92,6 +92,7 @@ export function CourseDetailsDialog({ course, onClose }: CourseDetailsDialogProp
       >
         <header className="detail-header">
           <div>
+            <p className="detail-kicker">FIELD NOTES / 課程探索筆記</p>
             <p className="eyebrow">
               {course.type === 'required' ? '必修課程' : '選修課程'} · {role.label}
             </p>

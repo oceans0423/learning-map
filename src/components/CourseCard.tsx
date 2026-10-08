@@ -39,6 +39,9 @@ export function CourseCard({
       onClick={() => onSelect(course)}
     >
       <span className="course-card-title">{course.name}</span>
+      <span className="course-card-arrow" aria-hidden="true">
+        ↗
+      </span>
       <span className="course-card-badges">
         <span className={`requirement-badge ${course.type}`}>{requirement}</span>
         <span className="role-badge">{role.label}</span>
@@ -47,6 +50,9 @@ export function CourseCard({
         {semester} <i aria-hidden="true">·</i> {course.credits} 學分
       </span>
       {track && <span className="course-track-label">{track.name}</span>}
+      <span className="course-card-discover">
+        {highlighted ? '相關課程 · ' : ''}查看課程 <span aria-hidden="true">→</span>
+      </span>
     </button>
   )
 }

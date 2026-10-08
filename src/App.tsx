@@ -5,6 +5,7 @@ import { LEARNING_PATH } from './data/learningPath'
 import { YearAccordion } from './components/YearAccordion'
 import { StructureDiagram } from './components/StructureDiagram'
 import { CourseDetailsDialog } from './components/CourseDetailsDialog'
+import { ExplorerAtlas } from './components/ExplorerAtlas'
 import {
   closeCourseUrlState,
   parseUrlState,
@@ -76,48 +77,59 @@ export function App() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#curriculum">
+        跳至課程地圖
+      </a>
       <header className="site-header site-shell">
         <a className="brand" href="#top" aria-label={`${meta.department}，回到頁首`}>
           <span className="brand-mark" aria-hidden="true">
-            人
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 2 21 11 30 16 21 21 16 30 11 21 2 16 11 11Z" stroke="currentColor" />
+              <path d="M16 8 19 16 16 24 13 16Z" fill="currentColor" />
+            </svg>
           </span>
-          <span className="brand-name">人文跨域與應用學系</span>
+          <span className="brand-name">
+            人文跨域與應用學系<small>THE HUMANITIES ATLAS</small>
+          </span>
         </a>
         <a className="header-link" href="#curriculum">
-          探索四年課程 <span aria-hidden="true">↓</span>
+          展開你的地圖 <span aria-hidden="true">↗</span>
         </a>
       </header>
 
       <main>
         <section className="hero site-shell" id="top" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow">115 學年度｜課程地圖</p>
+            <p className="eyebrow">
+              <span className="live-dot" aria-hidden="true" /> 115 學年度 · 人文探索指南
+            </p>
             <h1 className="display-type" id="hero-title">
-              從人文出發，
+              世界還有很多，
               <br />
-              <span>把想法帶進世界。</span>
+              <span>等你親自發現。</span>
             </h1>
             <p className="hero-description">
-              四年，從閱讀文學與理解文化開始，走進數位媒介、敘事創作與社會實踐，完成自己的提案與作品。
+              一段故事、一種媒介、一個真實的現場。從人文出發，循著好奇心探索四年，把你對世界的提問，變成自己的作品與行動。
             </p>
-            <a className="button button-primary" href="#curriculum">
-              看看四年會學什麼 <span aria-hidden="true">↓</span>
-            </a>
+            <div className="hero-actions">
+              <a className="button button-primary" href="#curriculum">
+                開始探索課程 <span aria-hidden="true">↗</span>
+              </a>
+              <a className="hero-secondary" href="#structure">
+                先找一個感興趣的方向 <span aria-hidden="true">↓</span>
+              </a>
+            </div>
             <p className="hero-footnote">
               {courses.length} 門規劃課程 <span aria-hidden="true">·</span> {requiredCount}{' '}
               門必修 <span aria-hidden="true">·</span> 三個探索面向
             </p>
           </div>
-          <div className="hero-art" aria-label="學習結構摘要">
-            <div className="hero-orbit hero-orbit-outer" />
-            <div className="hero-orbit hero-orbit-inner" />
-            <span className="orbit-label orbit-label-top">讀懂文本</span>
-            <span className="orbit-label orbit-label-right">連結媒介</span>
-            <span className="orbit-label orbit-label-bottom">走進現場</span>
-            <div className="hero-center">
-              <span>人文</span>
-              <small>觀察・詮釋・實踐</small>
-            </div>
+          <ExplorerAtlas />
+          <div className="hero-bottom">
+            <span>閱讀是起點，世界是你的現場。</span>
+            <span>
+              SCROLL TO EXPLORE <i aria-hidden="true">↓</i>
+            </span>
           </div>
         </section>
 
@@ -125,11 +137,11 @@ export function App() {
           <div className="site-shell">
             <div className="section-heading">
               <div>
-                <p className="eyebrow">A map, not a track</p>
+                <p className="eyebrow">01 / 選擇探索方向</p>
                 <h2 className="display-type" id="structure-title">
-                  一份底蘊，
+                  跟著好奇心，
                   <br className="mobile-only" />
-                  多種走法。
+                  找到你的入口。
                 </h2>
               </div>
               <p>
@@ -137,6 +149,15 @@ export function App() {
               </p>
             </div>
             <StructureDiagram selected={mapState.focus} onToggle={toggleFocus} />
+            <div className="structure-guide">
+              <p>
+                <span aria-hidden="true">＋</span>{' '}
+                點選區域，讓相關課程亮起；可以同時探索多個方向。
+              </p>
+              <a href="#curriculum">
+                前往課程地圖 <span aria-hidden="true">↓</span>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -147,9 +168,9 @@ export function App() {
         >
           <div className="section-heading section-heading-compact">
             <div>
-              <p className="eyebrow">Four years, one unfolding story</p>
+              <p className="eyebrow">02 / 四年旅程</p>
               <h2 className="display-type" id="learning-title">
-                四年學習主線
+                一步一步，走向更大的世界。
               </h2>
             </div>
             <p>從探索與奠基，走向方法、實作與展現。</p>
@@ -157,7 +178,10 @@ export function App() {
           <ol className="learning-path">
             {LEARNING_PATH.map((year) => (
               <li className="learning-year" key={year.year}>
-                <span className="learning-year-index">0{year.year}</span>
+                <span className="learning-year-index">
+                  0{year.year}
+                  <small>大{['一', '二', '三', '四'][year.year - 1]}</small>
+                </span>
                 <p className="learning-year-phase">{year.phase}</p>
                 <h3>{year.title}</h3>
                 <p className="learning-year-focus">{year.focus}</p>
@@ -170,6 +194,15 @@ export function App() {
                   <span>可能的學習活動</span>
                   {year.activities}
                 </p>
+                <a
+                  className="learning-year-link"
+                  href={`#year-${year.year}-heading`}
+                  onClick={() => {
+                    if (!mapState.openYears.includes(year.year)) toggleYear(year.year)
+                  }}
+                >
+                  探索這一年的課程 <span aria-hidden="true">↗</span>
+                </a>
               </li>
             ))}
           </ol>
@@ -183,12 +216,12 @@ export function App() {
           <div className="site-shell">
             <div className="section-heading section-heading-compact">
               <div>
-                <p className="eyebrow">The curriculum</p>
+                <p className="eyebrow">03 / 深入課程地圖</p>
                 <h2 className="display-type" id="curriculum-title">
                   四年課程地圖
                 </h2>
               </div>
-              <p>依年級與學期探索規劃課程。</p>
+              <p>打開一個年級，發現新的學習節點。點選課程，就能查看它在四年旅程中的位置。</p>
             </div>
             <div className="curriculum-controls" aria-label="課程地圖控制區">
               <fieldset className="semester-picker">

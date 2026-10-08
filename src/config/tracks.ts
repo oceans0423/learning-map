@@ -8,6 +8,7 @@ export const TRACKS = [
     description: '散文、小說、詩歌、報導、文案、出版及跨媒介敘事',
     visual: {
       accent: '#8c4d3d',
+      signal: '#eea08b',
       soft: '#f4e9e5',
       border: '#d8b6aa',
       onAccent: '#ffffff',
@@ -19,6 +20,7 @@ export const TRACKS = [
     description: '數位敘事、資料方法、AI 協作、互動媒介、空間人文及數位策展',
     visual: {
       accent: '#386a73',
+      signal: '#83d6cd',
       soft: '#e6f0f0',
       border: '#a8c9cc',
       onAccent: '#ffffff',
@@ -30,6 +32,7 @@ export const TRACKS = [
     description: '地方創生、田野調查、文化資產、策展、品牌、節慶及社會議題實作',
     visual: {
       accent: '#76602d',
+      signal: '#e9c579',
       soft: '#f2eedf',
       border: '#d4c69a',
       onAccent: '#ffffff',

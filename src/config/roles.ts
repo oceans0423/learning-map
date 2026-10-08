@@ -3,17 +3,35 @@ export const ROLES = [
   {
     id: 'foundation',
     label: '基底',
-    visual: { accent: '#45634f', soft: '#e8efe9', border: '#b1c5b5', onAccent: '#ffffff' },
+    visual: {
+      accent: '#45634f',
+      signal: '#a6cbb5',
+      soft: '#e8efe9',
+      border: '#b1c5b5',
+      onAccent: '#ffffff',
+    },
   },
   {
     id: 'application',
     label: '應用',
-    visual: { accent: '#a35d2b', soft: '#f5ebe2', border: '#dbb99f', onAccent: '#ffffff' },
+    visual: {
+      accent: '#a35d2b',
+      signal: '#e5b484',
+      soft: '#f5ebe2',
+      border: '#dbb99f',
+      onAccent: '#ffffff',
+    },
   },
   {
     id: 'integration',
     label: '整合',
-    visual: { accent: '#665486', soft: '#eeeaf4', border: '#c5b9d9', onAccent: '#ffffff' },
+    visual: {
+      accent: '#665486',
+      signal: '#e9c579',
+      soft: '#eeeaf4',
+      border: '#c5b9d9',
+      onAccent: '#ffffff',
+    },
   },
 ] as const
 

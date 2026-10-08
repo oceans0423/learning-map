@@ -3,6 +3,7 @@ import type { Course } from '../types/course'
 import { CourseCard } from './CourseCard'
 import { isCourseHighlighted } from '../lib/highlight'
 import type { FocusId } from '../config/focus'
+import { LEARNING_PATH } from '../data/learningPath'
 
 const yearLabels = ['大一', '大二', '大三', '大四'] as const
 
@@ -37,7 +38,7 @@ export function YearAccordion({
 
         return (
           <section className={`year-section${isOpen ? ' is-open' : ''}`} key={year}>
-            <h3 className="year-heading">
+            <h3 className="year-heading" id={`year-${year}-heading`}>
               <button
                 className="year-toggle"
                 type="button"
@@ -46,7 +47,10 @@ export function YearAccordion({
                 onClick={() => onToggle(year)}
               >
                 <span className="year-number">0{year}</span>
-                <span className="year-label">{label}</span>
+                <span className="year-label">
+                  {label}
+                  <small>{LEARNING_PATH[index].phase}</small>
+                </span>
                 <span className="year-count">{items.length} 門課程</span>
                 <span className="year-chevron" aria-hidden="true">
                   {isOpen ? '−' : '+'}
@@ -89,8 +93,10 @@ export function YearAccordion({
                         )
                       }
                     >
-                      選修 <span>共 {electives.length} 門</span>
-                      <span aria-hidden="true">{electivesOpen ? '收合 −' : '展開 +'}</span>
+                      探索選修 <span>共 {electives.length} 門課程</span>
+                      <span aria-hidden="true">
+                        {electivesOpen ? '收起地圖 −' : '展開更多可能 ＋'}
+                      </span>
                     </button>
                   </h4>
                   <div id={electivesId} hidden={!electivesOpen}>
