@@ -1,0 +1,85 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 360,
+      "input": "emulated tap, Enter, Space",
+      "geometry": {
+        "overflow": false,
+        "nested": 0,
+        "targets": true
+      },
+      "focus": {
+        "visible": true,
+        "outline": "3px"
+      },
+      "stableCollectionWidth": 160,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "input": "emulated tap, Enter, Space",
+      "geometry": {
+        "overflow": false,
+        "nested": 0,
+        "targets": true
+      },
+      "focus": {
+        "visible": true,
+        "outline": "3px"
+      },
+      "stableCollectionWidth": 160,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "input": "mouse, Enter, Space",
+      "geometry": {
+        "overflow": false,
+        "nested": 0,
+        "targets": true
+      },
+      "focus": {
+        "visible": true,
+        "outline": "3px"
+      },
+      "stableCollectionWidth": 160,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "input": "mouse, Enter, Space",
+      "geometry": {
+        "overflow": false,
+        "nested": 0,
+        "targets": true
+      },
+      "focus": {
+        "visible": true,
+        "outline": "3px"
+      },
+      "stableCollectionWidth": 160,
+      "reducedMotion": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "input": "mouse, Enter, Space",
+      "geometry": {
+        "overflow": false,
+        "nested": 0,
+        "targets": true
+      },
+      "focus": {
+        "visible": true,
+        "outline": "3px"
+      },
+      "stableCollectionWidth": 160,
+      "reducedMotion": true,
+      "passed": true
+    }
+  ]
+}

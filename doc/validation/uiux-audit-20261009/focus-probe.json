@@ -1,0 +1,764 @@
+[
+  {
+    "width": 390,
+    "stars": [
+      {
+        "name": "移動代表星：人文學概論",
+        "top": 744.359375,
+        "bottom": 788.359375,
+        "toolbarTop": 364.421875,
+        "toolbarBottom": 642.171875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1318
+      },
+      {
+        "name": "移動代表星：人文地理學概論",
+        "top": 777.859375,
+        "bottom": 821.859375,
+        "toolbarTop": 364.421875,
+        "toolbarBottom": 642.171875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1318
+      },
+      {
+        "name": "移動代表星：新媒體傳播與實作",
+        "top": 416.359375,
+        "bottom": 460.359375,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      },
+      {
+        "name": "移動代表星：語文修辭與溝通表達",
+        "top": 456.5625,
+        "bottom": 500.5625,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      },
+      {
+        "name": "移動代表星：科技哲學與未來社會",
+        "top": 563.765625,
+        "bottom": 607.765625,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      },
+      {
+        "name": "移動代表星：文化創意產業概論",
+        "top": 597.265625,
+        "bottom": 641.265625,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      },
+      {
+        "name": "移動代表星：文本分析與詮釋",
+        "top": 711.171875,
+        "bottom": 755.171875,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      },
+      {
+        "name": "移動代表星：數位人文方法與應用",
+        "top": 737.96875,
+        "bottom": 781.96875,
+        "toolbarTop": 8,
+        "toolbarBottom": 285.75,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1780
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "stars": [
+      {
+        "name": "移動代表星：人文學概論",
+        "top": 956.0625,
+        "bottom": 1000.0625,
+        "toolbarTop": 651.609375,
+        "toolbarBottom": 853.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 719
+      },
+      {
+        "name": "移動代表星：人文地理學概論",
+        "top": 955.5625,
+        "bottom": 999.5625,
+        "toolbarTop": 617.609375,
+        "toolbarBottom": 819.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 753
+      },
+      {
+        "name": "移動代表星：新媒體傳播與實作",
+        "top": 494.0625,
+        "bottom": 538.0625,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      },
+      {
+        "name": "移動代表星：語文修辭與溝通表達",
+        "top": 534.265625,
+        "bottom": 578.265625,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      },
+      {
+        "name": "移動代表星：科技哲學與未來社會",
+        "top": 641.46875,
+        "bottom": 685.46875,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      },
+      {
+        "name": "移動代表星：文化創意產業概論",
+        "top": 674.96875,
+        "bottom": 718.96875,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      },
+      {
+        "name": "移動代表星：文本分析與詮釋",
+        "top": 788.875,
+        "bottom": 832.875,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      },
+      {
+        "name": "移動代表星：數位人文方法與應用",
+        "top": 815.671875,
+        "bottom": 859.671875,
+        "toolbarTop": 55.609375,
+        "toolbarBottom": 257.875,
+        "samples": [
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          },
+          {
+            "own": true,
+            "toolbar": false
+          },
+          {
+            "own": false,
+            "toolbar": false
+          }
+        ],
+        "fullyCovered": false,
+        "scrollY": 1315
+      }
+    ]
+  }
+]

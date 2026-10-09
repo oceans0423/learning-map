@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1216" viewBox="0 0 1200 1216" role="img" aria-labelledby="title description" font-family="system-ui, sans-serif">
+<title id="title">&lt;script&gt;&quot;&amp;探索</title><desc id="description">個人探索星座，1顆代表星。連線不是先修、已修課或官方推薦。</desc>
+<rect width="1200" height="1216" fill="#102630"/>
+<text text-anchor="middle" font-size="36" font-weight="600" fill="#F6F0E4"><tspan x="600" y="85">&lt;script&gt;&quot;&amp;探索</tspan></text>
+<text x="600" y="180" text-anchor="middle" font-size="20" fill="#CCDADB">MY HUMANITIES CONSTELLATION / 個人探索星座</text>
+<rect x="100" y="210" width="1000" height="700" rx="24" fill="#17343E" stroke="#667F88" stroke-width="2"/>
+
+<g data-course-id="course-001" data-x="0.22" data-y="0.16"><circle cx="320" cy="322" r="19" fill="#F6F0E4"/><text x="320" y="330" text-anchor="middle" font-size="24" font-weight="700" fill="#102630">1</text></g><text x="100" y="1000" font-size="25" fill="#F6F0E4"><tspan x="100" dy="0">1. 人文學概論 · 大一上</tspan></text>
+<text x="100" y="1086" font-size="22" fill="#CCDADB"><tspan x="100">連線是個人探索想像，不是課程先修順序。</tspan><tspan x="100" dy="34">依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。</tspan><tspan x="100" dy="34">人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。</tspan></text>
+</svg>

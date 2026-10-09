@@ -1,0 +1,96 @@
+{
+  "browser": "154.0.8037.98",
+  "device": "Chrome headless; emulated touch, not physical device",
+  "checks": [
+    {
+      "width": 360,
+      "reducedMotion": "no-preference",
+      "overflow": false,
+      "duration": "220ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 360,
+      "reducedMotion": "reduce",
+      "overflow": false,
+      "duration": "0ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "overflow": false,
+      "duration": "220ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "reducedMotion": "reduce",
+      "overflow": false,
+      "duration": "0ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "reducedMotion": "no-preference",
+      "overflow": false,
+      "duration": "220ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "reducedMotion": "reduce",
+      "overflow": false,
+      "duration": "0ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "reducedMotion": "no-preference",
+      "overflow": false,
+      "duration": "220ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "reducedMotion": "reduce",
+      "overflow": false,
+      "duration": "0ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "overflow": false,
+      "duration": "220ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "overflow": false,
+      "duration": "0ms",
+      "font": "16px",
+      "surfaces": 4,
+      "passed": true
+    }
+  ]
+}

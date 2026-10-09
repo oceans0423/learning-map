@@ -1,0 +1,80 @@
+{
+  "browser": "154.0.8037.98",
+  "matrix": [
+    {
+      "mode": "mouse",
+      "width": 1440,
+      "journeyComplete": true,
+      "sourceFocus": true,
+      "noCollection": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "mode": "tap",
+      "width": 390,
+      "journeyComplete": true,
+      "sourceFocus": true,
+      "noCollection": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "mode": "keyboard",
+      "width": 1440,
+      "journeyComplete": true,
+      "sourceFocus": true,
+      "noCollection": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "mode": "reduce",
+      "width": 1440,
+      "journeyComplete": true,
+      "sourceFocus": true,
+      "noCollection": true,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "viewportChecks": [
+    {
+      "width": 360,
+      "height": 400,
+      "textScale": "200%",
+      "longestCourse": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 400,
+      "textScale": "200%",
+      "longestCourse": true,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 400,
+      "textScale": "200%",
+      "longestCourse": true,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "height": 400,
+      "textScale": "200%",
+      "longestCourse": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 400,
+      "textScale": "200%",
+      "longestCourse": true,
+      "passed": true
+    }
+  ],
+  "userValidation": "Pending: no student participants, physical devices, Safari or Firefox supplied",
+  "base": "http://127.0.0.1:5182/"
+}

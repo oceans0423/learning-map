@@ -1,0 +1,28 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "optIn": true,
+      "restore": true,
+      "autoUpdate": true,
+      "stop": true,
+      "delete": true,
+      "quota": true,
+      "corrupt": true
+    },
+    {
+      "width": 1440,
+      "optIn": true,
+      "restore": true,
+      "autoUpdate": true,
+      "stop": true,
+      "delete": true,
+      "quota": true,
+      "corrupt": true
+    },
+    {
+      "blockedStorageRead": true
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "stars": 1,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "<script>\"&探索",
+          "x": 464.6328125,
+          "y": 48,
+          "width": 270.734375,
+          "height": 46,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1064,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    },
+    {
+      "width": 390,
+      "stars": 2,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "星星星星星星星星星星星星星星星星星星星星星星星星",
+          "x": 384,
+          "y": 48,
+          "width": 432,
+          "height": 94,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "2",
+          "x": 792.8515625,
+          "y": 341,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "2. 人文地理學概論 · 大一上",
+          "x": 100,
+          "y": 1031,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1120,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    },
+    {
+      "width": 390,
+      "stars": 8,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦",
+          "x": 329.3671875,
+          "y": 48,
+          "width": 541.265625,
+          "height": 94,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "2",
+          "x": 792.8515625,
+          "y": 341,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "3",
+          "x": 362.8515625,
+          "y": 446,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "4",
+          "x": 872.8515625,
+          "y": 488,
+          "width": 15,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "5",
+          "x": 302.8515625,
+          "y": 600,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "6",
+          "x": 812.8515625,
+          "y": 635,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "7",
+          "x": 392.8515625,
+          "y": 754,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "8",
+          "x": 852.8515625,
+          "y": 782,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "2. 人文地理學概論 · 大一上",
+          "x": 100,
+          "y": 1031,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "3. 新媒體傳播與實作 · 大一上",
+          "x": 100,
+          "y": 1087,
+          "width": 319.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "4. 語文修辭與溝通表達 · 大一上",
+          "x": 99,
+          "y": 1143,
+          "width": 345.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "5. 科技哲學與未來社會 · 大一上",
+          "x": 100,
+          "y": 1199,
+          "width": 344.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "6. 文化創意產業概論 · 大一上",
+          "x": 100,
+          "y": 1255,
+          "width": 319.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "7. 文本分析與詮釋 · 大一下",
+          "x": 100,
+          "y": 1311,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "8. 數位人文方法與應用 · 大一下",
+          "x": 100,
+          "y": 1367,
+          "width": 344.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1456,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    },
+    {
+      "width": 1440,
+      "stars": 1,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "<script>\"&探索",
+          "x": 464.6328125,
+          "y": 48,
+          "width": 270.734375,
+          "height": 46,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1064,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    },
+    {
+      "width": 1440,
+      "stars": 2,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "星星星星星星星星星星星星星星星星星星星星星星星星",
+          "x": 384,
+          "y": 48,
+          "width": 432,
+          "height": 94,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "2",
+          "x": 792.8515625,
+          "y": 341,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "2. 人文地理學概論 · 大一上",
+          "x": 100,
+          "y": 1031,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1120,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    },
+    {
+      "width": 1440,
+      "stars": 8,
+      "download": true,
+      "openedIn": "system Chrome file URL",
+      "standalone": true,
+      "matchesEditor": true,
+      "textBounds": [
+        {
+          "text": "👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦👩‍👩‍👧‍👦",
+          "x": 329.3671875,
+          "y": 48,
+          "width": 541.265625,
+          "height": 94,
+          "contained": true
+        },
+        {
+          "text": "MY HUMANITIES CONSTELLATION / 個人探索星座",
+          "x": 367.390625,
+          "y": 160,
+          "width": 465.21875,
+          "height": 25,
+          "contained": true
+        },
+        {
+          "text": "1",
+          "x": 312.8515625,
+          "y": 306,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "2",
+          "x": 792.8515625,
+          "y": 341,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "3",
+          "x": 362.8515625,
+          "y": 446,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "4",
+          "x": 872.8515625,
+          "y": 488,
+          "width": 15,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "5",
+          "x": 302.8515625,
+          "y": 600,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "6",
+          "x": 812.8515625,
+          "y": 635,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "7",
+          "x": 392.8515625,
+          "y": 754,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "8",
+          "x": 852.8515625,
+          "y": 782,
+          "width": 14.296875,
+          "height": 30,
+          "contained": true
+        },
+        {
+          "text": "1. 人文學概論 · 大一上",
+          "x": 100,
+          "y": 975,
+          "width": 244.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "2. 人文地理學概論 · 大一上",
+          "x": 100,
+          "y": 1031,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "3. 新媒體傳播與實作 · 大一上",
+          "x": 100,
+          "y": 1087,
+          "width": 319.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "4. 語文修辭與溝通表達 · 大一上",
+          "x": 99,
+          "y": 1143,
+          "width": 345.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "5. 科技哲學與未來社會 · 大一上",
+          "x": 100,
+          "y": 1199,
+          "width": 344.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "6. 文化創意產業概論 · 大一上",
+          "x": 100,
+          "y": 1255,
+          "width": 319.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "7. 文本分析與詮釋 · 大一下",
+          "x": 100,
+          "y": 1311,
+          "width": 294.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "8. 數位人文方法與應用 · 大一下",
+          "x": 100,
+          "y": 1367,
+          "width": 344.765625,
+          "height": 31,
+          "contained": true
+        },
+        {
+          "text": "連線是個人探索想像，不是課程先修順序。依年級、學期與課程 ID 連接；位置不代表能力、重要性或官方推薦。人文跨域與應用學系 · 課程探索 · 實際開課以當學年度課表為準。",
+          "x": 100,
+          "y": 1456,
+          "width": 671.859375,
+          "height": 96,
+          "contained": true
+        }
+      ],
+      "storageFailureIndependent": true,
+      "objectURLCleanup": true
+    }
+  ]
+}

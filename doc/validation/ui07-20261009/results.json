@@ -1,0 +1,23 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "all69Notes": true,
+      "draftGuard": true,
+      "trap": true,
+      "focusReturn": true,
+      "directClose": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "all69Notes": true,
+      "draftGuard": true,
+      "trap": false,
+      "focusReturn": true,
+      "directClose": true,
+      "passed": true
+    }
+  ]
+}

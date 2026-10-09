@@ -1,0 +1,2867 @@
+{
+  "passed": true,
+  "failure": null,
+  "results": [
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 1,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 2,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 6,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 12,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 320,
+      "count": 69,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "aries"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "taurus"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "gemini"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "cancer"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "leo"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "virgo"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "libra"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "320px / 400px height / 200% root text",
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 1,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 2,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 6,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 12,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 390,
+      "count": 69,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 1,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 2,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 6,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 12,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 768,
+      "count": 69,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 1,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 2,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 6,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 12,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1024,
+      "count": 69,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 1,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 2,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 6,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 12,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "aries"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "taurus"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "gemini"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "cancer"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "leo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "virgo"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "libra"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "manual shape, ID coverage, no storage write, non-overlapping bounded touch targets",
+      "width": 1440,
+      "count": 69,
+      "zodiac": "pisces"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "aries"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "taurus"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "gemini"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "cancer"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "leo"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "virgo"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "libra"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "zero-collection twelve full themes without forced collecting",
+      "zodiac": "pisces"
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aries",
+      "year": null,
+      "count": 24
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aries",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aries",
+      "year": 2,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aries",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aries",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "taurus",
+      "year": null,
+      "count": 13
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "taurus",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "taurus",
+      "year": 2,
+      "count": 1
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "taurus",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "taurus",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "gemini",
+      "year": null,
+      "count": 21
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "gemini",
+      "year": 1,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "gemini",
+      "year": 2,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "gemini",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "gemini",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "cancer",
+      "year": null,
+      "count": 33
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "cancer",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "cancer",
+      "year": 2,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "cancer",
+      "year": 3,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "cancer",
+      "year": 4,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "leo",
+      "year": null,
+      "count": 38
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "leo",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "leo",
+      "year": 2,
+      "count": 10
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "leo",
+      "year": 3,
+      "count": 18
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "leo",
+      "year": 4,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "virgo",
+      "year": null,
+      "count": 29
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "virgo",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "virgo",
+      "year": 2,
+      "count": 12
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "virgo",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "virgo",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "libra",
+      "year": null,
+      "count": 20
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "libra",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "libra",
+      "year": 2,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "libra",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "libra",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "scorpio",
+      "year": null,
+      "count": 28
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "scorpio",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "scorpio",
+      "year": 2,
+      "count": 11
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "scorpio",
+      "year": 3,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "scorpio",
+      "year": 4,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "sagittarius",
+      "year": null,
+      "count": 23
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "sagittarius",
+      "year": 1,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "sagittarius",
+      "year": 2,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "sagittarius",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "sagittarius",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "capricorn",
+      "year": null,
+      "count": 35
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "capricorn",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "capricorn",
+      "year": 2,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "capricorn",
+      "year": 3,
+      "count": 13
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "capricorn",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aquarius",
+      "year": null,
+      "count": 19
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aquarius",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aquarius",
+      "year": 2,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aquarius",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "aquarius",
+      "year": 4,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "pisces",
+      "year": null,
+      "count": 34
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "pisces",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "pisces",
+      "year": 2,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "pisces",
+      "year": 3,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 390,
+      "zodiac": "pisces",
+      "year": 4,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aries",
+      "year": null,
+      "count": 24
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aries",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aries",
+      "year": 2,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aries",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aries",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "taurus",
+      "year": null,
+      "count": 13
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "taurus",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "taurus",
+      "year": 2,
+      "count": 1
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "taurus",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "taurus",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "gemini",
+      "year": null,
+      "count": 21
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "gemini",
+      "year": 1,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "gemini",
+      "year": 2,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "gemini",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "gemini",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "cancer",
+      "year": null,
+      "count": 33
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "cancer",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "cancer",
+      "year": 2,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "cancer",
+      "year": 3,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "cancer",
+      "year": 4,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "leo",
+      "year": null,
+      "count": 38
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "leo",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "leo",
+      "year": 2,
+      "count": 10
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "leo",
+      "year": 3,
+      "count": 18
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "leo",
+      "year": 4,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "virgo",
+      "year": null,
+      "count": 29
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "virgo",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "virgo",
+      "year": 2,
+      "count": 12
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "virgo",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "virgo",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "libra",
+      "year": null,
+      "count": 20
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "libra",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "libra",
+      "year": 2,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "libra",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "libra",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "scorpio",
+      "year": null,
+      "count": 28
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "scorpio",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "scorpio",
+      "year": 2,
+      "count": 11
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "scorpio",
+      "year": 3,
+      "count": 6
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "scorpio",
+      "year": 4,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "sagittarius",
+      "year": null,
+      "count": 23
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "sagittarius",
+      "year": 1,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "sagittarius",
+      "year": 2,
+      "count": 9
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "sagittarius",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "sagittarius",
+      "year": 4,
+      "count": 2
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "capricorn",
+      "year": null,
+      "count": 35
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "capricorn",
+      "year": 1,
+      "count": 3
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "capricorn",
+      "year": 2,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "capricorn",
+      "year": 3,
+      "count": 13
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "capricorn",
+      "year": 4,
+      "count": 5
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aquarius",
+      "year": null,
+      "count": 19
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aquarius",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aquarius",
+      "year": 2,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aquarius",
+      "year": 3,
+      "count": 7
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "aquarius",
+      "year": 4,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "pisces",
+      "year": null,
+      "count": 34
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "pisces",
+      "year": 1,
+      "count": 4
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "pisces",
+      "year": 2,
+      "count": 8
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "pisces",
+      "year": 3,
+      "count": 14
+    },
+    {
+      "check": "four-year real course coverage, complete paginated IDs, per-course angle, native control/page focus, no storage mutation",
+      "width": 1440,
+      "zodiac": "pisces",
+      "year": 4,
+      "count": 8
+    },
+    {
+      "check": "gallery changes theme only; one explicit detail add uses same collection and return restores mine"
+    },
+    {
+      "check": "mobile touch / reduced motion / matching evidence / manual shape retained / theme global search / Back and source focus"
+    },
+    {
+      "check": "direct zodiac + course URL closes in place and has safe empty-personal fallback"
+    },
+    {
+      "check": "real single-course preliminary result and explicit tie"
+    },
+    {
+      "check": "removing a course recomputes automatic shape, restores safe focus rather than unrelated reused slot, and undo rematches"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "aries"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "taurus"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "gemini"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "cancer"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "leo"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "virgo"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "libra"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "scorpio"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "sagittarius"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "capricorn"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "aquarius"
+    },
+    {
+      "check": "grouped course details, source focus, 1024px detail-narrowed geometry",
+      "zodiac": "pisces"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "match"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "explorer"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "reasons"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "year"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "gallery"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "details"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "match"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "explorer"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "reasons"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "year"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "gallery"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "details"
+    }
+  ],
+  "errors": [],
+  "environment": "Windows Chrome; isolated contexts, simulated touch; not physical devices"
+}

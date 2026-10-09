@@ -1,0 +1,39 @@
+{
+  "browser": "154.0.8037.98",
+  "environment": {
+    "platform": "win32",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13980HX",
+    "logicalCpus": 32,
+    "mode": "headless, no CPU throttling; emulator, not phone"
+  },
+  "checks": [
+    {
+      "width": 390,
+      "normal10Switches": true,
+      "reduced10Switches": true,
+      "latestState": true,
+      "livePreference": true,
+      "performance": {
+        "longTasks": [],
+        "frameCount": 115,
+        "maxFrameMs": 83.29999999999995,
+        "framesOver50ms": 1
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "normal10Switches": true,
+      "reduced10Switches": true,
+      "latestState": true,
+      "livePreference": true,
+      "performance": {
+        "longTasks": [],
+        "frameCount": 141,
+        "maxFrameMs": 17.40000000000009,
+        "framesOver50ms": 0
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1321 @@
+{
+  "passed": true,
+  "failure": null,
+  "results": [
+    {
+      "check": "empty collection does not require stars and direct star URL has an exit",
+      "width": 320,
+      "count": 0
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 320,
+      "count": 1,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 82.96875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 320,
+      "count": 2,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 82.96875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 200.875,
+            "y": 1949.375,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 320,
+      "count": 8,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 54.15625,
+            "y": 1697.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 111.796875,
+            "y": 1711.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 38.4375,
+            "y": 1765.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 82.96875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 106.546875,
+            "y": 1852.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 200.875,
+            "y": 1949.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 240.171875,
+            "y": 1895.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 234.9375,
+            "y": 1830.578125,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 320,
+      "count": 12,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 54.15625,
+            "y": 1697.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 111.796875,
+            "y": 1711.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 38.4375,
+            "y": 1765.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 82.96875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 106.546875,
+            "y": 1852.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 114.40625,
+            "y": 1906.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 143.234375,
+            "y": 1960.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 200.875,
+            "y": 1949.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 240.171875,
+            "y": 1895.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 234.9375,
+            "y": 1830.578125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 177.296875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 320,
+      "count": 69,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 54.15625,
+            "y": 1697.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 111.796875,
+            "y": 1711.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 38.4375,
+            "y": 1765.78125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 82.96875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 106.546875,
+            "y": 1852.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 114.40625,
+            "y": 1906.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 143.234375,
+            "y": 1960.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 200.875,
+            "y": 1949.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 240.171875,
+            "y": 1895.375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 234.9375,
+            "y": 1830.578125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 177.296875,
+            "y": 1798.1875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "empty collection does not require stars and direct star URL has an exit",
+      "width": 390,
+      "count": 0
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 390,
+      "count": 1,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 103.265625,
+            "y": 1644.546875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 390,
+      "count": 2,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 103.265625,
+            "y": 1644.546875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 252.671875,
+            "y": 1818.84375,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 390,
+      "count": 8,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 66.75,
+            "y": 1501.953125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 139.796875,
+            "y": 1518.546875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 46.828125,
+            "y": 1580.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 103.265625,
+            "y": 1618.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 133.15625,
+            "y": 1680.40625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 252.671875,
+            "y": 1792.453125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 302.46875,
+            "y": 1730.203125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 295.828125,
+            "y": 1655.5,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 390,
+      "count": 12,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 66.75,
+            "y": 1501.953125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 139.796875,
+            "y": 1518.546875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 46.828125,
+            "y": 1580.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 103.265625,
+            "y": 1618.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 133.15625,
+            "y": 1680.40625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 143.109375,
+            "y": 1742.65625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 179.625,
+            "y": 1804.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 252.671875,
+            "y": 1792.453125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 302.46875,
+            "y": 1730.203125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 295.828125,
+            "y": 1655.5,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 222.796875,
+            "y": 1618.15625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 390,
+      "count": 69,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 66.75,
+            "y": 1501.953125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 139.796875,
+            "y": 1518.546875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 46.828125,
+            "y": 1580.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 103.265625,
+            "y": 1618.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 133.15625,
+            "y": 1680.40625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 143.109375,
+            "y": 1742.65625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 179.625,
+            "y": 1804.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 252.671875,
+            "y": 1792.453125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 302.46875,
+            "y": 1730.203125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 295.828125,
+            "y": 1655.5,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 222.796875,
+            "y": 1618.15625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "empty collection does not require stars and direct star URL has an exit",
+      "width": 768,
+      "count": 0
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 768,
+      "count": 1,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 267.90625,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 768,
+      "count": 2,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 267.90625,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 469.515625,
+            "y": 1712.75,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 768,
+      "count": 8,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 218.625,
+            "y": 1320.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 317.1875,
+            "y": 1343.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 191.75,
+            "y": 1427.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 267.90625,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 308.234375,
+            "y": 1561.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 469.515625,
+            "y": 1712.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 536.71875,
+            "y": 1628.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 527.75,
+            "y": 1527.953125,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 768,
+      "count": 12,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 218.625,
+            "y": 1320.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 317.1875,
+            "y": 1343.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 191.75,
+            "y": 1427.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 267.90625,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 308.234375,
+            "y": 1561.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 321.671875,
+            "y": 1645.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 370.953125,
+            "y": 1729.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 469.515625,
+            "y": 1712.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 536.71875,
+            "y": 1628.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 527.75,
+            "y": 1527.953125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 429.1875,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 768,
+      "count": 69,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 218.625,
+            "y": 1320.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 317.1875,
+            "y": 1343.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 191.75,
+            "y": 1427.15625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 267.90625,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 308.234375,
+            "y": 1561.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 321.671875,
+            "y": 1645.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 370.953125,
+            "y": 1729.5625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 469.515625,
+            "y": 1712.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 536.71875,
+            "y": 1628.75,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 527.75,
+            "y": 1527.953125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 429.1875,
+            "y": 1477.5625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "empty collection does not require stars and direct star URL has an exit",
+      "width": 1024,
+      "count": 0
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1024,
+      "count": 1,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 616.875,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1024,
+      "count": 2,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 616.875,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 818.484375,
+            "y": 1108.984375,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1024,
+      "count": 8,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 567.59375,
+            "y": 716.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 666.15625,
+            "y": 739.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 540.71875,
+            "y": 823.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 616.875,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 657.203125,
+            "y": 957.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 818.484375,
+            "y": 1108.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 885.6875,
+            "y": 1024.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 876.71875,
+            "y": 924.1875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1024,
+      "count": 12,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 567.59375,
+            "y": 716.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 666.15625,
+            "y": 739.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 540.71875,
+            "y": 823.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 616.875,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 657.203125,
+            "y": 957.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 670.640625,
+            "y": 1041.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 719.921875,
+            "y": 1125.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 818.484375,
+            "y": 1108.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 885.6875,
+            "y": 1024.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 876.71875,
+            "y": 924.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 778.15625,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1024,
+      "count": 69,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 567.59375,
+            "y": 716.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 666.15625,
+            "y": 739.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 540.71875,
+            "y": 823.390625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 616.875,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 657.203125,
+            "y": 957.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 670.640625,
+            "y": 1041.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 719.921875,
+            "y": 1125.796875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 818.484375,
+            "y": 1108.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 885.6875,
+            "y": 1024.984375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 876.71875,
+            "y": 924.1875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 778.15625,
+            "y": 873.796875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "empty collection does not require stars and direct star URL has an exit",
+      "width": 1440,
+      "count": 0
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1440,
+      "count": 1,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 867.5,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1440,
+      "count": 2,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 867.5,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1069.109375,
+            "y": 1125.515625,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1440,
+      "count": 8,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 818.21875,
+            "y": 733.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 916.78125,
+            "y": 755.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 791.34375,
+            "y": 839.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 867.5,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 907.828125,
+            "y": 974.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1069.109375,
+            "y": 1125.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1136.3125,
+            "y": 1041.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1127.34375,
+            "y": 940.71875,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1440,
+      "count": 12,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 818.21875,
+            "y": 733.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 916.78125,
+            "y": 755.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 791.34375,
+            "y": 839.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 867.5,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 907.828125,
+            "y": 974.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 921.265625,
+            "y": 1058.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 970.546875,
+            "y": 1142.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1069.109375,
+            "y": 1125.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1136.3125,
+            "y": 1041.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1127.34375,
+            "y": 940.71875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1028.78125,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "same IDs, no rewriting storage, full paged list, toggle/Back, grouped star and geometry",
+      "width": 1440,
+      "count": 69,
+      "layout": {
+        "overflow": false,
+        "boxes": [
+          {
+            "x": 818.21875,
+            "y": 733.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 916.78125,
+            "y": 755.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 791.34375,
+            "y": 839.921875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 867.5,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 907.828125,
+            "y": 974.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 921.265625,
+            "y": 1058.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 970.546875,
+            "y": 1142.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1069.109375,
+            "y": 1125.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1136.3125,
+            "y": 1041.515625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1127.34375,
+            "y": 940.71875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "x": 1028.78125,
+            "y": 890.328125,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "check": "keyboard star/details, source focus, last removal/undo and accessible empty view"
+    },
+    {
+      "check": "Chrome injected touch and global search from stars returns to the same collection; reduced motion"
+    },
+    {
+      "check": "ordinary collection generates without consent/writes; confirmed blocked background and denied save retain its stars"
+    },
+    {
+      "check": "fixed template is derived only; existing name/representatives/consent remain unchanged and old artwork remains accessible"
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "stars",
+      "violations": []
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "group",
+      "violations": []
+    },
+    {
+      "check": "axe scoped state",
+      "width": 390,
+      "state": "details",
+      "violations": []
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "stars",
+      "violations": []
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "group",
+      "violations": []
+    },
+    {
+      "check": "axe scoped state",
+      "width": 1440,
+      "state": "details",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "environment": "Windows Chrome; isolated contexts and simulated touch, not physical phones"
+}

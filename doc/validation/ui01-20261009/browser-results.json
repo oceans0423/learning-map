@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-09",
+  "baseUrl": "http://127.0.0.1:5182/",
+  "browser": "154.0.8037.98",
+  "mode": "headless Chrome; mobile viewport/touch emulation, not physical device",
+  "scenarios": [
+    {
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "tests": [
+        {
+          "name": "default page and desktop/mobile screenshots",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/",
+          "metrics": {
+            "viewportWidth": 1440,
+            "documentWidth": 1440,
+            "documentHeight": 3637,
+            "mapHeight": 1393.109375,
+            "courseNodes": 69,
+            "visibleCourses": 4
+          }
+        },
+        {
+          "name": "year and elective expansion; all 69 courses reachable",
+          "passed": true,
+          "metrics": {
+            "viewportWidth": 1440,
+            "documentWidth": 1440,
+            "documentHeight": 8731,
+            "mapHeight": 6487.15625,
+            "courseNodes": 69,
+            "visibleCourses": 69
+          },
+          "url": "http://127.0.0.1:5182/?open=1%2C2%2C3%2C4"
+        },
+        {
+          "name": "semester and official focus OR state",
+          "passed": true,
+          "beforeClear": "http://127.0.0.1:5182/?sem=2&focus=foundation%2Cnarrative",
+          "afterClear": "http://127.0.0.1:5182/?sem=2"
+        },
+        {
+          "name": "details: course URL, visible content, Escape and focus return",
+          "passed": true,
+          "focusInside": true,
+          "focusReturned": true,
+          "url": "http://127.0.0.1:5182/"
+        },
+        {
+          "name": "visible close button and browser Back close details",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/",
+          "focusReturned": true
+        },
+        {
+          "name": "legacy direct URL, reload and safe direct close",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/?sem=2&focus=foundation%2Cnarrative&open=1%2C2"
+        },
+        {
+          "name": "invalid URL fallback",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/?sem=bad&focus=bad&open=bad&course=unknown"
+        }
+      ],
+      "errors": [],
+      "screenshots": [
+        "desktop-home.png",
+        "desktop-full.png",
+        "desktop-map.png",
+        "desktop-expanded-map.png",
+        "desktop-details.png"
+      ],
+      "observations": {
+        "default": {
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 3637,
+          "mapHeight": 1393.109375,
+          "courseNodes": 69,
+          "visibleCourses": 4
+        },
+        "expanded": {
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 8731,
+          "mapHeight": 6487.15625,
+          "courseNodes": 69,
+          "visibleCourses": 69
+        },
+        "dialog": {
+          "text": "FIELD NOTES / 課程探索筆記\n\n必修課程 · 基底\n\n文本分析與詮釋\n×\n年級\n大一\n學期\n下學期\n學分\n2 學分\n修別\n必修\n在四年中的位置\n\n這門課是四年課程規劃中的基底課程，讓學習逐步延伸至不同探索面向與實作成果。\n\n探索面向\n\n相關面向敘事與創作\n\n課程詳細說明整理中，實際內容請依當學年度課表及課程大綱為準。\n\n實際開課依當學年度課表\n\n課程說明以當年度課程大綱為準。",
+          "buttons": [
+            {
+              "text": "×",
+              "label": "關閉課程詳情"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "tests": [
+        {
+          "name": "default page and desktop/mobile screenshots",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/",
+          "metrics": {
+            "viewportWidth": 390,
+            "documentWidth": 390,
+            "documentHeight": 6107,
+            "mapHeight": 1789.8125,
+            "courseNodes": 69,
+            "visibleCourses": 4
+          }
+        },
+        {
+          "name": "year and elective expansion; all 69 courses reachable",
+          "passed": true,
+          "metrics": {
+            "viewportWidth": 390,
+            "documentWidth": 390,
+            "documentHeight": 18943,
+            "mapHeight": 14625.921875,
+            "courseNodes": 69,
+            "visibleCourses": 69
+          },
+          "url": "http://127.0.0.1:5182/?open=1%2C2%2C3%2C4"
+        },
+        {
+          "name": "semester and official focus OR state",
+          "passed": true,
+          "beforeClear": "http://127.0.0.1:5182/?sem=2&focus=foundation%2Cnarrative",
+          "afterClear": "http://127.0.0.1:5182/?sem=2"
+        },
+        {
+          "name": "details: course URL, visible content, Escape and focus return",
+          "passed": true,
+          "focusInside": true,
+          "focusReturned": true,
+          "url": "http://127.0.0.1:5182/"
+        },
+        {
+          "name": "visible close button and browser Back close details",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/",
+          "focusReturned": true
+        },
+        {
+          "name": "legacy direct URL, reload and safe direct close",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/?sem=2&focus=foundation%2Cnarrative&open=1%2C2"
+        },
+        {
+          "name": "invalid URL fallback",
+          "passed": true,
+          "url": "http://127.0.0.1:5182/?sem=bad&focus=bad&open=bad&course=unknown"
+        }
+      ],
+      "errors": [],
+      "screenshots": [
+        "mobile-home.png",
+        "mobile-full.png",
+        "mobile-map.png",
+        "mobile-expanded-map.png",
+        "mobile-details.png"
+      ],
+      "observations": {
+        "default": {
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 6107,
+          "mapHeight": 1789.8125,
+          "courseNodes": 69,
+          "visibleCourses": 4
+        },
+        "expanded": {
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 18943,
+          "mapHeight": 14625.921875,
+          "courseNodes": 69,
+          "visibleCourses": 69
+        },
+        "dialog": {
+          "text": "FIELD NOTES / 課程探索筆記\n\n必修課程 · 基底\n\n文本分析與詮釋\n×\n年級\n大一\n學期\n下學期\n學分\n2 學分\n修別\n必修\n在四年中的位置\n\n這門課是四年課程規劃中的基底課程，讓學習逐步延伸至不同探索面向與實作成果。\n\n探索面向\n\n相關面向敘事與創作\n\n課程詳細說明整理中，實際內容請依當學年度課表及課程大綱為準。\n\n實際開課依當學年度課表\n\n課程說明以當年度課程大綱為準。",
+          "buttons": [
+            {
+              "text": "×",
+              "label": "關閉課程詳情"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

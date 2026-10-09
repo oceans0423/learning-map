@@ -1,0 +1,546 @@
+/* global process, console, window, document, getComputedStyle */
+import { createRequire } from 'node:module'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { fileURLToPath, URL } from 'node:url'
+import assert from 'node:assert/strict'
+
+const require = createRequire(import.meta.url)
+const { chromium } = require(process.argv[2])
+const base = process.argv[3] || 'http://127.0.0.1:5186/'
+const catalog = JSON.parse(
+  await readFile(new URL('../../src/data/courses.json', import.meta.url), 'utf8'),
+).courses
+const directory = fileURLToPath(new URL('./course-atlas-v2-20261009/', import.meta.url))
+await mkdir(directory, { recursive: true })
+const browser = await chromium.launch({ channel: 'chrome' })
+const results = []
+const errors = []
+let passed = false
+let failure = null
+
+async function newPage(options) {
+  const page = await browser.newPage(options)
+  page.on('pageerror', (error) => errors.push(error.message))
+  return page
+}
+
+async function collect(page) {
+  const ids = []
+  while (true) {
+    ids.push(
+      ...(await page
+        .locator('[data-atlas-course]')
+        .evaluateAll((nodes) => nodes.map((node) => node.dataset.atlasCourse))),
+    )
+    const next = page.getByRole('button', { name: '下一頁', exact: true })
+    if (!(await next.count()) || (await next.isDisabled())) break
+    await next.click()
+  }
+  return ids
+}
+
+try {
+  for (const width of [320, 390, 768, 1024, 1440]) {
+    const page = await newPage({
+      viewport: { width, height: width < 768 ? 844 : 1000 },
+      hasTouch: width < 768,
+    })
+    await page.goto(base)
+    await page.locator('[data-area]').first().waitFor()
+    const layout = await page.evaluate(() => ({
+      width: window.innerWidth,
+      overflow: document.documentElement.scrollWidth > window.innerWidth,
+      firstEntryBottom: document.querySelector('.ca-area').getBoundingClientRect().bottom,
+      searchBottom: document.querySelector('#atlas-search').getBoundingClientRect().bottom,
+      height: window.innerHeight,
+      targets: [...document.querySelectorAll('.ca-area')].map((node) => {
+        const r = node.getBoundingClientRect()
+        return { width: r.width, height: r.height }
+      }),
+    }))
+    assert.equal(layout.overflow, false)
+    assert.ok(layout.firstEntryBottom < layout.height)
+    assert.ok(layout.searchBottom < layout.height)
+    assert.ok(layout.targets.every((target) => target.width >= 44 && target.height >= 44))
+    if (width === 390 || width === 1440)
+      await page.screenshot({ path: `${directory}/${width}-overview.png`, fullPage: true })
+    const ids = []
+    for (const area of ['thinking', 'narrative', 'digital', 'culture']) {
+      await page.locator(`[data-area="${area}"]`).click()
+      ids.push(...(await collect(page)))
+      assert.equal(
+        await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth),
+        false,
+      )
+      await page.getByRole('button', { name: '← 返回總覽', exact: true }).click()
+    }
+    assert.deepEqual(ids.sort(), catalog.map((course) => course.id).sort())
+    await page.getByRole('button', { name: '按年級看', exact: true }).click()
+    const yearIds = []
+    for (const year of [1, 2, 3, 4]) {
+      await page.locator(`[data-year="${year}"]`).click()
+      yearIds.push(...(await collect(page)))
+      await page.getByRole('button', { name: '← 返回總覽', exact: true }).click()
+    }
+    assert.deepEqual(yearIds.sort(), catalog.map((course) => course.id).sort())
+    await page.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+    assert.deepEqual((await collect(page)).sort(), catalog.map((course) => course.id).sort())
+    await page.getByLabel('篩選年級', { exact: true }).selectOption('2')
+    assert.equal(await page.locator('[data-atlas-course]').count(), width < 768 ? 6 : 12)
+    await page.getByLabel('篩選領域', { exact: true }).selectOption('narrative')
+    await page.locator('.ca-more-filters summary').click()
+    await page.getByLabel('篩選必選修', { exact: true }).selectOption('required')
+    assert.equal(await page.locator('[data-atlas-course]').count(), 0)
+    await page.getByRole('button', { name: '清除篩選', exact: true }).click()
+    assert.match(await page.locator('.ca-result-count').innerText(), /69/)
+    if (width === 390 || width === 1440)
+      await page.screenshot({ path: `${directory}/${width}-results.png`, fullPage: true })
+    results.push({
+      check: 'overview, full ID coverage through areas/years/all, filters, pagination',
+      ...layout,
+    })
+    // Details must preserve source pagination and focus, with an actual modal on mobile.
+    await page.getByRole('button', { name: '下一頁', exact: true }).click()
+    const sourceId = await page
+      .locator('[data-atlas-course]')
+      .first()
+      .getAttribute('data-atlas-course')
+    await page.locator('[data-atlas-course]').first().click()
+    await page.locator('.detail-panel').waitFor()
+    assert.equal(await page.locator('.detail-position').count(), 1)
+    assert.equal(await page.getByText('探索訊號 · 導覽草案', { exact: true }).count(), 0)
+    if (width < 1024) {
+      assert.equal(await page.getByRole('dialog').count(), 1)
+      await page.keyboard.press('Shift+Tab')
+      assert.equal(
+        await page.evaluate(() => !!document.activeElement.closest('.detail-panel')),
+        true,
+      )
+    }
+    if (width === 390 || width === 1440) {
+      await page.locator('.detail-panel').evaluate(async (node) => {
+        await Promise.all(
+          node
+            .getAnimations({ subtree: true })
+            .map((animation) => animation.finished.catch(() => {})),
+        )
+      })
+      await page.screenshot({ path: `${directory}/${width}-details.png`, fullPage: true })
+    }
+    await page.keyboard.press('Escape')
+    await page.locator('.detail-panel').waitFor({ state: 'hidden' })
+    assert.equal(
+      await page.evaluate(() => document.activeElement.dataset.atlasCourse),
+      sourceId,
+    )
+    assert.equal(
+      await page.locator('[data-atlas-course]').first().getAttribute('data-atlas-course'),
+      sourceId,
+    )
+    await page.locator('[data-atlas-course]').first().click()
+    await page.goBack()
+    await page.locator('.detail-panel').waitFor({ state: 'hidden' })
+    assert.equal(
+      await page.locator('[data-atlas-course]').first().getAttribute('data-atlas-course'),
+      sourceId,
+    )
+    // Global search from an empty personal view still has usable results and keeps all courses in scope.
+    await page.getByRole('button', { name: '我的課程', exact: true }).click()
+    const longCourse = [...catalog].sort((a, b) => b.name.length - a.name.length)[0]
+    await page.getByLabel('搜尋所有課程', { exact: true }).fill(longCourse.name)
+    await page.getByRole('button', { name: '搜尋', exact: true }).click()
+    assert.equal(await page.locator('[data-atlas-course]').count(), 1)
+    await page.locator('[data-atlas-course]').click()
+    await page
+      .getByRole('button', { name: `加入我的課程：${longCourse.name}`, exact: true })
+      .click()
+    await page.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+    await page.locator('.detail-panel').waitFor({ state: 'hidden' })
+    await page.getByRole('button', { name: '清除搜尋', exact: true }).click()
+    assert.equal(await page.locator('#atlas-content-title').innerText(), '我的課程')
+    assert.equal(await page.locator('[data-atlas-course]').count(), 1)
+    assert.equal(await page.evaluate(() => window.localStorage.length), 0)
+    await page.locator('[data-atlas-course]').click()
+    await page
+      .getByRole('button', { name: `移除我的課程：${longCourse.name}`, exact: true })
+      .click()
+    await page.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+    await page.locator('.detail-panel').waitFor({ state: 'hidden' })
+    assert.equal(await page.evaluate(() => document.activeElement.id), 'atlas-content-title')
+    await page.getByRole('button', { name: '復原最近移除', exact: true }).click()
+    assert.equal(await page.locator('[data-atlas-course]').count(), 1)
+    await page.getByLabel('搜尋所有課程', { exact: true }).fill('不存在的課程名稱XYZ')
+    await page.getByRole('button', { name: '搜尋', exact: true }).click()
+    assert.equal(await page.locator('[data-atlas-course]').count(), 0)
+    await page.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+    assert.match(await page.locator('.ca-result-count').innerText(), /69/)
+    results.push({
+      check:
+        'detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes',
+      width,
+    })
+    if (width === 390 || width === 1440) {
+      const axePath = process.argv[4]
+      if (axePath) {
+        const axeStates = []
+        for (const state of ['results', 'details', 'overview', 'mine']) {
+          if (state === 'details') await page.locator('[data-atlas-course]').first().click()
+          if (state === 'overview') {
+            await page.keyboard.press('Escape')
+            await page.getByRole('button', { name: '課程地圖', exact: true }).click()
+          }
+          if (state === 'mine')
+            await page.getByRole('button', { name: /我的課程/, exact: false }).click()
+          await page.addScriptTag({ path: axePath })
+          const scan = await page.evaluate(async () =>
+            (await window.axe.run()).violations.map((item) => ({
+              id: item.id,
+              nodes: item.nodes.map((node) => node.target),
+            })),
+          )
+          axeStates.push({ state, violations: scan })
+        }
+        results.push({ check: 'axe scoped states', width, scans: axeStates })
+        assert.ok(
+          axeStates.every((scan) => scan.violations.length === 0),
+          JSON.stringify(axeStates),
+        )
+      }
+    }
+    await page.close()
+    console.log(`Completed ${width}px overview, course coverage and details`)
+  }
+  const reduced = await newPage({
+    viewport: { width: 390, height: 844 },
+    reducedMotion: 'reduce',
+  })
+  await reduced.goto(base)
+  await reduced.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+  await reduced.locator('[data-atlas-course]').first().click()
+  assert.equal(
+    await reduced
+      .locator('.detail-panel')
+      .evaluate((node) => getComputedStyle(node).animationName),
+    'none',
+  )
+  await reduced.keyboard.press('Escape')
+  await reduced.evaluate(() => {
+    document.documentElement.style.fontSize = '200%'
+  })
+  assert.equal(
+    await reduced.evaluate(() => document.documentElement.scrollWidth > window.innerWidth),
+    false,
+  )
+  results.push({
+    check: 'reduced motion and 200% root-text-size simulation, not real browser zoom',
+  })
+  await reduced.close()
+  // Genuine injected touch, plus composition-event checks (not a real mobile keyboard).
+  const touch = await newPage({
+    viewport: { width: 390, height: 844 },
+    isMobile: true,
+    hasTouch: true,
+  })
+  await touch.goto(base)
+  await touch.locator('[data-area="digital"]').tap()
+  await touch.locator('[data-atlas-course]').first().tap()
+  await touch.getByRole('button', { name: /^加入我的課程：/ }).tap()
+  await touch.getByRole('button', { name: '關閉課程詳情', exact: true }).tap()
+  await touch.locator('.detail-panel').waitFor({ state: 'hidden' })
+  await touch.getByRole('button', { name: '課程地圖', exact: true }).tap()
+  const touchInput = touch.getByLabel('搜尋所有課程', { exact: true })
+  await touchInput.fill('數位')
+  await touchInput.evaluate((node) =>
+    node.dispatchEvent(new window.CompositionEvent('compositionstart', { bubbles: true })),
+  )
+  await touch.getByRole('button', { name: '搜尋', exact: true }).tap()
+  assert.equal(await touch.locator('[data-area]').count(), 4)
+  await touchInput.evaluate((node) =>
+    node.dispatchEvent(
+      new window.CompositionEvent('compositionend', { bubbles: true, data: '數位' }),
+    ),
+  )
+  await touch.getByRole('button', { name: '搜尋', exact: true }).tap()
+  assert.ok((await touch.locator('[data-atlas-course]').count()) > 0)
+  results.push({ check: 'real Chrome touch injection and synthetic composition events' })
+  await touch.close()
+
+  const separator = base.includes('?') ? '&' : '?'
+  const direct = await newPage({ viewport: { width: 390, height: 844 } })
+  await direct.goto(base + separator + 'course=course-069&open=4&focus=story&signals=text')
+  await direct.locator('.detail-panel').waitFor()
+  assert.equal(
+    await direct.locator('#course-detail-title').innerText(),
+    catalog.find((course) => course.id === 'course-069').name,
+  )
+  await direct.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+  await direct.locator('.detail-panel').waitFor({ state: 'hidden' })
+  assert.ok(!new URL(direct.url()).searchParams.has('course'))
+  assert.equal(await direct.evaluate(() => document.activeElement.id), 'atlas-content-title')
+  assert.ok(await direct.locator('.ca-legacy-notice').count())
+  results.push({
+    check: 'direct legacy URL closes in place and ignores old signals/focus visibly',
+  })
+  await direct.close()
+
+  const persistent = await newPage({ viewport: { width: 390, height: 844 } })
+  await persistent.goto(base)
+  const saved = {
+    version: 1,
+    consent: true,
+    ids: catalog.slice(0, 3).map((course) => course.id),
+    representatives: catalog.slice(0, 3).map((course, index) => ({
+      id: course.id,
+      x: [0.22, 0.7, 0.27][index],
+      y: [0.16, 0.21, 0.36][index],
+    })),
+    name: '既有作品不能消失',
+    initialized: true,
+    namedOnce: true,
+    completed: true,
+  }
+  await persistent.evaluate(
+    (saved) =>
+      window.localStorage.setItem('humanities-atlas:personal:v1', JSON.stringify(saved)),
+    saved,
+  )
+  await persistent.reload()
+  await persistent.getByRole('button', { name: '我的課程（3）', exact: true }).click()
+  assert.equal(await persistent.locator('[data-atlas-course]').count(), 3)
+  await persistent.getByLabel('搜尋所有課程', { exact: true }).fill(catalog[3].name)
+  await persistent.getByRole('button', { name: '搜尋', exact: true }).click()
+  await persistent.locator('[data-atlas-course]').click()
+  await persistent.getByRole('button', { name: /^加入我的課程：/ }).click()
+  await persistent.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+  await persistent.locator('.detail-panel').waitFor({ state: 'hidden' })
+  await persistent.getByRole('button', { name: '清除搜尋', exact: true }).click()
+  await persistent.reload()
+  assert.equal(await persistent.locator('[data-atlas-course]').count(), 4)
+  const restored = await persistent.evaluate(() =>
+    JSON.parse(window.localStorage.getItem('humanities-atlas:personal:v1')),
+  )
+  assert.equal(restored.name, saved.name)
+  assert.deepEqual(restored.representatives, saved.representatives)
+  await persistent.getByRole('button', { name: '查看既有星座作品', exact: true }).click()
+  assert.ok(
+    (await persistent.locator('.constellation-editor').innerText()).includes(saved.name),
+  )
+  results.push({
+    check: 'consented reload retains course IDs and does not rearrange/rename prior artwork',
+  })
+  await persistent.close()
+
+  const denied = await newPage({ viewport: { width: 390, height: 844 } })
+  await denied.addInitScript(() => {
+    window.Storage.prototype.setItem = () => {
+      throw new Error('Test denied storage')
+    }
+  })
+  await denied.goto(base)
+  await denied.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+  await denied.locator('[data-atlas-course]').first().click()
+  await denied.getByRole('button', { name: /^加入我的課程：/ }).click()
+  await denied.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+  await denied.locator('.detail-panel').waitFor({ state: 'hidden' })
+  await denied.getByRole('button', { name: '我的課程（1）', exact: true }).click()
+  await denied.getByRole('button', { name: '儲存在這台裝置', exact: true }).click()
+  assert.ok(
+    (await denied.locator('.personal-storage-controls').innerText()).includes('儲存失敗'),
+  )
+  assert.equal(await denied.locator('[data-atlas-course]').count(), 1)
+  results.push({ check: 'failed storage reports error and keeps session draft' })
+  await denied.close()
+
+  const noImage = await newPage({ viewport: { width: 390, height: 844 } })
+  await noImage.route('**/*starfield*.webp', (route) => route.abort())
+  await noImage.goto(base)
+  assert.equal(
+    await noImage
+      .locator('.ca-overview')
+      .evaluate((node) => getComputedStyle(node).backgroundColor),
+    'rgb(16, 24, 39)',
+  )
+  await noImage.locator('[data-area="culture"]').click()
+  assert.equal(await noImage.locator('[data-atlas-course]').count(), 6)
+  results.push({ check: 'blocked background still supports complete text and course browsing' })
+  await noImage.close()
+
+  const performancePage = await newPage({ viewport: { width: 390, height: 844 } })
+  await performancePage.goto(base)
+  await performancePage.locator('.ca-overview').waitFor()
+  await performancePage.waitForFunction(() =>
+    window.performance
+      .getEntriesByType('resource')
+      .some((item) => item.name.includes('starfield')),
+  )
+  const perf = await performancePage.evaluate(() => ({
+    userAgent: window.navigator.userAgent,
+    navigation: window.performance.getEntriesByType('navigation')[0]?.toJSON(),
+    backgrounds: window.performance
+      .getEntriesByType('resource')
+      .filter((item) => item.name.includes('starfield'))
+      .map((item) => item.toJSON()),
+  }))
+  assert.equal(perf.backgrounds.length, 1)
+  assert.ok(perf.backgrounds[0].name.includes('mobile.webp'))
+  await performancePage.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+  const frames = performancePage.evaluate(
+    () =>
+      new Promise((resolve) => {
+        const values = []
+        let previous
+        function frame(time) {
+          if (previous !== undefined) values.push(time - previous)
+          previous = time
+          if (values.length < 45) window.requestAnimationFrame(frame)
+          else resolve(values)
+        }
+        window.requestAnimationFrame(frame)
+      }),
+  )
+  for (let index = 0; index < 6; index++) {
+    await performancePage.getByRole('button', { name: '下一頁', exact: true }).click()
+    await performancePage.getByRole('button', { name: '上一頁', exact: true }).click()
+  }
+  const samples = await frames
+  results.push({
+    check:
+      'local built-preview load/resource timings and unthrottled viewport frame sample; not real-device assurance',
+    ...perf,
+    frameDeltas: samples,
+  })
+  await performancePage.close()
+  const keyboard = await newPage({ viewport: { width: 390, height: 844 } })
+  await keyboard.goto(base)
+  await keyboard.locator('.atlas-skip').waitFor({ state: 'attached' })
+  await keyboard.keyboard.press('Tab')
+  assert.equal(await keyboard.evaluate(() => document.activeElement.className), 'atlas-skip')
+  await keyboard.keyboard.press('Enter')
+  assert.ok(
+    ['atlas-content', 'atlas-content-title'].includes(
+      await keyboard.evaluate(() => document.activeElement.id),
+    ),
+  )
+  for (
+    let index = 0;
+    index < 15 && !(await keyboard.evaluate(() => !!document.activeElement.dataset.area));
+    index++
+  )
+    await keyboard.keyboard.press('Tab')
+  assert.ok(await keyboard.evaluate(() => !!document.activeElement.dataset.area))
+  await keyboard.keyboard.press('Enter')
+  await keyboard.locator('.ca-results').waitFor()
+  assert.equal(await keyboard.evaluate(() => document.activeElement.id), 'atlas-content-title')
+  for (
+    let index = 0;
+    index < 15 &&
+    !(await keyboard.evaluate(() => !!document.activeElement.dataset.atlasCourse));
+    index++
+  )
+    await keyboard.keyboard.press('Tab')
+  assert.ok(await keyboard.evaluate(() => !!document.activeElement.dataset.atlasCourse))
+  await keyboard.keyboard.press('Enter')
+  await keyboard.locator('.detail-panel').waitFor()
+  assert.equal(await keyboard.evaluate(() => document.activeElement.className), 'detail-close')
+  await keyboard.keyboard.press('Tab')
+  assert.ok(await keyboard.evaluate(() => !!document.activeElement.dataset.collectionId))
+  await keyboard.keyboard.press('Enter')
+  assert.equal(
+    await keyboard
+      .getByRole('button', { name: /^移除我的課程：/ })
+      .getAttribute('aria-pressed'),
+    'true',
+  )
+  await keyboard.keyboard.press('Escape')
+  await keyboard.locator('.detail-panel').waitFor({ state: 'hidden' })
+  assert.ok(await keyboard.evaluate(() => !!document.activeElement.dataset.atlasCourse))
+  results.push({ check: 'keyboard-only skip link, domain, course, add and Escape journey' })
+  await keyboard.close()
+
+  const resize = await newPage({ viewport: { width: 390, height: 844 } })
+  await resize.goto(base)
+  await resize.getByRole('button', { name: '查看全部 69 門課程', exact: true }).click()
+  for (let index = 0; index < 3; index++)
+    await resize.getByRole('button', { name: '下一頁', exact: true }).click()
+  const resizeAnchor = await resize
+    .locator('[data-atlas-course]')
+    .first()
+    .getAttribute('data-atlas-course')
+  await resize.locator('[data-atlas-course]').first().click()
+  await resize.setViewportSize({ width: 1440, height: 1000 })
+  await resize.waitForFunction(
+    () => document.querySelector('.detail-panel')?.getAttribute('role') === 'region',
+  )
+  assert.equal(await resize.locator('[inert]').count(), 0)
+  await resize.keyboard.press('Escape')
+  await resize.locator('.detail-panel').waitFor({ state: 'hidden' })
+  assert.equal(await resize.locator(`[data-atlas-course="${resizeAnchor}"]`).count(), 1)
+  await resize.setViewportSize({ width: 390, height: 844 })
+  await resize.waitForFunction(
+    () => document.querySelectorAll('[data-atlas-course]').length === 6,
+  )
+  assert.equal(
+    await resize.locator('[data-atlas-course]').first().getAttribute('data-atlas-course'),
+    resizeAnchor,
+  )
+  results.push({ check: 'resize keeps anchor and changes modal/region without residual inert' })
+  await resize.close()
+
+  const low = await newPage({ viewport: { width: 390, height: 400 } })
+  await low.goto(base)
+  const longest = [...catalog].sort((a, b) => b.name.length - a.name.length)[0]
+  await low.getByLabel('搜尋所有課程', { exact: true }).fill(longest.name)
+  await low.getByRole('button', { name: '搜尋', exact: true }).click()
+  await low.locator('[data-atlas-course]').click()
+  assert.equal(
+    await low.evaluate(() => document.documentElement.scrollWidth > window.innerWidth),
+    false,
+  )
+  const closeBounds = await low
+    .getByRole('button', { name: '關閉課程詳情', exact: true })
+    .boundingBox()
+  assert.ok(closeBounds.y >= 0 && closeBounds.y + closeBounds.height <= 400)
+  await low.getByRole('button', { name: '關閉課程詳情', exact: true }).click()
+  await low.locator('.detail-panel').waitFor({ state: 'hidden' })
+  results.push({ check: '400px low viewport, longest course and reachable close control' })
+  await low.close()
+  const resume = await newPage({ viewport: { width: 390, height: 844 } })
+  await resume.goto(base)
+  await resume.getByLabel('搜尋所有課程', { exact: true }).fill(catalog[12].name)
+  await resume.getByRole('button', { name: '搜尋', exact: true }).click()
+  await resume.getByRole('button', { name: '我的課程', exact: true }).click()
+  await resume.getByRole('button', { name: '← 返回找課', exact: true }).click()
+  assert.ok(
+    (await resume.locator('#atlas-content-title').innerText()).includes(catalog[12].name),
+  )
+  assert.equal(
+    await resume.getByLabel('搜尋所有課程', { exact: true }).inputValue(),
+    catalog[12].name,
+  )
+  results.push({
+    check: 'mine return restores prior global search rather than dropping its query',
+  })
+  await resume.close()
+  assert.deepEqual(errors, [])
+  passed = true
+  console.log(JSON.stringify({ checks: results.length, runtimeErrors: errors }))
+} catch (error) {
+  failure = error.stack || String(error)
+  throw error
+} finally {
+  await writeFile(
+    `${directory}/results.json`,
+    JSON.stringify(
+      {
+        passed,
+        failure,
+        results,
+        errors,
+        environment: 'Windows system Chrome; viewport/touch simulation, not physical phones',
+      },
+      null,
+      2,
+    ),
+  )
+  await browser.close()
+}

@@ -1,0 +1,23 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "keyboard": true,
+      "tap": true,
+      "drag": true,
+      "cancellation": true,
+      "boundary": true,
+      "resize": true
+    },
+    {
+      "width": 1440,
+      "keyboard": true,
+      "tap": true,
+      "drag": true,
+      "cancellation": true,
+      "boundary": true,
+      "resize": true
+    }
+  ]
+}

@@ -1,0 +1,1185 @@
+{
+  "base": "http://127.0.0.1:5186/",
+  "results": [
+    {
+      "width": 320,
+      "selected": 0,
+      "overflow": false,
+      "targets": [],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 0
+    },
+    {
+      "width": 320,
+      "selected": 1,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 77.9375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 1
+    },
+    {
+      "width": 320,
+      "selected": 2,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 77.9375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 206.625,
+          "y": 646.671875,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 2
+    },
+    {
+      "width": 320,
+      "selected": 8,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 46.46875,
+          "y": 396.421875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 109.390625,
+          "y": 410.71875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 29.3125,
+          "y": 464.34375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 77.9375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 103.671875,
+          "y": 550.15625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 206.625,
+          "y": 646.671875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 249.53125,
+          "y": 593.046875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 243.8125,
+          "y": 528.703125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 8
+    },
+    {
+      "width": 320,
+      "selected": 12,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 46.46875,
+          "y": 396.421875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 109.390625,
+          "y": 410.71875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 29.3125,
+          "y": 464.34375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 77.9375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 103.671875,
+          "y": 550.15625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 112.25,
+          "y": 603.78125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 143.71875,
+          "y": 657.40625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 206.625,
+          "y": 646.671875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 249.53125,
+          "y": 593.046875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 243.8125,
+          "y": 528.703125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 180.890625,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 12
+    },
+    {
+      "width": 320,
+      "selected": 69,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 46.46875,
+          "y": 396.421875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 109.390625,
+          "y": 410.71875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 29.3125,
+          "y": 464.34375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 77.9375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 103.671875,
+          "y": 550.15625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 112.25,
+          "y": 603.78125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 143.71875,
+          "y": 657.40625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 206.625,
+          "y": 646.671875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 249.53125,
+          "y": 593.046875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 243.8125,
+          "y": 528.703125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 180.890625,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 69
+    },
+    {
+      "width": 390,
+      "selected": 0,
+      "overflow": false,
+      "targets": [],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 0
+    },
+    {
+      "width": 390,
+      "selected": 1,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 98.234375,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 1
+    },
+    {
+      "width": 390,
+      "selected": 2,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 98.234375,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 258.4375,
+          "y": 684.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 2
+    },
+    {
+      "width": 390,
+      "selected": 8,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 59.078125,
+          "y": 373.328125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 137.390625,
+          "y": 391.125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 37.71875,
+          "y": 457.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 98.234375,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 130.265625,
+          "y": 564.6875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 258.4375,
+          "y": 684.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 311.828125,
+          "y": 618.078125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 304.71875,
+          "y": 537.984375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 8,
+      "axeDetails": [],
+      "axe": []
+    },
+    {
+      "width": 390,
+      "selected": 12,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 59.078125,
+          "y": 373.328125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 137.390625,
+          "y": 391.125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 37.71875,
+          "y": 457.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 98.234375,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 130.265625,
+          "y": 564.6875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 140.953125,
+          "y": 631.4375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 180.109375,
+          "y": 698.1875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 258.4375,
+          "y": 684.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 311.828125,
+          "y": 618.078125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 304.71875,
+          "y": 537.984375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 226.390625,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 12
+    },
+    {
+      "width": 390,
+      "selected": 69,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 59.078125,
+          "y": 373.328125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 137.390625,
+          "y": 391.125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 37.71875,
+          "y": 457.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 98.234375,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 130.265625,
+          "y": 564.6875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 140.953125,
+          "y": 631.4375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 180.109375,
+          "y": 698.1875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 258.4375,
+          "y": 684.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 311.828125,
+          "y": 618.078125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 304.71875,
+          "y": 537.984375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 226.390625,
+          "y": 497.9375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 69,
+      "axeGroup": []
+    },
+    {
+      "width": 768,
+      "selected": 0,
+      "overflow": false,
+      "targets": [],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 0
+    },
+    {
+      "width": 768,
+      "selected": 1,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 261.1875,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 1
+    },
+    {
+      "width": 768,
+      "selected": 2,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 261.1875,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 477.1875,
+          "y": 802.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 2
+    },
+    {
+      "width": 768,
+      "selected": 8,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 208.390625,
+          "y": 382.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 314,
+          "y": 406.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 179.59375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 261.1875,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 304.390625,
+          "y": 640.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 477.1875,
+          "y": 802.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 549.1875,
+          "y": 712.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 539.59375,
+          "y": 604.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 8
+    },
+    {
+      "width": 768,
+      "selected": 12,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 208.390625,
+          "y": 382.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 314,
+          "y": 406.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 179.59375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 261.1875,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 304.390625,
+          "y": 640.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 318.796875,
+          "y": 730.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 371.59375,
+          "y": 820.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 477.1875,
+          "y": 802.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 549.1875,
+          "y": 712.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 539.59375,
+          "y": 604.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 434,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 12
+    },
+    {
+      "width": 768,
+      "selected": 69,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 208.390625,
+          "y": 382.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 314,
+          "y": 406.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 179.59375,
+          "y": 496.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 261.1875,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 304.390625,
+          "y": 640.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 318.796875,
+          "y": 730.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 371.59375,
+          "y": 820.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 477.1875,
+          "y": 802.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 549.1875,
+          "y": 712.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 539.59375,
+          "y": 604.53125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 434,
+          "y": 550.53125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 69
+    },
+    {
+      "width": 1440,
+      "selected": 0,
+      "overflow": false,
+      "targets": [],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 0
+    },
+    {
+      "width": 1440,
+      "selected": 1,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 597.1875,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 1
+    },
+    {
+      "width": 1440,
+      "selected": 2,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "3",
+          "x": 597.1875,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 813.1875,
+          "y": 847.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 2
+    },
+    {
+      "width": 1440,
+      "selected": 8,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 544.390625,
+          "y": 427.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 650,
+          "y": 451.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 515.59375,
+          "y": 541.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 597.1875,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 640.390625,
+          "y": 685.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 813.1875,
+          "y": 847.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 885.1875,
+          "y": 757.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 875.59375,
+          "y": 649.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 8,
+      "axeDetails": [],
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "selected": 12,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 544.390625,
+          "y": 427.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 650,
+          "y": 451.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 515.59375,
+          "y": 541.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 597.1875,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 640.390625,
+          "y": 685.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 654.796875,
+          "y": 775.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 707.59375,
+          "y": 865.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 813.1875,
+          "y": 847.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 885.1875,
+          "y": 757.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 875.59375,
+          "y": 649.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 770,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 12
+    },
+    {
+      "width": 1440,
+      "selected": 69,
+      "overflow": false,
+      "targets": [
+        {
+          "id": "0",
+          "x": 544.390625,
+          "y": 427.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "1",
+          "x": 650,
+          "y": 451.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "2",
+          "x": 515.59375,
+          "y": 541.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "3",
+          "x": 597.1875,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "4",
+          "x": 640.390625,
+          "y": 685.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "5",
+          "x": 654.796875,
+          "y": 775.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "6",
+          "x": 707.59375,
+          "y": 865.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "7",
+          "x": 813.1875,
+          "y": 847.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "8",
+          "x": 885.1875,
+          "y": 757.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "9",
+          "x": 875.59375,
+          "y": 649.828125,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "10",
+          "x": 770,
+          "y": 595.828125,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "collisions": [],
+      "background": "linear-gradient(rgba(16, 24, 39, 0.133), rgba(16, 24, 39, 0.133)), url(\"http://127.0.0.1:5186/images/backgrounds/minimal-deep-blue-starfield.png\")",
+      "count": 69,
+      "axeGroup": []
+    },
+    {
+      "journey": "tap/search/add/view/note/close/filter/remove/undo/return/reenter",
+      "passed": true,
+      "unsolicitedStorage": false
+    },
+    {
+      "journey": "keyboard/focus-trap/escape/reduced-motion/200-percent-text",
+      "passed": true
+    },
+    {
+      "journey": "consented-reload/skip-link-deep-link",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

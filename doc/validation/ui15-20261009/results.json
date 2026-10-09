@@ -1,0 +1,155 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "stars": 1,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 0,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "stars": 2,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 1,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "stars": 8,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 7,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "stars": 1,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 0,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "stars": 2,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 1,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "stars": 8,
+      "grapheme24": true,
+      "safeText": true,
+      "blank": true,
+      "composition": true,
+      "noReplay": true,
+      "lines": 7,
+      "reduced": true,
+      "geometry": [
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        },
+        {
+          "contained": true
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

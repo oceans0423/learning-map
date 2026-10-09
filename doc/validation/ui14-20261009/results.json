@@ -1,0 +1,31 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "zero": true,
+      "one": true,
+      "eight": true,
+      "nineReplacement": true,
+      "cancel": true,
+      "noCollectionLoss": true,
+      "starUndo": true,
+      "reentryPreserved": true,
+      "all69": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "zero": true,
+      "one": true,
+      "eight": true,
+      "nineReplacement": true,
+      "cancel": true,
+      "noCollectionLoss": true,
+      "starUndo": true,
+      "reentryPreserved": true,
+      "all69": true,
+      "passed": true
+    }
+  ]
+}

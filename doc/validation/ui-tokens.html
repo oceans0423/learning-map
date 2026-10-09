@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UI-03 色彩與字體驗證</title>
+    <link rel="stylesheet" href="/src/styles/constellation-tokens.css" />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 24px; font: var(--ui-font-size)/var(--ui-leading) var(--ui-font-body); color: var(--ui-text); background: var(--ui-night); }
+      main { max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,320px),1fr)); gap: var(--ui-space-6); }
+      section { border: 1px solid var(--ui-line); padding: var(--ui-space-6); border-radius: var(--ui-radius); }
+      h1, h2 { font-family: var(--ui-font-display); }
+      h1 { max-width: 1100px; margin: 0 auto 24px; font-size: 2rem; }
+      li { margin: 16px 0; }
+      .text { color: var(--signal-text); } .story { color: var(--signal-story); } .digital { color: var(--signal-digital); } .field { color: var(--signal-field); }
+      .ui-paper .text { color: var(--signal-text-ink); } .ui-paper .story { color: var(--signal-story-ink); } .ui-paper .digital { color: var(--signal-digital-ink); } .ui-paper .field { color: var(--signal-field-ink); }
+      .secondary { color: var(--ui-text-secondary); } .ui-paper .secondary { color: var(--ui-ink-secondary); }
+      .focus { outline: 3px solid var(--ui-local-focus); outline-offset: 4px; padding: 8px; }
+      .error { color: var(--ui-error); } .ui-paper .error { color: var(--ui-error-on-paper); }
+      button { min-height: var(--ui-target); color: inherit; border: 1px solid currentColor; background: transparent; padding: 8px 16px; font: inherit; }
+      button:disabled { color: var(--ui-text-secondary); } .ui-paper button:disabled { color: var(--ui-ink-secondary); }
+    </style>
+  </head>
+  <body>
+    <h1>夜空與紙頁：兩種表面，一套資訊秩序</h1>
+    <main>
+      <section class="ui-night"><h2>夜空探索</h2><p>古典文獻的數據化與文化IP轉譯</p><p class="secondary">大四下學期 · 選修 · 2 學分</p><ul><li class="text">文本思辨</li><li class="story">敘事創作</li><li class="digital">數位媒介</li><li class="field">文化現場</li></ul><p class="focus">獨立的焦點輪廓，不借用分類色。</p></section>
+      <section class="ui-paper"><h2>課程筆記</h2><p>古典文獻的數據化與文化IP轉譯</p><p class="secondary">大四下學期 · 選修 · 2 學分</p><ul><li class="text">文本思辨</li><li class="story">敘事創作</li><li class="digital">數位媒介</li><li class="field">文化現場</li></ul><p class="focus">紙頁使用深色文字與焦點輪廓。</p></section>
+    </main>
+    <main style="margin-top:24px">
+      <section class="ui-night"><button disabled>尚未提供下載</button><p class="error">儲存失敗，草稿仍在。請重試。</p></section>
+      <section class="ui-paper"><button disabled>尚未提供下載</button><p class="error">儲存失敗，草稿仍在。請重試。</p></section>
+    </main>
+  </body>
+</html>

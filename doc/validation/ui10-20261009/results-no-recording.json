@@ -1,0 +1,42 @@
+{
+  "browser": "154.0.8037.98",
+  "environment": {
+    "platform": "win32",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13980HX",
+    "logicalCpus": 32,
+    "mode": "headless, no CPU throttling; emulator, not phone",
+    "recording": false
+  },
+  "checks": [
+    {
+      "width": 390,
+      "normal10Switches": true,
+      "reduced10Switches": true,
+      "latestState": true,
+      "livePreference": true,
+      "performance": {
+        "longTasks": [],
+        "frameCount": 117,
+        "maxFrameMs": 83.5,
+        "framesOver50ms": 1
+      },
+      "videoPath": null,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "normal10Switches": true,
+      "reduced10Switches": true,
+      "latestState": true,
+      "livePreference": true,
+      "performance": {
+        "longTasks": [],
+        "frameCount": 163,
+        "maxFrameMs": 33.299999999999955,
+        "framesOver50ms": 0
+      },
+      "videoPath": null,
+      "passed": true
+    }
+  ]
+}

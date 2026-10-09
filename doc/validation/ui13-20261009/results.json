@@ -1,0 +1,27 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "visibleFlights": 0,
+      "inertFallback": true,
+      "reverse": true,
+      "resize": true,
+      "reduced": true,
+      "closeCleanup": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "visibleFlights": 1,
+      "inertFallback": false,
+      "reverse": true,
+      "resize": true,
+      "reduced": true,
+      "closeCleanup": true,
+      "errors": [],
+      "passed": true
+    }
+  ]
+}

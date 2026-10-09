@@ -1,0 +1,5079 @@
+{
+  "browser": "154.0.8037.98",
+  "screens": [
+    {
+      "screen": "map",
+      "count": 129,
+      "gradient": "Conservative opaque upper-color bound #22444e (actual gradient is translucent)",
+      "readings": [
+        {
+          "text": "跳至課程地圖",
+          "color": [
+            16,
+            38,
+            48
+          ],
+          "background": [
+            233,
+            197,
+            121
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 4.5
+        },
+        {
+          "text": "✦ 人文跨域與應用學系",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "115 學年度 · 課程探索",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "THE HUMANITIES ATLAS / 69 個探索的起點",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "從一個提問，找到你的下一門課。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 56,
+          "weight": 500,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "找到你的下一門課。",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 56,
+          "weight": 500,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 3
+        },
+        {
+          "text": "先選年級，再點課名查看筆記；也可以直接使用所有課程清單。不收藏也能完整探索。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "選擇你感興趣的方向，看看哪些課程相關。探索導覽草案，非官方分流",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "探索導覽草案，非官方分流",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 13.3333,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 8.564912910193817,
+          "required": 4.5
+        },
+        {
+          "text": "讀懂文字、語言與思想",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "敘事創作",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 7.479051600088562,
+          "required": 4.5
+        },
+        {
+          "text": "把觀察和想法說成故事",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "數位媒介",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 9.288851911816716,
+          "required": 4.5
+        },
+        {
+          "text": "讓人文與科技產生新連結",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 4.5
+        },
+        {
+          "text": "走進地方、文化與社會",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "清除訊號",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "課程星圖",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "所有課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "搜尋所有課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "清除搜尋",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "搜尋全部 69 門課名，不受目前年級、學期或探索訊號限制。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "四年課程地圖",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 26,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "返回總覽",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大一",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大二",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大三",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大四",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大二 · 下學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 24,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "上學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 下學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "本學期 12 門 · 相關 7 門 · 整合匯流 0 門",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "人文議題探索與設計",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "必修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "敘事學：從理論到應用",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "必修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "臺灣宗教文學選讀",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "漢語語言學與教學實務",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "原住民文學影像紀錄",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "文化資產影音記錄概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "AI 輔助程式設計與應用開發",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "數位媒介",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.217460041692385,
+          "required": 4.5
+        },
+        {
+          "text": "報導文學與非虛構寫作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "敘事創作",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.00607662978788,
+          "required": 4.5
+        },
+        {
+          "text": "口述歷史：理論與實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "語言與文化",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "臺灣民間文學概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "中國文學史概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "◆ 基底 · ○ 應用 · ✦ 整合匯流 · 點選星點或課名查看課程；位置不代表先修或重要性。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "FIELD NOTES / 課程筆記",
+          "color": [
+            69,
+            95,
+            101
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.0116425529977,
+          "required": 4.5
+        },
+        {
+          "text": "每一門課，都是一個入口。",
+          "color": [
+            24,
+            52,
+            62
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 28,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.567235300866644,
+          "required": 3
+        },
+        {
+          "text": "點選課名，讀取年級、學期、學分及正式課程資訊。",
+          "color": [
+            24,
+            52,
+            62
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.567235300866644,
+          "required": 4.5
+        },
+        {
+          "text": "先認識課程，不必先做任何收藏。",
+          "color": [
+            24,
+            52,
+            62
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.567235300866644,
+          "required": 4.5
+        },
+        {
+          "text": "69 門規劃課程15 門必修 · 54 門選修",
+          "color": [
+            24,
+            52,
+            62
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.567235300866644,
+          "required": 4.5
+        },
+        {
+          "text": "實際開課以當學年度課表為準。",
+          "color": [
+            69,
+            95,
+            101
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 13.3333,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.0116425529977,
+          "required": 4.5
+        },
+        {
+          "text": "了解四年主線與正式探索面向",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "從共同的人文基礎，延伸到不同探索方向，再於專題與實作交會；沒有固定分流。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "01 / 基礎",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "共同基底",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "文學文化與人文方法",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            166,
+            203,
+            181
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.500578186261311,
+          "required": 4.5
+        },
+        {
+          "text": "延伸",
+          "color": [
+            166,
+            191,
+            194
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 8.96,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.087238186106967,
+          "required": 4.5
+        },
+        {
+          "text": "02 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "敘事與創作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "散文、小說、詩歌、報導、文案、出版及跨媒介敘事",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.362943112593692,
+          "required": 4.5
+        },
+        {
+          "text": "03 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "數位人文與媒介",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "數位敘事、資料方法、AI 協作、互動媒介、空間人文及數位策展",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.902664596604341,
+          "required": 4.5
+        },
+        {
+          "text": "04 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "文化與社會實踐",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "地方創生、田野調查、文化資產、策展、品牌、節慶及社會議題實作",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.068818545762909,
+          "required": 4.5
+        },
+        {
+          "text": "交會",
+          "color": [
+            166,
+            191,
+            194
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 8.96,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.087238186106967,
+          "required": 4.5
+        },
+        {
+          "text": "05 / 實踐",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "整合成果",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "專題、實習與畢業製作",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.068818545762909,
+          "required": 4.5
+        },
+        {
+          "text": "此處沿用原本正式面向高亮，與四個新探索訊號分開。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大一 · 探索與奠基",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "建立人文、文本、文化與數位方法基礎",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "從閱讀、觀察與提問開始，認識人文學習的不同入口。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "閱讀理解 · 文本分析 · 基礎表達 · 數位工具入門",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：閱讀分析、文化觀察、基礎表達與數位練習",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大二 · 方法與表達",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "學習田野、研究、敘事及議題分析方法",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "把觀察轉化為資料與故事，練習從不同角度理解議題。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "田野研究 · 資料整理 · 敘事轉譯 · 議題分析",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：訪談、資料整理、故事企劃與議題分析",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大三 · 跨域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "進入專題、策展、實習及進階選修",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "走進場域、媒介與團隊協作，將想法發展成可行的企劃。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "企劃協作 · 媒介應用 · 策展 · 場域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：數位內容、創作、文化方案、策展與場域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大四 · 整合與展現",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "統整所學並完成公開成果",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "整合四年的學習，完成作品、提案或公開展演。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "綜合運用 · 專案完成 · 公開表達",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：畢業專題、作品集、成果展演或文化提案",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "人文跨域與應用學系 · 資料版本 115學年度星圖是探索入口，不是先修順序或選課承諾。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        }
+      ],
+      "violations": []
+    },
+    {
+      "screen": "note",
+      "count": 152,
+      "gradient": "Conservative opaque upper-color bound #22444e (actual gradient is translucent)",
+      "readings": [
+        {
+          "text": "跳至課程地圖",
+          "color": [
+            16,
+            38,
+            48
+          ],
+          "background": [
+            233,
+            197,
+            121
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 4.5
+        },
+        {
+          "text": "✦ 人文跨域與應用學系",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "115 學年度 · 課程探索",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "THE HUMANITIES ATLAS / 69 個探索的起點",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "從一個提問，找到你的下一門課。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 56,
+          "weight": 500,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "找到你的下一門課。",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 56,
+          "weight": 500,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 3
+        },
+        {
+          "text": "先選年級，再點課名查看筆記；也可以直接使用所有課程清單。不收藏也能完整探索。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "選擇你感興趣的方向，看看哪些課程相關。探索導覽草案，非官方分流",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "探索導覽草案，非官方分流",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 13.3333,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 8.564912910193817,
+          "required": 4.5
+        },
+        {
+          "text": "讀懂文字、語言與思想",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "敘事創作",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 7.479051600088562,
+          "required": 4.5
+        },
+        {
+          "text": "把觀察和想法說成故事",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "數位媒介",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 9.288851911816716,
+          "required": 4.5
+        },
+        {
+          "text": "讓人文與科技產生新連結",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 9.484150524003882,
+          "required": 4.5
+        },
+        {
+          "text": "走進地方、文化與社會",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "清除訊號",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "課程星圖",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "所有課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "搜尋所有課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "清除搜尋",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "搜尋全部 69 門課名，不受目前年級、學期或探索訊號限制。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "四年課程地圖",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 26,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "返回總覽",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大一",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大二",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大三",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大四",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "大二 · 下學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 24,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "上學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 下學期",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "本學期 12 門 · 相關 7 門 · 整合匯流 0 門",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "人文議題探索與設計",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "必修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "也關聯：文本思辨",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "敘事學：從理論到應用",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "必修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "臺灣宗教文學選讀",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "漢語語言學與教學實務",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "原住民文學影像紀錄",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "文化資產影音記錄概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "AI 輔助程式設計與應用開發",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "數位媒介",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.217460041692385,
+          "required": 4.5
+        },
+        {
+          "text": "報導文學與非虛構寫作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "敘事創作",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.00607662978788,
+          "required": 4.5
+        },
+        {
+          "text": "口述歷史：理論與實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 應用",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文化現場",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.348182474238324,
+          "required": 4.5
+        },
+        {
+          "text": "語言與文化",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "臺灣民間文學概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "中國文學史概論",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 500,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "✓ 相關課程",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 9.228940439130128,
+          "required": 4.5
+        },
+        {
+          "text": "選修 · 2 學分 · 基底",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 6.55822668812582,
+          "required": 4.5
+        },
+        {
+          "text": "文本思辨",
+          "color": [
+            184,
+            189,
+            233
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": true,
+          "ratio": 5.7328940417234255,
+          "required": 4.5
+        },
+        {
+          "text": "◆ 基底 · ○ 應用 · ✦ 整合匯流 · 點選星點或課名查看課程；位置不代表先修或重要性。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        },
+        {
+          "text": "FIELD NOTES / 課程探索筆記",
+          "color": [
+            110,
+            96,
+            69
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.406909799338206,
+          "required": 4.5
+        },
+        {
+          "text": "必修課程 · 應用",
+          "color": [
+            99,
+            113,
+            91
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 4.575792385346136,
+          "required": 4.5
+        },
+        {
+          "text": "人文議題探索與設計",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 28,
+          "weight": 500,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 3
+        },
+        {
+          "text": "關閉",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 4.5
+        },
+        {
+          "text": "年級",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 4.885146840545427,
+          "required": 4.5
+        },
+        {
+          "text": "大二",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 16,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 9.596873420964672,
+          "required": 4.5
+        },
+        {
+          "text": "學期",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 4.885146840545427,
+          "required": 4.5
+        },
+        {
+          "text": "下學期",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 16,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 9.596873420964672,
+          "required": 4.5
+        },
+        {
+          "text": "學分",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 4.885146840545427,
+          "required": 4.5
+        },
+        {
+          "text": "2 學分",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 16,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 9.596873420964672,
+          "required": 4.5
+        },
+        {
+          "text": "修別",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 4.885146840545427,
+          "required": 4.5
+        },
+        {
+          "text": "必修",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            234,
+            226,
+            209
+          ],
+          "size": 16,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 9.596873420964672,
+          "required": 4.5
+        },
+        {
+          "text": "在四年中的位置",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 13.92,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 4.5
+        },
+        {
+          "text": "這門課是四年課程規劃中的應用課程，讓學習逐步延伸至不同探索面向與實作成果。",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "正式探索面向",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 13.92,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 4.5
+        },
+        {
+          "text": "主要面向文化與社會實踐",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "主要面向",
+          "color": [
+            69,
+            95,
+            101
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.0116425529977,
+          "required": 4.5
+        },
+        {
+          "text": "課程模組",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 13.92,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 4.5
+        },
+        {
+          "text": "人文思維與方法",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "探索訊號 · 導覽草案",
+          "color": [
+            35,
+            56,
+            58
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 13.92,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 10.895383398447414,
+          "required": 4.5
+        },
+        {
+          "text": "主訊號文化現場",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "主訊號",
+          "color": [
+            69,
+            95,
+            101
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.0116425529977,
+          "required": 4.5
+        },
+        {
+          "text": "次訊號文本思辨",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "次訊號",
+          "color": [
+            69,
+            95,
+            101
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.0116425529977,
+          "required": 4.5
+        },
+        {
+          "text": "這是幫助找課的新分類草案，不是官方分流或先修順序。",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "課程詳細說明整理中，實際內容請依當學年度課表及課程大綱為準。",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            236,
+            228,
+            210
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 4.974124610042586,
+          "required": 4.5
+        },
+        {
+          "text": "實際開課依當學年度課表",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 10.72,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "課程說明以當年度課程大綱為準。",
+          "color": [
+            82,
+            100,
+            92
+          ],
+          "background": [
+            246,
+            240,
+            228
+          ],
+          "size": 10.72,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 5.546134188785236,
+          "required": 4.5
+        },
+        {
+          "text": "了解四年主線與正式探索面向",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "從共同的人文基礎，延伸到不同探索方向，再於專題與實作交會；沒有固定分流。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "01 / 基礎",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "共同基底",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "文學文化與人文方法",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            166,
+            203,
+            181
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.500578186261311,
+          "required": 4.5
+        },
+        {
+          "text": "延伸",
+          "color": [
+            166,
+            191,
+            194
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 8.96,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.087238186106967,
+          "required": 4.5
+        },
+        {
+          "text": "02 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "敘事與創作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "散文、小說、詩歌、報導、文案、出版及跨媒介敘事",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            238,
+            160,
+            139
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.362943112593692,
+          "required": 4.5
+        },
+        {
+          "text": "03 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "數位人文與媒介",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "數位敘事、資料方法、AI 協作、互動媒介、空間人文及數位策展",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            131,
+            214,
+            205
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.902664596604341,
+          "required": 4.5
+        },
+        {
+          "text": "04 / 探索",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "文化與社會實踐",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "地方創生、田野調查、文化資產、策展、品牌、節慶及社會議題實作",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.068818545762909,
+          "required": 4.5
+        },
+        {
+          "text": "交會",
+          "color": [
+            166,
+            191,
+            194
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 8.96,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.087238186106967,
+          "required": 4.5
+        },
+        {
+          "text": "05 / 實踐",
+          "color": [
+            173,
+            190,
+            194
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 9.12,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 6.923803392898271,
+          "required": 4.5
+        },
+        {
+          "text": "整合成果",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 16.32,
+          "weight": 600,
+          "inGradient": false,
+          "ratio": 11.730388355279473,
+          "required": 4.5
+        },
+        {
+          "text": "專題、實習與畢業製作",
+          "color": [
+            183,
+            204,
+            207
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 11.2,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 7.957414494116428,
+          "required": 4.5
+        },
+        {
+          "text": "點亮相關課程 ↗",
+          "color": [
+            233,
+            197,
+            121
+          ],
+          "background": [
+            23,
+            51,
+            61
+          ],
+          "size": 10.08,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 8.068818545762909,
+          "required": 4.5
+        },
+        {
+          "text": "此處沿用原本正式面向高亮，與四個新探索訊號分開。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大一 · 探索與奠基",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "建立人文、文本、文化與數位方法基礎",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "從閱讀、觀察與提問開始，認識人文學習的不同入口。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "閱讀理解 · 文本分析 · 基礎表達 · 數位工具入門",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：閱讀分析、文化觀察、基礎表達與數位練習",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大二 · 方法與表達",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "學習田野、研究、敘事及議題分析方法",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "把觀察轉化為資料與故事，練習從不同角度理解議題。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "田野研究 · 資料整理 · 敘事轉譯 · 議題分析",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：訪談、資料整理、故事企劃與議題分析",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大三 · 跨域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "進入專題、策展、實習及進階選修",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "走進場域、媒介與團隊協作，將想法發展成可行的企劃。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "企劃協作 · 媒介應用 · 策展 · 場域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：數位內容、創作、文化方案、策展與場域實作",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "大四 · 整合與展現",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 18.72,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 3
+        },
+        {
+          "text": "統整所學並完成公開成果",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 700,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "整合四年的學習，完成作品、提案或公開展演。",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "綜合運用 · 專案完成 · 公開表達",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "可能的學習活動：畢業專題、作品集、成果展演或文化提案",
+          "color": [
+            246,
+            240,
+            228
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 16,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 13.787987452625737,
+          "required": 4.5
+        },
+        {
+          "text": "人文跨域與應用學系 · 資料版本 115學年度星圖是探索入口，不是先修順序或選課承諾。",
+          "color": [
+            191,
+            208,
+            208
+          ],
+          "background": [
+            16,
+            38,
+            48
+          ],
+          "size": 14,
+          "weight": 400,
+          "inGradient": false,
+          "ratio": 9.797955451522776,
+          "required": 4.5
+        }
+      ],
+      "violations": []
+    }
+  ]
+}

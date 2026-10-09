@@ -1,0 +1,122 @@
+[
+  {
+    "Path": "E:\\DEV\\leearning-map\\public\\favicon.svg",
+    "Hash": "88860F80E84779BC04A5A23EE4A37A514DFB05CF0C1E7BF09D495E7B75CD90AB"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\index.html",
+    "Hash": "37AAAC542B5CD8E0370B0DE5C2BA81BB561B587943F3A0A3C4AC518F469D844F"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\package.json",
+    "Hash": "C0104115CA74A9DF5C446AEC63AF92FDD668F72903C99580A1905EFB40D263A7"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\package-lock.json",
+    "Hash": "63D1DE539FE92710387B0F4484BEF6D02E3E065DF65CB6FDDD8310D41E216798"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\App.tsx",
+    "Hash": "AADC6119903F8FDC11FDDF618FC93B63FE4EE5D4FB9925C0A0725FD07D41CDD0"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\CourseCard.tsx",
+    "Hash": "5E8EC490B8E70C92A863A5989AC1FF8AB01ACA073AD08B02225E938B87E89A6B"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\CourseDetailsDialog.tsx",
+    "Hash": "6A238461C43A235090DE4F184E18D1CDF143C274700E1232D16BECD986AC89E4"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\ExplorationGlyph.tsx",
+    "Hash": "98D5288A7D9AE4E8F3C1D38B0498B1C02420A2A9EC0833504940F5DFDC1CD98E"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\ExplorerAtlas.tsx",
+    "Hash": "138E3E631C59AFE5880F7C1401895423D48E3B5E1C95F8232FC25E0F385DA7ED"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\StructureDiagram.tsx",
+    "Hash": "DB06B95DE2E2FCF3FF1F31FF520D3ADE4F46B2120AAC493DBDF36BED7418FF48"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\components\\YearAccordion.tsx",
+    "Hash": "31334F1C96D7A0FB539099ED72A9ADDAAA5ECF573802B15E9966410D4854A2FF"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\config\\focus.ts",
+    "Hash": "D1CA9D1B6A809D461BAE794B04768B5EE87A5747755BF0CA533630675E0D76FD"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\config\\roles.ts",
+    "Hash": "0A5828496A05FDCD2D8F052AD2F8BA78286FFA8E2B17DA97C31DBB2AEB56C44D"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\config\\tracks.ts",
+    "Hash": "D4755F283C0B3BA24B4D1622E5EBCD1B3D6BC2EAB763577DE63E65E310DD3FB7"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\data\\courses.json",
+    "Hash": "9A97CD17551A8F8E4218536AFEDECC843019F5CF4C8CAD32C04D37A3FD744691"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\data\\courses.test.ts",
+    "Hash": "78AB5D291E7FC79CC03FCB6A568397339255F9EB393DF3F39E9F6C25FBB7F8D8"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\data\\courses.ts",
+    "Hash": "B15CED2B39BF4BCA0320A457408ECF059C6737831F64E862EEB494ACFFD47284"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\data\\learningPath.test.ts",
+    "Hash": "F17A4F82E7BB320E93AF64ED8EE49BC6A24E1294AE85B8F4DB5846D17BD1A25C"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\data\\learningPath.ts",
+    "Hash": "F1AB5A286094D004D7998571789D649D78C4BFBDE0958D76E15905B7E7B6D232"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\highlight.test.ts",
+    "Hash": "EA9BD2E038B6BDB1AEAD0A31E2CF47784236AFCC6BEA9C930BF1BAF78EC45FEF"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\highlight.ts",
+    "Hash": "2B2C5FB5DE0650FD8B9406B46E3FD6D7ED3FC7980651721523A6BDE736BFE1A6"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\semester.test.ts",
+    "Hash": "AD2CB60D44B77916FE1B410FC11366443BE151F4C7FF2B2EDF9F6CD793107381"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\semester.ts",
+    "Hash": "4660782C54C92A5264CF9962398D3B38EAD7F0107BACC86A06D527509153EEF9"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\urlState.test.ts",
+    "Hash": "69A7D6C2ABECB559EABBB1C4FCB8265DAB14E20F1D65C7E8308C836CC798A3F0"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\lib\\urlState.ts",
+    "Hash": "396447F27016147B45B68133B72F64DC2E426B9F01EE8588EDA7195BC6A5C2CD"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\main.tsx",
+    "Hash": "518E352652C9DE963C41125B72EFAE7195A2CC7155E687C2824F280209321205"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\styles\\expedition.css",
+    "Hash": "5508C659A41DC5473B09FD5A6F3E786D7D1A7E331DB21B98A4542419BE4686C9"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\src\\types\\course.ts",
+    "Hash": "68743F157B9A1EFB70FEC2D55A7AE3AC5DFFEE123BBB1869EB1DC891246FC970"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\tsconfig.json",
+    "Hash": "D89509FB8EE29F437A0B3A54480141403424E94F0CB0B23315DF8828F6F9BEA9"
+  },
+  {
+    "Path": "E:\\DEV\\leearning-map\\vite.config.ts",
+    "Hash": "5F859DFFD2945F905D7E369E3CD374D024D6E54B03C9B5A6E8D09D46F9175834"
+  }
+]

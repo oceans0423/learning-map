@@ -1,0 +1,2499 @@
+{
+  "date": "2026-10-09 Asia/Taipei",
+  "base": "http://127.0.0.1:5181/",
+  "browser": "154.0.8037.98",
+  "method": "Isolated temporary browser contexts; no user browser data or application source changes",
+  "screens": [
+    {
+      "label": "home",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          }
+        ],
+        "passes": 38
+      },
+      "metrics": {
+        "pageHeight": 2409,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.171875,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.140625,
+            "width": 358,
+            "height": 890.71875
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 1196.609375,
+            "width": 358,
+            "height": 826.25
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "semester-signal",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 29
+          }
+        ],
+        "passes": 41
+      },
+      "metrics": {
+        "pageHeight": 2584,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 下學期"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.171875,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.140625,
+            "width": 358,
+            "height": 1051.296875
+          },
+          {
+            "selector": ".atlas-scene",
+            "top": 1420.171875,
+            "width": 358,
+            "height": 642.09375
+          }
+        ],
+        "interactive": 33
+      }
+    },
+    {
+      "label": "course-note",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [],
+        "passes": 38
+      },
+      "metrics": {
+        "pageHeight": 2584,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 下學期"
+          },
+          {
+            "tag": "H2",
+            "text": "人文議題探索與設計"
+          },
+          {
+            "tag": "H3",
+            "text": "在四年中的位置"
+          },
+          {
+            "tag": "H3",
+            "text": "正式探索面向"
+          },
+          {
+            "tag": "H3",
+            "text": "課程模組"
+          },
+          {
+            "tag": "H3",
+            "text": "探索訊號 · 導覽草案"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.171875,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.140625,
+            "width": 358,
+            "height": 1051.296875
+          },
+          {
+            "selector": ".atlas-scene",
+            "top": 1420.171875,
+            "width": 358,
+            "height": 642.09375
+          }
+        ],
+        "interactive": 2
+      }
+    },
+    {
+      "label": "collection",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [
+          {
+            "id": "heading-order",
+            "impact": "moderate",
+            "description": "Ensure the order of headings is semantically correct",
+            "help": "Heading levels should only increase by one",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ],
+            "nodes": [
+              {
+                "target": [
+                  ".personal-storage-controls > h4"
+                ],
+                "html": "<h4>只留在這台裝置</h4>",
+                "summary": "Fix any of the following:\n  Heading order invalid"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "passes": 43
+      },
+      "metrics": {
+        "pageHeight": 3054,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "我的探索 · 9 門"
+          },
+          {
+            "tag": "H4",
+            "text": "只留在這台裝置"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.78125
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.5625,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.53125,
+            "width": 358,
+            "height": 1518.71875
+          },
+          {
+            "selector": ".personal-storage-controls",
+            "top": 2409.765625,
+            "width": 358,
+            "height": 241.484375
+          }
+        ],
+        "interactive": 41
+      }
+    },
+    {
+      "label": "editor",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 25
+          }
+        ],
+        "passes": 44
+      },
+      "metrics": {
+        "pageHeight": 4466,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 6,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "我的星座"
+          },
+          {
+            "tag": "H3",
+            "text": "選擇你的代表星"
+          },
+          {
+            "tag": "H4",
+            "text": "未命名星座"
+          },
+          {
+            "tag": "H4",
+            "text": "只留在這台裝置"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.78125
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.5625,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.53125,
+            "width": 358,
+            "height": 2931.3125
+          },
+          {
+            "selector": ".constellation-canvas",
+            "top": 1976.171875,
+            "width": 358,
+            "height": 672
+          },
+          {
+            "selector": ".star-move-toolbar",
+            "top": 1682.421875,
+            "width": 358,
+            "height": 277.75
+          },
+          {
+            "selector": ".personal-storage-controls",
+            "top": 3822.359375,
+            "width": 358,
+            "height": 241.484375
+          },
+          {
+            "selector": ".representative-picker",
+            "top": 3228.453125,
+            "width": 358,
+            "height": 561.90625
+          }
+        ],
+        "interactive": 51
+      }
+    },
+    {
+      "label": "home",
+      "width": 1440,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          }
+        ],
+        "passes": 38
+      },
+      "metrics": {
+        "pageHeight": 1993,
+        "viewportHeight": 1000,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H2",
+            "text": "每一門課，都是一個入口。"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 1312,
+            "height": 319.078125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 410.46875,
+            "width": 1312,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 605.234375,
+            "width": 1312,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 707.625,
+            "width": 1312,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 879.5,
+            "width": 936,
+            "height": 727.40625
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 943.96875,
+            "width": 936,
+            "height": 662.9375
+          },
+          {
+            "selector": ".wb-note-intro",
+            "top": 879.5,
+            "width": 352,
+            "height": 447.90625
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "semester-signal",
+      "width": 1440,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 56
+          }
+        ],
+        "passes": 41
+      },
+      "metrics": {
+        "pageHeight": 2319,
+        "viewportHeight": 1000,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 下學期"
+          },
+          {
+            "tag": "H2",
+            "text": "每一門課，都是一個入口。"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 1312,
+            "height": 319.078125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 410.46875,
+            "width": 1312,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 605.234375,
+            "width": 1312,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 707.625,
+            "width": 1312,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 879.5,
+            "width": 936,
+            "height": 1052.9375
+          },
+          {
+            "selector": ".atlas-scene",
+            "top": 1107.140625,
+            "width": 936,
+            "height": 774.90625
+          },
+          {
+            "selector": ".wb-note-intro",
+            "top": 879.5,
+            "width": 352,
+            "height": 447.90625
+          }
+        ],
+        "interactive": 37
+      }
+    },
+    {
+      "label": "course-note",
+      "width": 1440,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 56
+          }
+        ],
+        "passes": 44
+      },
+      "metrics": {
+        "pageHeight": 2319,
+        "viewportHeight": 1000,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 下學期"
+          },
+          {
+            "tag": "H2",
+            "text": "人文議題探索與設計"
+          },
+          {
+            "tag": "H3",
+            "text": "在四年中的位置"
+          },
+          {
+            "tag": "H3",
+            "text": "正式探索面向"
+          },
+          {
+            "tag": "H3",
+            "text": "課程模組"
+          },
+          {
+            "tag": "H3",
+            "text": "探索訊號 · 導覽草案"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 1312,
+            "height": 319.078125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 410.46875,
+            "width": 1312,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 605.234375,
+            "width": 1312,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 707.625,
+            "width": 1312,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 879.5,
+            "width": 936,
+            "height": 1052.9375
+          },
+          {
+            "selector": ".atlas-scene",
+            "top": 1107.140625,
+            "width": 936,
+            "height": 774.90625
+          }
+        ],
+        "interactive": 39
+      }
+    },
+    {
+      "label": "collection",
+      "width": 1440,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [
+          {
+            "id": "heading-order",
+            "impact": "moderate",
+            "description": "Ensure the order of headings is semantically correct",
+            "help": "Heading levels should only increase by one",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ],
+            "nodes": [
+              {
+                "target": [
+                  ".personal-storage-controls > h4"
+                ],
+                "html": "<h4>只留在這台裝置</h4>",
+                "summary": "Fix any of the following:\n  Heading order invalid"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ],
+        "passes": 43
+      },
+      "metrics": {
+        "pageHeight": 2522,
+        "viewportHeight": 1000,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "我的探索 · 9 門"
+          },
+          {
+            "tag": "H4",
+            "text": "只留在這台裝置"
+          },
+          {
+            "tag": "H2",
+            "text": "每一門課，都是一個入口。"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 1312,
+            "height": 319.078125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 410.46875,
+            "width": 1312,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 605.234375,
+            "width": 1312,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 707.625,
+            "width": 1312,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 879.5,
+            "width": 936,
+            "height": 1256.375
+          },
+          {
+            "selector": ".wb-note-intro",
+            "top": 879.5,
+            "width": 352,
+            "height": 447.90625
+          },
+          {
+            "selector": ".personal-storage-controls",
+            "top": 1904.78125,
+            "width": 936,
+            "height": 215.09375
+          }
+        ],
+        "interactive": 41
+      }
+    },
+    {
+      "label": "editor",
+      "width": 1440,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 25
+          }
+        ],
+        "passes": 44
+      },
+      "metrics": {
+        "pageHeight": 3515,
+        "viewportHeight": 1000,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 6,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "我的星座"
+          },
+          {
+            "tag": "H3",
+            "text": "選擇你的代表星"
+          },
+          {
+            "tag": "H4",
+            "text": "未命名星座"
+          },
+          {
+            "tag": "H4",
+            "text": "只留在這台裝置"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 1312,
+            "height": 319.078125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 410.46875,
+            "width": 1312,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 605.234375,
+            "width": 1312,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 707.625,
+            "width": 1312,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 879.5,
+            "width": 1312,
+            "height": 2248.5625
+          },
+          {
+            "selector": ".constellation-canvas",
+            "top": 1588.875,
+            "width": 1312,
+            "height": 672
+          },
+          {
+            "selector": ".star-move-toolbar",
+            "top": 1370.609375,
+            "width": 1312,
+            "height": 202.265625
+          },
+          {
+            "selector": ".personal-storage-controls",
+            "top": 2896.96875,
+            "width": 1312,
+            "height": 215.09375
+          },
+          {
+            "selector": ".representative-picker",
+            "top": 2641.40625,
+            "width": 1312,
+            "height": 223.5625
+          }
+        ],
+        "interactive": 51
+      }
+    },
+    {
+      "label": "responsive-home",
+      "width": 320,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          }
+        ],
+        "passes": 37
+      },
+      "metrics": {
+        "pageHeight": 2601,
+        "viewportHeight": 720,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 114.484375,
+            "width": 288,
+            "height": 293.453125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 423.9375,
+            "width": 288,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 784.265625,
+            "width": 288,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 1002.65625,
+            "width": 288,
+            "height": 203.359375
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1254.015625,
+            "width": 288,
+            "height": 960
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 1318.484375,
+            "width": 288,
+            "height": 895.53125
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "responsive-home",
+      "width": 360,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          }
+        ],
+        "passes": 37
+      },
+      "metrics": {
+        "pageHeight": 2409,
+        "viewportHeight": 720,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 328,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 328,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 328,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.171875,
+            "width": 328,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.140625,
+            "width": 328,
+            "height": 890.71875
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 1196.609375,
+            "width": 328,
+            "height": 826.25
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "responsive-home",
+      "width": 768,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "passes": 37
+      },
+      "metrics": {
+        "pageHeight": 2057,
+        "viewportHeight": 720,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 706.5625,
+            "height": 256.671875
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 348.0625,
+            "width": 706.5625,
+            "height": 190.359375
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 562.421875,
+            "width": 706.5625,
+            "height": 138.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 724.8125,
+            "width": 706.5625,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 896.6875,
+            "width": 706.5625,
+            "height": 773.59375
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 961.15625,
+            "width": 706.5625,
+            "height": 709.125
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "responsive-home",
+      "width": 1024,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 4
+          }
+        ],
+        "passes": 37
+      },
+      "metrics": {
+        "pageHeight": 2001,
+        "viewportHeight": 720,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H2",
+            "text": "每一門課，都是一個入口。"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 942.09375,
+            "height": 279.953125
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 371.34375,
+            "width": 942.09375,
+            "height": 170.765625
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 566.109375,
+            "width": 942.09375,
+            "height": 78.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 668.5,
+            "width": 942.09375,
+            "height": 123.875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 840.375,
+            "width": 566.09375,
+            "height": 773.59375
+          },
+          {
+            "selector": ".atlas-overview",
+            "top": 904.84375,
+            "width": 566.09375,
+            "height": 709.125
+          },
+          {
+            "selector": ".wb-note-intro",
+            "top": 840.375,
+            "width": 352,
+            "height": 447.90625
+          }
+        ],
+        "interactive": 22
+      }
+    },
+    {
+      "label": "forced-colors-semester",
+      "width": 390,
+      "axe": {
+        "version": "4.12.1",
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ],
+            "nodes": [
+              {
+                "target": [
+                  "a[href$=\"#top\"]"
+                ],
+                "html": "<a href=\"#top\">✦ 人文跨域與應用學系</a>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "header > span"
+                ],
+                "html": "<span>115 學年度 · 課程探索</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".wb-intro > .wb-kicker"
+                ],
+                "html": "<p class=\"wb-kicker\">THE HUMANITIES ATLAS / 69 個探索的起點</p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "#page-title"
+                ],
+                "html": "<h1 id=\"page-title\">從一個提問，<span>找到你的下一門課。</span></h1>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+              },
+              {
+                "target": [
+                  "#page-title > span"
+                ],
+                "html": "<span>找到你的下一門課。</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #e9c579, background color: #ffffff, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+              },
+              {
+                "target": [
+                  ".wb-intro > p:nth-child(3)"
+                ],
+                "html": "<p>先選年級，再點課名查看筆記；也可以直接使用所有課程清單。不收藏也能完整探索。</p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".wb-signals > p"
+                ],
+                "html": "<p>選擇你感興趣的方向，看看哪些課程相關。<small>探索導覽草案，非官方分流</small></p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "p > small"
+                ],
+                "html": "<small>探索導覽草案，非官方分流</small>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"文本思辨\"] > strong"
+                ],
+                "html": "<strong>文本思辨</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.82 (foreground color: #b8bde9, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"文本思辨\"] > span:nth-child(3)"
+                ],
+                "html": "<span>讀懂文字、語言與思想</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-signal=\"story\"] > strong"
+                ],
+                "html": "<strong>敘事創作</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #eea08b, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-signal=\"story\"] > span:nth-child(3)"
+                ],
+                "html": "<span>把觀察和想法說成故事</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-signal=\"digital\"] > strong"
+                ],
+                "html": "<strong>數位媒介</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.68 (foreground color: #83d6cd, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-signal=\"digital\"] > span:nth-child(3)"
+                ],
+                "html": "<span>讓人文與科技產生新連結</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"文化現場\"] > strong"
+                ],
+                "html": "<strong>文化現場</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #e9c579, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"文化現場\"] > span:nth-child(3)"
+                ],
+                "html": "<span>走進地方、文化與社會</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".wb-signals > .ui-button--secondary.ui-button"
+                ],
+                "html": "<button type=\"button\" class=\"ui-button ui-button--secondary \">清除訊號</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".ui-button--toggle.ui-button:nth-child(1)"
+                ],
+                "html": "<button aria-pressed=\"true\" type=\"button\" class=\"ui-button ui-button--toggle \">課程星圖</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".ui-button--toggle.ui-button:nth-child(2)"
+                ],
+                "html": "<button aria-pressed=\"false\" type=\"button\" class=\"ui-button ui-button--toggle \">所有課程</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".constellation-entry"
+                ],
+                "html": "<button type=\"button\" class=\"ui-button ui-button--secondary constellation-entry\">我的星座（選用）</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "label"
+                ],
+                "html": "<label for=\"course-search\">搜尋所有課程</label>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "#course-search"
+                ],
+                "html": "<input id=\"course-search\" placeholder=\"試試課名、IP、文化…\" aria-describedby=\"search-scope\" type=\"search\" value=\"\" style=\"\">",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".wb-search-controls > .ui-button--secondary.ui-button"
+                ],
+                "html": "<button type=\"button\" class=\"ui-button ui-button--secondary \">清除搜尋</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "#search-scope"
+                ],
+                "html": "<p id=\"search-scope\">搜尋全部 69 門課名，不受目前年級、學期或探索訊號限制。</p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "#curriculum-title"
+                ],
+                "html": "<h2 id=\"curriculum-title\">四年課程地圖</h2>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 19.5pt (26px), font weight: bold). Expected contrast ratio of 3:1"
+              },
+              {
+                "target": [
+                  ".atlas-navigation > .ui-button--secondary.ui-button"
+                ],
+                "html": "<button type=\"button\" class=\"ui-button ui-button--secondary \">返回總覽</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇年級\"] > .ui-button--secondary.ui-button:nth-child(1)"
+                ],
+                "html": "<button aria-pressed=\"false\" type=\"button\" class=\"ui-button ui-button--secondary \">大一</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇年級\"] > .ui-button--secondary.ui-button:nth-child(2)"
+                ],
+                "html": "<button aria-pressed=\"true\" type=\"button\" class=\"ui-button ui-button--secondary \">大二</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇年級\"] > .ui-button--secondary.ui-button:nth-child(3)"
+                ],
+                "html": "<button aria-pressed=\"false\" type=\"button\" class=\"ui-button ui-button--secondary \">大三</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇年級\"] > .ui-button--secondary.ui-button:nth-child(4)"
+                ],
+                "html": "<button aria-pressed=\"false\" type=\"button\" class=\"ui-button ui-button--secondary \">大四</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".atlas-heading > h3"
+                ],
+                "html": "<h3>大二 · 下學期</h3>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 18.0pt (24px), font weight: normal). Expected contrast ratio of 3:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇學期\"] > .ui-button--secondary.ui-button:nth-child(1)"
+                ],
+                "html": "<button aria-pressed=\"false\" type=\"button\" class=\"ui-button ui-button--secondary \">上學期</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "div[aria-label=\"選擇學期\"] > .ui-button--secondary.ui-button:nth-child(2)"
+                ],
+                "html": "<button aria-pressed=\"true\" type=\"button\" class=\"ui-button ui-button--secondary \">✓ 下學期</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".atlas-count"
+                ],
+                "html": "<p class=\"atlas-count\" role=\"status\">本學期 12 門</p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-024\"] > strong"
+                ],
+                "html": "<strong>人文議題探索與設計</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-024\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">必修 · 2 學分 · 應用</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-024\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文化現場</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #e9c579, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-025\"] > strong"
+                ],
+                "html": "<strong>敘事學：從理論到應用</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-025\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">必修 · 2 學分 · 基底</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-025\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文本思辨</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.82 (foreground color: #b8bde9, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-026\"] > strong"
+                ],
+                "html": "<strong>臺灣宗教文學選讀</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-026\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">選修 · 2 學分 · 基底</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-026\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文本思辨</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.82 (foreground color: #b8bde9, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-027\"] > strong"
+                ],
+                "html": "<strong>漢語語言學與教學實務</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-027\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">選修 · 2 學分 · 基底</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-027\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文本思辨</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.82 (foreground color: #b8bde9, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-028\"] > strong"
+                ],
+                "html": "<strong>原住民文學影像紀錄</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-028\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">選修 · 2 學分 · 應用</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-028\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文化現場</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #e9c579, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-029\"] > strong"
+                ],
+                "html": "<strong>文化資產影音記錄概論</strong>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-029\"] > .atlas-course-meta"
+                ],
+                "html": "<span class=\"atlas-course-meta\">選修 · 2 學分 · 應用</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "button[data-course-id=\"course-029\"] > .atlas-course-signal"
+                ],
+                "html": "<span class=\"atlas-course-signal\">文化現場</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.64 (foreground color: #e9c579, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".atlas-pagination > span"
+                ],
+                "html": "<span>第 1／2 組 · 1–6 門</span>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".atlas-pagination > .ui-button--secondary.ui-button:nth-child(3)"
+                ],
+                "html": "<button type=\"button\" class=\"ui-button ui-button--secondary \">下一組</button>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  ".atlas-legend"
+                ],
+                "html": "<p class=\"atlas-legend\">◆ 基底 · ○ 應用 · ✦ 整合匯流 · 點選星點或課名查看課程；位置不代表先修或重要性。</p>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "summary"
+                ],
+                "html": "<summary>了解四年主線與正式探索面向</summary>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.13 (foreground color: #f6f0e4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              {
+                "target": [
+                  "footer"
+                ],
+                "html": "<footer class=\"wb-footer\">人文跨域與應用學系 · 資料版本 115學年度<br>星圖是探索入口，不是先修順序或選課承諾。</footer>",
+                "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.59 (foreground color: #bfd0d0, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ]
+          }
+        ],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 10
+          }
+        ],
+        "passes": 40
+      },
+      "metrics": {
+        "pageHeight": 2533,
+        "viewportHeight": 844,
+        "overflow": false,
+        "imgCount": 0,
+        "svgs": 5,
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "從一個提問，找到你的下一門課。"
+          },
+          {
+            "tag": "H2",
+            "text": "四年課程地圖"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 下學期"
+          },
+          {
+            "tag": "H3",
+            "text": "大一 · 探索與奠基"
+          },
+          {
+            "tag": "H4",
+            "text": "建立人文、文本、文化與數位方法基礎"
+          },
+          {
+            "tag": "H3",
+            "text": "大二 · 方法與表達"
+          },
+          {
+            "tag": "H4",
+            "text": "學習田野、研究、敘事及議題分析方法"
+          },
+          {
+            "tag": "H3",
+            "text": "大三 · 跨域實作"
+          },
+          {
+            "tag": "H4",
+            "text": "進入專題、策展、實習及進階選修"
+          },
+          {
+            "tag": "H3",
+            "text": "大四 · 整合與展現"
+          },
+          {
+            "tag": "H4",
+            "text": "統整所學並完成公開成果"
+          }
+        ],
+        "regions": [
+          {
+            "selector": ".wb-intro",
+            "top": 75.390625,
+            "width": 358,
+            "height": 267.0625
+          },
+          {
+            "selector": ".wb-signals",
+            "top": 358.453125,
+            "width": 358,
+            "height": 336.328125
+          },
+          {
+            "selector": ".wb-toolbar",
+            "top": 718.78125,
+            "width": 358,
+            "height": 194.390625
+          },
+          {
+            "selector": ".wb-search",
+            "top": 937.171875,
+            "width": 358,
+            "height": 146.96875
+          },
+          {
+            "selector": "#curriculum",
+            "top": 1132.140625,
+            "width": 358,
+            "height": 1000.109375
+          },
+          {
+            "selector": ".atlas-scene",
+            "top": 1420.171875,
+            "width": 358,
+            "height": 590.90625
+          }
+        ],
+        "interactive": 33
+      }
+    }
+  ],
+  "probes": [
+    {
+      "width": 390,
+      "case": "global-search-in-collection",
+      "countText": "找到 1 門課程",
+      "searchResultButtons": 0,
+      "collectionRows": 9
+    },
+    {
+      "width": 390,
+      "case": "global-search-in-editor",
+      "countText": "找到 1 門課程",
+      "searchResultButtons": 0,
+      "editorRemains": 1
+    },
+    {
+      "width": 390,
+      "case": "replacement-cancel-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      }
+    },
+    {
+      "width": 390,
+      "case": "replacement-commit-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      }
+    },
+    {
+      "width": 390,
+      "case": "name-draft-versus-saved",
+      "visibleDraft": "尚未提交的新名稱",
+      "displayedName": "已提交名稱",
+      "storageStatus": "已儲存在這台裝置；之後的修改會自動更新。清除瀏覽器資料會移除存檔。"
+    },
+    {
+      "width": 390,
+      "case": "legal-position-collisions",
+      "collisions": [
+        {
+          "a": 0,
+          "b": 1
+        },
+        {
+          "a": 0,
+          "b": 6
+        },
+        {
+          "a": 1,
+          "b": 6
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "case": "return-editor-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "case": "global-search-in-collection",
+      "countText": "找到 1 門課程",
+      "searchResultButtons": 0,
+      "collectionRows": 9
+    },
+    {
+      "width": 1440,
+      "case": "global-search-in-editor",
+      "countText": "找到 1 門課程",
+      "searchResultButtons": 0,
+      "editorRemains": 1
+    },
+    {
+      "width": 1440,
+      "case": "replacement-cancel-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      }
+    },
+    {
+      "width": 1440,
+      "case": "replacement-commit-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      }
+    },
+    {
+      "width": 1440,
+      "case": "name-draft-versus-saved",
+      "visibleDraft": "尚未提交的新名稱",
+      "displayedName": "已提交名稱",
+      "storageStatus": "已儲存在這台裝置；之後的修改會自動更新。清除瀏覽器資料會移除存檔。"
+    },
+    {
+      "width": 1440,
+      "case": "legal-position-collisions",
+      "collisions": [
+        {
+          "a": 0,
+          "b": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "case": "return-editor-focus",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+        "label": null
+      },
+      "errors": []
+    },
+    {
+      "case": "initial-30-tabs",
+      "sequence": [
+        {
+          "tag": "BODY",
+          "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+          "label": null
+        },
+        {
+          "tag": "A",
+          "text": "跳至課程地圖",
+          "label": null
+        },
+        {
+          "tag": "A",
+          "text": "✦ 人文跨域與應用學系",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋文本思辨讀懂文字、語言與思想",
+          "label": "文本思辨"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋敘事創作把觀察和想法說成故事",
+          "label": "敘事創作"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋數位媒介讓人文與科技產生新連結",
+          "label": "數位媒介"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋文化現場走進地方、文化與社會",
+          "label": "文化現場"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "清除訊號",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "課程星圖",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "所有課程",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "我的星座（選用）",
+          "label": null
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "清除搜尋",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "01大一 12 門探索與奠基從閱讀、觀察與提問開始，認識人文學習的不同入口。查看課程 ↗",
+          "label": "查看大一課程"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "02大二 23 門方法與表達把觀察轉化為資料與故事，練習從不同角度理解議題。查看課程 ↗",
+          "label": "查看大二課程"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "03大三 23 門跨域實作走進場域、媒介與團隊協作，將想法發展成可行的企劃。查看課程 ↗",
+          "label": "查看大三課程"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "04大四 11 門整合與展現整合四年的學習，完成作品、提案或公開展演。查看課程 ↗",
+          "label": "查看大四課程"
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "了解四年主線與正式探索面向",
+          "label": null
+        },
+        {
+          "tag": "BODY",
+          "text": "跳至課程地圖✦ 人文跨域與應用學系115 學年度 · 課程探索THE HUMANITIES ATLAS / 69 個探索的起點從一個提問，找到你的下一門課。先選年級，再點課名查看筆記；也可以直接使用所",
+          "label": null
+        },
+        {
+          "tag": "A",
+          "text": "跳至課程地圖",
+          "label": null
+        },
+        {
+          "tag": "A",
+          "text": "✦ 人文跨域與應用學系",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋文本思辨讀懂文字、語言與思想",
+          "label": "文本思辨"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋敘事創作把觀察和想法說成故事",
+          "label": "敘事創作"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋數位媒介讓人文與科技產生新連結",
+          "label": "數位媒介"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "＋文化現場走進地方、文化與社會",
+          "label": "文化現場"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "清除訊號",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "課程星圖",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "所有課程",
+          "label": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "我的星座（選用）",
+          "label": null
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "label": null
+        }
+      ]
+    }
+  ],
+  "untested": [
+    "students",
+    "screen reader",
+    "real phones",
+    "Safari",
+    "Firefox",
+    "OS IME"
+  ]
+}

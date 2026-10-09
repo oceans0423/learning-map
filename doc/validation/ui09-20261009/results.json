@@ -1,0 +1,55 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 360,
+      "crossYear": true,
+      "signalIndependent": true,
+      "resultGroup": true,
+      "sourceFocus": true,
+      "noResultExit": true,
+      "compositionEvents": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "crossYear": true,
+      "signalIndependent": true,
+      "resultGroup": true,
+      "sourceFocus": true,
+      "noResultExit": true,
+      "compositionEvents": true,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "crossYear": true,
+      "signalIndependent": true,
+      "resultGroup": true,
+      "sourceFocus": true,
+      "noResultExit": true,
+      "compositionEvents": true,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "crossYear": true,
+      "signalIndependent": true,
+      "resultGroup": true,
+      "sourceFocus": true,
+      "noResultExit": true,
+      "compositionEvents": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "crossYear": true,
+      "signalIndependent": true,
+      "resultGroup": true,
+      "sourceFocus": true,
+      "noResultExit": true,
+      "compositionEvents": true,
+      "passed": true
+    }
+  ]
+}

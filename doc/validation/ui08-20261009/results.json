@@ -1,0 +1,949 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "samples": [
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 1,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 5,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 1,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 5,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 11,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 8,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 10,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 12,
+          "open": 0
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 5,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 7,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 7,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 10,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 8,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 11,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 4,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 5,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 3,
+          "open": 1
+        }
+      ],
+      "allNodesRetained": true,
+      "pageCountsStable": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "samples": [
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 1,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 5,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 1,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 1,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 5,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 11,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 7,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 4,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 3,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 8,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 10,
+          "open": 0
+        },
+        {
+          "year": 2,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 12,
+          "open": 0
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 5,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 7,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 7,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 10,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 8,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 3,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 11,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "story"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "digital"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "field"
+          ],
+          "related": 4,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 5,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 1,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 6,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "story"
+          ],
+          "related": 3,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "digital"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "field"
+          ],
+          "related": 1,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text",
+            "digital"
+          ],
+          "related": 2,
+          "open": 1
+        },
+        {
+          "year": 4,
+          "sem": 2,
+          "selected": [
+            "text",
+            "story",
+            "digital",
+            "field"
+          ],
+          "related": 3,
+          "open": 1
+        }
+      ],
+      "allNodesRetained": true,
+      "pageCountsStable": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "width": 390,
+      "all69": true,
+      "stickySmoke": false,
+      "widthStable": true,
+      "mapNotShifted": true,
+      "lastUndo": true,
+      "recentUndoOnly": true,
+      "noStorageWrites": true,
+      "unsavedReload": true,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "all69": true,
+      "stickySmoke": false,
+      "widthStable": true,
+      "mapNotShifted": true,
+      "lastUndo": true,
+      "recentUndoOnly": true,
+      "noStorageWrites": true,
+      "unsavedReload": true,
+      "passed": true
+    }
+  ]
+}
