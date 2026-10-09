@@ -9,6 +9,32 @@ import {
 } from './urlState'
 
 describe('URL state parsing', () => {
+  it('switches an already open note in place and never invents a direct-link back marker', () => {
+    let pushed = 0
+    let replaced = 0
+    const history: HistoryPort = {
+      state: { __curriculumMap: { openedCourse: 'course-001' } },
+      pushState: () => {
+        pushed++
+      },
+      replaceState: (data) => {
+        history.state = data
+        replaced++
+      },
+      back: () => {},
+    }
+    const source = { semester: 1 as const, focus: [], openYears: [1], courseId: 'course-001' }
+    const location = { pathname: '/', search: '', hash: '' }
+    pushCourseUrlState(source, 'course-002', history, location)
+    expect(pushed).toBe(0)
+    expect(replaced).toBe(1)
+    expect(history.state).toEqual({ __curriculumMap: { openedCourse: 'course-002' } })
+    replaceUrlState({ ...source, courseId: 'course-002', signals: ['text'] }, history, location)
+    expect(history.state).toEqual({ __curriculumMap: { openedCourse: 'course-002' } })
+    history.state = null
+    pushCourseUrlState(source, 'course-002', history, location)
+    expect(history.state).toEqual({})
+  })
   it('parses valid semester, focus controls, expanded years and a course', () => {
     expect(
       parseUrlState('?sem=2&focus=foundation,narrative&open=1,2&course=course-010'),

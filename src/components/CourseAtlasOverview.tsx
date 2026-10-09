@@ -1,0 +1,157 @@
+import type { CSSProperties } from 'react'
+import { YEAR_LABELS } from '../config/courseAreas'
+import { courses } from '../data/courses'
+import { atlasStatistics, type AtlasScope } from '../lib/courseAtlas'
+import { Button } from './Button'
+
+const stats = atlasStatistics(courses)
+const shapes = [
+  [
+    [12, 64],
+    [32, 42],
+    [54, 48],
+    [74, 20],
+    [86, 54],
+    [62, 78],
+  ],
+  [
+    [12, 28],
+    [34, 48],
+    [48, 22],
+    [66, 50],
+    [84, 34],
+    [72, 80],
+  ],
+  [
+    [18, 20],
+    [52, 20],
+    [80, 42],
+    [52, 64],
+    [18, 64],
+    [38, 86],
+  ],
+  [
+    [12, 48],
+    [34, 20],
+    [52, 44],
+    [80, 28],
+    [86, 68],
+    [48, 80],
+  ],
+] as const
+
+export function AreaStarCluster({ index }: { index: number }) {
+  const points = shapes[index % shapes.length]
+  return (
+    <svg viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+      <polyline
+        points={points.map(([x, y]) => `${x},${y}`).join(' ')}
+        stroke="currentColor"
+        strokeWidth="0.8"
+        opacity="0.6"
+      />
+      <line
+        x1={points[1][0]}
+        y1={points[1][1]}
+        x2={points[4][0]}
+        y2={points[4][1]}
+        stroke="currentColor"
+        strokeWidth="0.5"
+        opacity="0.35"
+      />
+      {points.map(([x, y], point) => (
+        <g key={point}>
+          <circle cx={x} cy={y} r={point === 2 ? 6 : 4} fill="currentColor" opacity="0.09" />
+          <circle cx={x} cy={y} r={point === 2 ? 2.1 : 1.5} fill="#eef2f8" />
+        </g>
+      ))}
+    </svg>
+  )
+}
+
+interface Props {
+  perspective: 'area' | 'year'
+  onPerspective: (value: 'area' | 'year') => void
+  onScope: (scope: AtlasScope) => void
+}
+
+export function CourseAtlasOverview({ perspective, onPerspective, onScope }: Props) {
+  return (
+    <section
+      className="ca-content"
+      id="atlas-content"
+      tabIndex={-1}
+      aria-labelledby="atlas-content-title"
+    >
+      <div className="ca-section-heading">
+        <h2 id="atlas-content-title" tabIndex={-1}>
+          {perspective === 'area' ? '四大課程領域' : '四年課程結構'}
+        </h2>
+        <div className="ca-perspective" role="group" aria-label="總覽角度">
+          <Button aria-pressed={perspective === 'area'} onClick={() => onPerspective('area')}>
+            按領域看
+          </Button>
+          <Button aria-pressed={perspective === 'year'} onClick={() => onPerspective('year')}>
+            按年級看
+          </Button>
+        </div>
+      </div>
+      <div className="ca-overview">
+        <div className="ca-areas">
+          {perspective === 'area'
+            ? stats.areas.map((area, index) => (
+                <button
+                  type="button"
+                  className="ca-area"
+                  key={area.id}
+                  data-area={area.id}
+                  style={{ '--area-color': area.color } as CSSProperties}
+                  onClick={() => onScope({ kind: 'area', area: area.id })}
+                  aria-label={`查看${area.label}：${area.count}門課程`}
+                >
+                  <span>
+                    <span className="ca-area-index" aria-hidden="true">
+                      0{index + 1} / GALAXY
+                    </span>
+                    <span className="ca-area-heading">{area.label}</span>
+                    <span className="ca-area-meta">{area.count} 門課程 · 可依年級查看</span>
+                    <span className="ca-area-action">查看課程 ↗</span>
+                  </span>
+                  <AreaStarCluster index={index} />
+                </button>
+              ))
+            : stats.years.map((year, index) => (
+                <button
+                  type="button"
+                  className="ca-area"
+                  key={year.year}
+                  data-year={year.year}
+                  onClick={() => onScope({ kind: 'year', year: year.year })}
+                  aria-label={`查看${YEAR_LABELS[index]}：${year.count}門課程`}
+                >
+                  <span>
+                    <span className="ca-area-index" aria-hidden="true">
+                      0{year.year} / YEAR
+                    </span>
+                    <span className="ca-area-heading">
+                      {YEAR_LABELS[index]} · {year.count} 門課程
+                    </span>
+                    <span className="ca-area-meta">
+                      上學期 {year.first} 門 · 下學期 {year.second} 門
+                    </span>
+                    <span className="ca-area-action">查看課程 ↗</span>
+                  </span>
+                  <AreaStarCluster index={index} />
+                </button>
+              ))}
+        </div>
+        <div className="ca-overview-foot">
+          <p>星群是領域與年級的視覺入口，不是先修圖。</p>
+          <Button onClick={() => onScope({ kind: 'all' })}>
+            查看全部 {stats.total} 門課程
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}

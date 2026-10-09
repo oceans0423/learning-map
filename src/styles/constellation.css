@@ -1,0 +1,282 @@
+.constellation-entry.ui-button {
+  color: var(--ui-text-secondary);
+  background: transparent;
+  border-color: transparent;
+  font-size: var(--ui-font-small);
+}
+.wb-columns.is-editing {
+  grid-template-columns: minmax(0, 1fr);
+}
+.wb-columns.is-editing .wb-note-slot {
+  display: none;
+}
+.representative-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+.representative-options .ui-button {
+  overflow-wrap: anywhere;
+  text-align: left;
+  justify-content: flex-start;
+}
+.representative-count {
+  color: var(--ui-text-secondary);
+}
+.representative-picker summary {
+  min-height: var(--ui-target);
+  cursor: pointer;
+  padding-block: 0.75rem;
+}
+.constellation-naming {
+  margin-block: 1.5rem;
+}
+.constellation-name-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.constellation-name-controls input {
+  flex: 1;
+  min-width: min(100%, 15rem);
+  width: 100%;
+  min-height: var(--ui-target);
+  font: inherit;
+  color: var(--ui-text);
+  background: var(--ui-night-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+.constellation-name-controls input::placeholder {
+  color: var(--ui-text-secondary);
+}
+.constellation-name-controls input:focus-visible {
+  outline: 3px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+.constellation-naming form > p {
+  font-size: var(--ui-font-small);
+  color: var(--ui-text-secondary);
+}
+.constellation-art {
+  margin: 1.5rem 0;
+}
+.constellation-name-display {
+  font: clamp(1.5rem, 3vw, 2.5rem)/1.5 var(--ui-font-display);
+  text-align: center;
+  overflow-wrap: anywhere;
+  margin-block: 1rem;
+  color: var(--signal-field);
+}
+.constellation-canvas {
+  position: relative;
+  min-height: 42rem;
+  border: 1px solid var(--ui-line);
+  border-radius: 1rem;
+  background: radial-gradient(ellipse at 50% 50%, #22444e66, transparent 80%);
+}
+.constellation-canvas svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.constellation-canvas polyline {
+  fill: none;
+  stroke: var(--ui-line);
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+}
+.constellation-star {
+  position: absolute;
+  transform: translate(-50%, calc(var(--ui-target) / -2));
+  width: clamp(5rem, 12vw, 10rem);
+  max-width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  line-height: 1.4;
+  font-size: var(--ui-font-small);
+}
+.constellation-star-symbol {
+  min-height: var(--ui-target);
+  display: grid;
+  place-items: center;
+  color: var(--ui-paper);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.constellation-star-label-compact {
+  display: none;
+}
+.star-grip.ui-button {
+  margin-inline: auto;
+  width: var(--ui-target);
+  min-width: var(--ui-target);
+  height: var(--ui-target);
+  min-height: var(--ui-target);
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--ui-paper);
+  touch-action: none;
+  cursor: grab;
+}
+.star-grip.ui-button:active {
+  cursor: grabbing;
+}
+.constellation-star:has(.star-grip[aria-pressed='true']) {
+  z-index: 2;
+}
+.star-move-toolbar {
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: var(--ui-night);
+  margin-bottom: 1rem;
+  z-index: 3;
+}
+.star-move-selector {
+  display: flex;
+  gap: 0.75rem;
+  margin-block: 0.5rem;
+}
+.star-move-selector select {
+  min-width: 0;
+  flex: 1;
+  width: 100%;
+  min-height: var(--ui-target);
+  font: inherit;
+  color: var(--ui-text);
+  background: var(--ui-night-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+.star-move-selector select:focus-visible {
+  outline: 3px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+.star-move-directions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.star-move-toolbar p,
+.star-move-status {
+  font-size: var(--ui-font-small);
+  color: var(--ui-text-secondary);
+  margin-bottom: 0;
+}
+@media (min-height: 700px) {
+  .star-move-toolbar {
+    position: sticky;
+    top: 0.5rem;
+  }
+}
+.constellation-star small,
+.constellation-art figcaption,
+.constellation-course-legend span {
+  color: var(--ui-text-secondary);
+  font-size: var(--ui-font-small);
+}
+.constellation-art figcaption {
+  margin-block: 1rem;
+}
+.constellation-course-legend {
+  columns: 2;
+  padding-left: 1.5rem;
+}
+.constellation-course-legend li {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.is-celebrating .constellation-canvas polyline {
+  stroke-dasharray: 1;
+  animation: constellation-line var(--ui-duration-complete) var(--ui-ease);
+}
+.is-celebrating .constellation-name-display {
+  animation: constellation-glow var(--ui-duration-complete) var(--ui-ease);
+}
+@keyframes constellation-line {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes constellation-glow {
+  from {
+    opacity: 0.65;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .constellation-star-label {
+    display: none;
+  }
+  .constellation-star-label-compact {
+    display: block;
+  }
+  .constellation-course-legend {
+    columns: 1;
+  }
+}
+.replacement-panel {
+  border: 1px solid var(--ui-line);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  background: var(--ui-night-surface);
+}
+.personal-storage-controls {
+  border-top: 1px solid var(--ui-line);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.constellation-export {
+  margin-top: 1.5rem;
+}
+.constellation-export p {
+  color: var(--ui-text-secondary);
+  font-size: var(--ui-font-small);
+}
+.personal-storage-controls p {
+  color: var(--ui-text-secondary);
+}
+.personal-storage-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.storage-confirm {
+  margin-block: 1rem;
+  border: 1px solid var(--ui-line);
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+.replacement-panel > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .representative-options {
+    grid-template-columns: 1fr;
+  }
+}

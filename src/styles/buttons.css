@@ -1,0 +1,65 @@
+@import './constellation-tokens.css';
+
+.ui-button {
+  --button-text: var(--ui-text);
+  --button-surface: var(--ui-night-surface);
+  --button-focus: var(--ui-focus);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ui-space-2);
+  min-height: var(--ui-target);
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  font: inherit;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--button-text);
+  background: var(--button-surface);
+  cursor: pointer;
+  transition:
+    background-color var(--ui-duration-press) var(--ui-ease),
+    border-color var(--ui-duration-focus) var(--ui-ease),
+    box-shadow var(--ui-duration-press) var(--ui-ease);
+}
+.ui-paper .ui-button {
+  --button-text: var(--ui-ink);
+  --button-surface: var(--ui-paper);
+  --button-focus: var(--ui-focus-on-paper);
+  border-color: var(--ui-ink-secondary);
+}
+.ui-button--primary {
+  --button-text: var(--ui-ink);
+  --button-surface: var(--ui-paper);
+}
+.ui-button--stable {
+  min-inline-size: 10rem;
+}
+.ui-button[aria-pressed='true'] {
+  border-color: currentColor;
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+.ui-button:focus-visible {
+  outline: 3px solid var(--button-focus);
+  outline-offset: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .ui-button:not(:disabled):hover {
+    border-color: currentColor;
+    box-shadow: inset 0 0 0 1px currentColor;
+  }
+}
+.ui-button:not(:disabled):active {
+  box-shadow: inset 0 3px 0 var(--ui-line);
+}
+.ui-button:disabled {
+  color: var(--ui-text-secondary);
+  background: var(--ui-night);
+  border-style: dashed;
+  cursor: not-allowed;
+}
+.ui-paper .ui-button:disabled {
+  color: var(--ui-ink-secondary);
+  background: var(--ui-paper);
+}

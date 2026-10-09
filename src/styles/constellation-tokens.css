@@ -1,0 +1,62 @@
+:root {
+  --ui-night: #102630;
+  --ui-night-surface: #17333d;
+  --ui-paper: #f6f0e4;
+  --ui-ink: #18343e;
+  --ui-ink-secondary: #455f65;
+  --ui-text: #f6f0e4;
+  --ui-text-secondary: #bfd0d0;
+  --ui-line: #667f88;
+  --ui-focus: #fff8ea;
+  --ui-focus-on-paper: #244e5c;
+  --ui-selected: #f6f0e4;
+  --ui-success: #83d6cd;
+  --ui-error: #ffc0b4;
+  --ui-error-on-paper: #91362d;
+  --signal-text: #b8bde9;
+  --signal-story: #eea08b;
+  --signal-digital: #83d6cd;
+  --signal-field: #e9c579;
+  --signal-text-ink: #4c4d79;
+  --signal-story-ink: #7c3f33;
+  --signal-digital-ink: #236159;
+  --signal-field-ink: #695022;
+  --ui-font-body: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  --ui-font-display: 'Noto Serif TC', 'Songti TC', 'PMingLiU', Georgia, serif;
+  --ui-font-size: 1rem;
+  --ui-font-small: 0.875rem;
+  --ui-leading: 1.65;
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-6: 1.5rem;
+  --ui-space-8: 2rem;
+  --ui-target: 2.75rem;
+  --ui-radius: 0.75rem;
+  --ui-duration-press: 120ms;
+  --ui-duration-focus: 120ms;
+  --ui-duration-panel: 220ms;
+  --ui-duration-collect: 280ms;
+  --ui-duration-complete: 480ms;
+  --ui-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.ui-paper {
+  color: var(--ui-ink);
+  background: var(--ui-paper);
+  --ui-local-focus: var(--ui-focus-on-paper);
+}
+.ui-night {
+  color: var(--ui-text);
+  background: var(--ui-night);
+  --ui-local-focus: var(--ui-focus);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ui-duration-press: 0ms;
+    --ui-duration-focus: 0ms;
+    --ui-duration-panel: 0ms;
+    --ui-duration-collect: 0ms;
+    --ui-duration-complete: 0ms;
+  }
+}

@@ -1,0 +1,204 @@
+.atlas-overview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.atlas-year.ui-button {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.5rem;
+  text-align: left;
+  overflow: hidden;
+}
+.atlas-year-visual {
+  height: 7rem;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--ui-line);
+  margin-bottom: 1rem;
+}
+.atlas-year-number {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font:
+    2.5rem/1 Georgia,
+    serif;
+  color: var(--ui-text-secondary);
+}
+.atlas-year-visual i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ui-paper);
+  box-shadow: 0 0 12px #f6f0e440;
+}
+.atlas-year-title {
+  font-size: 1.5rem;
+}
+.atlas-year-title small {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: var(--ui-text-secondary);
+}
+.atlas-year-phase {
+  color: var(--signal-field);
+}
+.atlas-year-description {
+  color: var(--ui-text-secondary);
+  font-size: var(--ui-font-small);
+  line-height: 1.65;
+}
+.atlas-year-action {
+  padding-top: 0.75rem;
+}
+.atlas-navigation,
+.atlas-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.atlas-navigation > div,
+.atlas-heading > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.atlas-heading h3 {
+  margin: 0;
+  font: 1.5rem/1.5 var(--ui-font-display);
+}
+.atlas-count {
+  color: var(--ui-text-secondary);
+  margin-block: 1rem;
+}
+.atlas-scene {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--ui-line);
+  border-radius: 1rem;
+  background: radial-gradient(ellipse at 50% 50%, #22444e66, transparent 75%);
+}
+.atlas-course.ui-button {
+  min-height: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-color: transparent;
+  background: transparent;
+  gap: 0.375rem;
+  padding: 0.75rem 0.5rem;
+  position: relative;
+  color: var(--ui-text);
+}
+.atlas-course strong {
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+.atlas-star {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  color: var(--ui-text-secondary);
+}
+.atlas-course[data-signal='text'] .atlas-star,
+.atlas-course[data-signal='text'] .atlas-course-signal {
+  color: var(--signal-text);
+}
+.atlas-course[data-signal='story'] .atlas-star,
+.atlas-course[data-signal='story'] .atlas-course-signal {
+  color: var(--signal-story);
+}
+.atlas-course[data-signal='digital'] .atlas-star,
+.atlas-course[data-signal='digital'] .atlas-course-signal {
+  color: var(--signal-digital);
+}
+.atlas-course[data-signal='field'] .atlas-star,
+.atlas-course[data-signal='field'] .atlas-course-signal {
+  color: var(--signal-field);
+}
+.atlas-course-meta,
+.atlas-course-signal,
+.atlas-legend,
+.atlas-course-secondary {
+  font-size: var(--ui-font-small);
+  line-height: 1.6;
+  color: var(--ui-text-secondary);
+}
+.atlas-course-secondary {
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  left: 0;
+  right: 0;
+  background: var(--ui-night);
+  border-radius: 0.5rem;
+  z-index: 1;
+  padding: 0.25rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+.atlas-course:focus .atlas-course-secondary {
+  visibility: visible;
+}
+.atlas-course.is-current {
+  outline: 2px solid var(--ui-selected);
+  outline-offset: 2px;
+}
+.atlas-course.is-related {
+  border-color: var(--ui-line);
+}
+.atlas-course.is-unrelated .atlas-star {
+  filter: saturate(0.5);
+}
+.atlas-related-label {
+  color: var(--ui-text);
+  font-size: var(--ui-font-small);
+}
+.atlas-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
+.atlas-pagination span {
+  font-size: var(--ui-font-small);
+}
+@media (max-width: 767px) {
+  .atlas-scene {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .atlas-year.ui-button {
+    padding: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .atlas-overview {
+    grid-template-columns: 1fr;
+  }
+  .atlas-year.ui-button {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 0.5rem 1rem;
+  }
+  .atlas-year-visual {
+    grid-row: span 4;
+    height: 5rem;
+    margin: 0;
+  }
+  .atlas-year-title small {
+    display: inline-block;
+  }
+}

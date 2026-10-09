@@ -1,6 +1,7 @@
 import { courses } from '../data/courses'
 import { focusFromUrl, focusToUrl, type FocusId } from '../config/focus'
 import type { SemesterFilter } from './semester'
+import { SIGNAL_IDS, type SignalId } from '../config/explorationSignals'
 
 export const DEFAULT_OPEN_YEARS = [1] as const
 
@@ -9,6 +10,9 @@ export interface MapUrlState {
   focus: FocusId[]
   openYears: number[]
   courseId: string | null
+  /** New atlas view; omitted for untouched legacy URLs. null means overview. */
+  atlasYear?: number | null
+  signals?: SignalId[]
 }
 
 export interface HistoryPort {
@@ -52,6 +56,22 @@ export function parseUrlState(search: string): MapUrlState {
     focus,
     openYears: openYears.length ? openYears : [...DEFAULT_OPEN_YEARS],
     courseId: courseValue && courseIds.has(courseValue) ? courseValue : null,
+    ...(params.has('signals')
+      ? {
+          signals: [
+            ...new Set(params.getAll('signals').flatMap((value) => value.split(','))),
+          ].filter((value): value is SignalId =>
+            (SIGNAL_IDS as readonly string[]).includes(value),
+          ),
+        }
+      : {}),
+    ...(params.has('atlas')
+      ? {
+          atlasYear: /^[1-4]$/.test(params.get('atlas') ?? '')
+            ? Number(params.get('atlas'))
+            : null,
+        }
+      : {}),
   }
 }
 
@@ -67,6 +87,19 @@ export function serializeUrlState(state: MapUrlState): string {
     params.set('open', openYears.join(','))
   }
   if (state.courseId && courseIds.has(state.courseId)) params.set('course', state.courseId)
+  if (state.signals?.length)
+    params.set(
+      'signals',
+      [...new Set(state.signals)].filter((id) => SIGNAL_IDS.includes(id)).join(','),
+    )
+  if (state.atlasYear === null) params.set('atlas', 'overview')
+  else if (
+    state.atlasYear !== undefined &&
+    Number.isInteger(state.atlasYear) &&
+    state.atlasYear >= 1 &&
+    state.atlasYear <= 4
+  )
+    params.set('atlas', String(state.atlasYear))
   return params.toString()
 }
 
@@ -86,13 +119,28 @@ function preservedHistoryState(
   return next
 }
 
+function openedCourseMarker(state: unknown): unknown {
+  const marker =
+    typeof state === 'object' && state !== null
+      ? (state as Record<string, unknown>)[historyMarker]
+      : null
+  return typeof marker === 'object' && marker !== null
+    ? (marker as Record<string, unknown>).openedCourse
+    : null
+}
+
 export function replaceUrlState(
   state: MapUrlState,
   history: HistoryPort = window.history,
   location: LocationPort = window.location,
 ): void {
   history.replaceState(
-    preservedHistoryState(history.state, null),
+    preservedHistoryState(
+      history.state,
+      state.courseId && openedCourseMarker(history.state) === state.courseId
+        ? state.courseId
+        : null,
+    ),
     '',
     urlForState(state, location),
   )
@@ -105,6 +153,17 @@ export function pushCourseUrlState(
   location: LocationPort = window.location,
 ): void {
   if (!courseIds.has(courseId)) throw new Error(`Unknown course ID: ${courseId}`)
+  if (state.courseId) {
+    history.replaceState(
+      preservedHistoryState(
+        history.state,
+        openedCourseMarker(history.state) === state.courseId ? courseId : null,
+      ),
+      '',
+      urlForState({ ...state, courseId }, location),
+    )
+    return
+  }
   history.pushState(
     preservedHistoryState(history.state, courseId),
     '',

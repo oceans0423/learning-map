@@ -1,0 +1,554 @@
+[
+  {
+    "id": "course-001",
+    "primary": "text",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "人文理解與思辨的共同入口"
+  },
+  {
+    "id": "course-002",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "以人文地理與地方空間作探索入口"
+  },
+  {
+    "id": "course-003",
+    "primary": "digital",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "新媒體傳播與實作"
+  },
+  {
+    "id": "course-004",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "以語言、修辭與表達方法為主，連到敘事"
+  },
+  {
+    "id": "course-005",
+    "primary": "text",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "哲學思考為主，科技為相關探索"
+  },
+  {
+    "id": "course-006",
+    "primary": "field",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化產業與文化實踐"
+  },
+  {
+    "id": "course-007",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文本分析與詮釋為主，連到敘事"
+  },
+  {
+    "id": "course-008",
+    "primary": "digital",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "數位人文方法與應用"
+  },
+  {
+    "id": "course-009",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化敘事與美學轉譯"
+  },
+  {
+    "id": "course-010",
+    "primary": "field",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "地方創生為主，數位敘事為相關媒介"
+  },
+  {
+    "id": "course-011",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "民俗文化為探索對象，仍保留基底作用"
+  },
+  {
+    "id": "course-012",
+    "primary": "story",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文案寫作"
+  },
+  {
+    "id": "course-013",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "田野為探索入口，質性研究連到研究方法"
+  },
+  {
+    "id": "course-014",
+    "primary": "story",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "散文創作"
+  },
+  {
+    "id": "course-015",
+    "primary": "field",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化旅行為主，書寫為相關表達"
+  },
+  {
+    "id": "course-016",
+    "primary": "text",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "美學與哲學思考為主，連到文化"
+  },
+  {
+    "id": "course-017",
+    "primary": "field",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "節慶與展演企劃"
+  },
+  {
+    "id": "course-018",
+    "primary": "field",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "族群祭典與文化實踐"
+  },
+  {
+    "id": "course-019",
+    "primary": "digital",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "資料探勘為主，文本分析為相關方法"
+  },
+  {
+    "id": "course-020",
+    "primary": "text",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "詞彙與語言教學；不增設獨立教學面向"
+  },
+  {
+    "id": "course-021",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學史理解為主，連到文學敘事"
+  },
+  {
+    "id": "course-022",
+    "primary": "text",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "漢字理解與教學；不增設獨立教學面向"
+  },
+  {
+    "id": "course-023",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "經典閱讀為主，連到敘事創作"
+  },
+  {
+    "id": "course-024",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "人文議題探索與設計，連到議題理解"
+  },
+  {
+    "id": "course-025",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "敘事理論為主，連到創作應用"
+  },
+  {
+    "id": "course-026",
+    "primary": "text",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "宗教文學閱讀為主，連到文化脈絡"
+  },
+  {
+    "id": "course-027",
+    "primary": "text",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "語言學與教學；不增設獨立教學面向"
+  },
+  {
+    "id": "course-028",
+    "primary": "field",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "原住民文化為主，影像紀錄為次訊號；其他正式面向仍保留於詳情"
+  },
+  {
+    "id": "course-029",
+    "primary": "field",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化資產為主，影音紀錄為次訊號"
+  },
+  {
+    "id": "course-030",
+    "primary": "digital",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "AI、程式與應用開發"
+  },
+  {
+    "id": "course-031",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "非虛構寫作為主，連到真實現場"
+  },
+  {
+    "id": "course-032",
+    "primary": "field",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "口述歷史為主，連到口述與敘事"
+  },
+  {
+    "id": "course-033",
+    "primary": "text",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "語言理解為主，連到文化脈絡"
+  },
+  {
+    "id": "course-034",
+    "primary": "text",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "民間文學理解為主，連到文化脈絡"
+  },
+  {
+    "id": "course-035",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學史理解為主，連到文學敘事"
+  },
+  {
+    "id": "course-036",
+    "primary": null,
+    "secondary": null,
+    "signalPolicy": "open",
+    "status": "draft",
+    "reason": "整合課程，保留既有文化與數位相關面向"
+  },
+  {
+    "id": "course-037",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "出版編輯為主，地方刊物為相關現場"
+  },
+  {
+    "id": "course-038",
+    "primary": "field",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "品牌與文化企劃為主，故事為表達方式"
+  },
+  {
+    "id": "course-039",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "永續與生活議題為主，連到價值思考"
+  },
+  {
+    "id": "course-040",
+    "primary": "digital",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "數位與空間人文為主，連到地方空間"
+  },
+  {
+    "id": "course-041",
+    "primary": "digital",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "互動媒介與遊戲企劃為主，連到敘事"
+  },
+  {
+    "id": "course-042",
+    "primary": "field",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "策展為主，保留既有數位相關面向"
+  },
+  {
+    "id": "course-043",
+    "primary": "field",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化資產保存為主，保留既有數位相關面向"
+  },
+  {
+    "id": "course-044",
+    "primary": "story",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "轉譯改編為主，保留既有數位相關面向"
+  },
+  {
+    "id": "course-045",
+    "primary": "story",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "小說創作為主，類型理解為相關入口"
+  },
+  {
+    "id": "course-046",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "書寫為主，生態與現場為相關題材"
+  },
+  {
+    "id": "course-047",
+    "primary": "text",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學與文化研究為主，連到社會文化脈絡"
+  },
+  {
+    "id": "course-048",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學理論理解為主，連到創作"
+  },
+  {
+    "id": "course-049",
+    "primary": "digital",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "數位策展為主，連到文化現場"
+  },
+  {
+    "id": "course-050",
+    "primary": null,
+    "secondary": null,
+    "signalPolicy": "open",
+    "status": "draft",
+    "reason": "實習為整合作用，具體訊號由實際實習內容決定"
+  },
+  {
+    "id": "course-051",
+    "primary": "digital",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "AI 產品提案為主，保留既有文化相關面向"
+  },
+  {
+    "id": "course-052",
+    "primary": "field",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化評論與傳播為主，連到敘事表達"
+  },
+  {
+    "id": "course-053",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學專題先以閱讀研究作入口，未假設課綱一定包含創作"
+  },
+  {
+    "id": "course-054",
+    "primary": "story",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "詩歌創作"
+  },
+  {
+    "id": "course-055",
+    "primary": "story",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "應用文書寫作"
+  },
+  {
+    "id": "course-056",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "閱讀與書寫為主，連到語言文化"
+  },
+  {
+    "id": "course-057",
+    "primary": "story",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "閱讀與書寫為主，連到語言文化"
+  },
+  {
+    "id": "course-058",
+    "primary": "story",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "詩詞現代應用為主，保留既有數位相關面向"
+  },
+  {
+    "id": "course-059",
+    "primary": null,
+    "secondary": null,
+    "signalPolicy": "open",
+    "status": "draft",
+    "reason": "畢業專題為整合作用，具體訊號隨題目而定"
+  },
+  {
+    "id": "course-060",
+    "primary": "field",
+    "secondary": null,
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文化事業與管理"
+  },
+  {
+    "id": "course-061",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "性別文化議題為主，連到議題思考"
+  },
+  {
+    "id": "course-062",
+    "primary": "story",
+    "secondary": "digital",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "漢字創意應用為主，保留既有數位相關面向"
+  },
+  {
+    "id": "course-063",
+    "primary": "digital",
+    "secondary": "field",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "數位儒學為主，社群實踐為相關入口；課名依來源保留"
+  },
+  {
+    "id": "course-064",
+    "primary": "field",
+    "secondary": "text",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "社會實踐為主，人文主義為思考入口"
+  },
+  {
+    "id": "course-065",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學專題先以閱讀研究作入口，未假設課綱一定包含創作"
+  },
+  {
+    "id": "course-066",
+    "primary": null,
+    "secondary": null,
+    "signalPolicy": "open",
+    "status": "draft",
+    "reason": "畢業專題為整合作用，具體訊號隨題目而定"
+  },
+  {
+    "id": "course-067",
+    "primary": "field",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "戲曲與當代文化為主，連到敘事表達"
+  },
+  {
+    "id": "course-068",
+    "primary": "digital",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文獻數據化為主，文化 IP 轉譯為相關表達"
+  },
+  {
+    "id": "course-069",
+    "primary": "text",
+    "secondary": "story",
+    "signalPolicy": "assigned",
+    "status": "draft",
+    "reason": "文學專題先以閱讀研究作入口，原文化相關面向仍保留於詳情"
+  }
+]

@@ -1,0 +1,50 @@
+/* Local, finite motion; the previous scene is removed immediately, never queued. */
+.workbench .atlas-scene,
+.workbench .atlas-overview {
+  animation: atlas-enter var(--ui-duration-panel) var(--ui-ease);
+}
+.workbench .dialog-backdrop {
+  animation: atlas-enter var(--ui-duration-panel) var(--ui-ease);
+}
+.workbench .detail-panel {
+  animation: note-enter var(--ui-duration-panel) var(--ui-ease);
+}
+.workbench .detail-body {
+  animation: atlas-enter var(--ui-duration-panel) var(--ui-ease);
+}
+.workbench .atlas-course.is-current {
+  outline-color: var(--ui-selected);
+}
+.workbench .atlas-course:focus-visible {
+  outline: 3px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+@keyframes atlas-enter {
+  from {
+    opacity: 0.65;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes note-enter {
+  from {
+    opacity: 0.65;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .workbench *,
+  .workbench *::before,
+  .workbench *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

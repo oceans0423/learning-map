@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'node',
+    css: { include: /(?:constellation-tokens|scorpius|course-atlas)\.css/ },
     include: ['src/**/*.test.{ts,tsx}'],
   },
 })

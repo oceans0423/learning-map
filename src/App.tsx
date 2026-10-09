@@ -14,10 +14,22 @@ import {
 } from './lib/urlState'
 import { getVisibleCourses, SEMESTER_OPTIONS } from './lib/semester'
 import { isCourseHighlighted } from './lib/highlight'
+import { WorkbenchApp } from './components/WorkbenchApp'
+import { CourseAtlasApp } from './components/CourseAtlasApp'
 
 const requiredCount = courses.filter((course) => course.type === 'required').length
 
 export function App() {
+  if (
+    new URLSearchParams(window.location.search).get('ui') === 'legacy' ||
+    window.location.hash.startsWith('#scorpius')
+  )
+    return <WorkbenchApp />
+  return <CourseAtlasApp />
+}
+
+/** Kept during the migration as the reference for legacy URL and curriculum behavior. */
+export function LegacyApp() {
   const [mapState, setMapState] = useState(() => parseUrlState(window.location.search))
 
   useEffect(() => {

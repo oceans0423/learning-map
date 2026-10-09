@@ -1,0 +1,120 @@
+.wb-personal-slot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.collection-summary-text {
+  font-size: var(--ui-font-small);
+}
+.collection-mobile-count {
+  display: none;
+}
+.wb-feedback {
+  position: fixed;
+  z-index: 15;
+  bottom: 1rem;
+  left: 1rem;
+  max-width: min(34rem, calc(100% - 2rem));
+  max-height: 25dvh;
+  overflow-y: auto;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-night);
+  padding: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: var(--ui-target);
+  margin-block: 0.5rem;
+}
+.wb-feedback:has(p:empty):not(:has(button)) {
+  display: none;
+}
+.workbench .wb-footer {
+  padding-bottom: 10rem;
+}
+.wb-feedback p {
+  margin: 0;
+  color: var(--ui-text-secondary);
+  font-size: var(--ui-font-small);
+}
+.collection-panel > p {
+  color: var(--ui-text-secondary);
+}
+.collection-list {
+  list-style: none;
+  padding: 0;
+}
+.collection-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--ui-line);
+  padding-block: 1rem;
+}
+.collection-list li > div {
+  min-width: 0;
+}
+.collection-list li > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.collection-list strong {
+  overflow-wrap: anywhere;
+}
+.collection-list p {
+  color: var(--ui-text-secondary);
+  margin: 0.375rem 0 0;
+}
+.collection-toggle {
+  margin-bottom: 1rem;
+}
+.collection-flight {
+  position: fixed;
+  z-index: 25;
+  color: var(--ui-paper);
+  font-size: 1.5rem;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+@media (min-width: 1024px) {
+  .wb-note-slot {
+    position: sticky;
+    top: 1rem;
+  }
+  .wb-inline-note .detail-panel {
+    height: auto;
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
+  }
+  .wb-inline-note .detail-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--ui-paper);
+  }
+}
+@media (max-width: 1023px) {
+  .workbench .wb-personal-slot:empty {
+    display: flex;
+  }
+  .wb-personal-slot {
+    justify-content: flex-start;
+  }
+  .wb-toolbar {
+    min-height: calc(var(--ui-target) * 2 + 3rem);
+  }
+  .collection-summary-text {
+    display: none;
+  }
+  .collection-mobile-count {
+    display: inline;
+  }
+}
