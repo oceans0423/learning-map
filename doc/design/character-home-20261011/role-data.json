@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "mappingVersion": "2026-10-11-v0.1",
-  "annotationVersion": "2026-10-11-v0.1",
+  "mappingVersion": "2026-10-11-v0.2",
+  "annotationVersion": "2026-10-11-v0.2",
   "reviewStatus": "proposed",
   "sourceHashes": {
-    "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "5713024673acd0ea695d0032f78a6acbc0372c7c17a6d6fd85169bbfaefd87bf",
+    "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "9c758243e0928ad95c68b8c1768069a040c2dab2c0419e48236d7f6c9c2d6d26",
     "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "43ecd58d82c333a827a82611f1d1f595b79a92a981184fadeada58f3069ff8d9",
     "doc/course/courses_v1.json": "9a97cd17551a8f8e4218536afedecc843019f5cf4c8cad32c04d37a3fd744691",
-    "doc/design/role-rules-20261011/annotations.mjs": "830b9493f9e3ec3d98dbb5c850535c83753b94dbf976a3df20ceab5b91cfb092",
-    "doc/design/role-rules-20261011/interpret.mjs": "af9adee515eec881778293dc3d685de563e9695c97b43eec75a278dcce67044d",
-    "doc/CHARACTER_INTERPRETATION_RULES_2026-10-11.md": "55b18c9ca19711fd85935ecc78db1cd04a4ea200c28b7c8c0afddcd7c4b12db6"
+    "doc/design/role-rules-20261011/annotations.mjs": "bea3d83e5eb11d1aa7d2b21c227a1c3c5860d1f5aa675e8e5948908bff43a604",
+    "doc/design/role-rules-20261011/interpret.mjs": "3749957a8941b1511503b7d54f60f8ea12540ad00b2d5731b4a6c8861a06ee2e",
+    "doc/CHARACTER_INTERPRETATION_RULES_2026-10-11.md": "848c3e094e7a4578d99dd25f33d7fed2fa5d329a290b262782cf843271990c18"
   },
   "courseIds": [
     "course-001",
@@ -123,8 +123,8 @@
       "id": "P4",
       "name": "分析師",
       "facets": {
-        "data": "資料操作",
-        "interpretation": "分析與人文解讀"
+        "data": "資料整理與分析",
+        "interpretation": "人文解讀"
       },
       "requiredFacets": [
         "data",
@@ -136,7 +136,7 @@
       "name": "策展人",
       "facets": {
         "content": "文化或敘事內容",
-        "experience": "觀看與參與流程"
+        "experience": "表達與呈現"
       },
       "requiredFacets": [
         "content",
@@ -161,8 +161,8 @@
       "id": "P7",
       "name": "策略師",
       "facets": {
-        "culture": "文化內容與對象",
-        "strategy": "目標資源與傳播方案"
+        "culture": "文化創意構想",
+        "strategy": "目標、資源與推動規劃"
       },
       "requiredFacets": [
         "culture",
@@ -174,13 +174,12 @@
       "name": "開拓者",
       "facets": {
         "context": "地方或社群理解",
-        "joint": "共同目標",
         "action": "實踐方向",
+        "joint": "協作與共同目標（補充）",
         "reflection": "永續與影響反思（補充）"
       },
       "requiredFacets": [
         "context",
-        "joint",
         "action"
       ]
     }
@@ -203,7 +202,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 49
+          "line": 51
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -235,7 +234,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 50
+          "line": 52
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -263,7 +262,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 51
+          "line": 53
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -295,7 +294,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 52
+          "line": 54
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -323,7 +322,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 53
+          "line": 55
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -351,7 +350,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 54
+          "line": 56
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -379,7 +378,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 55
+          "line": 57
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -407,7 +406,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 56
+          "line": 58
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -439,7 +438,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 57
+          "line": 59
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -467,7 +466,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 58
+          "line": 60
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -495,7 +494,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 59
+          "line": 61
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -523,7 +522,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 60
+          "line": 62
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -555,7 +554,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 61
+          "line": 63
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -587,7 +586,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 62
+          "line": 64
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -619,7 +618,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 63
+          "line": 65
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -647,7 +646,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 64
+          "line": 66
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -675,7 +674,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 65
+          "line": 67
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -707,7 +706,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 66
+          "line": 68
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -735,7 +734,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 67
+          "line": 69
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -767,7 +766,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 68
+          "line": 70
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -799,7 +798,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 74
+          "line": 76
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -831,7 +830,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 75
+          "line": 77
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -863,7 +862,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 76
+          "line": 78
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -895,7 +894,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 77
+          "line": 79
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -923,7 +922,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 78
+          "line": 80
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -955,7 +954,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 79
+          "line": 81
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -983,7 +982,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 80
+          "line": 82
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1015,7 +1014,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 81
+          "line": 83
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1047,7 +1046,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 82
+          "line": 84
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1079,7 +1078,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 83
+          "line": 85
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1111,7 +1110,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 84
+          "line": 86
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1143,7 +1142,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 85
+          "line": 87
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1175,7 +1174,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 86
+          "line": 88
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1207,7 +1206,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 87
+          "line": 89
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1239,7 +1238,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 88
+          "line": 90
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1271,7 +1270,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 89
+          "line": 91
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1299,7 +1298,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 95
+          "line": 97
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1331,7 +1330,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 96
+          "line": 98
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1363,7 +1362,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 97
+          "line": 99
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1395,7 +1394,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 98
+          "line": 100
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1427,7 +1426,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 99
+          "line": 101
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1459,7 +1458,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 100
+          "line": 102
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1491,7 +1490,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 101
+          "line": 103
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1523,7 +1522,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 102
+          "line": 104
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1551,7 +1550,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 103
+          "line": 105
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1583,7 +1582,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 104
+          "line": 106
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1615,7 +1614,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 105
+          "line": 107
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1647,7 +1646,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 106
+          "line": 108
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1670,12 +1669,12 @@
         }
       ],
       "facetDescription": "H08 資料方法、H10 工具應用",
-      "reason": "思考人文問題適合哪些資料方法與工具。",
-      "limitations": "方法概論不能單獨當成分析實作",
+      "reason": "認識人文研究可用的資料方法與工具。",
+      "limitations": "方法概論，作為分析的基礎",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 112
+          "line": 114
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1703,11 +1702,11 @@
       ],
       "facetDescription": "H08 資料處理與分析、H02 文本詮釋",
       "reason": "從文本資料的模式回到人文解讀。",
-      "limitations": "分析流程與品質檢查仍待課綱核對",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 113
+          "line": 115
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1735,11 +1734,11 @@
       ],
       "facetDescription": "H08 資料分析、H09 空間呈現",
       "reason": "透過空間資料與地圖探索人文關係。",
-      "limitations": "不能只有漂亮地圖，須保留解讀依據",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 114
+          "line": 116
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1761,13 +1760,13 @@
           "abilityId": "H08"
         }
       ],
-      "facetDescription": "H08 內容資料整理、H09 數位呈現",
-      "reason": "整理文化內容，支援數位展覽的材料結構。",
-      "limitations": "未確認分析活動，不當分析代表課",
+      "facetDescription": "H08 內容資料整理與分析、H09 數位呈現",
+      "reason": "整理與分析文化內容，作為數位展覽的材料基礎。",
+      "limitations": "主要方向在 P5",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 115
+          "line": 117
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1782,20 +1781,24 @@
       "courseId": "course-068",
       "courseName": "古典文獻的數據化與文化IP轉譯",
       "characterId": "P4",
-      "relationType": "支援",
+      "relationType": "代表",
       "abilityFacets": [
         {
           "facetId": "data",
           "abilityId": "H08"
+        },
+        {
+          "facetId": "interpretation",
+          "abilityId": "H02"
         }
       ],
-      "facetDescription": "H08 文獻數據整理、H02 文獻理解",
-      "reason": "將古典文獻整理成可使用的數位材料。",
-      "limitations": "數據化不等於已具備分析論證",
+      "facetDescription": "H08 文獻數據整理與分析、H02 文獻理解",
+      "reason": "把古典文獻整理成數據，再回到文獻意義與轉譯。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 116
+          "line": 118
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1827,7 +1830,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 122
+          "line": 124
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1855,7 +1858,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 123
+          "line": 125
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1887,7 +1890,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 124
+          "line": 126
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1915,7 +1918,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 125
+          "line": 127
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1947,7 +1950,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 126
+          "line": 128
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1974,12 +1977,12 @@
         }
       ],
       "facetDescription": "H11 觀看體驗、H06 內容轉譯",
-      "reason": "連結主題、文化材料與觀眾的觀看方式。",
-      "limitations": "與策略師共享課程但用途不同",
+      "reason": "把主題與文化材料表達、呈現給觀眾。",
+      "limitations": "規劃面另見 P7",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 127
+          "line": 129
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2007,11 +2010,11 @@
       ],
       "facetDescription": "H11 觀看流程、H09 數位呈現",
       "reason": "把文化內容轉成有觀看動線的數位展覽。",
-      "limitations": "數位展覽不等於資料分析或 AI 產品",
+      "limitations": "資料面另見 P4",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 128
+          "line": 130
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2039,7 +2042,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 134
+          "line": 136
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2067,7 +2070,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 135
+          "line": 137
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2095,7 +2098,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 136
+          "line": 138
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2127,7 +2130,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 137
+          "line": 139
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2155,7 +2158,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 138
+          "line": 140
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2191,7 +2194,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 139
+          "line": 141
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2218,12 +2221,12 @@
         }
       ],
       "facetDescription": "H12 產業與資源、H04 文化理解",
-      "reason": "理解文化內容如何連結產業與資源。",
-      "limitations": "概論不等於完整實作策略",
+      "reason": "認識文化創意如何連結產業與資源。",
+      "limitations": "概論課",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 145
+          "line": 147
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2246,12 +2249,12 @@
         }
       ],
       "facetDescription": "H06 文化轉譯、H04 意義理解",
-      "reason": "為企劃保留文化意義與表達方向。",
-      "limitations": "無 H12，不單獨視為策略方案",
+      "reason": "為文化創意找到有意義的表達方向。",
+      "limitations": "無 H12，提供創意面",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 146
+          "line": 148
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2278,12 +2281,12 @@
         }
       ],
       "facetDescription": "H12 目標與資源、H13 分工",
-      "reason": "為文化活動安排目標、資源與執行合作。",
-      "limitations": "觀眾體驗另見 P5，不推論地方共創",
+      "reason": "為文化活動發想主題，並規劃目標、資源與合作。",
+      "limitations": "呈現面另見 P5",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 147
+          "line": 149
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2310,12 +2313,12 @@
         }
       ],
       "facetDescription": "H12 刊物企劃、H06 對象轉譯",
-      "reason": "連結刊物對象、內容方向與製作安排。",
-      "limitations": "理解引導另見 P3，不預設商業營運",
+      "reason": "為刊物構想內容方向，並規劃對象與製作安排。",
+      "limitations": "轉譯面另見 P3",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 148
+          "line": 150
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2342,12 +2345,12 @@
         }
       ],
       "facetDescription": "H12 品牌傳播、H05 故事",
-      "reason": "為文化故事設定品牌方向與溝通對象。",
-      "limitations": "不以行銷取代文化脈絡",
+      "reason": "從文化故事發想品牌，規劃溝通對象與傳播方式。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 149
+          "line": 151
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2374,12 +2377,12 @@
         }
       ],
       "facetDescription": "H12 策展目標、H04 文化理解",
-      "reason": "支持策展主題與對象的整體規劃。",
-      "limitations": "本課 H12 是輔助，不假定資源配置深度",
+      "reason": "為策展主題與對象做整體規劃。",
+      "limitations": "本課主要方向在 P5",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 150
+          "line": 152
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2406,12 +2409,12 @@
         }
       ],
       "facetDescription": "H12 傳播路徑、H06 價值轉譯",
-      "reason": "思考文化資產價值如何觸及不同公眾。",
-      "limitations": "不預設完整品牌或活動方案",
+      "reason": "規劃文化資產的價值如何觸及不同公眾。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 151
+          "line": 153
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2438,12 +2441,12 @@
         }
       ],
       "facetDescription": "H12 資源與組織、H13 協作安排",
-      "reason": "理解文化事業如何配置資源與組織方案。",
-      "limitations": "代表策略視角，不等於實際經營經驗",
+      "reason": "規劃文化事業的資源與組織方式。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 152
+          "line": 154
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2467,11 +2470,11 @@
       ],
       "facetDescription": "H03 地方觀察、H04 空間文化",
       "reason": "理解地方生活、空間與人的關係。",
-      "limitations": "不等於地方行動",
+      "limitations": "地方理解的基礎",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 158
+          "line": 160
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2502,12 +2505,12 @@
         }
       ],
       "facetDescription": "H03 地方需求、H09 數位敘事、H13 合作方向",
-      "reason": "從地方理解發展數位故事與合作構想。",
-      "limitations": "H13 是輔助；是否共同決策與執行待確認",
+      "reason": "從地方需求出發，以數位故事推動地方創生。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 159
+          "line": 161
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2530,12 +2533,12 @@
         }
       ],
       "facetDescription": "H03 訪談理解、H01 問題界定",
-      "reason": "先理解現場與人的需要，再思考如何回應。",
-      "limitations": "田野研究不直接證成共創",
+      "reason": "走進現場，理解人與地方的需要。",
+      "limitations": "田野方法，作為支援",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 160
+          "line": 162
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2558,12 +2561,12 @@
         }
       ],
       "facetDescription": "H03 地方理解、H12 遊程方案",
-      "reason": "讓地方理解連結旅遊文化方案。",
-      "limitations": "無 H13，不預設社群參與共創",
+      "reason": "讓地方文化連結旅行與遊程方案。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 161
+          "line": 163
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2583,15 +2586,19 @@
         {
           "facetId": "context",
           "abilityId": "H03"
+        },
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
         }
       ],
       "facetDescription": "H04 文化理解、H03 參與觀察、H13 合作可能",
-      "reason": "理解祭典脈絡與文化參與者的立場。",
-      "limitations": "合作深度依實際活動確認，不以參觀代替共創",
+      "reason": "理解祭典脈絡，與文化參與者一起實踐。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 162
+          "line": 164
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2606,20 +2613,24 @@
       "courseId": "course-024",
       "courseName": "人文議題探索與設計",
       "characterId": "P8",
-      "relationType": "支援",
+      "relationType": "代表",
       "abilityFacets": [
         {
           "facetId": "context",
           "abilityId": "H03"
+        },
+        {
+          "facetId": "action",
+          "abilityId": "H01"
         }
       ],
       "facetDescription": "H01 議題界定、H03 需求理解",
-      "reason": "把現場需求轉成有依據的設計構想。",
-      "limitations": "無 H13，不預設合作落實",
+      "reason": "以社會設計的方式，把現場需求轉成可行動的構想。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 163
+          "line": 165
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2634,20 +2645,60 @@
       "courseId": "course-036",
       "courseName": "人文創新設計專題",
       "characterId": "P8",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        },
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
+        },
+        {
+          "facetId": "action",
+          "abilityId": "H01"
+        }
+      ],
+      "facetDescription": "H13 共同成果、H01 問題整合、H03 地方需求、H14 修訂",
+      "reason": "和夥伴一起把社會議題做成可實踐的設計方案。",
+      "limitations": "無",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 166
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-037",
+      "courseName": "出版編輯與地方刊物",
+      "characterId": "P8",
       "relationType": "支援",
       "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H06"
+        },
         {
           "facetId": "joint",
           "abilityId": "H13"
         }
       ],
-      "facetDescription": "H13 共同成果、H01 問題整合、H14 修訂",
-      "reason": "整合不同工作，形成可修正的共同方案。",
-      "limitations": "未知場域，不預設地方社群參與",
+      "facetDescription": "H06 地方內容轉譯、H13 合作編輯",
+      "reason": "和地方一起編出屬於社區的刊物。",
+      "limitations": "主要方向在 P3／P7",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 164
+          "line": 167
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2670,12 +2721,12 @@
         }
       ],
       "facetDescription": "H01 永續問題、H04 價值比較、H14 評估",
-      "reason": "檢視日常方案對環境與社會的影響。",
-      "limitations": "沒有協作證據，不單獨當地方行動",
+      "reason": "檢視方案對環境與社會的影響。",
+      "limitations": "補充永續反思",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 165
+          "line": 168
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2695,15 +2746,19 @@
         {
           "facetId": "context",
           "abilityId": "H04"
+        },
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
         }
       ],
       "facetDescription": "H04 社群觀點、H13 共同方向",
-      "reason": "理解思想如何與社群對話及實踐連結。",
-      "limitations": "數位社群不等於地方共創，執行方式待確認",
+      "reason": "讓思想走進社群，與人對話並實踐。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 166
+          "line": 169
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2721,6 +2776,10 @@
       "relationType": "代表",
       "abilityFacets": [
         {
+          "facetId": "context",
+          "abilityId": "H04"
+        },
+        {
           "facetId": "joint",
           "abilityId": "H13"
         },
@@ -2730,12 +2789,12 @@
         }
       ],
       "facetDescription": "H01 社會問題、H04 人文觀點、H13 共同目標",
-      "reason": "從人文關懷形成社會實踐與合作構想。",
-      "limitations": "不預設地方場域或已完成行動",
+      "reason": "從人文關懷出發，投入社會實踐。",
+      "limitations": "無",
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 167
+          "line": 170
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2751,7 +2810,7 @@
     {
       "courseId": "course-050",
       "courseName": "實務實習",
-      "pendingReason": "實際任務、對象、產出及回饋；不把 H07 一律當教學",
+      "pendingReason": "整合性課程，把前面所學帶進實際場域",
       "abilityIds": [
         "H13",
         "H14",
@@ -2761,7 +2820,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 175
+          "line": 178
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2774,7 +2833,7 @@
     {
       "courseId": "course-059",
       "courseName": "畢業專題製作(一)",
-      "pendingReason": "專題問題、合作情境與方法；不按課名加入所有角色",
+      "pendingReason": "整合性課程，綜合運用四年所學",
       "abilityIds": [
         "H01",
         "H13",
@@ -2784,7 +2843,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 176
+          "line": 179
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2797,7 +2856,7 @@
     {
       "courseId": "course-066",
       "courseName": "畢業專題製作(二)",
-      "pendingReason": "成果形式、具體專業工作與評估；不自動沿用未知題目",
+      "pendingReason": "整合性課程，完成並呈現專題成果",
       "abilityIds": [
         "H13",
         "H14",
@@ -2807,7 +2866,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 177
+          "line": 180
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"

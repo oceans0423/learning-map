@@ -63,7 +63,7 @@ for (const line of document.split(/\r?\n/)) {
     assert.ok(!pending.has(id));
     pending.add(id);
     for (const ability of cells[2].match(/H\d{2}/g) ?? []) assert.ok(allowedAbilities.get(id).has(ability));
-    assert.equal(cells[3], '不預配任何角色');
+    assert.equal(cells[3], '不另配角色');
     assert.ok(cells[4]);
   }
 }
@@ -75,7 +75,9 @@ for (let number = 1; number <= 8; number++) {
 }
 assert.ok(!relations.some(row => pending.has(row.id)));
 assert.ok(!relations.some(row => row.role === 'P4' && row.id === 'course-063'));
-for (const id of ['course-049', 'course-068']) assert.equal(relations.find(row => row.role === 'P4' && row.id === id)?.type, '支援');
+assert.equal(relations.find(row => row.role === 'P4' && row.id === 'course-049')?.type, '支援');
+assert.equal(relations.find(row => row.role === 'P4' && row.id === 'course-068')?.type, '代表');
+for (const id of ['course-010', 'course-024', 'course-036', 'course-064']) assert.equal(relations.find(row => row.role === 'P8' && row.id === id)?.type, '代表');
 for (const id of ['course-004', 'course-055']) assert.match(relations.find(row => row.role === 'P3' && row.id === id)?.limitations ?? '', /教學|學習引導/);
 for (const id of ['course-005', 'course-008', 'course-036']) assert.equal(relations.find(row => row.role === 'P6' && row.id === id)?.type, '支援');
 console.log(JSON.stringify({status: 'passed', courses: covered.size, roles: foundRoles.size, relationships: relations.length, pending: [...pending], byRole: roleNames.map((name, i) => ({id: `P${i + 1}`, name, representative: relations.filter(row => row.role === `P${i + 1}` && row.type === '代表').length, supporting: relations.filter(row => row.role === `P${i + 1}` && row.type === '支援').length})), canonicalSha256: hash(canonical), note: 'Structural checks only; no role inference, scoring, syllabus verification or UI changes.'}, null, 2));

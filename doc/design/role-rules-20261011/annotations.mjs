@@ -4,12 +4,12 @@ export const roleDefinitions = [
   ['P1', '探索者', {question:'問題或解釋意圖', material:'文本或田野材料'}],
   ['P2', '創作人', {theme:'材料或創作主題', expression:'作品表達'}],
   ['P3', '引路人', {content:'內容理解', audience:'讀者轉譯或學習引導'}],
-  ['P4', '分析師', {data:'資料操作', interpretation:'分析與人文解讀'}],
-  ['P5', '策展人', {content:'文化或敘事內容', experience:'觀看與參與流程'}],
+  ['P4', '分析師', {data:'資料整理與分析', interpretation:'人文解讀'}],
+  ['P5', '策展人', {content:'文化或敘事內容', experience:'表達與呈現'}],
   ['P6', '造物者', {need:'人的需求', making:'工具與可測試方案', review:'檢查與修訂'}],
-  ['P7', '策略師', {culture:'文化內容與對象', strategy:'目標資源與傳播方案'}],
-  ['P8', '開拓者', {context:'地方或社群理解', joint:'共同目標', action:'實踐方向', reflection:'永續與影響反思（補充）'}],
-].map(([id,name,facets])=>({id,name,facets,requiredFacets:Object.keys(facets).filter(key=>key!=='reflection')}));
+  ['P7', '策略師', {culture:'文化創意構想', strategy:'目標、資源與推動規劃'}],
+  ['P8', '開拓者', {context:'地方或社群理解', action:'實踐方向', joint:'協作與共同目標（補充）', reflection:'永續與影響反思（補充）'}],
+].map(([id,name,facets])=>({id,name,facets,requiredFacets:Object.keys(facets).filter(key=>!['joint','reflection'].includes(key))}));
 
 // course number : facet @ existing ability. Each row is manually scoped to its role.
 // A representative relationship is necessary but not sufficient: all facets must have evidence.
@@ -43,7 +43,7 @@ export const annotations = {
  ],
  P4: [
   '008:data@H08', '019:data@H08,interpretation@H02',
-  '040:data@H08,interpretation@H08', '049:data@H08', '068:data@H08',
+  '040:data@H08,interpretation@H08', '049:data@H08', '068:data@H08,interpretation@H02',
  ],
  P5: [
   '015:content@H05,experience@H11', '016:content@H01',
@@ -64,8 +64,9 @@ export const annotations = {
  ],
  P8: [
   '002:context@H03', '010:context@H03,joint@H13,action@H09',
-  '013:context@H03', '015:context@H03', '018:context@H03',
-  '024:context@H03', '036:joint@H13', '039:reflection@H14',
-  '063:context@H04', '064:joint@H13,action@H01',
+  '013:context@H03', '015:context@H03', '018:context@H03,joint@H13',
+  '024:context@H03,action@H01', '036:context@H03,joint@H13,action@H01',
+  '037:context@H06,joint@H13', '039:reflection@H14',
+  '063:context@H04,joint@H13', '064:context@H04,joint@H13,action@H01',
  ],
 };

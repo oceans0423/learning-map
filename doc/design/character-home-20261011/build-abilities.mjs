@@ -16,7 +16,7 @@ for(const line of document.split(/\r?\n/).filter(line=>/^\| course-\d{3} \|/.tes
  const course=courses.find(c=>c.id===id);assert.ok(course,id);assert.equal(name,course.name);assert.ok(!mappings[id]);
  const primary=core.match(/H\d{2}/g)||[],secondary=support.match(/H\d{2}/g)||[];
  for(const ability of [...primary,...secondary])assert.ok(abilities[ability],ability);
- mappings[id]={primary,secondary,rationale};
+ mappings[id]={primary,secondary,rationale:rationale.replace(/，不預設[^。；]*/g,'')};
 }
 assert.equal(Object.keys(mappings).length,69);
 await writeFile(new URL('./ability-data.json',import.meta.url),JSON.stringify({source:'doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md',status:'department_course_mapping_proposal',abilities,mappings},null,2)+'\n');

@@ -5,10 +5,10 @@ export const roles=[
  ['創作人','把想像變成作品','以文字、影像與跨媒介敘事，把觀察與想像轉成有觀點、能與人對話的作品。'],
  ['引路人','讓知識更容易抵達','理解不同對象的需求，把人文知識轉成清楚的內容與學習引導，讓更多人走進理解。'],
  ['分析師','在線索之間找出關聯','整理人文資料、比較不同證據，運用分析與詮釋提出有依據的解釋。'],
- ['策展人','把觀點變成一段體驗','連結內容、空間與觀眾，透過展覽與互動體驗，讓文化議題被看見、被感受。'],
+ ['策展人','把文化變成看得見的呈現','把文化內容轉成展覽、影音與互動體驗，用表達與呈現，讓議題被看見、被感受。'],
  ['造物者','讓點子有可以試的形狀','從人的需求出發，運用 AI、數位工具與原型實作，把想法變成可測試、可修訂的方案。'],
- ['策略師','為文化找到行動方向','理解文化價值與溝通對象，整合品牌、活動與傳播策略，讓提案有清楚的方向。'],
- ['開拓者','和地方一起開出新路','走進地方與社群，在跨域合作、永續議題與實際行動中，共同探索新的可能。']
+ ['策略師','從創意走向計畫','從文化創意發想出發，規劃目標、資源與推動方式，讓品牌、活動與提案走向實現。'],
+ ['開拓者','和地方一起開出新路','走進地方與社群，透過地方創生、社區參與與社會設計，和大家一起開創新的可能。']
 ];
 const $=s=>document.querySelector(s);
 const track=$('.domain-track'),roleTrack=$('.role-track'),dialog=$('#preview');
@@ -37,7 +37,7 @@ track.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTi
 track.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();select(e.key==='Home'?0:e.key==='End'?3:selected+(e.key==='ArrowRight'?1:-1),true);track.children[selected].focus({preventScroll:true});});
 mobile.addEventListener('change',()=>select(selected,true));
 function openPreview(source,label,html){opener=source;$('#dialog-label').textContent=label;$('#dialog-content').innerHTML=html;if(!dialog.open)dialog.showModal();$('#close-dialog').focus();}
-roleTrack.addEventListener('click',e=>{const button=e.target.closest('[data-role]');if(!button)return;const [name,tag,description]=roles[Number(button.dataset.role)];openPreview(button,'八種專業視角',`<div class="role-detail"><img src="${picture(name)}" alt="${name}人物造型"><div><h2 id="dialog-title">${name}</h2><p>${tag}</p><p>${description}</p></div></div><p class="dialog-note">這是一種可以探索的專業方向，不是固定的人格或職業判定。專業角色與課程的配對將在後續階段呈現。</p>`);});
+roleTrack.addEventListener('click',e=>{const button=e.target.closest('[data-role]');if(!button)return;const [name,tag,description]=roles[Number(button.dataset.role)];openPreview(button,'八種專業視角',`<div class="role-detail"><img src="${picture(name)}" alt="${name}人物造型"><div><h2 id="dialog-title">${name}</h2><p>${tag}</p><p>${description}</p></div></div><p class="dialog-note">收藏感興趣的課程後，可以在「我的探索」看看你的選擇連向哪些角色。</p>`);});
 $('#close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))dialog.close();});
 dialog.addEventListener('close',()=>{opener?.focus({preventScroll:true});});

@@ -36,7 +36,7 @@ function renderCollectionSummary(){
   const related=saved.filter(c=>{const m=abilityData.mappings[c.id];return m.primary.includes(id)||m.secondary.includes(id)});if(!related.length)return '';
   return `<details class="interest-direction"><summary><span>${escapeHTML(a.name)}</span><small>${related.length} 門課程連結</small></summary><p>${escapeHTML(a.definition)}</p><ul>${related.map(c=>`<li><button data-course="${c.id}" aria-haspopup="dialog">${escapeHTML(c.name)} ↗</button><span>${abilityData.mappings[c.id].primary.includes(id)?'主要方向':'支援方向'}</span></li>`).join('')}</ul></details>`;
  }).join(''):'<p class="ability-unavailable">能力連結資料暫時無法讀取；收藏課程與領域仍可正常查看。</p>';
- box.innerHTML=`<div class="summary-heading"><p class="eyebrow">A FEW THINGS YOU ARE CURIOUS ABOUT</p><h2>這些選擇，連向哪些方向？</h2><p>你留下了 ${saved.length} 門想進一步認識的課。這是此刻的好奇，不是固定的分類。</p><a class="text-link" href="#results-title">直接查看收藏的課程 ↓</a></div><div class="direction-grid">${domainHTML}</div><div class="interest-heading"><h2>你想探索的能力方向</h2><p>展開看看，是哪些課程帶來這個連結。門數只表示課程關聯，不是能力分數，也不代表熟練程度。</p></div><div class="interest-list">${rows}</div><p class="interest-note">逐課能力連結為學系課程對應規劃；沒有角色排名、百分比或人格判定。通用能力出現較多，也不表示它更符合你的個人特質。</p>`;
+ box.innerHTML=`<div class="summary-heading"><p class="eyebrow">A FEW THINGS YOU ARE CURIOUS ABOUT</p><h2>這些選擇，連向哪些方向？</h2><p>你留下了 ${saved.length} 門想進一步認識的課。</p><a class="text-link" href="#results-title">直接查看收藏的課程 ↓</a></div><div class="direction-grid">${domainHTML}</div><div class="interest-heading"><h2>你想探索的能力方向</h2><p>展開看看，是哪些課程帶來這個連結。</p></div><div class="interest-list">${rows}</div>`;
 }
 function render(){
  syncURL();renderIntro();syncSaveUI();if(!courses)return;
@@ -60,7 +60,7 @@ function abilityBlock(id){const a=abilityData.abilities[id];return `<div class="
 function openCourse(e){
  const button=e.target.closest('[data-course]');if(!button)return;
  const c=courses.find(c=>c.id===button.dataset.course),d=domainFor(c),mapping=abilityData?.mappings[c.id];opener=button;
- $('#course-content').innerHTML=`<div class="course-heading"><img src="assets/${d.name}.webp" alt=""><div><p>${d.title}</p><h2 id="course-title">${escapeHTML(c.name)}</h2></div></div><dl class="facts"><div><dt>規劃年級</dt><dd>${labels[c.year-1]}年級</dd></div><div><dt>規劃學期</dt><dd>第 ${c.semester} 學期</dd></div><div><dt>課程學分</dt><dd>${c.credits} 學分</dd></div><div><dt>課程性質</dt><dd>${c.type==='required'?'必修':'選修'}</dd></div></dl><p class="detail-offering">${escapeHTML(c.offeringNote)} · ${escapeHTML(c.sourceVersion)}</p><section class="ability-section" aria-labelledby="ability-title"><h3 id="ability-title">這門課的能力連結</h3><p class="proposal-label">學系課程對應規劃 · 非能力測驗</p>${mapping?`${mapping.primary.map(abilityBlock).join('')}<p class="mapping-rationale">${escapeHTML(mapping.rationale)}</p><details><summary>看看其他支援方向（${mapping.secondary.length} 項）</summary>${mapping.secondary.map(abilityBlock).join('')}</details>`:'<p>能力對照資料暫時無法讀取，課程基本資訊仍可正常查看。</p>'}<p class="detail-disclaimer">能力名稱來自已確認的學系轉譯架構；逐課連結及成果例為規劃建議，並非正式課綱或既定作業。選擇課程代表探索興趣，不表示已具備這些能力。</p></section>`;
+ $('#course-content').innerHTML=`<div class="course-heading"><img src="assets/${d.name}.webp" alt=""><div><p>${d.title}</p><h2 id="course-title">${escapeHTML(c.name)}</h2></div></div><dl class="facts"><div><dt>規劃年級</dt><dd>${labels[c.year-1]}年級</dd></div><div><dt>規劃學期</dt><dd>第 ${c.semester} 學期</dd></div><div><dt>課程學分</dt><dd>${c.credits} 學分</dd></div><div><dt>課程性質</dt><dd>${c.type==='required'?'必修':'選修'}</dd></div></dl><p class="detail-offering">${escapeHTML(c.offeringNote)} · ${escapeHTML(c.sourceVersion)}</p><section class="ability-section" aria-labelledby="ability-title"><h3 id="ability-title">這門課的能力連結</h3>${mapping?`${mapping.primary.map(abilityBlock).join('')}<p class="mapping-rationale">${escapeHTML(mapping.rationale)}</p><details><summary>看看其他支援方向（${mapping.secondary.length} 項）</summary>${mapping.secondary.map(abilityBlock).join('')}</details>`:'<p>能力對照資料暫時無法讀取，課程基本資訊仍可正常查看。</p>'}</section>`;
  $('.detail-offering').insertAdjacentHTML('afterend',`<div class="detail-save-row">${saveButton(c)}<p>想再看一眼？把這門課留在「我的探索」。</p></div><p id="detail-save-feedback" class="detail-save-feedback" role="status" aria-live="polite"></p>`);
  $('#course-dialog').showModal();$('#close-course').focus();
 }
@@ -99,7 +99,7 @@ if(savedView){
  document.title='我的探索｜人文跨域與應用學系';document.body.classList.add('saved-view');
  $('#collection-link').setAttribute('aria-current','page');$('.filter-panel').hidden=true;
  $('#catalog-title').innerHTML='留下一點好奇，<br>慢慢長出方向<span class="title-dot">．</span>';
- $('.catalog-intro .eyebrow').textContent='MY EXPLORATION';$('.catalog-lead').innerHTML='你不必現在就決定未來。<br>先從想了解的課程，看見自己的探索路徑。';
+ $('.catalog-intro .eyebrow').textContent='MY EXPLORATION';$('.catalog-lead').innerHTML='從想了解的課程開始，<br>看見自己的探索路徑。';
  $('#results-title').innerHTML='收藏的課程 <span id="result-number">—</span>';
 }else $('#browse-link').setAttribute('aria-current','page');
 if(savedView)mountRoleResults({getSavedIds,subscribeCollection,isCourseReady:()=>Boolean(courses)});

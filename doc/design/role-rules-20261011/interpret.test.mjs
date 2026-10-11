@@ -12,7 +12,7 @@ const expected=[
  [[5,30,51],['P6']], [[38,60],['P7']], [[10,36,39,64],['P8']],
  [[13,31,32],['P1','P2']], [[17,38,42,49],['P5','P7']],
  [[41,42,49],['P2','P5']], [[1,11,21,35],[]], [[4,55],[]],
- [[49,68],['P5']], [[63],[]], [[50,59,66],[]], [[51],['P6']],
+ [[49,68],['P4','P5']], [[63],[]], [[50,59,66],[]], [[51],['P6']],
  [[14,19,40,45,51],['P2','P4','P6']], [[],[]],
 ];
 const document=await readFile(new URL('../../CHARACTER_INTERPRETATION_RULES_2026-10-11.md',import.meta.url),'utf8');
@@ -39,12 +39,11 @@ test('removal removes creative direction and all removed evidence',()=>{
 test('background course volume cannot displace an established direction',()=>{
  assert.deepEqual(directionIds(run(ids(42,49,1,11,21,35))),['P5']);
 });
-test('all courses retain all eight roles and three pending courses, without rankings',()=>{
+test('all courses retain all eight roles and three integrative courses, without rankings',()=>{
  const result=run(data.courseIds);
  assert.deepEqual(directionIds(result),data.roles.map(role=>role.id));
  assert.equal(result.pending.length,3);
  assert.equal(result.ordering,'fixed_role_id_not_rank');
- assert.match(result.directions.find(role=>role.characterId==='P8').scopeNote,/未證實/);
 });
 test('single-course result explicitly records concentrated evidence',()=>{
  assert.equal(run(ids(51)).directions[0].singleCourseEvidence,true);

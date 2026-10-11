@@ -1,5 +1,5 @@
 // Pure, deterministic local interpreter. No storage, network, DOM, randomness or scoring.
-export const RULE_VERSION = '2026-10-11-v0.1';
+export const RULE_VERSION = '2026-10-11-v0.2';
 export function interpretCollection(input,data) {
  if (!Array.isArray(input)) throw new TypeError('收藏必須是課程 ID 陣列');
  const validIds=new Set(data.courseIds);
@@ -17,8 +17,7 @@ export function interpretCollection(input,data) {
   const result={characterId:role.id,name:role.name,evidence,
    facetEvidence:role.requiredFacets.map(facetId=>({facetId,label:role.facets[facetId],sources:evidence.flatMap(row=>row.abilityFacets.filter(f=>f.facetId===facetId).map(f=>({courseId:row.courseId,abilityId:f.abilityId})))})),
    missingFacets,hasRepresentative,singleCourseEvidence:evidence.length===1,
-   limitations:[...new Set(evidence.map(row=>row.limitations))],
-   ...(role.id==='P8'?{scopeNote:'僅呈現地方與社會實踐的探索方向，未證實地方共同決策與執行訓練。'}:{})};
+   limitations:[...new Set(evidence.map(row=>row.limitations))]};
   (candidate?directions:partialDirections).push(result);
  }
  return {ruleVersion:RULE_VERSION,mappingVersion:data.mappingVersion,annotationVersion:data.annotationVersion,
