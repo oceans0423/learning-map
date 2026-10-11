@@ -6,8 +6,9 @@ const {courses}=JSON.parse(await readFile(new URL('../../course/courses_v1.json'
 const abilities={};
 for(const match of document.matchAll(/### (H\d{2})｜([^\r\n]+)\r?\n([\s\S]*?)(?=\r?\n### |\r?\n## |$)/g)){
  const [,id,name,body]=match;
- const definition=body.match(/- 定義：([^\r\n]+)/)?.[1];assert.ok(definition,id);
- abilities[id]={name,definition};
+ const field=label=>body.match(new RegExp(`- ${label}：([^\\r\\n]+)`))?.[1];
+ const definition=field('定義'),behavior=field('核心行為'),outputs=field('成果例');assert.ok(definition&&behavior&&outputs,id);
+ abilities[id]={name,definition,behavior,outputs};
 }
 assert.equal(Object.keys(abilities).length,14);
 const mappings={};

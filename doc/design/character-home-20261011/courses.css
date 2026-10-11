@@ -4,3 +4,15 @@
 .catalog-page .masthead{min-height:96px}.catalog-intro{padding-block:28px}.catalog-intro h1{font-size:44px;line-height:1.25;margin-block:10px 14px}.catalog-lead{font-size:14px;line-height:1.8}.mini-crew{height:155px}.filter-panel{padding-block:18px 22px}.filter-heading{margin-bottom:12px}.domain-filter{margin-block:18px}.domain-option{min-height:60px;padding-block:9px}.results-section{padding-top:28px}
 @media(max-width:700px){.catalog-page .masthead{min-height:86px}.catalog-intro{padding-block:24px}.catalog-intro h1{font-size:30px;line-height:1.35}.catalog-lead{font-size:12px}.filter-heading .index{display:inline;margin-right:8px}.filter-heading h2{max-width:none;font-size:14px}.filter-heading .text-button{white-space:nowrap;font-size:11px}.domain-option small{display:none}.domain-option{min-height:52px}.domain-option strong{font-size:12px}.domain-filter{margin-block:16px}.filter-panel{padding-block:16px 20px}.catalog-intro .eyebrow{font-size:9px}.result-status{margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){.course-card{transition:none}}
+
+/* Course–ability correspondence (UI-08-028, UI-16-009, UI-05-014) */
+.course-card .course-domain{margin-bottom:12px}
+.card-abilities{margin:0 0 18px}
+.ability-group{font-size:13px;letter-spacing:.08em;color:var(--green);margin:22px 0 4px}
+.ability-block dl{display:grid;gap:6px;margin-top:10px}
+.ability-block dl div{display:grid;grid-template-columns:5.5em 1fr;gap:8px;font-size:13px;line-height:1.8}
+.ability-block dt{color:var(--green);font-weight:600}
+.ability-block dd{margin:0;color:var(--muted)}
+.mapping-rationale{margin-top:14px}
+.filter-heading .button-secondary{flex:none}
+@media(max-width:700px){.ability-block dl div{grid-template-columns:1fr;gap:0}}

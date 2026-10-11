@@ -37,7 +37,35 @@ track.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTi
 track.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();select(e.key==='Home'?0:e.key==='End'?3:selected+(e.key==='ArrowRight'?1:-1),true);track.children[selected].focus({preventScroll:true});});
 mobile.addEventListener('change',()=>select(selected,true));
 function openPreview(source,label,html){opener=source;$('#dialog-label').textContent=label;$('#dialog-content').innerHTML=html;if(!dialog.open)dialog.showModal();$('#close-dialog').focus();}
-roleTrack.addEventListener('click',e=>{const button=e.target.closest('[data-role]');if(!button)return;const [name,tag,description]=roles[Number(button.dataset.role)];openPreview(button,'八種專業視角',`<div class="role-detail"><img src="${picture(name)}" alt="${name}人物造型"><div><h2 id="dialog-title">${name}</h2><p>${tag}</p><p>${description}</p></div></div><p class="dialog-note">收藏感興趣的課程後，可以在「我的探索」看看你的選擇連向哪些角色。</p>`);});
+// Role course combinations come from the role mapping; abilities show names only.
+let comboData=null;
+async function loadComboData(){
+ if(comboData)return comboData;
+ const get=async url=>{const r=await fetch(url);if(!r.ok)throw Error(url);return r.json();};
+ const [roleData,abilityData,courseData]=await Promise.all([get('role-data.json'),get('ability-data.json'),get('../../course/courses_v1.json')]);
+ if(roleData.roles?.length!==8||!abilityData.abilities||courseData.courses?.length!==69)throw Error('Invalid combo data');
+ comboData={roleData,abilityData,courseById:new Map(courseData.courses.map(c=>[c.id,c]))};return comboData;
+}
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function comboHTML(index){
+ const {roleData,abilityData,courseById}=comboData,roleId=`P${index+1}`;
+ const rows=roleData.relations.filter(r=>r.characterId===roleId).map(r=>({...r,course:courseById.get(r.courseId)})).sort((a,b)=>a.course.year-b.course.year||a.course.semester-b.course.semester||a.courseId.localeCompare(b.courseId));
+ const core=rows.filter(r=>r.relationType==='代表'),extra=rows.filter(r=>r.relationType==='支援');
+ const abilityNames=[...new Set(core.flatMap(r=>r.abilityFacets.map(f=>f.abilityId)))].slice(0,4).map(id=>abilityData.abilities[id].name);
+ const chip=r=>`<li><a class="course-chip" href="courses.html?course=${r.courseId}"><strong><span>${r.course.year}年級${r.course.semester===1?'上':'下'}</span>${esc(r.course.name)}</strong><ul class="ability-tags">${abilityData.mappings[r.courseId].primary.map(a=>`<li>${esc(abilityData.abilities[a].name)}</li>`).join('')}</ul></a></li>`;
+ const list=items=>`<ul class="course-list">${items.map(chip).join('')}</ul>`;
+ return `<section class="role-combo" aria-label="會用到的能力"><h3>這個角色會用到的能力</h3><ul class="ability-tags">${abilityNames.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></section>
+<section class="role-combo" aria-label="核心課程"><h3>核心課程<small>${core.length} 門</small></h3>${list(core.slice(0,6))}${core.length>6?`<details><summary>再看 ${core.length-6} 門核心課程</summary>${list(core.slice(6))}</details>`:''}
+${extra.length?`<details><summary>延伸課程（${extra.length} 門）</summary>${list(extra)}</details>`:''}</section>`;
+}
+roleTrack.addEventListener('click',async e=>{
+ const button=e.target.closest('[data-role]');if(!button)return;const index=Number(button.dataset.role);const [name,tag,description]=roles[index];
+ const shell=body=>`<div class="role-detail"><img src="${picture(name)}" alt="${name}人物造型"><div><h2 id="dialog-title">${name}</h2><p>${tag}</p><p>${description}</p></div></div><div id="role-combo-slot">${body}</div><div class="dialog-actions"><a class="primary" href="courses.html">探索全部課程 <span aria-hidden="true">↗</span></a><a class="button-secondary" href="courses.html?view=saved">我的探索 ↗</a></div>`;
+ openPreview(button,'八種專業視角',shell(comboData?comboHTML(index):'<p class="role-combo-status" role="status">正在整理課程組合…</p>'));
+ if(comboData)return;
+ try{await loadComboData();if(dialog.open&&opener===button)$('#role-combo-slot').innerHTML=comboHTML(index);}
+ catch{if(dialog.open&&opener===button)$('#role-combo-slot').innerHTML='<p class="role-combo-status" role="status">課程組合暫時無法讀取，請重新開啟再試一次。</p>';}
+});
 $('#close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))dialog.close();});
 dialog.addEventListener('close',()=>{opener?.focus({preventScroll:true});});
