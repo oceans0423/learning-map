@@ -1,0 +1,102 @@
+[
+  {
+    "source": {
+      "name": "humanities-thinking.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1371025,
+      "sha256": "770c9f06136fa01d92921bb0070c066b363373d358baeafd9a2c12cb231b6e20"
+    },
+    "outputs": [
+      {
+        "name": "humanities-thinking-384.webp",
+        "width": 384,
+        "height": 384,
+        "bytes": 6858,
+        "sha256": "0855040461fdc9f0355237f7e30f41e63ee4f802028aeabe47f2bc84d6bae367"
+      },
+      {
+        "name": "humanities-thinking-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 16464,
+        "sha256": "d9a0f00506261b707cc0c0d0fe27e8646ecb4dc8af5902679fabb73d8c3360c1"
+      }
+    ]
+  },
+  {
+    "source": {
+      "name": "narrative-creation.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1450851,
+      "sha256": "ee9995410ea688e3b992e8743ea7cbd932c6d53656343651ba75856004844e4b"
+    },
+    "outputs": [
+      {
+        "name": "narrative-creation-384.webp",
+        "width": 384,
+        "height": 384,
+        "bytes": 11476,
+        "sha256": "db97a4a4e7b68cb4efd2794ca197ace34f8730d8bd4302b6284aa7772da35277"
+      },
+      {
+        "name": "narrative-creation-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 28092,
+        "sha256": "7342bbd7c7024f2ffbb3d7f7dec028fce134710d363c99491467b2f3a23fbac2"
+      }
+    ]
+  },
+  {
+    "source": {
+      "name": "digital-humanities.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1578379,
+      "sha256": "93890ec82fc396394b0e0be22e72e5d75bbd90fbf7627ed74aaa6ed298d66471"
+    },
+    "outputs": [
+      {
+        "name": "digital-humanities-384.webp",
+        "width": 384,
+        "height": 384,
+        "bytes": 10858,
+        "sha256": "8d26c6c2c791c54c930d74cd169d7771c77594a9626b41712eb5e15ad8defa17"
+      },
+      {
+        "name": "digital-humanities-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 25710,
+        "sha256": "4e92964ba05e47e07a63c85649e5f6b6f3a8b918a0072e105d143c83c131e8db"
+      }
+    ]
+  },
+  {
+    "source": {
+      "name": "cultural-social-design.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1436057,
+      "sha256": "f19478eede0856272e2a585235e0acbd1352674e19c511e51c767afcdd5ee083"
+    },
+    "outputs": [
+      {
+        "name": "cultural-social-design-384.webp",
+        "width": 384,
+        "height": 384,
+        "bytes": 12570,
+        "sha256": "facb6f1b6119ad73e730828e5a544aa6ae6edc899c29a5e6d955ab835de51f65"
+      },
+      {
+        "name": "cultural-social-design-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 32772,
+        "sha256": "b52674675fe01569df60a1648c176eaa7cf4bf0c716d9f972617584c7a821600"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+import type { CourseAreaId } from './courseAreas'
+
+/** Decorative homepage artwork; independent of the approved curriculum metadata. */
+export const AREA_ILLUSTRATIONS = {
+  thinking: 'humanities-thinking',
+  narrative: 'narrative-creation',
+  digital: 'digital-humanities',
+  culture: 'cultural-social-design',
+} as const satisfies Record<CourseAreaId, string>
+
+export function areaIllustrationSources(area: CourseAreaId, base = import.meta.env.BASE_URL) {
+  const root = `${base}images/areas/${AREA_ILLUSTRATIONS[area]}`
+  return {
+    src: `${root}-384.webp`,
+    srcSet: `${root}-384.webp 384w, ${root}-768.webp 768w`,
+  }
+}

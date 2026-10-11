@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>課程與四年路徑｜手機體驗分鏡</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="storyboard.css" />
+    <script defer src="learning-data.js"></script>
+    <script defer src="storyboard.js"></script>
+    <script defer src="../vendor/alpine.min.js"></script>
+  </head>
+  <body
+    x-data="learningPreview()"
+    :class="screen ? (embedded ? 'screen embedded' : 'screen') : 'board'"
+  >
+    <noscript>請開啟 JavaScript，以查看手機分鏡與課程操作。</noscript>
+    <template x-if="!screen">
+      <main class="story-board">
+        <header class="board-head">
+          <div>
+            <p class="board-kicker">四個世界 · 學習關聯切片</p>
+            <h1>從一門課，看懂一組學習。</h1>
+            <p class="board-intro">
+              沿用 B
+              版入口，這一輪只比較領域內的四個操作時刻。每幅畫面以手機閱讀寬度呈現，往下可捲動。
+            </p>
+          </div>
+          <nav class="board-actions" aria-label="樣張導覽">
+            <a class="primary" :href="screenUrl()" target="_blank" rel="noopener"
+              >開啟操作版 ↗</a
+            >
+            <a class="plain-link" :href="'../atlas-b.html?area=' + domain.id"
+              >查看原 B 版入口</a
+            >
+          </nav>
+        </header>
+        <nav class="domain-switch board-switch" aria-label="選擇分鏡領域">
+          <template x-for="area in data.areas" :key="area.id">
+            <a :href="boardUrl(area.id)" :aria-current="area.id === domain.id ? 'page' : null">
+              <span class="domain-label"
+                ><template x-for="part in area.navParts" :key="part"
+                  ><span x-text="part"></span></template
+              ></span>
+              <small
+                x-text="data.courses.filter(course => course.area === area.id).length + ' 門'"
+              ></small>
+            </a>
+          </template>
+        </nav>
+        <div class="story-grid">
+          <template x-for="step in steps" :key="step.state">
+            <section class="story-step">
+              <h2 x-text="step.title"></h2>
+              <p class="step-note" x-text="step.text"></p>
+              <iframe
+                :src="screenUrl(step.state, true)"
+                :title="step.title"
+                width="390"
+                height="844"
+              ></iframe>
+              <a class="plain-link" :href="screenUrl(step.state)" target="_blank" rel="noopener"
+                >單獨查看這一幕 ↗</a
+              >
+            </section>
+          </template>
+        </div>
+        <footer class="board-footer">
+          <p>
+            設計討論樣張，不是正式網站。四領域包含全部 69 門課程事實，
+            每門課有一句介紹與一組主要學習關聯。不需收藏，也能閱讀全部安排。
+          </p>
+          <p>
+            介紹與能力是本輪設計內容，尚未逐筆對照能力研究；沒有改動原課程分類或正式路由。
+            四年標示時間位置，學習關聯不代表必修鏈。完整說明與驗證紀錄見
+            <a href="README.md">交接文件</a>。
+          </p>
+        </footer>
+      </main>
+    </template>
+    <template x-if="screen">
+      <div>
+        <a class="skip-link" href="#year-1">跳到四年課程</a>
+        <main class="course-map" id="course-map" x-ref="map" :data-view="route.view">
+          <header class="map-head">
+            <a :href="'../atlas-b.html?area=' + domain.id" class="plain-link">← 四大領域</a>
+            <span>課程地圖</span>
+          </header>
+          <nav class="domain-switch" aria-label="切換課程領域">
+            <template x-for="area in data.areas" :key="area.id">
+              <a
+                :href="screenUrl(undefined, false, area.id)"
+                :aria-current="area.id === domain.id ? 'page' : null"
+              >
+                <span class="domain-label"
+                  ><template x-for="part in area.navParts" :key="part"
+                    ><span x-text="part"></span></template
+                ></span>
+                <small
+                  x-text="data.courses.filter(course => course.area === area.id).length + ' 門'"
+                ></small>
+              </a>
+            </template>
+          </nav>
+          <section class="domain-intro" aria-labelledby="domain-title">
+            <div class="domain-heading">
+              <img :src="domain.thumbnail" width="64" height="64" alt="" />
+              <div>
+                <p class="eyebrow" x-text="domainCourses.length + ' 門課程'"></p>
+                <h1 id="domain-title">
+                  <template x-for="part in domain.navParts" :key="part"
+                    ><span class="domain-title-part" x-text="part"></span
+                  ></template>
+                </h1>
+              </div>
+            </div>
+            <p class="domain-goal" x-text="domain.goal"></p>
+            <nav class="year-nav" aria-label="跳到年級">
+              <template x-for="stage in domain.years" :key="stage.year">
+                <a :href="'#year-' + stage.year"
+                  ><strong x-text="labelForYear(stage.year)"></strong
+                  ><span x-text="coursesForYear(stage.year).length + ' 門'"></span
+                ></a>
+              </template>
+            </nav>
+          </section>
+          <template x-for="stage in domain.years" :key="stage.year">
+            <section
+              class="year-section"
+              :id="'year-' + stage.year"
+              :aria-labelledby="'year-title-' + stage.year"
+            >
+              <header class="year-head">
+                <h2 :id="'year-title-' + stage.year" x-text="labelForYear(stage.year)"></h2>
+                <span x-text="coursesForYear(stage.year).length + ' 門'"></span>
+              </header>
+              <p class="stage-title" x-text="stage.title"></p>
+              <div class="course-list">
+                <template x-for="course in coursesForYear(stage.year)" :key="course.id">
+                  <button
+                    type="button"
+                    class="course-row"
+                    :id="course.id"
+                    :class="{ returned: returned && origin === course.id }"
+                    @click="openCourse(course.id)"
+                    aria-haspopup="dialog"
+                  >
+                    <span class="course-meta"
+                      ><span x-text="course.semester === 1 ? '上學期' : '下學期'"></span
+                      ><span
+                        :class="{ required: course.type === 'required' }"
+                        x-text="course.type === 'required' ? '必修' : '選修'"
+                      ></span
+                    ></span>
+                    <span class="course-name"
+                      ><span x-text="course.name"></span
+                      ><span class="row-arrow" aria-hidden="true">→</span></span
+                    >
+                    <span class="course-intro" x-text="course.intro"></span>
+                  </button>
+                </template>
+              </div>
+            </section>
+          </template>
+          <p class="offering-note">實際開課依當學年度課表。</p>
+        </main>
+        <div
+          class="embedded-scrim"
+          x-cloak
+          x-show="embedded && route.view !== 'overview'"
+          @click="closeCourse()"
+          aria-hidden="true"
+        ></div>
+        <dialog
+          class="course-sheet"
+          x-ref="sheet"
+          aria-labelledby="sheet-title"
+          :aria-modal="embedded && route.view !== 'overview' ? 'true' : null"
+          @cancel.prevent="closeCourse()"
+          @click="if ($event.target === $refs.sheet) closeCourse()"
+          @keydown.escape.prevent="closeCourse()"
+        >
+          <header class="sheet-head">
+            <div>
+              <p
+                class="eyebrow"
+                x-text="selected ? domainName(selected.area) + ' · 課程詳情' : '課程詳情'"
+              ></p>
+              <h2 id="sheet-title" x-text="selected?.name || ''"></h2>
+            </div>
+            <button
+              class="close-button"
+              type="button"
+              x-ref="close"
+              @click="closeCourse()"
+              aria-label="關閉課程詳情，返回課程地圖"
+            >
+              ×
+            </button>
+          </header>
+          <div class="sheet-body" x-ref="sheetBody">
+            <template x-if="previous">
+              <button class="back-related" type="button" @click="backWithinSheet()">
+                <span aria-hidden="true">←</span
+                ><span
+                  x-text="'回到「' + nameFor(previous.id) + '」' + (previous.view === 'relations' ? '的關聯' : '')"
+                ></span>
+              </button>
+            </template>
+            <p
+              class="detail-meta"
+              x-text="selected ? labelForYear(selected.year) + '・' + (selected.semester === 1 ? '上學期' : '下學期') + '・' + (selected.type === 'required' ? '必修' : '選修') + '・' + selected.credits + ' 學分' : ''"
+            ></p>
+            <p class="detail-intro" x-text="selected?.intro || ''"></p>
+            <section class="ability-section" aria-label="主要練習能力">
+              <h3>練習這些能力</h3>
+              <div class="abilities">
+                <template x-for="ability in selected?.abilities || []" :key="ability"
+                  ><span x-text="ability"></span
+                ></template>
+              </div>
+            </section>
+            <template x-if="hasRelation">
+              <div class="relation-section">
+                <button
+                  type="button"
+                  class="relation-toggle"
+                  id="relation-toggle"
+                  @click="toggleRelations()"
+                  :aria-expanded="route.view === 'relations'"
+                  aria-controls="learning-relations"
+                >
+                  <span
+                    x-text="route.view === 'relations' ? '收起學習關聯' : '看這些課如何連起來'"
+                  ></span
+                  ><span
+                    aria-hidden="true"
+                    x-text="route.view === 'relations' ? '−' : '+'"
+                  ></span>
+                </button>
+                <section
+                  id="learning-relations"
+                  x-show="route.view === 'relations'"
+                  x-transition:enter="relation-enter"
+                  x-transition:enter-start="relation-enter-start"
+                  x-transition:enter-end="relation-enter-end"
+                  aria-labelledby="relation-title"
+                >
+                  <h3
+                    id="relation-title"
+                    class="relation-title"
+                    x-text="relation?.title || ''"
+                  ></h3>
+                  <p class="relation-description" x-text="relation?.description || ''"></p>
+                  <ol class="relation-timeline">
+                    <template
+                      x-for="stage in domain.years.filter(item => relatedForYear(item.year).length)"
+                      :key="stage.year"
+                    >
+                      <li class="relation-year">
+                        <h4 x-text="labelForYear(stage.year)"></h4>
+                        <template x-for="course in relatedForYear(stage.year)" :key="course.id">
+                          <div
+                            class="related-course"
+                            :class="{ current: course.id === route.id }"
+                          >
+                            <p
+                              class="cross-domain"
+                              x-show="course.area !== domain.id"
+                              x-text="domainName(course.area)"
+                            ></p>
+                            <template x-if="course.id === route.id"
+                              ><div>
+                                <span class="current-label">目前查看</span>
+                                <p class="related-name" x-text="course.name"></p></div
+                            ></template>
+                            <template x-if="course.id !== route.id"
+                              ><button
+                                class="related-link"
+                                type="button"
+                                @click="openCourse(course.id)"
+                              >
+                                <span x-text="course.name"></span
+                                ><span aria-hidden="true">→</span>
+                              </button></template
+                            >
+                            <p class="related-reason" x-text="course.reason"></p>
+                          </div>
+                        </template>
+                      </li>
+                    </template>
+                  </ol>
+                  <p class="relation-note">這是共同的學習方向，不是必須依序修課的路線。</p>
+                </section>
+              </div>
+            </template>
+          </div>
+        </dialog>
+      </div>
+    </template>
+  </body>
+</html>

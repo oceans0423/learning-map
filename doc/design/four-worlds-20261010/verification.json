@@ -1,0 +1,132 @@
+{
+  "sourceHash": "9A97CD17551A8F8E4218536AFEDECC843019F5CF4C8CAD32C04D37A3FD744691",
+  "checks": [
+    {
+      "run": 1,
+      "variant": "a",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    },
+    {
+      "run": 1,
+      "variant": "b",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    },
+    {
+      "run": 2,
+      "variant": "a",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    },
+    {
+      "run": 2,
+      "variant": "b",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    },
+    {
+      "run": 3,
+      "variant": "a",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    },
+    {
+      "run": 3,
+      "variant": "b",
+      "status": "PASS",
+      "courses": 69,
+      "digitalCourses": 12,
+      "years": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "introductoryCourses": 5,
+      "illustratedAreas": [
+        "thinking",
+        "narrative",
+        "digital",
+        "culture"
+      ],
+      "modelChecks": "search, paging, empty results, collection, bounds, reduced motion, artwork paths"
+    }
+  ],
+  "scope": "Data and view-model checks; browser evidence is stored separately."
+}

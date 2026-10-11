@@ -1,0 +1,343 @@
+{
+  "passed": true,
+  "browser": "Chrome",
+  "results": [
+    {
+      "check": "layout, correct artwork, keyboard/touch entry, original year view",
+      "width": 320,
+      "overflow": false,
+      "searchBottom": 378.140625,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 262,
+          "height": 174.46875,
+          "bottom": 759.390625,
+          "imageWidth": 100,
+          "imageHeight": 100,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 262,
+          "height": 174.46875,
+          "bottom": 945.859375,
+          "imageWidth": 100,
+          "imageHeight": 100,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 262,
+          "height": 174.46875,
+          "bottom": 1132.328125,
+          "imageWidth": 100,
+          "imageHeight": 100,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 262,
+          "height": 203.265625,
+          "bottom": 1347.59375,
+          "imageWidth": 100,
+          "imageHeight": 100,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 844
+    },
+    {
+      "check": "axe",
+      "width": 390,
+      "violations": 0
+    },
+    {
+      "check": "layout, correct artwork, keyboard/touch entry, original year view",
+      "width": 390,
+      "overflow": false,
+      "searchBottom": 378.140625,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 332,
+          "height": 163.15625,
+          "bottom": 642.6875,
+          "imageWidth": 129.15625,
+          "imageHeight": 129.15625,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 332,
+          "height": 163.15625,
+          "bottom": 817.84375,
+          "imageWidth": 129.15625,
+          "imageHeight": 129.15625,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 332,
+          "height": 163.15625,
+          "bottom": 993,
+          "imageWidth": 129.15625,
+          "imageHeight": 129.15625,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 332,
+          "height": 163.15625,
+          "bottom": 1168.15625,
+          "imageWidth": 129.15625,
+          "imageHeight": 129.15625,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 844
+    },
+    {
+      "check": "layout, correct artwork, keyboard/touch entry, original year view",
+      "width": 768,
+      "overflow": false,
+      "searchBottom": 316.84375,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 336.609375,
+          "height": 224,
+          "bottom": 645.59375,
+          "imageWidth": 140.734375,
+          "imageHeight": 140.734375,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 336.609375,
+          "height": 224,
+          "bottom": 645.59375,
+          "imageWidth": 140.734375,
+          "imageHeight": 140.734375,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 336.609375,
+          "height": 233.671875,
+          "bottom": 895.265625,
+          "imageWidth": 140.734375,
+          "imageHeight": 140.734375,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 336.609375,
+          "height": 233.671875,
+          "bottom": 895.265625,
+          "imageWidth": 140.734375,
+          "imageHeight": 140.734375,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 1000
+    },
+    {
+      "check": "layout, correct artwork, keyboard/touch entry, original year view",
+      "width": 1024,
+      "overflow": false,
+      "searchBottom": 320.65625,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 451.8125,
+          "height": 244.328125,
+          "bottom": 674.84375,
+          "imageWidth": 194.328125,
+          "imageHeight": 194.328125,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 451.8125,
+          "height": 244.328125,
+          "bottom": 674.84375,
+          "imageWidth": 194.328125,
+          "imageHeight": 194.328125,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 451.8125,
+          "height": 244.328125,
+          "bottom": 935.171875,
+          "imageWidth": 194.328125,
+          "imageHeight": 194.328125,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 451.8125,
+          "height": 244.328125,
+          "bottom": 935.171875,
+          "imageWidth": 194.328125,
+          "imageHeight": 194.328125,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 1000
+    },
+    {
+      "check": "axe",
+      "width": 1440,
+      "violations": 0
+    },
+    {
+      "check": "layout, correct artwork, keyboard/touch entry, original year view",
+      "width": 1440,
+      "overflow": false,
+      "searchBottom": 333.65625,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 543,
+          "height": 286.734375,
+          "bottom": 733.78125,
+          "imageWidth": 236.734375,
+          "imageHeight": 236.734375,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 543,
+          "height": 286.734375,
+          "bottom": 733.78125,
+          "imageWidth": 236.734375,
+          "imageHeight": 236.734375,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 543,
+          "height": 286.734375,
+          "bottom": 1036.515625,
+          "imageWidth": 236.734375,
+          "imageHeight": 236.734375,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 543,
+          "height": 286.734375,
+          "bottom": 1036.515625,
+          "imageWidth": 236.734375,
+          "imageHeight": 236.734375,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 1000
+    },
+    {
+      "check": "reduced motion",
+      "passed": true
+    },
+    {
+      "check": "200% text size at 390px",
+      "overflow": false,
+      "searchBottom": 1055.734375,
+      "cards": [
+        {
+          "id": "thinking",
+          "width": 276,
+          "height": 620.546875,
+          "bottom": 2195.671875,
+          "imageWidth": 192,
+          "imageHeight": 192,
+          "source": "http://127.0.0.1:5186/images/areas/humanities-thinking-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "narrative",
+          "width": 276,
+          "height": 620.546875,
+          "bottom": 2840.21875,
+          "imageWidth": 192,
+          "imageHeight": 192,
+          "source": "http://127.0.0.1:5186/images/areas/narrative-creation-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "digital",
+          "width": 276,
+          "height": 562.953125,
+          "bottom": 3427.171875,
+          "imageWidth": 192,
+          "imageHeight": 192,
+          "source": "http://127.0.0.1:5186/images/areas/digital-humanities-384.webp",
+          "loaded": true,
+          "headingFits": true
+        },
+        {
+          "id": "culture",
+          "width": 276,
+          "height": 620.546875,
+          "bottom": 4071.71875,
+          "imageWidth": 192,
+          "imageHeight": 192,
+          "source": "http://127.0.0.1:5186/images/areas/cultural-social-design-384.webp",
+          "loaded": true,
+          "headingFits": true
+        }
+      ],
+      "height": 844
+    },
+    {
+      "check": "blocked images retain layout and native entry",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failure": null
+}

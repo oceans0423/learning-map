@@ -1,0 +1,2837 @@
+{
+  "schemaVersion": 1,
+  "mappingVersion": "2026-10-11-v0.1",
+  "annotationVersion": "2026-10-11-v0.1",
+  "reviewStatus": "proposed",
+  "sourceHashes": {
+    "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "5713024673acd0ea695d0032f78a6acbc0372c7c17a6d6fd85169bbfaefd87bf",
+    "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "43ecd58d82c333a827a82611f1d1f595b79a92a981184fadeada58f3069ff8d9",
+    "doc/course/courses_v1.json": "9a97cd17551a8f8e4218536afedecc843019f5cf4c8cad32c04d37a3fd744691",
+    "doc/design/role-rules-20261011/annotations.mjs": "830b9493f9e3ec3d98dbb5c850535c83753b94dbf976a3df20ceab5b91cfb092",
+    "doc/design/role-rules-20261011/interpret.mjs": "af9adee515eec881778293dc3d685de563e9695c97b43eec75a278dcce67044d",
+    "doc/CHARACTER_INTERPRETATION_RULES_2026-10-11.md": "55b18c9ca19711fd85935ecc78db1cd04a4ea200c28b7c8c0afddcd7c4b12db6"
+  },
+  "courseIds": [
+    "course-001",
+    "course-002",
+    "course-003",
+    "course-004",
+    "course-005",
+    "course-006",
+    "course-007",
+    "course-008",
+    "course-009",
+    "course-010",
+    "course-011",
+    "course-012",
+    "course-013",
+    "course-014",
+    "course-015",
+    "course-016",
+    "course-017",
+    "course-018",
+    "course-019",
+    "course-020",
+    "course-021",
+    "course-022",
+    "course-023",
+    "course-024",
+    "course-025",
+    "course-026",
+    "course-027",
+    "course-028",
+    "course-029",
+    "course-030",
+    "course-031",
+    "course-032",
+    "course-033",
+    "course-034",
+    "course-035",
+    "course-036",
+    "course-037",
+    "course-038",
+    "course-039",
+    "course-040",
+    "course-041",
+    "course-042",
+    "course-043",
+    "course-044",
+    "course-045",
+    "course-046",
+    "course-047",
+    "course-048",
+    "course-049",
+    "course-050",
+    "course-051",
+    "course-052",
+    "course-053",
+    "course-054",
+    "course-055",
+    "course-056",
+    "course-057",
+    "course-058",
+    "course-059",
+    "course-060",
+    "course-061",
+    "course-062",
+    "course-063",
+    "course-064",
+    "course-065",
+    "course-066",
+    "course-067",
+    "course-068",
+    "course-069"
+  ],
+  "roles": [
+    {
+      "id": "P1",
+      "name": "探索者",
+      "facets": {
+        "question": "問題或解釋意圖",
+        "material": "文本或田野材料"
+      },
+      "requiredFacets": [
+        "question",
+        "material"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "創作人",
+      "facets": {
+        "theme": "材料或創作主題",
+        "expression": "作品表達"
+      },
+      "requiredFacets": [
+        "theme",
+        "expression"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "引路人",
+      "facets": {
+        "content": "內容理解",
+        "audience": "讀者轉譯或學習引導"
+      },
+      "requiredFacets": [
+        "content",
+        "audience"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "分析師",
+      "facets": {
+        "data": "資料操作",
+        "interpretation": "分析與人文解讀"
+      },
+      "requiredFacets": [
+        "data",
+        "interpretation"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "策展人",
+      "facets": {
+        "content": "文化或敘事內容",
+        "experience": "觀看與參與流程"
+      },
+      "requiredFacets": [
+        "content",
+        "experience"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "造物者",
+      "facets": {
+        "need": "人的需求",
+        "making": "工具與可測試方案",
+        "review": "檢查與修訂"
+      },
+      "requiredFacets": [
+        "need",
+        "making",
+        "review"
+      ]
+    },
+    {
+      "id": "P7",
+      "name": "策略師",
+      "facets": {
+        "culture": "文化內容與對象",
+        "strategy": "目標資源與傳播方案"
+      },
+      "requiredFacets": [
+        "culture",
+        "strategy"
+      ]
+    },
+    {
+      "id": "P8",
+      "name": "開拓者",
+      "facets": {
+        "context": "地方或社群理解",
+        "joint": "共同目標",
+        "action": "實踐方向",
+        "reflection": "永續與影響反思（補充）"
+      },
+      "requiredFacets": [
+        "context",
+        "joint",
+        "action"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "courseId": "course-001",
+      "courseName": "人文學概論",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        }
+      ],
+      "facetDescription": "H01 提問、H04 文化理解",
+      "reason": "認識人文學如何提出問題，為研究建立入口。",
+      "limitations": "概論不等於完成研究",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 49
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-007",
+      "courseName": "文本分析與詮釋",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 文本詮釋、H01 論據",
+      "reason": "從文本線索與背景形成有依據的解讀。",
+      "limitations": "不等於數據分析",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 50
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-011",
+      "courseName": "臺灣民俗文化概論",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H04 文化脈絡、H02 理解",
+      "reason": "以生活習俗與文化背景補充研究視角。",
+      "limitations": "不預設有田野作業",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 51
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-013",
+      "courseName": "田野調查與質性研究",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 訪談觀察、H01 研究提問",
+      "reason": "從現場材料發展值得研究的問題。",
+      "limitations": "不等於地方行動",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 52
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-021",
+      "courseName": "臺灣文學史概論",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 歷史脈絡、H04 文化理解",
+      "reason": "把作品放回時代與社會背景理解。",
+      "limitations": "歷史知識不是研究成果",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 53
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-023",
+      "courseName": "古典文學經典選讀",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 細讀",
+      "reason": "由古典語言與意象練習理解材料。",
+      "limitations": "不推論教學或創作實作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 54
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-026",
+      "courseName": "臺灣宗教文學選讀",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 詮釋、H04 信仰脈絡",
+      "reason": "理解文學、信仰與文化意義的關係。",
+      "limitations": "仍需研究問題與論據",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 55
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-031",
+      "courseName": "報導文學與非虛構寫作",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 真實取材、H02 材料理解",
+      "reason": "透過真實人物與材料理解議題。",
+      "limitations": "作品方向亦見 P2，不視為完整研究訓練",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 56
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-032",
+      "courseName": "口述歷史：理論與實作",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 訪談、H02 歷史詮釋",
+      "reason": "將人物記憶與歷史脈絡相互對照。",
+      "limitations": "不自動等於共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 57
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-033",
+      "courseName": "語言與文化",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 語言情境、H04 文化差異",
+      "reason": "從語言使用理解身分與文化關係。",
+      "limitations": "不預設教學實作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 58
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-034",
+      "courseName": "臺灣民間文學概論",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 敘事解讀、H04 地方文化",
+      "reason": "由口傳故事理解地方文化經驗。",
+      "limitations": "不預設完成創作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 59
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-035",
+      "courseName": "中國文學史概論",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 歷史脈絡、H04 文化理解",
+      "reason": "比較作品、文類與時代的關係。",
+      "limitations": "不以閱讀量判定研究方向",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 60
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-047",
+      "courseName": "文學社會學與文化研究",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 文本脈絡、H01 解釋",
+      "reason": "把文學放入社會關係，提出文化分析。",
+      "limitations": "不等於量化資料分析",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 61
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-048",
+      "courseName": "現當代文學理論與實務",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H01 論證、H02 理論詮釋",
+      "reason": "用不同理論比較與說明作品解讀。",
+      "limitations": "不推論創作作業",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 62
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-053",
+      "courseName": "現當代小說專題",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H01 聚焦問題、H02 文本分析",
+      "reason": "聚焦小說問題與寫法，深入形成解釋。",
+      "limitations": "小說專題不直接標成創作課",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 63
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-061",
+      "courseName": "性別與文化",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        }
+      ],
+      "facetDescription": "H04 多元觀點、H01 議題論證",
+      "reason": "檢視文化中的性別、差異與權力問題。",
+      "limitations": "通用議題視角不能單獨決定角色",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 64
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-063",
+      "courseName": "數位儒學與社群論理實踐",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 思想詮釋、H04 觀點比較",
+      "reason": "理解文化思想如何進入當代社群討論。",
+      "limitations": "課名有數位，不代表資料分析",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 65
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-065",
+      "courseName": "中國現當代文學專題",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H01 研究問題、H02 時代詮釋",
+      "reason": "聚焦作品與時代脈絡發展專題研究。",
+      "limitations": "不預設創作或教學",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 66
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-067",
+      "courseName": "戲曲藝術與當代文化",
+      "characterId": "P1",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 表演文本、H04 文化連結",
+      "reason": "理解戲曲文本及其當代文化意義。",
+      "limitations": "不預設展演製作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 67
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-069",
+      "courseName": "臺灣現當代文學專題",
+      "characterId": "P1",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "question",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "material",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H01 研究問題、H02 文化詮釋",
+      "reason": "連結作品議題與臺灣社會脈絡深入探究。",
+      "limitations": "不預設創作作業",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 68
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-003",
+      "courseName": "新媒體傳播與實作",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H09"
+        }
+      ],
+      "facetDescription": "H09 媒介呈現、H05 創作表達",
+      "reason": "選擇適合的媒介，把內容變成可傳達的作品。",
+      "limitations": "不預設產品開發",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 74
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-009",
+      "courseName": "文化敘事與美學轉譯",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 敘事構思、H06 意義轉譯",
+      "reason": "從文化意義發展敘事與表達形式。",
+      "limitations": "不等於品牌策略",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 75
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-012",
+      "courseName": "創意文案寫作",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 文字創作、H06 對象調整",
+      "reason": "依主題與讀者發展不同的創意文字。",
+      "limitations": "不等於完整傳播企劃",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 76
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-014",
+      "courseName": "散文創作實務",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 創作、H14 修訂",
+      "reason": "把生活材料寫成散文，反覆修訂表達。",
+      "limitations": "收藏不代表已完成作品",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 77
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-025",
+      "courseName": "敘事學：從理論到應用",
+      "characterId": "P2",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H02 敘事分析、H05 構思",
+      "reason": "理解人物、觀點與時間如何構成故事。",
+      "limitations": "理論理解與實際成品分開看",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 78
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-028",
+      "courseName": "原住民文學影像紀錄",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H09"
+        }
+      ],
+      "facetDescription": "H04 文化理解、H09 影像表達",
+      "reason": "讓文學與文化脈絡透過影像被呈現。",
+      "limitations": "不擅加未列的 H05，須尊重紀錄倫理",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 79
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-029",
+      "courseName": "文化資產影音記錄概論",
+      "characterId": "P2",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H09 影音呈現、H03 現場觀察",
+      "reason": "以影音方法保存文化現場，提供內容素材。",
+      "limitations": "不預設大型拍攝或完整敘事成品",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 80
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-031",
+      "courseName": "報導文學與非虛構寫作",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H03"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H03 取材、H05 敘事表達",
+      "reason": "將真實材料組織為有觀點的非虛構作品。",
+      "limitations": "不以故事效果取代材料真實性",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 81
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-041",
+      "courseName": "互動敘事與遊戲企劃",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 敘事構思、H11 參與流程",
+      "reason": "讓故事隨讀者選擇與參與展開。",
+      "limitations": "不預設能開發完整遊戲",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 82
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-044",
+      "courseName": "古典文學的轉譯與改編",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H02 文本理解、H05 改編",
+      "reason": "理解經典，再以新的形式重新表達。",
+      "limitations": "知識說明路線另見 P3",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 83
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-045",
+      "courseName": "小說類型與創作",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 小說創作、H14 修訂",
+      "reason": "運用類型與敘事方法發展小說作品。",
+      "limitations": "不把興趣當成創作熟練度",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 84
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-046",
+      "courseName": "自然書寫與生態文學",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 書寫、H04 生態觀點",
+      "reason": "把自然經驗與人和環境的關係轉成作品。",
+      "limitations": "生態書寫不等於永續行動",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 85
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-054",
+      "courseName": "詩歌創作實務",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 詩作表達、H14 修訂",
+      "reason": "以意象、節奏與語言選擇形成詩作。",
+      "limitations": "不等於所有文類能力",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 86
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-056",
+      "courseName": "客語文學閱讀與書寫",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H02 閱讀、H05 書寫",
+      "reason": "將語言與文化閱讀轉化為自己的書寫。",
+      "limitations": "不推論教學能力",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 87
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-057",
+      "courseName": "臺語文學閱讀與書寫",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H02 閱讀、H05 書寫",
+      "reason": "由語言與生活經驗發展文學表達。",
+      "limitations": "不推論教學能力",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 88
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-062",
+      "courseName": "漢字與創意應用",
+      "characterId": "P2",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "theme",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "expression",
+          "abilityId": "H05"
+        }
+      ],
+      "facetDescription": "H05 構思、H06 文化轉譯",
+      "reason": "以漢字的形式與文化意義發展創意內容。",
+      "limitations": "不預設商業產品或品牌方案",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 89
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-004",
+      "courseName": "語文修辭與溝通表達",
+      "characterId": "P3",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H07 語意表達、H06 對象調整",
+      "reason": "練習依對象把意思說清楚。",
+      "limitations": "只支持表達，不等於學習引導",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 95
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-020",
+      "courseName": "漢語詞彙與教學",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H07"
+        }
+      ],
+      "facetDescription": "H07 學習引導、H02 詞彙理解",
+      "reason": "把詞彙知識轉成說明、練習與理解檢查。",
+      "limitations": "不宣稱教學資格",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 96
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-022",
+      "courseName": "漢字文化與教學",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H07"
+        }
+      ],
+      "facetDescription": "H07 學習引導、H04 文化理解",
+      "reason": "把漢字文化轉為學習者能進入的內容。",
+      "limitations": "不預設已實際試教",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 97
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-027",
+      "courseName": "漢語語言學與教學實務",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H07"
+        }
+      ],
+      "facetDescription": "H02 語言分析、H07 學習引導",
+      "reason": "理解語言規則，再思考如何教與解釋。",
+      "limitations": "學習興趣不等於教學成效",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 98
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-037",
+      "courseName": "出版編輯與地方刊物",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H06 知識轉譯、H12 刊物目標",
+      "reason": "為讀者選擇與組織地方內容，形成刊物。",
+      "limitations": "P3 看理解路徑，資源策略另見 P7",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 99
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-043",
+      "courseName": "文化資產保存與傳播",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H06 文化解說、H04 保存脈絡",
+      "reason": "把文化資產的價值轉成大眾能理解的內容。",
+      "limitations": "不自動推論教學或策展實作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 100
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-044",
+      "courseName": "古典文學的轉譯與改編",
+      "characterId": "P3",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H02 文本理解、H06 意義轉譯",
+      "reason": "調整經典的表達，讓當代對象更容易理解。",
+      "limitations": "創作意圖另見 P2",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 101
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-052",
+      "courseName": "文化評論與傳播實務",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H01"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H01 論據、H06 公眾轉譯",
+      "reason": "把文化觀點與理由轉成面向公眾的說明。",
+      "limitations": "不等於教學引導",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 102
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-055",
+      "courseName": "應用文書寫作",
+      "characterId": "P3",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H06 情境轉譯、H07 語意表達",
+      "reason": "依目的與使用情境組織清楚的實用文字。",
+      "limitations": "不標為教學路線代表課",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 103
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-058",
+      "courseName": "古典詩詞的現代應用",
+      "characterId": "P3",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H02 意象理解、H06 當代轉譯",
+      "reason": "保留古典意義，轉成當代可理解的內容。",
+      "limitations": "不預設教學或品牌企劃",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 104
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-062",
+      "courseName": "漢字與創意應用",
+      "characterId": "P3",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H06 文化轉譯、H02 字形理解",
+      "reason": "讓漢字文化透過新的內容形式被理解。",
+      "limitations": "創意應用本身不等於學習引導",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 105
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-067",
+      "courseName": "戲曲藝術與當代文化",
+      "characterId": "P3",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H02"
+        },
+        {
+          "facetId": "audience",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H02 文本理解、H06 當代轉譯",
+      "reason": "為理解戲曲與當代文化的連結提供材料。",
+      "limitations": "轉譯構想不等於完整出版成果",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 106
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-008",
+      "courseName": "數位人文方法與應用",
+      "characterId": "P4",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "data",
+          "abilityId": "H08"
+        }
+      ],
+      "facetDescription": "H08 資料方法、H10 工具應用",
+      "reason": "思考人文問題適合哪些資料方法與工具。",
+      "limitations": "方法概論不能單獨當成分析實作",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 112
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-019",
+      "courseName": "人文數據探勘與文本分析",
+      "characterId": "P4",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "data",
+          "abilityId": "H08"
+        },
+        {
+          "facetId": "interpretation",
+          "abilityId": "H02"
+        }
+      ],
+      "facetDescription": "H08 資料處理與分析、H02 文本詮釋",
+      "reason": "從文本資料的模式回到人文解讀。",
+      "limitations": "分析流程與品質檢查仍待課綱核對",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 113
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-040",
+      "courseName": "數位人文應用與空間人文",
+      "characterId": "P4",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "data",
+          "abilityId": "H08"
+        },
+        {
+          "facetId": "interpretation",
+          "abilityId": "H08"
+        }
+      ],
+      "facetDescription": "H08 資料分析、H09 空間呈現",
+      "reason": "透過空間資料與地圖探索人文關係。",
+      "limitations": "不能只有漂亮地圖，須保留解讀依據",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 114
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-049",
+      "courseName": "數位策展：理論與實務",
+      "characterId": "P4",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "data",
+          "abilityId": "H08"
+        }
+      ],
+      "facetDescription": "H08 內容資料整理、H09 數位呈現",
+      "reason": "整理文化內容，支援數位展覽的材料結構。",
+      "limitations": "未確認分析活動，不當分析代表課",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 115
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-068",
+      "courseName": "古典文獻的數據化與文化IP轉譯",
+      "characterId": "P4",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "data",
+          "abilityId": "H08"
+        }
+      ],
+      "facetDescription": "H08 文獻數據整理、H02 文獻理解",
+      "reason": "將古典文獻整理成可使用的數位材料。",
+      "limitations": "數據化不等於已具備分析論證",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 116
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-015",
+      "courseName": "文化旅行設計與書寫",
+      "characterId": "P5",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "experience",
+          "abilityId": "H11"
+        }
+      ],
+      "facetDescription": "H11 旅人體驗、H05 遊程敘事",
+      "reason": "把地方文化安排成旅人能經歷的路徑。",
+      "limitations": "不等於地方共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 122
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-016",
+      "courseName": "文化美學與設計哲學",
+      "characterId": "P5",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H01"
+        }
+      ],
+      "facetDescription": "H01 設計論證、H11 體驗思考",
+      "reason": "為文化與美感的設計選擇提出理由。",
+      "limitations": "不預設實際製作展覽",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 123
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-017",
+      "courseName": "文化節慶與展演活動企劃",
+      "characterId": "P5",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H12"
+        },
+        {
+          "facetId": "experience",
+          "abilityId": "H11"
+        }
+      ],
+      "facetDescription": "H11 參與流程、H12 活動目標",
+      "reason": "將文化主題安排為觀眾能參與的活動體驗。",
+      "limitations": "資源與推廣路線另見 P7",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 124
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-040",
+      "courseName": "數位人文應用與空間人文",
+      "characterId": "P5",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H04"
+        }
+      ],
+      "facetDescription": "H09 空間呈現、H04 人文脈絡",
+      "reason": "用數位地圖提供觀看文化關係的媒介。",
+      "limitations": "不擅加 H11 或推論策展流程",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 125
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-041",
+      "courseName": "互動敘事與遊戲企劃",
+      "characterId": "P5",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "experience",
+          "abilityId": "H11"
+        }
+      ],
+      "facetDescription": "H11 互動流程、H05 敘事",
+      "reason": "設計參與者如何選擇、閱讀與走進故事。",
+      "limitations": "不預設正式遊戲開發",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 126
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-042",
+      "courseName": "策展學：理論與實務",
+      "characterId": "P5",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "experience",
+          "abilityId": "H11"
+        }
+      ],
+      "facetDescription": "H11 觀看體驗、H06 內容轉譯",
+      "reason": "連結主題、文化材料與觀眾的觀看方式。",
+      "limitations": "與策略師共享課程但用途不同",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 127
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-049",
+      "courseName": "數位策展：理論與實務",
+      "characterId": "P5",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "content",
+          "abilityId": "H09"
+        },
+        {
+          "facetId": "experience",
+          "abilityId": "H11"
+        }
+      ],
+      "facetDescription": "H11 觀看流程、H09 數位呈現",
+      "reason": "把文化內容轉成有觀看動線的數位展覽。",
+      "limitations": "數位展覽不等於資料分析或 AI 產品",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 128
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-005",
+      "courseName": "科技哲學與未來社會",
+      "characterId": "P6",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "review",
+          "abilityId": "H14"
+        }
+      ],
+      "facetDescription": "H01 科技提問、H04 影響理解、H14 評估",
+      "reason": "檢查工具服務誰，以及可能帶來的影響。",
+      "limitations": "不含工具實作證據",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 134
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-008",
+      "courseName": "數位人文方法與應用",
+      "characterId": "P6",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "making",
+          "abilityId": "H10"
+        }
+      ],
+      "facetDescription": "H10 工具應用、H01 方法選擇",
+      "reason": "為人文需求選擇合適的數位工具。",
+      "limitations": "不預設程式或產品開發",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 135
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-024",
+      "courseName": "人文議題探索與設計",
+      "characterId": "P6",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "need",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H01 問題界定、H03 需求理解",
+      "reason": "從人的經驗把值得回應的需求說清楚。",
+      "limitations": "不擅加 H10 或宣稱已有原型",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 136
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-030",
+      "courseName": "AI 輔助程式設計與應用開發",
+      "characterId": "P6",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "making",
+          "abilityId": "H10"
+        },
+        {
+          "facetId": "review",
+          "abilityId": "H14"
+        }
+      ],
+      "facetDescription": "H10 應用實作、H14 檢查修訂",
+      "reason": "把問題轉為可試用的小型應用並檢查輸出。",
+      "limitations": "工具實作仍須搭配人的需求",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 137
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-036",
+      "courseName": "人文創新設計專題",
+      "characterId": "P6",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "review",
+          "abilityId": "H14"
+        }
+      ],
+      "facetDescription": "H01 問題整合、H13 分工、H14 修訂",
+      "reason": "練習把研究與設計整合為可修正的方案。",
+      "limitations": "未知題目，不預設 AI、程式或產品開發",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 138
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-051",
+      "courseName": "人本AI 產品提案與設計",
+      "characterId": "P6",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "need",
+          "abilityId": "H03"
+        },
+        {
+          "facetId": "making",
+          "abilityId": "H10"
+        },
+        {
+          "facetId": "review",
+          "abilityId": "H14"
+        }
+      ],
+      "facetDescription": "H03 需求理解、H10 工具實作、H14 評估",
+      "reason": "讓人的需求連結 AI 應用與可測試的方案。",
+      "limitations": "提案或原型不等於已上市產品",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 139
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-006",
+      "courseName": "文化創意產業概論",
+      "characterId": "P7",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 產業與資源、H04 文化理解",
+      "reason": "理解文化內容如何連結產業與資源。",
+      "limitations": "概論不等於完整實作策略",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 145
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-009",
+      "courseName": "文化敘事與美學轉譯",
+      "characterId": "P7",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H06"
+        }
+      ],
+      "facetDescription": "H06 文化轉譯、H04 意義理解",
+      "reason": "為企劃保留文化意義與表達方向。",
+      "limitations": "無 H12，不單獨視為策略方案",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 146
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-017",
+      "courseName": "文化節慶與展演活動企劃",
+      "characterId": "P7",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H12"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 目標與資源、H13 分工",
+      "reason": "為文化活動安排目標、資源與執行合作。",
+      "limitations": "觀眾體驗另見 P5，不推論地方共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 147
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-037",
+      "courseName": "出版編輯與地方刊物",
+      "characterId": "P7",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 刊物企劃、H06 對象轉譯",
+      "reason": "連結刊物對象、內容方向與製作安排。",
+      "limitations": "理解引導另見 P3，不預設商業營運",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 148
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-038",
+      "courseName": "品牌設計與故事行銷",
+      "characterId": "P7",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H05"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 品牌傳播、H05 故事",
+      "reason": "為文化故事設定品牌方向與溝通對象。",
+      "limitations": "不以行銷取代文化脈絡",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 149
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-042",
+      "courseName": "策展學：理論與實務",
+      "characterId": "P7",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H04"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 策展目標、H04 文化理解",
+      "reason": "支持策展主題與對象的整體規劃。",
+      "limitations": "本課 H12 是輔助，不假定資源配置深度",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 150
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-043",
+      "courseName": "文化資產保存與傳播",
+      "characterId": "P7",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H06"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 傳播路徑、H06 價值轉譯",
+      "reason": "思考文化資產價值如何觸及不同公眾。",
+      "limitations": "不預設完整品牌或活動方案",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 151
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-060",
+      "courseName": "文化事業與管理概論",
+      "characterId": "P7",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "culture",
+          "abilityId": "H12"
+        },
+        {
+          "facetId": "strategy",
+          "abilityId": "H12"
+        }
+      ],
+      "facetDescription": "H12 資源與組織、H13 協作安排",
+      "reason": "理解文化事業如何配置資源與組織方案。",
+      "limitations": "代表策略視角，不等於實際經營經驗",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 152
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-002",
+      "courseName": "人文地理學概論",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 地方觀察、H04 空間文化",
+      "reason": "理解地方生活、空間與人的關係。",
+      "limitations": "不等於地方行動",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 158
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-010",
+      "courseName": "地方創生與數位敘事",
+      "characterId": "P8",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        },
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
+        },
+        {
+          "facetId": "action",
+          "abilityId": "H09"
+        }
+      ],
+      "facetDescription": "H03 地方需求、H09 數位敘事、H13 合作方向",
+      "reason": "從地方理解發展數位故事與合作構想。",
+      "limitations": "H13 是輔助；是否共同決策與執行待確認",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 159
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-013",
+      "courseName": "田野調查與質性研究",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 訪談理解、H01 問題界定",
+      "reason": "先理解現場與人的需要，再思考如何回應。",
+      "limitations": "田野研究不直接證成共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 160
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-015",
+      "courseName": "文化旅行設計與書寫",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H03 地方理解、H12 遊程方案",
+      "reason": "讓地方理解連結旅遊文化方案。",
+      "limitations": "無 H13，不預設社群參與共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 161
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-018",
+      "courseName": "族群祭典與文化實踐",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H04 文化理解、H03 參與觀察、H13 合作可能",
+      "reason": "理解祭典脈絡與文化參與者的立場。",
+      "limitations": "合作深度依實際活動確認，不以參觀代替共創",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 162
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-024",
+      "courseName": "人文議題探索與設計",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H03"
+        }
+      ],
+      "facetDescription": "H01 議題界定、H03 需求理解",
+      "reason": "把現場需求轉成有依據的設計構想。",
+      "limitations": "無 H13，不預設合作落實",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 163
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-036",
+      "courseName": "人文創新設計專題",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
+        }
+      ],
+      "facetDescription": "H13 共同成果、H01 問題整合、H14 修訂",
+      "reason": "整合不同工作，形成可修正的共同方案。",
+      "limitations": "未知場域，不預設地方社群參與",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 164
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-039",
+      "courseName": "永續議題與生活美學",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "reflection",
+          "abilityId": "H14"
+        }
+      ],
+      "facetDescription": "H01 永續問題、H04 價值比較、H14 評估",
+      "reason": "檢視日常方案對環境與社會的影響。",
+      "limitations": "沒有協作證據，不單獨當地方行動",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 165
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-063",
+      "courseName": "數位儒學與社群論理實踐",
+      "characterId": "P8",
+      "relationType": "支援",
+      "abilityFacets": [
+        {
+          "facetId": "context",
+          "abilityId": "H04"
+        }
+      ],
+      "facetDescription": "H04 社群觀點、H13 共同方向",
+      "reason": "理解思想如何與社群對話及實踐連結。",
+      "limitations": "數位社群不等於地方共創，執行方式待確認",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 166
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    },
+    {
+      "courseId": "course-064",
+      "courseName": "人文主義與當代社會實踐",
+      "characterId": "P8",
+      "relationType": "代表",
+      "abilityFacets": [
+        {
+          "facetId": "joint",
+          "abilityId": "H13"
+        },
+        {
+          "facetId": "action",
+          "abilityId": "H01"
+        }
+      ],
+      "facetDescription": "H01 社會問題、H04 人文觀點、H13 共同目標",
+      "reason": "從人文關懷形成社會實踐與合作構想。",
+      "limitations": "不預設地方場域或已完成行動",
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 167
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ],
+      "reviewStatus": "proposed"
+    }
+  ],
+  "pending": [
+    {
+      "courseId": "course-050",
+      "courseName": "實務實習",
+      "pendingReason": "實際任務、對象、產出及回饋；不把 H07 一律當教學",
+      "abilityIds": [
+        "H13",
+        "H14",
+        "H03",
+        "H07"
+      ],
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 175
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ]
+    },
+    {
+      "courseId": "course-059",
+      "courseName": "畢業專題製作(一)",
+      "pendingReason": "專題問題、合作情境與方法；不按課名加入所有角色",
+      "abilityIds": [
+        "H01",
+        "H13",
+        "H12",
+        "H03"
+      ],
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 176
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ]
+    },
+    {
+      "courseId": "course-066",
+      "courseName": "畢業專題製作(二)",
+      "pendingReason": "成果形式、具體專業工作與評估；不自動沿用未知題目",
+      "abilityIds": [
+        "H13",
+        "H14",
+        "H06",
+        "H09"
+      ],
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 177
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ]
+    }
+  ],
+  "abilityNames": {
+    "H01": "人文問題探究與論證",
+    "H02": "文本閱讀與脈絡詮釋",
+    "H03": "田野觀察與訪談理解",
+    "H04": "多元觀點與文化理解",
+    "H05": "敘事構思與創作表達",
+    "H06": "人文知識轉譯",
+    "H07": "語文溝通與學習引導",
+    "H08": "人文資料整理與分析",
+    "H09": "跨媒介與數位呈現",
+    "H10": "AI 協作與工具應用實作",
+    "H11": "文化體驗與策展設計",
+    "H12": "文化企劃與傳播策略",
+    "H13": "跨域共創與專案實踐",
+    "H14": "反思修訂與方案評估"
+  }
+}

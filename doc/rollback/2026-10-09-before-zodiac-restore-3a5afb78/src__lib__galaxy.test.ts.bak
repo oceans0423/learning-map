@@ -1,0 +1,44 @@
+import { describe, expect, it } from 'vitest'
+import { COURSE_AREAS } from '../config/courseAreas'
+import { courses } from '../data/courses'
+import { galaxyYears, spiralStars } from './galaxy'
+
+describe('galaxy scene data contract', () => {
+  it('uses exact curriculum counts for every area and year', () => {
+    for (const area of COURSE_AREAS) {
+      const years = galaxyYears(courses, area.id)
+      expect(years.map((item) => item.year)).toEqual([1, 2, 3, 4])
+      for (const item of years) {
+        expect(item.count).toBe(
+          courses.filter((course) => course.module === area.module && course.year === item.year)
+            .length,
+        )
+      }
+    }
+    expect(galaxyYears(courses, 'digital').map((item) => item.count)).toEqual([3, 3, 4, 2])
+    expect(
+      COURSE_AREAS.flatMap((area) => galaxyYears(courses, area.id)).reduce(
+        (sum, item) => sum + item.count,
+        0,
+      ),
+    ).toBe(69)
+  })
+  it('produces bounded, deterministic decorative geometry', () => {
+    const stars = spiralStars(120)
+    expect(stars).toEqual(spiralStars(120))
+    expect(stars).toHaveLength(120)
+    expect(
+      stars.every(
+        (star) =>
+          star.x > 0 &&
+          star.x < 100 &&
+          star.y > 0 &&
+          star.y < 100 &&
+          star.radius > 0 &&
+          star.opacity > 0 &&
+          star.opacity <= 1,
+      ),
+    ).toBe(true)
+    expect(spiralStars(0)).toEqual([])
+  })
+})

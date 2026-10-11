@@ -1,0 +1,39 @@
+{
+  "sourcePath": "C:\\Users\\user\\Downloads\\新增資料夾 (20)\\陽光下的巷角寫生時光.png",
+  "originalPath": "public/images/worlds/originals/humanities-thinking-original.png",
+  "originalSHA256": "0CEB59D2F5156383DCECF33BE0D0751D05E03D55CA238FC678E3CF9A3F3F1EE6",
+  "originalDimensions": [1448, 1086],
+  "cornerRGB": {
+    "topLeft": [252, 252, 246],
+    "topRight": [254, 253, 249],
+    "bottomLeft": [252, 251, 246],
+    "bottomRight": [253, 252, 246]
+  },
+  "processing": "RGB conversion, crop, Lanczos downsample and WebP quality 88; no drawing or generative editing",
+  "outputs": [
+    {
+      "name": "scene",
+      "publicPath": "public/images/worlds/humanities-thinking-scene.webp",
+      "taskPath": "assets/thinking-mother.webp",
+      "dimensions": [1280, 960],
+      "cropPixels": null,
+      "bytes": 366860
+    },
+    {
+      "name": "focus",
+      "publicPath": "public/images/worlds/humanities-thinking-focus.webp",
+      "taskPath": "assets/thinking-focus.webp",
+      "dimensions": [1100, 572],
+      "cropPixels": [0, 348, 1419, 1086],
+      "bytes": 201910
+    },
+    {
+      "name": "thumbnail",
+      "publicPath": "public/images/worlds/humanities-thinking-thumbnail.webp",
+      "taskPath": "assets/thinking-thumbnail.webp",
+      "dimensions": [320, 197],
+      "cropPixels": [29, 673, 681, 1075],
+      "bytes": 26832
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourcePath": "C:\\Users\\user\\Downloads\\新增資料夾 (20)\\窗邊的靜謐創作角落.png",
+  "originalPath": "public/images/worlds/originals/narrative-content-original.png",
+  "originalSHA256": "40793EF408B5510B17A189A61BF28F1C69D4D752F35004DE8B58E8E2ABBD5CE7",
+  "originalDimensions": [1448, 1086],
+  "cornerRGB": {
+    "topLeft": [253, 248, 238],
+    "topRight": [250, 246, 236],
+    "bottomLeft": [249, 246, 238],
+    "bottomRight": [251, 247, 237]
+  },
+  "processing": "RGB conversion, crop, Lanczos downsample and WebP quality 88; no drawing or generative editing",
+  "outputs": [
+    {
+      "name": "scene",
+      "publicPath": "public/images/worlds/narrative-content-scene.webp",
+      "taskPath": "assets/narrative-mother.webp",
+      "dimensions": [1280, 960],
+      "cropPixels": null,
+      "bytes": 246110
+    },
+    {
+      "name": "focus",
+      "publicPath": "public/images/worlds/narrative-content-focus.webp",
+      "taskPath": "assets/narrative-focus.webp",
+      "dimensions": [1100, 464],
+      "cropPixels": [43, 434, 1434, 1021],
+      "bytes": 132464
+    },
+    {
+      "name": "thumbnail",
+      "publicPath": "public/images/worlds/narrative-content-thumbnail.webp",
+      "taskPath": "assets/narrative-thumbnail.webp",
+      "dimensions": [320, 137],
+      "cropPixels": [492, 608, 1332, 967],
+      "bytes": 14624
+    }
+  ]
+}

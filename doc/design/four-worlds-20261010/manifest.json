@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lang": "zh",
+  "project": "四領域互動課程地圖",
+  "brief": "手機優先，四領域一開始全部可見。點選或在線性區滑動比較，再按探索進入四年課程安排。使用者已選 B，四領域均已接入專屬手繪場景。人文與文化的領域配對可調整，A 保留為比較紀錄。",
+  "round": "01｜手機版型比較",
+  "candidates": [
+    {
+      "id": "shared-scene",
+      "name": "A｜四域共景＋線性聚焦帶",
+      "concept": "先看一幅四領域全景，再選一處靠近閱讀。",
+      "typography": "Microsoft JhengHei／PingFang TC／system-ui；領域 24 px、課名 17 px、內文 16 px。",
+      "palette": ["#FAF9F3", "#213047", "#265CD7", "#8F68D8", "#ED8855", "#439ED4", "#45AA8C"],
+      "traits": ["四區共享畫布，位置固定", "滑動只在下方線性預覽", "四年連續閱讀，收藏可略過"],
+      "kind": "html",
+      "source": "atlas-a.html",
+      "interactive": true
+    },
+    {
+      "id": "overview-focus",
+      "name": "B｜四領域全覽＋大幅聚焦場景",
+      "concept": "完整導覽保留全貌，聚焦場景放大學習內容。",
+      "typography": "Microsoft JhengHei／PingFang TC／system-ui；領域 24 px、課名 17 px、內文 16 px。",
+      "palette": ["#FAF9F3", "#213047", "#265CD7", "#8F68D8", "#ED8855", "#439ED4", "#45AA8C"],
+      "traits": ["四領域名稱完整常見", "大場景承接線性滑動", "與 A 共用內容、色票與素材位置"],
+      "kind": "html",
+      "source": "atlas-b.html",
+      "interactive": true
+    }
+  ]
+}

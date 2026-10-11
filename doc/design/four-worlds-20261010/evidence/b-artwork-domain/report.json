@@ -1,0 +1,30 @@
+[
+  {
+    "file": "domain-390x844.png",
+    "state": "domain",
+    "size": "390x844",
+    "zoom": 1,
+    "issues": []
+  },
+  {
+    "file": "detail-390x844.png",
+    "state": "detail",
+    "size": "390x844",
+    "zoom": 1,
+    "issues": []
+  },
+  {
+    "file": "domain-1280x900.png",
+    "state": "domain",
+    "size": "1280x900",
+    "zoom": 1,
+    "issues": []
+  },
+  {
+    "file": "detail-1280x900.png",
+    "state": "detail",
+    "size": "1280x900",
+    "zoom": 1,
+    "issues": []
+  }
+]

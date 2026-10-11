@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>課程地圖｜四領域探索</title>
+    <style>
+      :root {
+  --background: #faf9f3;
+  --surface: #fff;
+  --ink: #213047;
+  --muted: #4b5b6a;
+  --action: #265cd7;
+  --line: #d8dee5;
+  --soft-blue: #eff4fc;
+  --radius: 10px;
+  --space: 16px;
+  font-family: 'Microsoft JhengHei', 'PingFang TC', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--background);
+  font-size: 16px;
+  line-height: 1.6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  color: #6c7781;
+  opacity: 0.7;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--action);
+  outline-offset: 4px;
+}
+button:active:not(:disabled) {
+  transform: translateY(1px) scale(0.985);
+}
+button {
+  transition:
+    background-color 160ms,
+    transform 100ms;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 22px;
+  line-height: 1.25;
+}
+h2 {
+  font-size: 26px;
+  line-height: 1.35;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+h3 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+}
+strong {
+  font-weight: 650;
+}
+a {
+  color: var(--action);
+}
+.atlas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+.app-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 8px;
+}
+.department {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  padding: 0;
+  background: none;
+  min-height: 44px;
+  font-weight: 700;
+}
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--action);
+  border-radius: 50%;
+}
+.text-button {
+  min-height: 44px;
+  border: 0;
+  padding: 8px 4px;
+  background: transparent;
+  color: var(--action);
+  font-size: 14px;
+  font-weight: 550;
+}
+.saved-link {
+  white-space: nowrap;
+  color: var(--ink);
+}
+.count-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 23px;
+  height: 23px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: var(--surface);
+  font-size: 13px;
+}
+.browse-line,
+.section-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.browse-line {
+  margin-bottom: 12px;
+}
+.search-link {
+  color: var(--muted);
+}
+.home-layout {
+  display: grid;
+  gap: 20px;
+}
+.area-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+.area-choice {
+  position: relative;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 4px 8px 12px;
+  display: grid;
+  align-content: start;
+  color: var(--ink);
+}
+.area-art {
+  display: block;
+  position: relative;
+  min-height: 58px;
+  margin-bottom: 4px;
+}
+.art-index {
+  display: block;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--area-color, #439ed4);
+  opacity: 0.2;
+}
+.mother-art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.has-artwork .mother-art {
+  mask-image:
+    linear-gradient(to right, transparent, #000 3%, #000 97%, transparent),
+    linear-gradient(to bottom, transparent, #000 3%, #000 97%, transparent);
+  mask-composite: intersect;
+}
+.area-label {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+}
+.area-label strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.scene-alias {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.area-count {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.selected-mark {
+  color: var(--action);
+}
+.is-selected .area-label {
+  border-color: var(--action);
+}
+.selected-info {
+  padding: 16px 0 4px;
+  border-top: 1px solid var(--line);
+}
+.focus-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.step-number {
+  color: var(--action);
+  font-variant-numeric: tabular-nums;
+}
+.selected-info h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.goal {
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 48ch;
+}
+.ability-hint {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.compare-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin: 8px 0;
+}
+.swipe-hint {
+  color: var(--muted);
+  font-size: 12px;
+}
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  background: var(--action);
+  color: #fff;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.primary:hover {
+  background: #1e4db7;
+}
+.explore > span:last-child {
+  margin-left: auto;
+}
+.explore {
+  justify-content: start;
+}
+.gesture-zone {
+  touch-action: pan-y;
+  user-select: none;
+}
+.gesture-content {
+  transition: transform 200ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.focus-art {
+  position: relative;
+  height: 205px;
+  background: var(--background);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.focus-art.has-artwork .mother-art {
+  object-fit: cover;
+  object-position: center;
+}
+.focus-art .gesture-content {
+  position: relative;
+  height: 100%;
+}
+.large-index {
+  font-size: 104px;
+  line-height: 1;
+  font-weight: 500;
+  color: #439ed4;
+  opacity: 0.16;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+}
+.hero-scene {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.variant-b .area-selector {
+  gap: 6px 16px;
+}
+.variant-b .area-choice {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0;
+}
+.variant-b .area-art {
+  min-height: 0;
+  flex: 0 0 32px;
+  margin: 2px 0 0;
+}
+.variant-b .area-art.has-artwork {
+  height: 40px;
+}
+.variant-b .area-art.has-artwork .mother-art {
+  object-fit: cover;
+}
+.variant-b .art-index {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.variant-b .area-label {
+  flex: 1;
+  padding-bottom: 4px;
+}
+.variant-b .area-label strong {
+  font-size: 16px;
+}
+.variant-b .scene-alias {
+  display: none;
+}
+.variant-b .area-count {
+  font-size: 13px;
+  margin-top: 2px;
+}
+.variant-b .selected-info {
+  border-top: 0;
+  padding-top: 0;
+}
+.variant-b .home-layout {
+  gap: 16px;
+}
+.domain-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+.section-kicker {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.domain-intro h2 {
+  margin-bottom: 12px;
+}
+.domain-art {
+  height: 96px;
+  position: relative;
+  margin: 12px 0;
+}
+.domain-art .art-index {
+  font-size: 72px;
+  opacity: 0.16;
+}
+.domain-art.has-artwork {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  max-height: 320px;
+}
+.path-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.path-head h3 {
+  color: var(--ink);
+}
+.year-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 16px 0 32px;
+  background: var(--surface);
+}
+.year-overview a {
+  display: grid;
+  text-align: center;
+  padding: 12px 6px;
+  min-height: 66px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.year-overview a strong {
+  color: var(--ink);
+  font-weight: 550;
+}
+.year-overview a:hover {
+  background: var(--soft-blue);
+}
+.year-section {
+  margin-bottom: 32px;
+  scroll-margin-top: 20px;
+}
+.year-heading {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.year-number {
+  font-size: 24px;
+  color: var(--action);
+  line-height: 1.2;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.year-heading h3 {
+  font-size: 20px;
+}
+.year-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.semester-group h4 {
+  margin: 12px 0 4px;
+}
+.course-row {
+  border-bottom: 1px solid var(--line);
+}
+.course-open {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border: 0;
+  text-align: left;
+  background: transparent;
+  border-radius: 0;
+}
+.course-title-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  justify-content: space-between;
+}
+.course-open strong {
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.course-type {
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 13px;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+.course-type.required {
+  color: var(--action);
+  font-weight: 600;
+}
+.course-intro {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.detail-link {
+  display: block;
+  color: var(--action);
+  margin-top: 8px;
+  font-size: 13px;
+}
+.course-open:hover {
+  background: #f2f4f6;
+}
+.section-lead {
+  color: var(--muted);
+  margin: 12px 0 24px;
+}
+.search-field {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+.search-field input {
+  border: 1px solid #8494a3;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 12px;
+  min-width: 0;
+  font-size: 16px;
+  width: 100%;
+}
+.filter-row {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+.filter-row label {
+  flex: 1;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+.filter-row select {
+  min-height: 44px;
+  padding: 6px 8px;
+  background: var(--surface);
+  border: 1px solid #8494a3;
+  border-radius: 8px;
+  width: 100%;
+}
+.result-summary {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 20px;
+}
+.course-context {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.row-arrow {
+  color: var(--action);
+  padding-top: 4px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+.empty-state {
+  padding: 24px 0;
+  color: var(--muted);
+}
+.saved-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.remove-saved {
+  flex-shrink: 0;
+}
+.saved-screen > .primary {
+  margin-top: 24px;
+}
+.app-foot {
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+  margin-top: 32px;
+}
+.course-dialog {
+  width: min(560px, calc(100% - 24px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.course-dialog::backdrop {
+  background: rgb(20 32 49 / 0.3);
+}
+.course-dialog[open] {
+  animation: dialog-in 240ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.close-button {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+}
+.dialog-content {
+  padding: 24px;
+}
+.dialog-content h2 {
+  margin-bottom: 12px;
+}
+.detail-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+.detail-intro {
+  margin: 24px 0;
+  font-size: 17px;
+}
+.ability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 24px;
+}
+.ability-tags span {
+  background: var(--soft-blue);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.save-course {
+  margin-top: 24px;
+}
+.collection-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 12px;
+}
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  background: #fff;
+  padding: 12px;
+  z-index: 10;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.first-entry .area-art,
+.first-entry .focus-art {
+  animation: first-entry 460ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes first-entry {
+  from {
+    opacity: 0.65;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes dialog-in {
+  from {
+    opacity: 0.8;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 700px) {
+  :root {
+    --space: 28px;
+  }
+  .atlas {
+    padding-top: 12px;
+  }
+  .app-head {
+    padding-bottom: 24px;
+  }
+  .home-layout {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+    min-height: 520px;
+  }
+  .area-selector {
+    gap: 24px 32px;
+  }
+  .area-art {
+    min-height: 120px;
+  }
+  .art-index {
+    font-size: 76px;
+  }
+  .area-label strong {
+    font-size: 21px;
+  }
+  .selected-info h2 {
+    font-size: 30px;
+  }
+  .variant-b .home-layout {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+  }
+  .variant-b .area-selector {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .variant-b .area-choice {
+    gap: 16px;
+    padding: 12px 0;
+  }
+  .variant-b .area-label strong {
+    font-size: 20px;
+  }
+  .variant-b .scene-alias {
+    display: block;
+  }
+  .variant-b .area-art {
+    flex-basis: 40px;
+  }
+  .variant-b .art-index {
+    font-size: 26px;
+  }
+  .focus-art {
+    height: 240px;
+  }
+  .domain-intro {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 0;
+  }
+  .domain-art {
+    height: 140px;
+  }
+  .domain-art.has-artwork {
+    height: auto;
+    max-height: 320px;
+  }
+  .domain-art .art-index {
+    font-size: 110px;
+  }
+  .year-overview {
+    max-width: 640px;
+  }
+  .year-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .catalog-screen,
+  .saved-screen {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1100px) {
+  .year-columns {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 340px) {
+  .department {
+    font-size: 12px;
+  }
+  .saved-link {
+    font-size: 13px;
+  }
+  .area-selector {
+    column-gap: 8px;
+  }
+  .area-choice {
+    padding-inline: 2px;
+  }
+  .area-label strong {
+    font-size: 17px;
+  }
+  .swipe-hint {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+    </style>
+    <script>
+      window.ATLAS_DATA = {"areas":[{"id":"thinking","name":"人文思維與方法","module":"人文思維與方法","scene":"觀點觀測庭","color":"#8F68D8","goal":"從閱讀與觀察出發，練習提出問題、理解不同觀點。","ability":"提問・觀察・理解","phases":["建立人文視野","分析文本與脈絡","練習研究方法","整合問題與觀點"],"count":13,"image":"assets/thinking-mother.webp","focusImage":"assets/thinking-focus.webp","thumbnail":"assets/thinking-thumbnail.webp"},{"id":"narrative","name":"敘事與內容創作","module":"文學創作","scene":"故事製造所","color":"#ED8855","goal":"把理解與想像，轉成能被閱讀、理解與傳播的內容。","ability":"敘事・表達・編輯","phases":["認識語言與敘事","練習多元寫作","發展內容與編輯","整合創作與傳播"],"count":26,"image":"assets/narrative-mother.webp","focusImage":"assets/narrative-focus.webp","thumbnail":"assets/narrative-thumbnail.webp"},{"id":"digital","name":"數位人文","module":"數位人文","scene":"資料實驗場","color":"#439ED4","goal":"用資料與數位方法，探索人文問題的理解與呈現方式。","ability":"文本・資料・數位媒介","phases":["認識數位人文與媒介","嘗試分析與工具應用","探索互動、空間與策展","連結文本資料與文化轉譯"],"count":12,"image":"assets/digital-mother.webp","focusImage":"assets/digital-focus.webp","thumbnail":"assets/digital-thumbnail.webp"},{"id":"culture","name":"文化創意與社會設計","module":"文化創意與社會設計","scene":"文化共創街區","color":"#45AA8C","goal":"理解地方與社會需求，練習把想法發展為文化提案與實踐。","ability":"地方・企劃・實踐","phases":["認識文化與地方","發展企劃與設計","整合專題與實踐","連結現場與應用"],"count":18,"image":"assets/culture-mother.webp","focusImage":"assets/culture-focus.webp","thumbnail":"assets/culture-thumbnail.webp"}],"courses":[{"id":"course-001","name":"人文學概論","year":1,"semester":1,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-002","name":"人文地理學概論","year":1,"semester":1,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-003","name":"新媒體傳播與實作","year":1,"semester":1,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-004","name":"語文修辭與溝通表達","year":1,"semester":1,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-005","name":"科技哲學與未來社會","year":1,"semester":1,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-006","name":"文化創意產業概論","year":1,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-007","name":"文本分析與詮釋","year":1,"semester":2,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-008","name":"數位人文方法與應用","year":1,"semester":2,"credits":2,"type":"required","area":2,"intro":"學習數位人文的基本方法，連結人文問題與數位工具。","abilities":["問題界定","數位方法理解"]},{"id":"course-009","name":"文化敘事與美學轉譯","year":1,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-010","name":"地方創生與數位敘事","year":1,"semester":2,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-011","name":"臺灣民俗文化概論","year":1,"semester":2,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-012","name":"創意文案寫作","year":1,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-013","name":"田野調查與質性研究","year":2,"semester":1,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-014","name":"散文創作實務","year":2,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-015","name":"文化旅行設計與書寫","year":2,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-016","name":"文化美學與設計哲學","year":2,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-017","name":"文化節慶與展演活動企劃","year":2,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-018","name":"族群祭典與文化實踐","year":2,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-019","name":"人文數據探勘與文本分析","year":2,"semester":1,"credits":2,"type":"elective","area":2,"intro":"整理並分析文本資料，從資料中辨認模式與解讀意義。","abilities":["資料整理","文本分析"]},{"id":"course-020","name":"漢語詞彙與教學","year":2,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-021","name":"臺灣文學史概論","year":2,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-022","name":"漢字文化與教學","year":2,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-023","name":"古典文學經典選讀","year":2,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-024","name":"人文議題探索與設計","year":2,"semester":2,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-025","name":"敘事學：從理論到應用","year":2,"semester":2,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-026","name":"臺灣宗教文學選讀","year":2,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-027","name":"漢語語言學與教學實務","year":2,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-028","name":"原住民文學影像紀錄","year":2,"semester":2,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-029","name":"文化資產影音記錄概論","year":2,"semester":2,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-030","name":"AI 輔助程式設計與應用開發","year":2,"semester":2,"credits":2,"type":"elective","area":2,"intro":"運用 AI 輔助程式設計，將問題需求轉為應用構想與實作。","abilities":["需求拆解","工具應用與檢查"]},{"id":"course-031","name":"報導文學與非虛構寫作","year":2,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-032","name":"口述歷史：理論與實作","year":2,"semester":2,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-033","name":"語言與文化","year":2,"semester":2,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-034","name":"臺灣民間文學概論","year":2,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-035","name":"中國文學史概論","year":2,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-036","name":"人文創新設計專題","year":3,"semester":1,"credits":2,"type":"required","area":3,"intro":"","abilities":[]},{"id":"course-037","name":"出版編輯與地方刊物","year":3,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-038","name":"品牌設計與故事行銷","year":3,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-039","name":"永續議題與生活美學","year":3,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-040","name":"數位人文應用與空間人文","year":3,"semester":1,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-041","name":"互動敘事與遊戲企劃","year":3,"semester":1,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-042","name":"策展學：理論與實務","year":3,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-043","name":"文化資產保存與傳播","year":3,"semester":1,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-044","name":"古典文學的轉譯與改編","year":3,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-045","name":"小說類型與創作","year":3,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-046","name":"自然書寫與生態文學","year":3,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-047","name":"文學社會學與文化研究","year":3,"semester":2,"credits":2,"type":"required","area":0,"intro":"","abilities":[]},{"id":"course-048","name":"現當代文學理論與實務","year":3,"semester":2,"credits":2,"type":"required","area":1,"intro":"","abilities":[]},{"id":"course-049","name":"數位策展：理論與實務","year":3,"semester":2,"credits":2,"type":"required","area":2,"intro":"學習組織策展內容，運用數位媒介設計觀眾的閱讀體驗。","abilities":["內容組織","數位呈現"]},{"id":"course-050","name":"實務實習","year":3,"semester":2,"credits":2,"type":"required","area":3,"intro":"","abilities":[]},{"id":"course-051","name":"人本AI 產品提案與設計","year":3,"semester":2,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-052","name":"文化評論與傳播實務","year":3,"semester":2,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-053","name":"現當代小說專題","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-054","name":"詩歌創作實務","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-055","name":"應用文書寫作","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-056","name":"客語文學閱讀與書寫","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-057","name":"臺語文學閱讀與書寫","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-058","name":"古典詩詞的現代應用","year":3,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-059","name":"畢業專題製作(一)","year":4,"semester":1,"credits":2,"type":"required","area":3,"intro":"","abilities":[]},{"id":"course-060","name":"文化事業與管理概論","year":4,"semester":1,"credits":2,"type":"required","area":3,"intro":"","abilities":[]},{"id":"course-061","name":"性別與文化","year":4,"semester":1,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-062","name":"漢字與創意應用","year":4,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-063","name":"數位儒學與社群論理實踐","year":4,"semester":1,"credits":2,"type":"elective","area":2,"intro":"","abilities":[]},{"id":"course-064","name":"人文主義與當代社會實踐","year":4,"semester":1,"credits":2,"type":"elective","area":0,"intro":"","abilities":[]},{"id":"course-065","name":"中國現當代文學專題","year":4,"semester":1,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]},{"id":"course-066","name":"畢業專題製作(二)","year":4,"semester":2,"credits":2,"type":"required","area":3,"intro":"","abilities":[]},{"id":"course-067","name":"戲曲藝術與當代文化","year":4,"semester":2,"credits":2,"type":"elective","area":3,"intro":"","abilities":[]},{"id":"course-068","name":"古典文獻的數據化與文化IP轉譯","year":4,"semester":2,"credits":2,"type":"elective","area":2,"intro":"將古典文獻整理為數位資料，發展文化內容與 IP 轉譯。","abilities":["文獻資料整理","文化轉譯"]},{"id":"course-069","name":"臺灣現當代文學專題","year":4,"semester":2,"credits":2,"type":"elective","area":1,"intro":"","abilities":[]}]};
+      /* # MIT License
+
+Copyright © 2019-2025 Caleb Porzio and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Source: https://github.com/alpinejs/alpine/blob/main/LICENSE.md
+The bundled Alpine runtime was copied from the project-local oil-ui skill.
+ */
+/* global window */
+window.attachAtlasGestures = function (root, choose) {
+  const cleanups = []
+  root.querySelectorAll('[data-gesture-zone]').forEach((zone) => {
+    const content = zone.querySelector('.gesture-content')
+    let start = null
+    const down = (event) => {
+      if (
+        !event.isPrimary ||
+        event.button !== 0 ||
+        event.target.closest('button, a, input, select')
+      )
+        return
+      start = {
+        x: event.clientX,
+        y: event.clientY,
+        pointer: event.pointerId,
+        horizontal: false,
+      }
+    }
+    const move = (event) => {
+      if (!start || event.pointerId !== start.pointer) return
+      const dx = event.clientX - start.x
+      const dy = event.clientY - start.y
+      if (!start.horizontal && Math.abs(dy) > 12 && Math.abs(dy) >= Math.abs(dx)) {
+        start = null
+        return
+      }
+      if (!start.horizontal && Math.abs(dx) > 12 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        start.horizontal = true
+        zone.setPointerCapture(event.pointerId)
+      }
+      if (start.horizontal) {
+        if (event.cancelable) event.preventDefault()
+        content.style.transition = 'none'
+        const displacement = Math.max(-28, Math.min(28, dx * 0.2))
+        content.style.transform = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+          ? ''
+          : `translateX(${displacement}px)`
+      }
+    }
+    const finish = (event) => {
+      if (!start) return
+      const dx = event.clientX - start.x
+      if (event.type === 'pointerup' && start.horizontal && Math.abs(dx) > 44)
+        choose(dx < 0 ? 1 : -1)
+      content.style.transition = ''
+      content.style.transform = ''
+      if (zone.hasPointerCapture(start.pointer)) zone.releasePointerCapture(start.pointer)
+      start = null
+    }
+    zone.addEventListener('pointerdown', down)
+    zone.addEventListener('pointermove', move)
+    zone.addEventListener('pointerup', finish)
+    zone.addEventListener('pointercancel', finish)
+    cleanups.push(() => {
+      zone.removeEventListener('pointerdown', down)
+      zone.removeEventListener('pointermove', move)
+      zone.removeEventListener('pointerup', finish)
+      zone.removeEventListener('pointercancel', finish)
+    })
+  })
+  return () => cleanups.forEach((cleanup) => cleanup())
+}
+
+/* global window, document, URLSearchParams */
+document.addEventListener('alpine:init', () => {
+  window.Alpine.data('atlas', () => ({
+    areas: window.ATLAS_DATA.areas,
+    courses: window.ATLAS_DATA.courses,
+    selected: 0,
+    screen: 'home',
+    savedIds: [],
+    detail: null,
+    query: '',
+    yearFilter: '0',
+    typeFilter: 'all',
+    page: 1,
+    pageSize: 12,
+    homeScroll: 0,
+    returnScreen: 'home',
+    courseTrigger: null,
+    gestureCleanup: null,
+    years: [1, 2, 3, 4],
+    init() {
+      this.entryTimer = window.setTimeout(() => this.$root.classList.remove('first-entry'), 600)
+      const params = new URLSearchParams(window.location.search)
+      const areaId = params.get('area')
+      const state = params.get('state')
+      if (areaId)
+        this.selected = Math.max(
+          0,
+          this.areas.findIndex((area) => area.id === areaId),
+        )
+      else if (state === 'domain' || state === 'detail') this.selected = 2
+      if (['home', 'domain', 'catalog', 'saved'].includes(state)) this.screen = state
+      this.gestureCleanup = window.attachAtlasGestures(this.$root, (direction) =>
+        this.shiftArea(direction),
+      )
+      if (state === 'detail') {
+        this.screen = 'domain'
+        this.$nextTick(() =>
+          this.openDetails(this.courses.find((course) => course.id === 'course-068')),
+        )
+      }
+      if (window.top === window) {
+        window.history.replaceState(
+          { atlasNavigation: true, screen: this.screen, selected: this.selected },
+          '',
+        )
+        this.popstate = (event) => {
+          if (!event.state?.atlasNavigation || window.location.hash.startsWith('#year-')) return
+          if (this.$refs.details.open) this.$refs.details.close()
+          this.screen = event.state.screen
+          this.selected = event.state.selected
+          this.$nextTick(() => window.scrollTo(0, 0))
+        }
+        window.addEventListener('popstate', this.popstate)
+      }
+    },
+    destroy() {
+      window.clearTimeout(this.entryTimer)
+      this.gestureCleanup?.()
+      if (this.popstate) window.removeEventListener('popstate', this.popstate)
+    },
+    get area() {
+      return this.areas[this.selected]
+    },
+    get domainCourses() {
+      return this.courses.filter((course) => course.area === this.selected)
+    },
+    get savedCourses() {
+      return this.courses.filter((course) => this.savedIds.includes(course.id))
+    },
+    get filteredCourses() {
+      const query = this.query.trim().toLocaleLowerCase('zh-TW')
+      return this.courses.filter(
+        (course) =>
+          (!query ||
+            `${course.name} ${this.areas[course.area].name}`
+              .toLocaleLowerCase('zh-TW')
+              .includes(query)) &&
+          (this.yearFilter === '0' || course.year === Number(this.yearFilter)) &&
+          (this.typeFilter === 'all' || course.type === this.typeFilter),
+      )
+    },
+    get totalPages() {
+      return Math.max(1, Math.ceil(this.filteredCourses.length / this.pageSize))
+    },
+    get results() {
+      return this.filteredCourses.slice(
+        (this.page - 1) * this.pageSize,
+        this.page * this.pageSize,
+      )
+    },
+    coursesFor(year, semester) {
+      return this.domainCourses.filter(
+        (course) => course.year === year && course.semester === semester,
+      )
+    },
+    countFor(year) {
+      return this.domainCourses.filter((course) => course.year === year).length
+    },
+    yearName(year) {
+      return ['大一', '大二', '大三', '大四'][year - 1]
+    },
+    courseMeta(course) {
+      return `${this.yearName(course.year)}・${course.semester === 1 ? '上' : '下'}學期・${course.type === 'required' ? '必修' : '選修'}・${course.credits} 學分`
+    },
+    focusArea(index) {
+      if (index === this.selected) return
+      const direction = index > this.selected ? 1 : -1
+      this.selected = index
+      this.$nextTick(() => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+        this.$root.querySelectorAll('.gesture-content').forEach((element) => {
+          element.getAnimations().forEach((animation) => animation.cancel())
+          element.animate(
+            [
+              { opacity: 0.8, transform: `translateX(${12 * direction}px)` },
+              { opacity: 1, transform: 'translateX(0)' },
+            ],
+            { duration: 200, easing: 'cubic-bezier(.2,.7,.2,1)' },
+          )
+        })
+      })
+    },
+    shiftArea(direction) {
+      const next = this.selected + direction
+      if (next >= 0 && next < this.areas.length) this.focusArea(next)
+    },
+    go(screen) {
+      if (screen === this.screen) return
+      if (this.screen === 'home') this.homeScroll = window.scrollY
+      if (window.top === window)
+        window.history.replaceState(
+          { atlasNavigation: true, screen: this.screen, selected: this.selected },
+          '',
+        )
+      this.returnScreen = this.screen
+      this.screen = screen
+      if (window.top === window) {
+        const nextUrl = new window.URL(window.location.href)
+        nextUrl.hash = ''
+        nextUrl.searchParams.set('state', screen)
+        nextUrl.searchParams.set('area', this.area.id)
+        window.history.pushState(
+          { atlasNavigation: true, screen, selected: this.selected },
+          '',
+          nextUrl,
+        )
+      }
+      this.$nextTick(() => {
+        window.scrollTo(0, screen === 'home' ? this.homeScroll : 0)
+        if (screen === 'catalog') this.$refs.search.focus({ preventScroll: true })
+        else
+          this.$root
+            .querySelector(`[data-screen="${screen}"] h2`)
+            ?.focus({ preventScroll: true })
+        const heading = this.$root.querySelector(
+          `[data-screen="${screen}"] .domain-intro, [data-screen="${screen}"] .selected-info`,
+        )
+        if (heading && !window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+          heading.animate(
+            [
+              { opacity: 0.75, transform: 'translateY(8px)' },
+              { opacity: 1, transform: 'translateY(0)' },
+            ],
+            { duration: 220, easing: 'cubic-bezier(.2,.7,.2,1)' },
+          )
+      })
+    },
+    showAll() {
+      this.query = ''
+      this.yearFilter = '0'
+      this.typeFilter = 'all'
+      this.page = 1
+      this.go('catalog')
+    },
+    toggleSaved(id) {
+      this.savedIds = this.savedIds.includes(id)
+        ? this.savedIds.filter((value) => value !== id)
+        : [...this.savedIds, id]
+    },
+    openDetails(course, event) {
+      this.detail = course
+      this.courseTrigger = event?.currentTarget || document.activeElement
+      this.$nextTick(() => {
+        this.$refs.details.showModal()
+        this.$refs.closeDetails.focus()
+      })
+    },
+    closeDetails() {
+      this.$refs.details.close()
+    },
+    restoreFocus() {
+      this.courseTrigger?.focus({ preventScroll: true })
+    },
+  }))
+})
+
+    </script>
+    <script defer src="vendor/alpine.min.js"></script>
+  </head>
+  <body class="variant-b">
+    <a class="skip-link" href="#main">跳到主要內容</a>
+    <main id="main" class="atlas first-entry" x-data="atlas">
+      <header class="app-head">
+        <div>
+          <span class="department">人文跨域與應用學系</span>
+          <h1>
+            <button class="brand" @click="go('home')">
+              課程地圖<span class="brand-dot" aria-hidden="true"></span>
+            </button>
+          </h1>
+        </div>
+        <button class="text-button saved-link" @click="go('saved')">
+          我的課程 <span class="count-badge" x-text="savedIds.length">0</span>
+        </button>
+      </header>
+
+      <section class="screen home-screen" data-screen="home" x-show="screen === 'home'">
+        <div class="browse-line">
+          <button class="search-link text-button" @click="showAll()">⌕ 搜尋所有課程</button
+          ><button class="text-button all-courses" @click="showAll()">查看全部 69 門 →</button>
+        </div>
+        <div class="home-layout">
+          <div class="area-selector" role="group" aria-label="四大學習領域">
+            
+    <button type="button" class="area-choice area-0" style="--area-color:#8F68D8" @click="focusArea(0)" :aria-pressed="selected === 0" :class="{ 'is-selected': selected === 0 }" aria-label="比較人文思維與方法">
+      <span class="area-art has-artwork" aria-hidden="true"><img src="assets/thinking-thumbnail.webp" alt="" class="mother-art" decoding="async"></span>
+      <span class="area-label"><span class="scene-alias">觀點觀測庭</span><strong>人文思維與方法</strong><span class="area-count">13 門課<span class="selected-mark" x-show="selected === 0" aria-hidden="true"> ✓</span></span></span>
+    </button>
+    <button type="button" class="area-choice area-1" style="--area-color:#ED8855" @click="focusArea(1)" :aria-pressed="selected === 1" :class="{ 'is-selected': selected === 1 }" aria-label="比較敘事與內容創作">
+      <span class="area-art has-artwork" aria-hidden="true"><img src="assets/narrative-thumbnail.webp" alt="" class="mother-art" decoding="async"></span>
+      <span class="area-label"><span class="scene-alias">故事製造所</span><strong>敘事與內容創作</strong><span class="area-count">26 門課<span class="selected-mark" x-show="selected === 1" aria-hidden="true"> ✓</span></span></span>
+    </button>
+    <button type="button" class="area-choice area-2" style="--area-color:#439ED4" @click="focusArea(2)" :aria-pressed="selected === 2" :class="{ 'is-selected': selected === 2 }" aria-label="比較數位人文">
+      <span class="area-art has-artwork" aria-hidden="true"><img src="assets/digital-thumbnail.webp" alt="" class="mother-art" decoding="async"></span>
+      <span class="area-label"><span class="scene-alias">資料實驗場</span><strong>數位人文</strong><span class="area-count">12 門課<span class="selected-mark" x-show="selected === 2" aria-hidden="true"> ✓</span></span></span>
+    </button>
+    <button type="button" class="area-choice area-3" style="--area-color:#45AA8C" @click="focusArea(3)" :aria-pressed="selected === 3" :class="{ 'is-selected': selected === 3 }" aria-label="比較文化創意與社會設計">
+      <span class="area-art has-artwork" aria-hidden="true"><img src="assets/culture-thumbnail.webp" alt="" class="mother-art" decoding="async"></span>
+      <span class="area-label"><span class="scene-alias">文化共創街區</span><strong>文化創意與<wbr>社會設計</strong><span class="area-count">18 門課<span class="selected-mark" x-show="selected === 3" aria-hidden="true"> ✓</span></span></span>
+    </button>
+          </div>
+          <section class="focus-panel" aria-label="領域預覽">
+            <div class="focus-art gesture-zone" :class="{ 'has-artwork': !!area.image }" data-gesture-zone aria-label="左右滑動比較領域"><div class="gesture-content"><span class="large-index" x-show="!area.image" aria-hidden="true" x-text="'0' + (selected + 1)">01</span><img src="assets/thinking-focus.webp" alt="" class="mother-art" x-show="selected === 0" style="display:none" decoding="async"><img src="assets/narrative-focus.webp" alt="" class="mother-art" x-show="selected === 1" style="display:none" decoding="async"><img src="assets/digital-focus.webp" alt="" class="mother-art" x-show="selected === 2" style="display:none" decoding="async"><img src="assets/culture-focus.webp" alt="" class="mother-art" x-show="selected === 3" style="display:none" decoding="async"><span class="hero-scene" x-show="!area.image" x-text="area.scene">觀點觀測庭</span></div></div>
+            <div class="selected-info gesture-zone" >
+              <div class="gesture-content">
+                <div class="focus-meta">
+                  <span class="step-number" x-text="'0' + (selected + 1) + ' / 04'"
+                    >01 / 04</span
+                  ><span x-text="area.count + ' 門課'">13 門課</span>
+                </div>
+                <h2 tabindex="-1" x-text="area.name">人文思維與方法</h2>
+                <p class="goal" x-text="area.goal">
+                  從閱讀與觀察出發，練習提出問題、理解不同觀點。
+                </p>
+                <p class="ability-hint" x-text="area.ability">提問・觀察・理解</p>
+              </div>
+            </div>
+            <div class="compare-controls">
+              <button
+                class="text-button previous-area"
+                @click="shiftArea(-1)"
+                :disabled="selected === 0"
+              >
+                ← 上一領域</button
+              ><span class="swipe-hint">左右滑動比較</span
+              ><button
+                class="text-button next-area"
+                @click="shiftArea(1)"
+                :disabled="selected === 3"
+              >
+                下一領域 →
+              </button>
+            </div>
+            <button class="primary explore" @click="go('domain')">
+              探索<span x-text="area.name">人文思維與方法</span
+              ><span aria-hidden="true">→</span>
+            </button>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="screen domain-screen"
+        data-screen="domain"
+        x-show="screen === 'domain'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button back-home" @click="go('home')">← 四大領域</button
+          ><button class="text-button" @click="showAll()">全部課程 →</button>
+        </div>
+        <div class="domain-intro">
+          <div class="domain-heading">
+            <span class="section-kicker" x-text="area.scene">資料實驗場</span>
+            <h2 tabindex="-1" x-text="area.name">數位人文</h2>
+            <p class="goal" x-text="area.goal">
+              用資料與數位方法，探索人文問題的理解與呈現方式。
+            </p>
+            <p class="ability-hint" x-text="area.ability">文本・資料・數位媒介</p>
+          </div>
+          <div class="domain-art" :class="{ 'has-artwork': !!area.image }" aria-hidden="true">
+            <span class="art-index" x-show="!area.image" x-text="'0' + (selected + 1)">03</span>
+            <img src="assets/thinking-mother.webp" alt="" class="mother-art" x-show="selected === 0" style="display:none" decoding="async"><img src="assets/narrative-mother.webp" alt="" class="mother-art" x-show="selected === 1" style="display:none" decoding="async"><img src="assets/digital-mother.webp" alt="" class="mother-art" x-show="selected === 2" style="display:none" decoding="async"><img src="assets/culture-mother.webp" alt="" class="mother-art" x-show="selected === 3" style="display:none" decoding="async">
+          </div>
+        </div>
+        <div class="path-head">
+          <h3>四年學習安排</h3>
+          <span x-text="area.count + ' 門課'">12 門課</span>
+        </div>
+        <nav class="year-overview" aria-label="跳至年級">
+          <template x-for="year in years" :key="year"
+            ><a :href="'#year-' + year"
+              ><span x-text="yearName(year)"></span
+              ><strong x-text="countFor(year) + ' 門'"></strong></a
+          ></template>
+        </nav>
+        <div class="year-columns">
+          <template x-for="year in years" :key="year"
+            ><section class="year-section" :id="'year-' + year">
+              <header class="year-heading">
+                <span class="year-number" aria-hidden="true" x-text="'0' + year"></span>
+                <div>
+                  <h3 x-text="yearName(year)"></h3>
+                  <p x-text="area.phases[year - 1]"></p>
+                </div>
+              </header>
+              <template x-for="semester in [1,2]" :key="semester"
+                ><div class="semester-group" x-show="coursesFor(year, semester).length">
+                  <h4 x-text="semester === 1 ? '上學期' : '下學期'"></h4>
+                  <template x-for="course in coursesFor(year, semester)" :key="course.id"
+                    ><article class="course-row" :data-course-id="course.id">
+                      <button class="course-open" @click="openDetails(course, $event)">
+                        <span class="course-title-line"
+                          ><strong x-text="course.name"></strong
+                          ><span
+                            class="course-type"
+                            :class="{ required: course.type === 'required' }"
+                            x-text="course.type === 'required' ? '必修' : '選修'"
+                          ></span></span
+                        ><span
+                          class="course-intro"
+                          x-show="course.intro"
+                          x-text="course.intro"
+                        ></span
+                        ><span class="detail-link"
+                          >查看詳情 <span aria-hidden="true">→</span></span
+                        >
+                      </button>
+                    </article></template
+                  >
+                </div></template
+              >
+            </section></template
+          >
+        </div>
+      </section>
+
+      <section
+        class="screen catalog-screen"
+        data-screen="catalog"
+        x-show="screen === 'catalog'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button" @click="go('home')">← 四大領域</button>
+        </div>
+        <h2 tabindex="-1">全部課程</h2>
+        <p class="section-lead">搜尋四個領域的 69 門課，找到你想深入了解的學習。</p>
+        <label class="search-field"
+          ><span>課名或領域</span
+          ><input
+            type="search"
+            x-ref="search"
+            x-model="query"
+            @input="page = 1"
+            placeholder="試試文本、AI、策展"
+            autocomplete="off"
+        /></label>
+        <div class="filter-row">
+          <label
+            >年級<select x-model="yearFilter" @change="page = 1">
+              <option value="0">全部年級</option>
+              <option value="1">大一</option>
+              <option value="2">大二</option>
+              <option value="3">大三</option>
+              <option value="4">大四</option>
+            </select></label
+          ><label
+            >必選修<select x-model="typeFilter" @change="page = 1">
+              <option value="all">全部課程</option>
+              <option value="required">必修</option>
+              <option value="elective">選修</option>
+            </select></label
+          >
+        </div>
+        <p
+          class="result-summary"
+          role="status"
+          x-text="'找到 ' + filteredCourses.length + ' 門課'"
+        >
+          找到 69 門課
+        </p>
+        <p class="empty-state" x-show="!filteredCourses.length" style="display:none">
+          沒有找到符合的課程，換個關鍵字或調整篩選試試。
+        </p>
+        <div class="catalog-list">
+          <template x-for="course in results" :key="course.id"
+            ><article class="course-row">
+              <button class="course-open" @click="openDetails(course, $event)">
+                <span class="course-title-line"
+                  ><strong x-text="course.name"></strong
+                  ><span class="row-arrow" aria-hidden="true">→</span></span
+                ><span class="course-context" x-text="areas[course.area].name"></span
+                ><span class="course-context" x-text="courseMeta(course)"></span>
+              </button></article
+          ></template>
+        </div>
+        <nav class="pagination" aria-label="搜尋結果頁次">
+          <button class="text-button" @click="page--" :disabled="page <= 1">← 上一頁</button
+          ><span x-text="page + ' / ' + totalPages">1 / 6</span
+          ><button class="text-button" @click="page++" :disabled="page >= totalPages">
+            下一頁 →
+          </button>
+        </nav>
+      </section>
+
+      <section
+        class="screen saved-screen"
+        data-screen="saved"
+        x-show="screen === 'saved'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button" @click="go('home')">← 繼續探索</button>
+        </div>
+        <h2 tabindex="-1">我的課程</h2>
+        <p class="section-lead">把感興趣的課程放在一起，看看自己的探索方向。</p>
+        <p class="empty-state" x-show="!savedCourses.length">
+          遇到喜歡的課程時，可以在詳情中加入。也可以直接繼續看課程地圖。
+        </p>
+        <template x-for="course in savedCourses" :key="course.id"
+          ><article class="course-row saved-row">
+            <button class="course-open" @click="openDetails(course, $event)">
+              <strong x-text="course.name"></strong
+              ><span class="course-context" x-text="courseMeta(course)"></span></button
+            ><button
+              class="text-button remove-saved"
+              @click="toggleSaved(course.id)"
+              :aria-label="'移除' + course.name"
+            >
+              移除
+            </button>
+          </article></template
+        ><button class="primary" @click="go('home')">繼續探索課程 →</button>
+      </section>
+
+      <footer class="app-foot">115 學年度規劃課程<br />實際開課依當學年度課表</footer>
+      <dialog
+        class="course-dialog"
+        x-ref="details"
+        aria-labelledby="detail-title"
+        @close="restoreFocus()"
+        @click="if ($event.target === $refs.details) closeDetails()"
+      >
+        <div class="dialog-head">
+          <span>課程詳情</span
+          ><button
+            class="close-button"
+            x-ref="closeDetails"
+            @click="closeDetails()"
+            aria-label="關閉課程詳情"
+          >
+            ✕
+          </button>
+        </div>
+        <template x-if="detail"
+          ><div class="dialog-content">
+            <span class="section-kicker" x-text="areas[detail.area].name"></span>
+            <h2 id="detail-title" x-text="detail.name"></h2>
+            <p class="detail-meta" x-text="courseMeta(detail)"></p>
+            <p class="detail-intro" x-show="detail.intro" x-text="detail.intro"></p>
+            <div x-show="detail.abilities.length">
+              <h3>能力重點</h3>
+              <div class="ability-tags">
+                <template x-for="ability in detail.abilities" :key="ability"
+                  ><span x-text="ability"></span
+                ></template>
+              </div>
+            </div>
+            <button
+              class="primary save-course"
+              @click="toggleSaved(detail.id)"
+              :aria-pressed="savedIds.includes(detail.id)"
+              x-text="savedIds.includes(detail.id) ? '✓ 已加入我的課程' : '＋ 加入我的課程'"
+            ></button>
+            <p class="collection-note">記下感興趣的課程，並非正式選課。</p>
+          </div></template
+        >
+      </dialog>
+    </main>
+  </body>
+</html>

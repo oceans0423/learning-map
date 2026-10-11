@@ -1,0 +1,25 @@
+import { COURSE_AREAS, type CourseAreaId } from '../config/courseAreas'
+import type { Course } from '../types/course'
+
+/** Stable decorative geometry: these particles are not courses or selectable objects. */
+export function spiralStars(count: number, seed = 0) {
+  return Array.from({ length: count }, (_, index) => {
+    const radius = 5 + Math.sqrt((index + 1) / count) * 40
+    const angle = radius * 0.115 + (index % 3) * ((Math.PI * 2) / 3) + seed
+    const scatter = Math.sin(index * 12.9898 + seed) * 3.2
+    return {
+      x: 50 + Math.cos(angle) * (radius + scatter),
+      y: 50 + Math.sin(angle) * (radius + scatter) * 0.72,
+      radius: index % 17 === 0 ? 1.05 : index % 5 === 0 ? 0.65 : 0.35,
+      opacity: 0.35 + (index % 7) / 12,
+    }
+  })
+}
+
+export function galaxyYears(input: readonly Course[], area: CourseAreaId) {
+  const module = COURSE_AREAS.find((item) => item.id === area)!.module
+  return ([1, 2, 3, 4] as const).map((year) => ({
+    year,
+    count: input.filter((course) => course.module === module && course.year === year).length,
+  }))
+}

@@ -1,0 +1,39 @@
+{
+  "sourcePath": "C:\\Users\\user\\Downloads\\新增資料夾 (20)\\陽光下的歐式庭院藝術展佈置.png",
+  "originalPath": "public/images/worlds/originals/cultural-social-design-original.png",
+  "originalSHA256": "0FBAC990D218447F4E36ED3AFBED9ED64C4E2CF15590C60AEE56C1A672680A54",
+  "originalDimensions": [1448, 1086],
+  "cornerRGB": {
+    "topLeft": [253, 252, 246],
+    "topRight": [231, 217, 158],
+    "bottomLeft": [253, 252, 245],
+    "bottomRight": [252, 251, 244]
+  },
+  "processing": "RGB conversion, crop, Lanczos downsample and WebP quality 88; no drawing or generative editing",
+  "outputs": [
+    {
+      "name": "scene",
+      "publicPath": "public/images/worlds/cultural-social-design-scene.webp",
+      "taskPath": "assets/culture-mother.webp",
+      "dimensions": [1280, 960],
+      "cropPixels": null,
+      "bytes": 397818
+    },
+    {
+      "name": "focus",
+      "publicPath": "public/images/worlds/cultural-social-design-focus.webp",
+      "taskPath": "assets/culture-focus.webp",
+      "dimensions": [1100, 633],
+      "cropPixels": [174, 261, 1419, 977],
+      "bytes": 241964
+    },
+    {
+      "name": "thumbnail",
+      "publicPath": "public/images/worlds/cultural-social-design-thumbnail.webp",
+      "taskPath": "assets/culture-thumbnail.webp",
+      "dimensions": [320, 219],
+      "cropPixels": [434, 304, 1115, 771],
+      "bytes": 31924
+    }
+  ]
+}

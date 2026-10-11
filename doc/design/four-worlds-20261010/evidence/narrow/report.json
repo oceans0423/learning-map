@@ -1,0 +1,16 @@
+[
+  {
+    "file": "home.png",
+    "state": "home",
+    "size": "320x740",
+    "zoom": 1,
+    "issues": []
+  },
+  {
+    "file": "detail.png",
+    "state": "detail",
+    "size": "320x740",
+    "zoom": 1,
+    "issues": []
+  }
+]

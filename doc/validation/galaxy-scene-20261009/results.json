@@ -1,0 +1,472 @@
+{
+  "passed": true,
+  "environment": "Windows system Chrome; simulated viewports/touch, not physical phones",
+  "results": [
+    {
+      "check": "tilted opening, automatic flatten, replay, skip, no persistent animation"
+    },
+    {
+      "check": "responsive native targets, no retired images, year data, touch/keyboard, detail, Back, no intro replay, original year view",
+      "width": 320,
+      "overflow": false,
+      "searchBottom": 346.828125,
+      "firstBottom": 770.734375,
+      "height": 844,
+      "targets": [
+        {
+          "x": 22.7265625,
+          "y": 643.90625,
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "x": 159.9921875,
+          "y": 629.265625,
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "x": 39.8828125,
+          "y": 797.625,
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "x": 171.4453125,
+          "y": 786.640625,
+          "width": 131.546875,
+          "height": 147.828125
+        }
+      ],
+      "focusState": {
+        "width": 320,
+        "overflow": false,
+        "searchBottom": 266.828125,
+        "firstBottom": 530,
+        "height": 844,
+        "targets": [
+          {
+            "x": 29,
+            "y": 486,
+            "width": 127,
+            "height": 44
+          },
+          {
+            "x": 164,
+            "y": 486,
+            "width": 127,
+            "height": 44
+          },
+          {
+            "x": 29,
+            "y": 538,
+            "width": 127,
+            "height": 60
+          },
+          {
+            "x": 164,
+            "y": 538,
+            "width": 127,
+            "height": 60
+          },
+          {
+            "x": 94.1875,
+            "y": 645.09375,
+            "width": 94.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 196.59375,
+            "y": 645.09375,
+            "width": 94.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 94.1875,
+            "y": 700.78125,
+            "width": 94.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 196.59375,
+            "y": 700.78125,
+            "width": 94.40625,
+            "height": 47.6875
+          }
+        ]
+      }
+    },
+    {
+      "check": "responsive native targets, no retired images, year data, touch/keyboard, detail, Back, no intro replay, original year view",
+      "width": 390,
+      "overflow": false,
+      "searchBottom": 346.828125,
+      "firstBottom": 688.4375,
+      "height": 844,
+      "targets": [
+        {
+          "x": 24.125,
+          "y": 560.109375,
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "x": 195,
+          "y": 546.109375,
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "x": 45.484375,
+          "y": 707.109375,
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "x": 209.234375,
+          "y": 696.609375,
+          "width": 163.75,
+          "height": 128.328125
+        }
+      ],
+      "focusState": {
+        "width": 390,
+        "overflow": false,
+        "searchBottom": 346.828125,
+        "firstBottom": 553.609375,
+        "height": 844,
+        "targets": [
+          {
+            "x": 29,
+            "y": 509.609375,
+            "width": 162,
+            "height": 44
+          },
+          {
+            "x": 199,
+            "y": 509.609375,
+            "width": 162,
+            "height": 44
+          },
+          {
+            "x": 29,
+            "y": 561.609375,
+            "width": 162,
+            "height": 44
+          },
+          {
+            "x": 199,
+            "y": 561.609375,
+            "width": 162,
+            "height": 44
+          },
+          {
+            "x": 108.1875,
+            "y": 652.703125,
+            "width": 122.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 238.59375,
+            "y": 652.703125,
+            "width": 122.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 108.1875,
+            "y": 708.390625,
+            "width": 122.40625,
+            "height": 47.6875
+          },
+          {
+            "x": 238.59375,
+            "y": 708.390625,
+            "width": 122.40625,
+            "height": 47.6875
+          }
+        ]
+      }
+    },
+    {
+      "check": "responsive native targets, no retired images, year data, touch/keyboard, detail, Back, no intro replay, original year view",
+      "width": 768,
+      "overflow": false,
+      "searchBottom": 316.84375,
+      "firstBottom": 702.25,
+      "height": 1000,
+      "targets": [
+        {
+          "x": 74.4296875,
+          "y": 514.296875,
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "x": 419.9921875,
+          "y": 496.125,
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "x": 117.6171875,
+          "y": 704.96875,
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "x": 448.7890625,
+          "y": 691.34375,
+          "width": 259.171875,
+          "height": 187.953125
+        }
+      ],
+      "focusState": {
+        "width": 768,
+        "overflow": false,
+        "searchBottom": 316.84375,
+        "firstBottom": 499.71875,
+        "height": 1000,
+        "targets": [
+          {
+            "x": 40.03125,
+            "y": 455.71875,
+            "width": 165.984375,
+            "height": 44
+          },
+          {
+            "x": 214.015625,
+            "y": 455.71875,
+            "width": 165.984375,
+            "height": 44
+          },
+          {
+            "x": 388,
+            "y": 455.71875,
+            "width": 165.984375,
+            "height": 44
+          },
+          {
+            "x": 561.984375,
+            "y": 455.71875,
+            "width": 165.984375,
+            "height": 44
+          },
+          {
+            "x": 232.015625,
+            "y": 554.8125,
+            "width": 115.984375,
+            "height": 80.6875
+          },
+          {
+            "x": 356,
+            "y": 554.8125,
+            "width": 115.984375,
+            "height": 80.6875
+          },
+          {
+            "x": 479.984375,
+            "y": 554.8125,
+            "width": 115.984375,
+            "height": 80.6875
+          },
+          {
+            "x": 603.96875,
+            "y": 554.8125,
+            "width": 116,
+            "height": 80.6875
+          }
+        ]
+      }
+    },
+    {
+      "check": "responsive native targets, no retired images, year data, touch/keyboard, detail, Back, no intro replay, original year view",
+      "width": 1024,
+      "overflow": false,
+      "searchBottom": 320.65625,
+      "firstBottom": 706.78125,
+      "height": 1000,
+      "targets": [
+        {
+          "x": 111.859375,
+          "y": 518.828125,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 572.921875,
+          "y": 500.65625,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 169.484375,
+          "y": 709.5,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 611.34375,
+          "y": 695.875,
+          "width": 320,
+          "height": 187.953125
+        }
+      ],
+      "focusState": {
+        "width": 1024,
+        "overflow": false,
+        "searchBottom": 320.65625,
+        "firstBottom": 504.25,
+        "height": 1000,
+        "targets": [
+          {
+            "x": 47.71875,
+            "y": 460.25,
+            "width": 226.140625,
+            "height": 44
+          },
+          {
+            "x": 281.859375,
+            "y": 460.25,
+            "width": 226.140625,
+            "height": 44
+          },
+          {
+            "x": 516,
+            "y": 460.25,
+            "width": 226.140625,
+            "height": 44
+          },
+          {
+            "x": 750.140625,
+            "y": 460.25,
+            "width": 226.140625,
+            "height": 44
+          },
+          {
+            "x": 299.859375,
+            "y": 559.34375,
+            "width": 161.09375,
+            "height": 80.6875
+          },
+          {
+            "x": 468.953125,
+            "y": 559.34375,
+            "width": 161.109375,
+            "height": 80.6875
+          },
+          {
+            "x": 638.0625,
+            "y": 559.34375,
+            "width": 161.109375,
+            "height": 80.6875
+          },
+          {
+            "x": 807.171875,
+            "y": 559.34375,
+            "width": 161.109375,
+            "height": 80.6875
+          }
+        ]
+      }
+    },
+    {
+      "check": "responsive native targets, no retired images, year data, touch/keyboard, detail, Back, no intro replay, original year view",
+      "width": 1440,
+      "overflow": false,
+      "searchBottom": 333.65625,
+      "firstBottom": 728.671875,
+      "height": 1000,
+      "targets": [
+        {
+          "x": 272.5,
+          "y": 540.71875,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 824.5,
+          "y": 522.546875,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 341.5,
+          "y": 731.390625,
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "x": 870.5,
+          "y": 717.765625,
+          "width": 320,
+          "height": 187.953125
+        }
+      ],
+      "focusState": {
+        "width": 1440,
+        "overflow": false,
+        "searchBottom": 333.65625,
+        "firstBottom": 526.140625,
+        "height": 1000,
+        "targets": [
+          {
+            "x": 161,
+            "y": 482.140625,
+            "width": 273.5,
+            "height": 44
+          },
+          {
+            "x": 442.5,
+            "y": 482.140625,
+            "width": 273.5,
+            "height": 44
+          },
+          {
+            "x": 724,
+            "y": 482.140625,
+            "width": 273.5,
+            "height": 44
+          },
+          {
+            "x": 1005.5,
+            "y": 482.140625,
+            "width": 273.5,
+            "height": 44
+          },
+          {
+            "x": 460.5,
+            "y": 581.234375,
+            "width": 196.625,
+            "height": 80.6875
+          },
+          {
+            "x": 665.125,
+            "y": 581.234375,
+            "width": 196.625,
+            "height": 80.6875
+          },
+          {
+            "x": 869.75,
+            "y": 581.234375,
+            "width": 196.625,
+            "height": 80.6875
+          },
+          {
+            "x": 1074.375,
+            "y": 581.234375,
+            "width": 196.625,
+            "height": 80.6875
+          }
+        ]
+      }
+    },
+    {
+      "check": "reduced motion, 200% text reflow and native year targets"
+    },
+    {
+      "check": "search independent of intro, live reduced-motion change interrupts intro, repeated area/year switching has no duplicate content or animation"
+    }
+  ],
+  "errors": [],
+  "failure": null
+}

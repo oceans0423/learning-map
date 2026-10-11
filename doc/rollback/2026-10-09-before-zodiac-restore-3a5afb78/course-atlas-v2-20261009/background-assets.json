@@ -1,0 +1,24 @@
+{
+  "source": {
+    "width": 1672,
+    "height": 941,
+    "bytes": 1487597,
+    "sha256": "aeb9020cdf7d7eded29ff37b9ecb69cdecc96ad03d05e95a38addb54841f4404"
+  },
+  "outputs": [
+    {
+      "name": "minimal-deep-blue-starfield-desktop.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 14232,
+      "sha256": "9afddb12a84d10bbc70ea386a0bd9e35806f072fdb93ab5727d1b6b6d2aebd19"
+    },
+    {
+      "name": "minimal-deep-blue-starfield-mobile.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 5264,
+      "sha256": "0199a4b7e08bc42ecb45bfaf324328e399d664da03a78eb8eb38e5d18f94775c"
+    }
+  ]
+}

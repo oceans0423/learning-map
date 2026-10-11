@@ -1,0 +1,1011 @@
+.course-atlas {
+  --ca-night: #101827;
+  --ca-surface: #1b2638;
+  --ca-text: #eef2f8;
+  --ca-muted: #b0bdd0;
+  --ca-blue: #a9c2f5;
+  --ca-gold: #d8be8a;
+  --ca-line: #8094b3;
+  --ui-night: var(--ca-night);
+  --ui-night-surface: var(--ca-surface);
+  --ui-text: var(--ca-text);
+  --ui-text-secondary: var(--ca-muted);
+  --ui-line: var(--ca-line);
+  --ui-focus: var(--ca-blue);
+  --ui-paper: var(--ca-surface);
+  --ui-ink: var(--ca-text);
+  --ui-ink-secondary: var(--ca-muted);
+  --ui-focus-on-paper: var(--ca-blue);
+  --color-focus-ring: var(--ca-blue);
+  min-height: 100dvh;
+  color: var(--ca-text);
+  background: var(--ca-night);
+  font:
+    1rem/1.65 'Noto Sans TC',
+    'PingFang TC',
+    'Microsoft JhengHei',
+    sans-serif;
+}
+.ca-container {
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+.course-atlas button,
+.course-atlas input,
+.course-atlas select {
+  font: inherit;
+}
+.course-atlas .ui-button {
+  min-width: 44px;
+  border-radius: 0.6rem;
+}
+.course-atlas .ui-button--primary {
+  --button-text: var(--ca-night);
+  --button-surface: var(--ca-blue);
+  border-color: var(--ca-blue);
+}
+.course-atlas :is(button, a, input, select, summary):focus-visible {
+  outline: 3px solid var(--ca-blue);
+  outline-offset: 4px;
+}
+.atlas-skip {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 50;
+  padding: 0.75rem 1rem;
+  background: var(--ca-blue);
+  color: var(--ca-night);
+}
+.atlas-skip:not(:focus) {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  padding: 0;
+}
+.ca-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid #34445e;
+}
+.ca-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  color: var(--ca-text);
+  background: none;
+  text-align: left;
+}
+.ca-brand small {
+  display: block;
+  color: var(--ca-muted);
+  font: 0.75rem/1.6 var(--font-mono);
+  letter-spacing: 0.1em;
+}
+.ca-brand-mark {
+  color: var(--ca-gold);
+  font-size: 1.75rem;
+}
+.ca-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.ca-header .ui-button {
+  border-color: transparent;
+  background: transparent;
+}
+.ca-header [aria-current='page'] {
+  border-bottom-color: var(--ca-blue);
+  border-radius: 0;
+}
+.ca-intro {
+  padding-block: 1.75rem 1rem;
+}
+.ca-eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--ca-gold);
+  font-size: 0.875rem;
+}
+.ca-intro h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.ca-intro h1 > span {
+  color: var(--ca-line);
+  font-weight: 400;
+}
+.ca-intro h1 small {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+.ca-intro > p:last-child {
+  color: var(--ca-muted);
+  margin: 0.75rem 0 0;
+}
+.ca-search {
+  margin-bottom: 1.5rem;
+}
+.ca-search label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.ca-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.ca-search input {
+  width: 100%;
+  flex: 1 1 16rem;
+  min-width: 0;
+  min-height: 48px;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.6rem;
+  padding: 0.625rem 1rem;
+  color: var(--ca-text);
+  background: var(--ca-surface);
+}
+.ca-search input::placeholder {
+  color: var(--ca-muted);
+  opacity: 1;
+}
+.ca-footer {
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+  padding-block: 1.5rem 2rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #34445e;
+}
+.ca-footer p {
+  margin: 0.25rem 0;
+}
+.ca-content {
+  min-width: 0;
+}
+.ca-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.ca-section-heading h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.ca-perspective {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.ca-perspective .ui-button {
+  background: transparent;
+}
+.ca-overview,
+.ca-constellation {
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  border: 1px solid #34445e;
+  border-radius: 1rem;
+  background-color: var(--ca-night);
+  background-image:
+    linear-gradient(0deg, rgb(16 24 39 / 30%), rgb(16 24 39 / 10%)),
+    url('/images/backgrounds/minimal-deep-blue-starfield-desktop.webp');
+  background-size: cover;
+  background-position: center;
+}
+.ca-mine-presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 0 1rem;
+}
+.ca-zodiac-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.ca-zodiac-layout {
+  container-type: inline-size;
+}
+.ca-zodiac-presentation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.ca-zodiac-presentation > :is(.ca-zodiac-panel, .ca-constellation) {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+}
+@container (min-width: 48rem) {
+  .ca-zodiac-presentation {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+}
+.ca-zodiac-panel {
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-surface);
+  overflow-wrap: anywhere;
+}
+.ca-zodiac-panel h3 {
+  margin-block: 0.5rem;
+  line-height: 1.5;
+}
+.ca-zodiac-note,
+.ca-zodiac-method {
+  color: var(--ca-muted);
+}
+.ca-zodiac-method summary,
+.ca-zodiac-gallery summary,
+.ca-zodiac-reasons summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding-block: 0.5rem;
+}
+.ca-zodiac-tagline {
+  color: var(--ca-gold);
+  font-weight: 500;
+}
+.ca-zodiac-angle {
+  display: block;
+  margin-block: 0.25rem 0.75rem;
+  color: var(--ca-muted);
+}
+.ca-zodiac-years {
+  margin-block: 0.75rem 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-surface);
+  overflow-wrap: anywhere;
+}
+.ca-zodiac-year-counts {
+  margin-top: 0;
+  color: var(--ca-gold);
+}
+.ca-course-theme-note {
+  color: var(--ca-muted);
+  border-top: 1px solid var(--ca-line);
+  margin-top: 0.375rem;
+  padding-top: 0.375rem;
+  overflow-wrap: anywhere;
+}
+.ca-zodiac-select {
+  display: block;
+  margin-block: 1rem;
+}
+.ca-zodiac-select select {
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  min-height: 48px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.5rem;
+  color: var(--ca-text);
+  background: var(--ca-night);
+}
+.ca-zodiac-evidence {
+  padding-left: 1.25rem;
+}
+.ca-zodiac-gallery > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+  gap: 0.75rem;
+  margin-block: 0.75rem;
+}
+.ca-zodiac-gallery button {
+  min-height: 44px;
+  padding: 0.75rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-night);
+  color: var(--ca-text);
+  cursor: pointer;
+}
+.ca-zodiac-gallery button[aria-pressed='true'] {
+  border-color: var(--ca-gold);
+  outline: 1px solid var(--ca-gold);
+}
+.ca-zodiac-gallery svg {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  fill: var(--ca-gold);
+  stroke: var(--ca-line);
+  stroke-width: 1;
+}
+.ca-zodiac-gallery small {
+  display: block;
+  color: var(--ca-muted);
+}
+.ca-mine-presentation p {
+  margin: 0;
+  color: var(--ca-muted);
+}
+.ca-constellation {
+  max-width: 48rem;
+  margin: 1rem auto 1.5rem;
+  container-type: inline-size;
+}
+.ca-star-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.ca-star-heading :is(h3, h4) {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.ca-star-heading > span {
+  color: var(--ca-gold);
+}
+.ca-star-hint {
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+  margin-block: 0.75rem;
+}
+.ca-star-chart {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  min-height: 500px;
+  aspect-ratio: 4 / 5;
+  margin: 1rem auto 2rem;
+}
+@container (min-width: 260px) {
+  .ca-star-chart {
+    min-height: 360px;
+  }
+}
+.ca-star-chart > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.ca-star-chart line {
+  stroke: var(--ca-line);
+  stroke-width: 1;
+  opacity: 0.65;
+}
+.ca-star-chart circle {
+  fill: var(--ca-muted);
+}
+.ca-star {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: var(--ca-text);
+  display: grid;
+  place-items: center;
+  transition: border-color 120ms ease;
+}
+.ca-star-core {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ca-text);
+  box-shadow: 0 0 14px rgb(216 190 138 / 50%);
+  pointer-events: none;
+}
+.ca-star-number {
+  position: absolute;
+  top: 100%;
+  font-size: 0.75rem;
+  color: var(--ca-muted);
+  pointer-events: none;
+}
+.ca-star-badge {
+  position: absolute;
+  right: -0.125rem;
+  top: -0.125rem;
+  min-width: 1.5rem;
+  padding-inline: 0.25rem;
+  border: 1px solid var(--ca-gold);
+  border-radius: 1rem;
+  background: var(--ca-night);
+  color: var(--ca-gold);
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+.ca-star[aria-expanded='true'] {
+  border-color: var(--ca-gold);
+}
+.ca-star-group {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-surface);
+}
+.ca-star-group ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+.ca-star-course {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.625rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--ca-line);
+  color: var(--ca-text);
+  background: transparent;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.ca-star-course span {
+  color: var(--ca-blue);
+}
+.ca-mine-list-heading {
+  margin-block: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.ca-areas {
+  container: atlas-areas / inline-size;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.ca-area {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 7rem;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 10rem;
+  padding: 1.5rem;
+  border: 1px solid #455873;
+  border-radius: 0.75rem;
+  background: rgb(16 24 39 / 92%);
+  color: var(--ca-text);
+  text-align: left;
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+.ca-area-heading {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.ca-area--illustrated {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 0;
+  min-height: 14rem;
+  padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+}
+.ca-area-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+.ca-area-artwork {
+  display: block;
+  min-width: 0;
+  aspect-ratio: 1;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse at center, #000 40%, transparent 73%);
+}
+.ca-area-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 180ms ease-out;
+}
+.ca-area--illustrated:focus-visible .ca-area-artwork img {
+  transform: translateY(-3px);
+}
+.ca-area--illustrated:active {
+  border-color: var(--area-color);
+  background-color: var(--ca-surface);
+}
+.ca-area-index {
+  display: block;
+  color: var(--area-color, var(--ca-gold));
+  font: 0.875rem/1.6 var(--font-mono);
+  margin-bottom: 0.5rem;
+}
+.ca-area-meta {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.ca-area-action {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--area-color, var(--ca-blue));
+  font-size: 0.875rem;
+}
+.ca-area svg {
+  width: 100%;
+  height: auto;
+  color: var(--area-color, var(--ca-blue));
+  overflow: visible;
+}
+.ca-overview-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.ca-overview-foot p {
+  margin: 0;
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.ca-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 0 1rem;
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.ca-result-count {
+  color: var(--ca-muted);
+}
+.ca-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.ca-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  min-width: 0;
+  font-size: 0.875rem;
+}
+.ca-filters select {
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.5rem;
+  background: var(--ca-surface);
+  color: var(--ca-text);
+}
+.ca-more-filters {
+  padding-top: 1.75rem;
+}
+.ca-more-filters summary {
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.ca-more-filters > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+}
+.ca-active-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.ca-active-filters p {
+  margin: 0;
+  color: var(--ca-gold);
+}
+.ca-course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.ca-course-list li {
+  min-width: 0;
+}
+.ca-course {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  border: 1px solid #455873;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: var(--ca-surface);
+  color: var(--ca-text);
+  text-align: left;
+  transition: border-color 120ms ease;
+}
+.ca-course.is-current {
+  border-color: var(--ca-blue);
+  outline: 1px solid var(--ca-blue);
+}
+.ca-course-star {
+  color: var(--ca-gold);
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+}
+.ca-course-copy {
+  min-width: 0;
+  flex: 1;
+}
+.ca-course-copy strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.ca-course-copy > span {
+  display: block;
+  margin-top: 0.375rem;
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.ca-course-arrow {
+  color: var(--ca-blue);
+}
+.ca-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1.25rem;
+}
+.ca-pagination span {
+  font-size: 0.875rem;
+  color: var(--ca-muted);
+}
+.ca-empty {
+  padding: 1.5rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+}
+.ca-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+.ca-primary {
+  min-width: 0;
+}
+.ca-personal,
+.ca-personal-feedback,
+.ca-legacy-notice {
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-surface);
+}
+.ca-personal > p,
+.ca-legacy-notice > p {
+  color: var(--ca-muted);
+}
+.course-atlas .detail-panel {
+  color: var(--ca-text);
+  background: var(--ca-surface);
+  border: 1px solid var(--ca-line);
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: none;
+}
+.course-atlas .detail-panel .display-type {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+.course-atlas .detail-header {
+  padding: 1.25rem;
+  border-color: var(--ca-line);
+  background: var(--ca-surface);
+}
+.course-atlas .detail-header > div {
+  min-width: 0;
+}
+.course-atlas .detail-header h2 {
+  margin-top: 0.5rem;
+  padding-right: 0;
+}
+.course-atlas .detail-header .eyebrow,
+.course-atlas .detail-kicker,
+.course-atlas .detail-facts dt,
+.course-atlas .detail-footer p {
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.course-atlas .detail-header .eyebrow {
+  margin-top: 0.375rem;
+}
+.course-atlas .detail-kicker {
+  letter-spacing: 0.02em;
+}
+.course-atlas .detail-close {
+  position: static;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  min-width: 44px;
+  width: auto;
+  height: auto;
+  min-height: 44px;
+  padding: 0.5rem;
+  border-color: var(--ca-line);
+  color: var(--ca-text);
+  background: var(--ca-night);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.course-atlas .detail-close:hover {
+  transform: none;
+  background: var(--ca-night);
+}
+.course-atlas .detail-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1rem 1.25rem;
+  border-color: var(--ca-line);
+  background: var(--ca-surface);
+}
+.course-atlas .detail-area-fact {
+  grid-column: 1 / -1;
+}
+.course-atlas .detail-facts dd {
+  color: var(--ca-text);
+  font-size: 1rem;
+}
+.course-atlas .detail-body {
+  padding: 1.25rem;
+}
+.course-atlas .detail-body p,
+.course-atlas .detail-body li {
+  color: var(--ca-text);
+  font-size: 1rem;
+}
+.course-atlas .detail-position {
+  margin-top: 1rem;
+  border-block: 1px solid var(--ca-line);
+  padding-block: 0.5rem;
+}
+.course-atlas .detail-position summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding-block: 0.5rem;
+}
+.course-atlas .detail-selection-note,
+.course-atlas .detail-body .details-pending {
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.course-atlas .details-pending {
+  border-color: var(--ca-line);
+  background: var(--ca-night);
+}
+.course-atlas .detail-footer {
+  padding: 1rem 1.25rem;
+  border-color: var(--ca-line);
+  background: var(--ca-night);
+}
+.course-atlas .dialog-backdrop {
+  background: rgb(5 10 19 / 70%);
+  align-items: flex-end;
+  padding: 0;
+  backdrop-filter: none;
+  animation: none;
+}
+.course-atlas .wb-drawer .detail-panel {
+  max-height: 92dvh;
+  height: auto;
+  border-radius: 0.75rem 0.75rem 0 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  animation: ca-enter 220ms ease-out;
+}
+.course-atlas .wb-drawer .detail-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.course-atlas .wb-inline-note {
+  min-width: 0;
+  position: sticky;
+  top: 1rem;
+}
+.course-atlas .wb-inline-note .detail-panel {
+  height: auto;
+  max-height: calc(100dvh - 2rem);
+  animation: ca-enter 180ms ease-out;
+}
+@keyframes ca-enter {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: none;
+  }
+}
+@media (min-width: 1024px) {
+  .ca-layout.has-detail {
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 24rem);
+  }
+  .ca-layout.has-detail .ca-course-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.course-atlas) {
+    scroll-behavior: auto;
+  }
+}
+@media (max-width: 767px) {
+  .ca-overview,
+  .ca-constellation {
+    background-image:
+      linear-gradient(0deg, rgb(16 24 39 / 30%), rgb(16 24 39 / 10%)),
+      url('/images/backgrounds/minimal-deep-blue-starfield-mobile.webp');
+  }
+  .ca-course-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ca-filters > label {
+    flex: 1 1 8rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .ca-star:hover {
+    border-color: var(--ca-gold);
+  }
+  .ca-area:hover {
+    border-color: var(--area-color, var(--ca-blue));
+    background-color: var(--ca-surface);
+  }
+  .ca-area--illustrated:hover .ca-area-artwork img {
+    transform: translateY(-3px);
+  }
+}
+@media (max-width: 767px) {
+  .ca-header {
+    gap: 0.5rem;
+    padding-block: 0.75rem;
+  }
+  .ca-header .ui-button {
+    padding-inline: 0.625rem;
+  }
+  .ca-brand {
+    font-size: 0.875rem;
+  }
+  .ca-brand small {
+    font-size: 0.6875rem;
+  }
+  .ca-intro {
+    padding-block: 1.25rem 1rem;
+  }
+  .ca-intro h1 small,
+  .ca-intro h1 > span {
+    display: none;
+  }
+  .ca-intro > p:last-child {
+    font-size: 0.9375rem;
+  }
+  .ca-areas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  .ca-area {
+    min-height: 8.5rem;
+    padding: 1rem;
+    grid-template-columns: minmax(0, 1fr) 5rem;
+  }
+  .ca-area-heading {
+    font-size: 1.125rem;
+  }
+  .ca-area--illustrated {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    min-height: 9.5rem;
+    padding: 1rem 0.25rem 1rem 1rem;
+  }
+  .ca-area-index {
+    margin-bottom: 0.25rem;
+  }
+  .ca-area-action {
+    margin-top: 0.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ca-area--illustrated:is(:hover, :focus-visible) .ca-area-artwork img {
+    transform: none;
+  }
+  .course-atlas *,
+  .course-atlas *::before,
+  .course-atlas *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* At enlarged text sizes, keep whole labels readable instead of squeezing them beside art. */
+@container atlas-areas (max-width: 12rem) {
+  .ca-area--illustrated {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .ca-area-artwork {
+    width: min(100%, 6rem);
+    justify-self: center;
+  }
+}
+@media (forced-colors: active) {
+  .ca-area,
+  .ca-overview,
+  .ca-constellation {
+    background-image: none;
+    border: 1px solid ButtonText;
+  }
+  .ca-header [aria-current='page'] {
+    outline: 2px solid Highlight;
+  }
+  .ca-star-core {
+    background: ButtonText;
+    box-shadow: none;
+  }
+  .ca-star-chart :is(line, circle) {
+    stroke: CanvasText;
+    fill: CanvasText;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,56 @@
+import { renderToStaticMarkup } from 'react-dom/server'
+import { describe, expect, it } from 'vitest'
+import { CourseAtlasOverview } from './CourseAtlasOverview'
+import { AREA_ILLUSTRATIONS, areaIllustrationSources } from '../config/areaIllustrations'
+import { COURSE_AREAS } from '../config/courseAreas'
+
+const noop = () => {}
+
+describe('course atlas visual entry', () => {
+  it('assigns the approved artwork to every domain with subdirectory-safe sources', () => {
+    expect(AREA_ILLUSTRATIONS).toEqual({
+      thinking: 'humanities-thinking',
+      narrative: 'narrative-creation',
+      digital: 'digital-humanities',
+      culture: 'cultural-social-design',
+    })
+    for (const area of COURSE_AREAS) {
+      const sources = areaIllustrationSources(area.id, './')
+      expect(sources.src).toBe(`./images/areas/${AREA_ILLUSTRATIONS[area.id]}-384.webp`)
+      expect(sources.srcSet).toContain('384w')
+      expect(sources.srcSet).toContain('768w')
+      expect(areaIllustrationSources(area.id, '/learning-map/').src).toMatch(
+        /^\/learning-map\/images\/areas\//,
+      )
+    }
+  })
+
+  it('replaces the retired images with four native galaxy entry buttons and decorative starfields', () => {
+    const html = renderToStaticMarkup(
+      <CourseAtlasOverview perspective="area" onPerspective={noop} onScope={noop} />,
+    )
+    expect(html.match(/class="ca-area gx-domain"/g)).toHaveLength(4)
+    expect(html).not.toContain('<img')
+    expect(html.match(/focusable="false"/g)).toHaveLength(4)
+    expect(html).toContain('aria-label="選擇課程領域"')
+    for (const area of COURSE_AREAS) {
+      expect(html).toContain(`data-area="${area.id}"`)
+      expect(html).toContain(area.label)
+      expect(html).not.toContain(`${AREA_ILLUSTRATIONS[area.id]}-384.webp`)
+    }
+    expect(html).toContain('查看全部 69 門課程')
+  })
+
+  it('leaves the year overview with its original SVGs and course counts', () => {
+    const html = renderToStaticMarkup(
+      <CourseAtlasOverview perspective="year" onPerspective={noop} onScope={noop} />,
+    )
+    expect(html.match(/<svg /g)).toHaveLength(4)
+    expect(html).not.toContain('<img')
+    expect(html).not.toContain('ca-area--illustrated')
+    for (const [index, count] of [12, 23, 23, 11].entries()) {
+      expect(html).toContain(`data-year="${index + 1}"`)
+      expect(html).toContain(`· ${count} 門課程`)
+    }
+  })
+})

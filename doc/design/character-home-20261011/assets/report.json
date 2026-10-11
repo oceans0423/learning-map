@@ -1,0 +1,184 @@
+[
+  {
+    "name": "觀察家",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 171,
+      "top": 45,
+      "width": 654,
+      "height": 1414
+    },
+    "transparentFraction": 0.6676597595214844
+  },
+  {
+    "name": "說書人",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 173,
+      "top": 17,
+      "width": 735,
+      "height": 1444
+    },
+    "transparentFraction": 0.6236387888590494
+  },
+  {
+    "name": "解碼師",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 185,
+      "top": 21,
+      "width": 677,
+      "height": 1446
+    },
+    "transparentFraction": 0.6203435262044271
+  },
+  {
+    "name": "設計師",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 192,
+      "top": 14,
+      "width": 641,
+      "height": 1461
+    },
+    "transparentFraction": 0.7037849426269531
+  },
+  {
+    "name": "探索者",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 206,
+      "top": 37,
+      "width": 555,
+      "height": 1413
+    },
+    "transparentFraction": 0.7004426320393881
+  },
+  {
+    "name": "創作人",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 135,
+      "top": 19,
+      "width": 737,
+      "height": 1462
+    },
+    "transparentFraction": 0.6278737386067709
+  },
+  {
+    "name": "引路人",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 201,
+      "top": 25,
+      "width": 626,
+      "height": 1476
+    },
+    "transparentFraction": 0.662316640218099
+  },
+  {
+    "name": "分析師",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 198,
+      "top": 16,
+      "width": 596,
+      "height": 1455
+    },
+    "transparentFraction": 0.6606998443603516
+  },
+  {
+    "name": "策展人",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 125,
+      "top": 63,
+      "width": 762,
+      "height": 1390
+    },
+    "transparentFraction": 0.6654497782389323
+  },
+  {
+    "name": "造物者",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 200,
+      "top": 17,
+      "width": 700,
+      "height": 1476
+    },
+    "transparentFraction": 0.6183198293050131
+  },
+  {
+    "name": "策略師",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 298,
+      "top": 15,
+      "width": 529,
+      "height": 1454
+    },
+    "transparentFraction": 0.7325617472330729
+  },
+  {
+    "name": "開拓者",
+    "original": {
+      "width": 1024,
+      "height": 1536
+    },
+    "crop": {
+      "left": 55,
+      "top": 42,
+      "width": 935,
+      "height": 1421
+    },
+    "transparentFraction": 0.5133336385091146
+  },
+  {
+    "name": "logo",
+    "original": {
+      "width": 2172,
+      "height": 724
+    },
+    "crop": {
+      "left": 175,
+      "top": 177,
+      "width": 1822,
+      "height": 348
+    },
+    "transparentFraction": 0.8169031012484357
+  }
+]

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>課程地圖｜四領域探索</title>
+    <style>
+      %%CSS%%
+    </style>
+    <script>
+      window.ATLAS_DATA = %%DATA%%;
+      %%RUNTIME%%
+    </script>
+    <script defer src="vendor/alpine.min.js"></script>
+  </head>
+  <body class="variant-%%VARIANT%%">
+    <a class="skip-link" href="#main">跳到主要內容</a>
+    <main id="main" class="atlas first-entry" x-data="atlas">
+      <header class="app-head">
+        <div>
+          <span class="department">人文跨域與應用學系</span>
+          <h1>
+            <button class="brand" @click="go('home')">
+              課程地圖<span class="brand-dot" aria-hidden="true"></span>
+            </button>
+          </h1>
+        </div>
+        <button class="text-button saved-link" @click="go('saved')">
+          我的課程 <span class="count-badge" x-text="savedIds.length">0</span>
+        </button>
+      </header>
+
+      <section class="screen home-screen" data-screen="home" x-show="screen === 'home'">
+        <div class="browse-line">
+          <button class="search-link text-button" @click="showAll()">⌕ 搜尋所有課程</button
+          ><button class="text-button all-courses" @click="showAll()">查看全部 69 門 →</button>
+        </div>
+        <div class="home-layout">
+          <div class="area-selector" role="group" aria-label="四大學習領域">
+            %%AREA_BUTTONS%%
+          </div>
+          <section class="focus-panel" aria-label="領域預覽">
+            %%FOCUSED_ART%%
+            <div class="selected-info gesture-zone" %%GESTURE_ATTRIBUTE%%>
+              <div class="gesture-content">
+                <div class="focus-meta">
+                  <span class="step-number" x-text="'0' + (selected + 1) + ' / 04'"
+                    >01 / 04</span
+                  ><span x-text="area.count + ' 門課'">13 門課</span>
+                </div>
+                <h2 tabindex="-1" x-text="area.name">人文思維與方法</h2>
+                <p class="goal" x-text="area.goal">
+                  從閱讀與觀察出發，練習提出問題、理解不同觀點。
+                </p>
+                <p class="ability-hint" x-text="area.ability">提問・觀察・理解</p>
+              </div>
+            </div>
+            <div class="compare-controls">
+              <button
+                class="text-button previous-area"
+                @click="shiftArea(-1)"
+                :disabled="selected === 0"
+              >
+                ← 上一領域</button
+              ><span class="swipe-hint">左右滑動比較</span
+              ><button
+                class="text-button next-area"
+                @click="shiftArea(1)"
+                :disabled="selected === 3"
+              >
+                下一領域 →
+              </button>
+            </div>
+            <button class="primary explore" @click="go('domain')">
+              探索<span x-text="area.name">人文思維與方法</span
+              ><span aria-hidden="true">→</span>
+            </button>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="screen domain-screen"
+        data-screen="domain"
+        x-show="screen === 'domain'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button back-home" @click="go('home')">← 四大領域</button
+          ><button class="text-button" @click="showAll()">全部課程 →</button>
+        </div>
+        <div class="domain-intro">
+          <div class="domain-heading">
+            <span class="section-kicker" x-text="area.scene">資料實驗場</span>
+            <h2 tabindex="-1" x-text="area.name">數位人文</h2>
+            <p class="goal" x-text="area.goal">
+              用資料與數位方法，探索人文問題的理解與呈現方式。
+            </p>
+            <p class="ability-hint" x-text="area.ability">文本・資料・數位媒介</p>
+          </div>
+          <div class="domain-art" :class="{ 'has-artwork': !!area.image }" aria-hidden="true">
+            <span class="art-index" x-show="!area.image" x-text="'0' + (selected + 1)">03</span>
+            %%DOMAIN_IMAGES%%
+          </div>
+        </div>
+        <div class="path-head">
+          <h3>四年學習安排</h3>
+          <span x-text="area.count + ' 門課'">12 門課</span>
+        </div>
+        <nav class="year-overview" aria-label="跳至年級">
+          <template x-for="year in years" :key="year"
+            ><a :href="'#year-' + year"
+              ><span x-text="yearName(year)"></span
+              ><strong x-text="countFor(year) + ' 門'"></strong></a
+          ></template>
+        </nav>
+        <div class="year-columns">
+          <template x-for="year in years" :key="year"
+            ><section class="year-section" :id="'year-' + year">
+              <header class="year-heading">
+                <span class="year-number" aria-hidden="true" x-text="'0' + year"></span>
+                <div>
+                  <h3 x-text="yearName(year)"></h3>
+                  <p x-text="area.phases[year - 1]"></p>
+                </div>
+              </header>
+              <template x-for="semester in [1,2]" :key="semester"
+                ><div class="semester-group" x-show="coursesFor(year, semester).length">
+                  <h4 x-text="semester === 1 ? '上學期' : '下學期'"></h4>
+                  <template x-for="course in coursesFor(year, semester)" :key="course.id"
+                    ><article class="course-row" :data-course-id="course.id">
+                      <button class="course-open" @click="openDetails(course, $event)">
+                        <span class="course-title-line"
+                          ><strong x-text="course.name"></strong
+                          ><span
+                            class="course-type"
+                            :class="{ required: course.type === 'required' }"
+                            x-text="course.type === 'required' ? '必修' : '選修'"
+                          ></span></span
+                        ><span
+                          class="course-intro"
+                          x-show="course.intro"
+                          x-text="course.intro"
+                        ></span
+                        ><span class="detail-link"
+                          >查看詳情 <span aria-hidden="true">→</span></span
+                        >
+                      </button>
+                    </article></template
+                  >
+                </div></template
+              >
+            </section></template
+          >
+        </div>
+      </section>
+
+      <section
+        class="screen catalog-screen"
+        data-screen="catalog"
+        x-show="screen === 'catalog'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button" @click="go('home')">← 四大領域</button>
+        </div>
+        <h2 tabindex="-1">全部課程</h2>
+        <p class="section-lead">搜尋四個領域的 69 門課，找到你想深入了解的學習。</p>
+        <label class="search-field"
+          ><span>課名或領域</span
+          ><input
+            type="search"
+            x-ref="search"
+            x-model="query"
+            @input="page = 1"
+            placeholder="試試文本、AI、策展"
+            autocomplete="off"
+        /></label>
+        <div class="filter-row">
+          <label
+            >年級<select x-model="yearFilter" @change="page = 1">
+              <option value="0">全部年級</option>
+              <option value="1">大一</option>
+              <option value="2">大二</option>
+              <option value="3">大三</option>
+              <option value="4">大四</option>
+            </select></label
+          ><label
+            >必選修<select x-model="typeFilter" @change="page = 1">
+              <option value="all">全部課程</option>
+              <option value="required">必修</option>
+              <option value="elective">選修</option>
+            </select></label
+          >
+        </div>
+        <p
+          class="result-summary"
+          role="status"
+          x-text="'找到 ' + filteredCourses.length + ' 門課'"
+        >
+          找到 69 門課
+        </p>
+        <p class="empty-state" x-show="!filteredCourses.length" style="display:none">
+          沒有找到符合的課程，換個關鍵字或調整篩選試試。
+        </p>
+        <div class="catalog-list">
+          <template x-for="course in results" :key="course.id"
+            ><article class="course-row">
+              <button class="course-open" @click="openDetails(course, $event)">
+                <span class="course-title-line"
+                  ><strong x-text="course.name"></strong
+                  ><span class="row-arrow" aria-hidden="true">→</span></span
+                ><span class="course-context" x-text="areas[course.area].name"></span
+                ><span class="course-context" x-text="courseMeta(course)"></span>
+              </button></article
+          ></template>
+        </div>
+        <nav class="pagination" aria-label="搜尋結果頁次">
+          <button class="text-button" @click="page--" :disabled="page <= 1">← 上一頁</button
+          ><span x-text="page + ' / ' + totalPages">1 / 6</span
+          ><button class="text-button" @click="page++" :disabled="page >= totalPages">
+            下一頁 →
+          </button>
+        </nav>
+      </section>
+
+      <section
+        class="screen saved-screen"
+        data-screen="saved"
+        x-show="screen === 'saved'"
+        style="display:none"
+      >
+        <div class="section-nav">
+          <button class="text-button" @click="go('home')">← 繼續探索</button>
+        </div>
+        <h2 tabindex="-1">我的課程</h2>
+        <p class="section-lead">把感興趣的課程放在一起，看看自己的探索方向。</p>
+        <p class="empty-state" x-show="!savedCourses.length">
+          遇到喜歡的課程時，可以在詳情中加入。也可以直接繼續看課程地圖。
+        </p>
+        <template x-for="course in savedCourses" :key="course.id"
+          ><article class="course-row saved-row">
+            <button class="course-open" @click="openDetails(course, $event)">
+              <strong x-text="course.name"></strong
+              ><span class="course-context" x-text="courseMeta(course)"></span></button
+            ><button
+              class="text-button remove-saved"
+              @click="toggleSaved(course.id)"
+              :aria-label="'移除' + course.name"
+            >
+              移除
+            </button>
+          </article></template
+        ><button class="primary" @click="go('home')">繼續探索課程 →</button>
+      </section>
+
+      <footer class="app-foot">115 學年度規劃課程<br />實際開課依當學年度課表</footer>
+      <dialog
+        class="course-dialog"
+        x-ref="details"
+        aria-labelledby="detail-title"
+        @close="restoreFocus()"
+        @click="if ($event.target === $refs.details) closeDetails()"
+      >
+        <div class="dialog-head">
+          <span>課程詳情</span
+          ><button
+            class="close-button"
+            x-ref="closeDetails"
+            @click="closeDetails()"
+            aria-label="關閉課程詳情"
+          >
+            ✕
+          </button>
+        </div>
+        <template x-if="detail"
+          ><div class="dialog-content">
+            <span class="section-kicker" x-text="areas[detail.area].name"></span>
+            <h2 id="detail-title" x-text="detail.name"></h2>
+            <p class="detail-meta" x-text="courseMeta(detail)"></p>
+            <p class="detail-intro" x-show="detail.intro" x-text="detail.intro"></p>
+            <div x-show="detail.abilities.length">
+              <h3>能力重點</h3>
+              <div class="ability-tags">
+                <template x-for="ability in detail.abilities" :key="ability"
+                  ><span x-text="ability"></span
+                ></template>
+              </div>
+            </div>
+            <button
+              class="primary save-course"
+              @click="toggleSaved(detail.id)"
+              :aria-pressed="savedIds.includes(detail.id)"
+              x-text="savedIds.includes(detail.id) ? '✓ 已加入我的課程' : '＋ 加入我的課程'"
+            ></button>
+            <p class="collection-note">記下感興趣的課程，並非正式選課。</p>
+          </div></template
+        >
+      </dialog>
+    </main>
+  </body>
+</html>

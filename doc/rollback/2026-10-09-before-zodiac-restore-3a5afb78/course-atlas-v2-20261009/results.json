@@ -1,0 +1,337 @@
+{
+  "passed": true,
+  "failure": null,
+  "results": [
+    {
+      "check": "overview, full ID coverage through areas/years/all, filters, pagination",
+      "width": 320,
+      "overflow": false,
+      "firstEntryBottom": 770.734375,
+      "searchBottom": 346.828125,
+      "height": 844,
+      "targets": [
+        {
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "width": 131.546875,
+          "height": 126.828125
+        },
+        {
+          "width": 131.546875,
+          "height": 147.828125
+        }
+      ]
+    },
+    {
+      "check": "detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes",
+      "width": 320
+    },
+    {
+      "check": "overview, full ID coverage through areas/years/all, filters, pagination",
+      "width": 390,
+      "overflow": false,
+      "firstEntryBottom": 688.4375,
+      "searchBottom": 346.828125,
+      "height": 844,
+      "targets": [
+        {
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "width": 163.75,
+          "height": 128.328125
+        },
+        {
+          "width": 163.75,
+          "height": 128.328125
+        }
+      ]
+    },
+    {
+      "check": "detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes",
+      "width": 390
+    },
+    {
+      "check": "axe scoped states",
+      "width": 390,
+      "scans": [
+        {
+          "state": "results",
+          "violations": []
+        },
+        {
+          "state": "details",
+          "violations": []
+        },
+        {
+          "state": "overview",
+          "violations": []
+        },
+        {
+          "state": "mine",
+          "violations": []
+        }
+      ]
+    },
+    {
+      "check": "overview, full ID coverage through areas/years/all, filters, pagination",
+      "width": 768,
+      "overflow": false,
+      "firstEntryBottom": 702.25,
+      "searchBottom": 316.84375,
+      "height": 1000,
+      "targets": [
+        {
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "width": 259.171875,
+          "height": 187.953125
+        },
+        {
+          "width": 259.171875,
+          "height": 187.953125
+        }
+      ]
+    },
+    {
+      "check": "detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes",
+      "width": 768
+    },
+    {
+      "check": "overview, full ID coverage through areas/years/all, filters, pagination",
+      "width": 1024,
+      "overflow": false,
+      "firstEntryBottom": 706.78125,
+      "searchBottom": 320.65625,
+      "height": 1000,
+      "targets": [
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        }
+      ]
+    },
+    {
+      "check": "detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes",
+      "width": 1024
+    },
+    {
+      "check": "overview, full ID coverage through areas/years/all, filters, pagination",
+      "width": 1440,
+      "overflow": false,
+      "firstEntryBottom": 728.671875,
+      "searchBottom": 333.65625,
+      "height": 1000,
+      "targets": [
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        },
+        {
+          "width": 320,
+          "height": 187.953125
+        }
+      ]
+    },
+    {
+      "check": "detail focus/Back/Escape, global search from mine, zero results, add/remove/undo, no-consent writes",
+      "width": 1440
+    },
+    {
+      "check": "axe scoped states",
+      "width": 1440,
+      "scans": [
+        {
+          "state": "results",
+          "violations": []
+        },
+        {
+          "state": "details",
+          "violations": []
+        },
+        {
+          "state": "overview",
+          "violations": []
+        },
+        {
+          "state": "mine",
+          "violations": []
+        }
+      ]
+    },
+    {
+      "check": "reduced motion and 200% root-text-size simulation, not real browser zoom"
+    },
+    {
+      "check": "real Chrome touch injection and synthetic composition events"
+    },
+    {
+      "check": "direct legacy URL closes in place and ignores old signals/focus visibly"
+    },
+    {
+      "check": "consented reload retains course IDs and does not rearrange/rename prior artwork"
+    },
+    {
+      "check": "failed storage reports error and keeps session draft"
+    },
+    {
+      "check": "blocked background still supports complete text and course browsing"
+    },
+    {
+      "check": "local built-preview load/resource timings and unthrottled viewport frame sample; not real-device assurance",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "navigation": {
+        "name": "http://127.0.0.1:5186/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 109.09999999403954,
+        "navigationId": 4712,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 1.2999999970197678,
+        "domainLookupStart": 1.2999999970197678,
+        "domainLookupEnd": 1.2999999970197678,
+        "connectStart": 1.2999999970197678,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.2999999970197678,
+        "requestStart": 3.3999999910593033,
+        "responseStart": 10,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 10,
+        "responseEnd": 11,
+        "transferSize": 890,
+        "encodedBodySize": 590,
+        "decodedBodySize": 1492,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 24,
+        "domContentLoadedEventStart": 109,
+        "domContentLoadedEventEnd": 109,
+        "domComplete": 109.09999999403954,
+        "loadEventStart": 109.09999999403954,
+        "loadEventEnd": 109.09999999403954,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "backgrounds": [],
+      "frameDeltas": [
+        16.800000000000182,
+        16.59999999999991,
+        16.59999999999991,
+        16.59999999999991,
+        16.800000000000182,
+        16.59999999999991,
+        16.90000000000009,
+        16.59999999999991,
+        16.59999999999991,
+        16.5,
+        16.800000000000182,
+        16.699999999999818,
+        17,
+        16.5,
+        16.5,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.700000000000273,
+        16.59999999999991,
+        16.59999999999991,
+        16.699999999999818,
+        16.90000000000009,
+        16.300000000000182,
+        16.799999999999727,
+        16.700000000000273,
+        16.699999999999818,
+        16.700000000000273,
+        16.699999999999818,
+        16.59999999999991,
+        16.90000000000009,
+        16.59999999999991,
+        16.700000000000273,
+        16.5,
+        16.799999999999727,
+        16.59999999999991,
+        16.600000000000364,
+        16.699999999999818,
+        16.59999999999991,
+        16.59999999999991,
+        16.90000000000009,
+        16.5,
+        17.200000000000273,
+        16.299999999999727,
+        16.59999999999991
+      ]
+    },
+    {
+      "check": "keyboard-only skip link, domain, course, add and Escape journey"
+    },
+    {
+      "check": "resize keeps anchor and changes modal/region without residual inert"
+    },
+    {
+      "check": "400px low viewport, longest course and reachable close control"
+    },
+    {
+      "check": "mine return restores prior global search rather than dropping its query"
+    }
+  ],
+  "errors": [],
+  "environment": "Windows system Chrome; viewport/touch simulation, not physical phones"
+}

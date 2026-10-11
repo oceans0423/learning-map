@@ -1,0 +1,33 @@
+import {createRequire} from 'node:module';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import assert from 'node:assert/strict';
+const {chromium}=createRequire(import.meta.url)(process.argv[2]);
+const {domains}=await import('./domains.mjs');
+const {courses}=JSON.parse(await readFile(new URL('../../course/courses_v1.json',import.meta.url),'utf8'));
+const ability=JSON.parse(await readFile(new URL('./ability-data.json',import.meta.url),'utf8'));
+const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:1050}});
+const errors=[],checks=[];page.on('pageerror',e=>errors.push(e.message));
+const base='http://127.0.0.1:4175/doc/design/character-home-20261011/courses.html';
+async function ready(){await page.locator('.course-card').first().waitFor();}
+const names=()=>page.locator('.course-card h3').allTextContents();
+try{
+ await page.goto(base);await ready();assert.deepEqual(await names(),courses.map(c=>c.name));checks.push('69 課名與排序吻合原始資料');
+ await page.screenshot({path:dir+'courses-desktop.png'});
+ for(let i=0;i<4;i++){await page.goto(base+'?domain='+i);await ready();assert.deepEqual(await names(),courses.filter(c=>c.module===domains[i].module).map(c=>c.name));}checks.push('四個首頁領域入口的課程集合正確');
+ await page.goto(base);await ready();await page.locator('[name=domain][value="0"]').check();await page.locator('[name=domain][value="2"]').check();await page.locator('#year').selectOption('2');await page.locator('#type').selectOption('elective');
+ const expected=courses.filter(c=>[domains[0].module,domains[2].module].includes(c.module)&&c.year===2&&c.type==='elective');assert.deepEqual(await names(),expected.map(c=>c.name));checks.push('領域聯集、年級與必選修交集篩選正確');
+ const filterURL=page.url();await page.reload();await ready();assert.deepEqual(await names(),expected.map(c=>c.name));assert.ok(await page.locator('[name=domain][value="2"]').isChecked());checks.push('網址保留篩選，重新整理不遺失');
+ await page.locator('.reset').click();assert.equal(await page.locator('.course-card').count(),69);assert.equal(await page.locator('#search').evaluate(e=>e===document.activeElement),true);
+ await page.locator('#search').fill('ａｉ');await page.locator('#search').press('Enter');assert.deepEqual(await names(),courses.filter(c=>c.name.toLowerCase().includes('ai')).map(c=>c.name));checks.push('搜尋支援大小寫與全形英數正規化');
+ await page.locator('#search').fill('完全不存在的課名xyz');await page.locator('#search').press('Enter');await page.locator('#empty-reset').waitFor();assert.equal(await page.locator('.course-card').count(),0);assert.ok((await page.locator('#result-status').textContent()).includes('xyz'));await page.locator('#empty-reset').click();assert.equal(await page.locator('.course-card').count(),69);checks.push('零結果明示條件，可清除恢復且焦點回搜尋');
+ for(const course of courses){await page.locator(`[data-course="${course.id}"]`).click();assert.equal(await page.locator('#course-title').textContent(),course.name);assert.deepEqual(await page.locator('.facts dd').allTextContents(),[`${['一','二','三','四'][course.year-1]}年級`,`第 ${course.semester} 學期`,`${course.credits} 學分`,course.type==='required'?'必修':'選修']);assert.deepEqual(await page.locator('.ability-section > .ability-block h4').allTextContents(),ability.mappings[course.id].primary.map(id=>ability.abilities[id].name));assert.equal(await page.locator('.mapping-rationale').textContent(),ability.mappings[course.id].rationale);await page.keyboard.press('Escape');await page.waitForFunction(id=>document.activeElement?.dataset.course===id,course.id);}checks.push('69 門詳情事實與核心能力對照逐一核對；Escape 回來源');
+ await page.locator('.reset').click();await page.locator('#search').fill('田野');await page.locator('#search').press('Enter');await page.locator('[data-course]').first().click();await page.locator('summary').click();assert.ok(await page.locator('.ability-section details').evaluate(e=>e.open));await page.locator('#close-course').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#course-dialog').evaluate(e=>e.open),false);checks.push('支援方向可展開，關閉按鈕支援鍵盤');
+ for(const width of [320,390,700,768,1024,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow ${width}`);}checks.push('六種視窗寬度無整頁水平溢出');
+ await page.setViewportSize({width:390,height:844});await page.goto(base+'?domain=2');await ready();await page.screenshot({path:dir+'courses-mobile.png'});await page.locator('[data-course]').first().click();assert.ok(await page.locator('#course-dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));await page.screenshot({path:dir+'course-detail-mobile.png'});await page.keyboard.press('Escape');checks.push('手機卡片單欄、詳情不橫向溢出');
+ await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('.course-card').first().evaluate(e=>getComputedStyle(e).transitionDuration),'0s');checks.push('減少動態取消卡片過場');
+ await page.route('**/courses_v1.json',r=>r.abort());await page.goto(filterURL);await page.locator('#retry-courses').waitFor();assert.ok((await page.locator('#result-status').textContent()).includes('失敗'));assert.equal(await page.locator('#year').inputValue(),'2');await page.unroute('**/courses_v1.json');await page.locator('#retry-courses').click();await ready();assert.deepEqual(await names(),expected.map(c=>c.name));checks.push('載入失敗保留篩選，重試恢復正確集合');
+ await page.route('**/ability-data.json',r=>r.abort());await page.goto(base);await ready();await page.locator('[data-course]').first().click();assert.ok((await page.locator('.ability-section').textContent()).includes('暫時無法讀取'));assert.equal(await page.locator('.facts dd').count(),4);await page.unroute('**/ability-data.json');checks.push('能力資料失敗不阻斷課程事實閱讀');
+ assert.deepEqual(errors,[]);checks.push('無 JavaScript 執行錯誤');console.log(checks);
+}finally{await writeFile(dir+'courses-results.json',JSON.stringify({browser:browser.version(),checks,errors,limitations:'Chrome 自動化與模擬視窗；未做實體手機、Safari、讀屏或高中生測試。'},null,2));await browser.close();}

@@ -1,0 +1,299 @@
+import { useEffect, useId, useState, type CSSProperties } from 'react'
+import { YEAR_LABELS, type CourseAreaId } from '../config/courseAreas'
+import { courses } from '../data/courses'
+import { atlasStatistics, type AtlasScope } from '../lib/courseAtlas'
+import { galaxyYears, spiralStars } from '../lib/galaxy'
+import type { Course } from '../types/course'
+import { Button } from './Button'
+import '../styles/galaxy-scene.css'
+
+const stats = atlasStatistics(courses)
+const positions = [
+  [25, 27],
+  [73, 23],
+  [31, 69],
+  [77, 66],
+] as const
+const colors = ['#c7a6ff', '#ffbbab', '#91dafa', '#a5e9cf']
+const invitations = [
+  '換個角度，看見世界',
+  '把想像，變成故事',
+  '用數位，探索人文',
+  '把點子，帶進生活',
+]
+const stars = spiralStars(120)
+const distantStars = Array.from({ length: 62 }, (_, index) => ({
+  x: (index * 73.13 + 11) % 100,
+  y: (index * 37.71 + 7) % 100,
+  radius: index % 11 === 0 ? 1.35 : 0.7,
+}))
+
+export function GalaxyArtwork({ index }: { index: number }) {
+  const id = useId().replace(/:/g, '')
+  return (
+    <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false" fill="none">
+      <defs>
+        <radialGradient id={`${id}-haze`}>
+          <stop stopColor="currentColor" stopOpacity="0.28" />
+          <stop offset="0.5" stopColor="currentColor" stopOpacity="0.12" />
+          <stop offset="1" stopColor="currentColor" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id={`${id}-core`}>
+          <stop stopColor="#fff8ea" />
+          <stop offset="0.22" stopColor="currentColor" stopOpacity="0.85" />
+          <stop offset="1" stopColor="currentColor" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="50" cy="50" rx="49" ry="42" fill={`url(#${id}-haze)`} />
+      <g transform={`rotate(${index * 29} 50 50)`}>
+        {[0, 120, 240].map((angle) => (
+          <g key={angle} transform={`rotate(${angle} 50 50)`}>
+            <path
+              d="M50 50C60 43 70 53 66 65S39 85 23 73S9 45 20 29"
+              stroke="currentColor"
+              strokeWidth="5"
+              opacity="0.09"
+              strokeLinecap="round"
+            />
+            <path
+              d="M50 50C60 43 70 53 66 65S39 85 23 73S9 45 20 29"
+              stroke="currentColor"
+              strokeWidth="1.1"
+              opacity="0.38"
+              strokeLinecap="round"
+            />
+          </g>
+        ))}
+        {stars.map((star, i) => (
+          <circle
+            key={i}
+            cx={star.x}
+            cy={star.y}
+            r={star.radius}
+            fill={i % 8 === 0 ? '#fff8ea' : 'currentColor'}
+            opacity={star.opacity}
+          />
+        ))}
+      </g>
+      <ellipse cx="50" cy="50" rx="12" ry="9" fill={`url(#${id}-core)`} />
+      <circle cx="50" cy="50" r="1.4" fill="#fff8ea" />
+      <path
+        d="M80 14v6m-3-3h6M17 75v4m-2-2h4"
+        stroke="#e5e8ff"
+        strokeWidth="0.7"
+        opacity="0.7"
+      />
+    </svg>
+  )
+}
+
+interface Props {
+  area?: CourseAreaId | null
+  year?: Course['year'] | null
+  playIntro?: boolean
+  onIntroConsumed?: () => void
+  onScope: (scope: AtlasScope | null) => void
+  onYear?: (year: Course['year'] | null) => void
+  onPerspective: (perspective: 'area' | 'year') => void
+}
+
+export function CourseGalaxyScene({
+  area = null,
+  year = null,
+  playIntro = true,
+  onIntroConsumed,
+  onScope,
+  onYear,
+  onPerspective,
+}: Props) {
+  const [reduced, setReduced] = useState(
+    () =>
+      typeof window === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
+  const [intro, setIntro] = useState(() => !area && playIntro && !reduced)
+  useEffect(() => {
+    onIntroConsumed?.()
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const sync = () => {
+      setReduced(media.matches)
+      if (media.matches) setIntro(false)
+    }
+    const finishWhenHidden = () => {
+      if (document.hidden) setIntro(false)
+    }
+    media.addEventListener('change', sync)
+    document.addEventListener('visibilitychange', finishWhenHidden)
+    return () => {
+      media.removeEventListener('change', sync)
+      document.removeEventListener('visibilitychange', finishWhenHidden)
+    }
+  }, [onIntroConsumed])
+  useEffect(() => {
+    if (!intro) return
+    const timer = window.setTimeout(() => setIntro(false), 1800)
+    return () => window.clearTimeout(timer)
+  }, [intro])
+  const selected = stats.areas.find((item) => item.id === area)
+  return (
+    <section
+      className={`gx-scene${intro ? ' is-arriving' : ''}${area ? ' is-focused' : ''}`}
+      id={area ? undefined : 'atlas-content'}
+      tabIndex={-1}
+      aria-labelledby={area ? 'galaxy-focus-title' : 'atlas-content-title'}
+      data-intro={intro ? 'playing' : 'complete'}
+      onFocusCapture={(event) => {
+        if (intro && (event.target as HTMLElement).closest('.gx-domain')) setIntro(false)
+      }}
+    >
+      <div className="gx-heading">
+        <div>
+          <p className="gx-eyebrow">
+            {area ? 'YOUR NEXT STOP / 領域探索' : 'A UNIVERSE OF POSSIBILITIES'}
+          </p>
+          <h2 id={area ? 'galaxy-focus-title' : 'atlas-content-title'} tabIndex={-1}>
+            {selected ? selected.label : '你的好奇，從哪裡出發？'}
+          </h2>
+          <p className="gx-guide">
+            {selected
+              ? `${selected.count} 門課程，分布在四個年級。`
+              : '四個星系，四種探索方向。選一個，看看有哪些課程。'}
+          </p>
+        </div>
+        <div className="gx-tools">
+          {area ? (
+            <Button onClick={() => onScope(null)}>← 返回星河</Button>
+          ) : (
+            <>
+              <Button
+                id="galaxy-intro-control"
+                disabled={reduced}
+                onClick={() => setIntro((value) => !value)}
+              >
+                {reduced ? '靜態星圖' : intro ? '跳過動畫' : '重看星河'}
+              </Button>
+              <Button onClick={() => onPerspective('year')}>按年級看</Button>
+            </>
+          )}
+        </div>
+      </div>
+      <div className={`gx-field${area ? ' is-focused' : ''}`}>
+        <div className="gx-cosmos-clip" aria-hidden="true">
+          <div className="gx-cosmos" onAnimationEnd={() => setIntro(false)}>
+            <svg
+              className="gx-distance"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              fill="#d8e2ff"
+            >
+              {distantStars.map((star, i) => (
+                <circle
+                  key={i}
+                  cx={star.x}
+                  cy={star.y}
+                  r={star.radius * 0.12}
+                  opacity={i % 3 === 0 ? 0.6 : 0.24}
+                />
+              ))}
+            </svg>
+            <div className="gx-disk" />
+            {stats.areas.map((item, index) => (
+              <div
+                key={item.id}
+                className={`gx-visual${area === item.id ? ' is-current' : ''}`}
+                data-galaxy={item.id}
+                style={
+                  {
+                    '--gx-x': `${positions[index][0]}%`,
+                    '--gx-y': `${positions[index][1]}%`,
+                    '--gx-color': colors[index],
+                  } as CSSProperties
+                }
+              >
+                <GalaxyArtwork index={index} />
+              </div>
+            ))}
+            <span className="gx-coordinate">✦</span>
+          </div>
+        </div>
+        <div className="gx-domains" role="group" aria-label="選擇課程領域">
+          {stats.areas.map((item, index) => (
+            <button
+              key={item.id}
+              type="button"
+              className="ca-area gx-domain"
+              data-area={item.id}
+              aria-label={`查看${item.label}：${item.count}門課程`}
+              aria-pressed={area === item.id}
+              style={
+                {
+                  '--gx-x': `${positions[index][0]}%`,
+                  '--gx-y': `${positions[index][1]}%`,
+                  '--gx-color': colors[index],
+                } as CSSProperties
+              }
+              onClick={() => {
+                setIntro(false)
+                onScope({ kind: 'area', area: item.id })
+              }}
+            >
+              <span className="gx-hit-orbit" aria-hidden="true" />
+              <span className="gx-label">
+                <span className="gx-domain-name">{item.label}</span>
+                <span className="gx-invitation">{invitations[index]}</span>
+                <span className="gx-domain-count">
+                  {item.count} 門課程 <span aria-hidden="true">↗</span>
+                </span>
+              </span>
+            </button>
+          ))}
+        </div>
+        {area ? (
+          <div className="gx-focus">
+            <p className="gx-focus-guide">選擇年級，展開這個星系的課程</p>
+            <div className="gx-years" role="group" aria-label="領域的四年課程分布">
+              {galaxyYears(courses, area).map((item) => (
+                <button
+                  type="button"
+                  key={item.year}
+                  data-galaxy-year={item.year}
+                  aria-pressed={year === item.year}
+                  onClick={() => onYear?.(year === item.year ? null : item.year)}
+                >
+                  <span>{YEAR_LABELS[item.year - 1]}</span>
+                  <strong>
+                    {item.count}
+                    <small> 門</small>
+                  </strong>
+                </button>
+              ))}
+            </div>
+            <p className="gx-year-state" role="status">
+              {year
+                ? `正在查看${YEAR_LABELS[year - 1]} · 再點一次可查看四年全部課程`
+                : '目前顯示四年全部課程 · 課程清單在下方'}
+            </p>
+          </div>
+        ) : (
+          <div className="gx-map-center" aria-hidden="true">
+            <span>69</span>
+            <small>門課程 · 四年探索</small>
+          </div>
+        )}
+      </div>
+      {!area && (
+        <div className="gx-foot">
+          <p>不必收藏，也能探索全部課程。</p>
+          <Button
+            onClick={() => {
+              setIntro(false)
+              onScope({ kind: 'all' })
+            }}
+          >
+            查看全部 {stats.total} 門課程
+          </Button>
+        </div>
+      )}
+    </section>
+  )
+}

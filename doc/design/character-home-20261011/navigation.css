@@ -1,0 +1,32 @@
+/* Route navigation: native links with aria-current, not an ARIA tab widget. */
+.catalog-nav{gap:10px}
+.catalog-nav .text-link{
+  min-height:48px;
+  padding:10px 17px;
+  border:1px solid #a8b19e;
+  border-radius:7px;
+  background:#fffdf7;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.6;
+  letter-spacing:.02em;
+  justify-content:center;
+  gap:9px;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.catalog-nav .text-link:hover{background:#e3e8db;border-color:var(--green);text-decoration:none}
+.catalog-nav .text-link[aria-current=page]{background:var(--green);color:#fffdf8;border-color:var(--green);font-weight:700;text-decoration:none;box-shadow:inset 0 -3px 0 #263e30}
+.catalog-nav .text-link[aria-current=page]:hover{background:#2f4537}
+.catalog-nav .text-link:focus-visible{outline:3px solid #315c8e;outline-offset:4px}
+.catalog-nav .nav-count{display:inline-flex;align-items:center;justify-content:center;gap:3px;padding:3px 8px;min-height:28px;border-radius:5px;background:#e3e8db;color:#2f4537;font-size:12px;font-weight:600;line-height:1.5}
+.catalog-nav [data-save-count]{display:inline;min-width:0;min-height:0;border-radius:0;background:transparent;color:inherit;font:inherit}
+.catalog-nav [aria-current=page] .nav-count{background:#fffdf8;color:#2f4537}
+@media(max-width:900px) and (min-width:701px){.catalog-page .brand-link{width:310px;max-width:44%}.catalog-nav .text-link{padding-inline:12px;font-size:14px}}
+@media(max-width:700px){
+  .catalog-page .masthead{gap:14px;padding-bottom:16px}
+  .catalog-nav{display:grid;grid-template-columns:.7fr 1fr 1.6fr;gap:8px;width:100%;min-width:0}
+  .catalog-nav .text-link{padding:10px 6px;font-size:13px;min-height:48px;gap:6px;letter-spacing:0;min-width:0}
+  .catalog-nav .nav-count{font-size:11px;padding:3px 6px;gap:2px;min-height:25px}
+}
+@media(max-width:350px){.catalog-nav{gap:6px}.catalog-nav .text-link{font-size:12px;padding-inline:4px;gap:4px}.catalog-nav .nav-count{padding-inline:5px}}

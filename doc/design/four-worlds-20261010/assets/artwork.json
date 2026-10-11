@@ -1,0 +1,77 @@
+{
+  "sourcePath": "C:\\Users\\user\\Downloads\\新增資料夾 (20)\\靜謐手繪地圖研究工作桌.png",
+  "originalPath": "public/images/worlds/originals/digital-humanities-original.png",
+  "originalSHA256": "FB2DE2CBEB35E2087CA45A6E4832286D280F077EF5DB4196AE39B053E26D6716",
+  "originalDimensions": [
+    1448,
+    1086
+  ],
+  "cornerRGB": {
+    "topLeft": [
+      251,
+      250,
+      245
+    ],
+    "topRight": [
+      251,
+      250,
+      246
+    ],
+    "bottomLeft": [
+      251,
+      250,
+      245
+    ],
+    "bottomRight": [
+      251,
+      250,
+      245
+    ]
+  },
+  "processing": "RGB conversion, crop, Lanczos downsample and WebP quality 88; no drawing or generative editing",
+  "outputs": [
+    {
+      "name": "scene",
+      "publicPath": "public/images/worlds/digital-humanities-scene.webp",
+      "taskPath": "assets/digital-mother.webp",
+      "dimensions": [
+        1280,
+        960
+      ],
+      "cropPixels": null,
+      "bytes": 179892
+    },
+    {
+      "name": "focus",
+      "publicPath": "public/images/worlds/digital-humanities-focus.webp",
+      "taskPath": "assets/digital-focus.webp",
+      "dimensions": [
+        1100,
+        683
+      ],
+      "cropPixels": [
+        246,
+        293,
+        1419,
+        1021
+      ],
+      "bytes": 149242
+    },
+    {
+      "name": "thumbnail",
+      "publicPath": "public/images/worlds/digital-humanities-thumbnail.webp",
+      "taskPath": "assets/digital-thumbnail.webp",
+      "dimensions": [
+        320,
+        208
+      ],
+      "cropPixels": [
+        507,
+        413,
+        1361,
+        967
+      ],
+      "bytes": 17620
+    }
+  ]
+}
