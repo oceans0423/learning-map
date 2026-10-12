@@ -15,14 +15,15 @@ const track=$('.domain-track'),roleTrack=$('.role-track'),dialog=$('#preview');
 const mobile=matchMedia('(max-width:700px)'),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 let selected=0,opener=null,scrollTimer;
 const picture=name=>`assets/${name}.webp`;
-track.innerHTML=domains.map((d,i)=>`<button class="domain-card" aria-pressed="${i===0}" data-index="${i}" style="--tint:${d.tint}" aria-label="${d.name}，${d.title}"><span class="portrait"><img src="${picture(d.name)}" alt="" width="400" height="760" fetchpriority="${i===0?'high':'auto'}"></span><span class="character-name">${d.name}</span><span class="domain-sub">${d.title}</span><span class="selected-label">● 目前選取</span></button>`).join('');
-$('.domain-tabs').innerHTML=domains.map((d,i)=>`<button data-index="${i}" aria-pressed="${i===0}" aria-label="選取${d.title}">${d.name}</button>`).join('');
+const building=name=>`../building/${name}.png`;
+track.innerHTML=domains.map((d,i)=>`<button class="domain-card" aria-pressed="${i===0}" data-index="${i}" style="--tint:${d.tint}" aria-label="${d.guild}，${d.title}"><span class="portrait"><img class="guild-building" src="${building(d.building)}" alt="" width="1024" height="1536" fetchpriority="${i===0?'high':'auto'}"><img class="representative" src="${picture(d.name)}" alt="" width="400" height="760" fetchpriority="${i===0?'high':'auto'}"></span><span class="guild-name">${d.guild}</span><span class="domain-sub">${d.title}</span><span class="selected-label">● 目前選取</span></button>`).join('');
+$('.domain-tabs').innerHTML=domains.map((d,i)=>`<button data-index="${i}" aria-pressed="${i===0}" aria-label="選取${d.guild}">${d.guild}</button>`).join('');
 roleTrack.innerHTML=roles.map(([name,tag],i)=>`<button class="role-card" data-role="${i}" aria-haspopup="dialog" aria-label="認識${name}：${tag}"><img src="${picture(name)}" alt="" width="400" height="760" loading="lazy"><h3>${name}</h3><p>${tag}</p></button>`).join('');
 function syncDomainControls(){for(const card of track.children){card.tabIndex=mobile.matches?-1:0;card.toggleAttribute('aria-hidden',mobile.matches);}}
 function select(index,scroll=false){
  selected=Math.max(0,Math.min(3,index));const d=domains[selected];
  document.querySelectorAll('[data-index]').forEach(el=>el.setAttribute('aria-pressed',String(Number(el.dataset.index)===selected)));
- $('#domain-detail').innerHTML=`<div><p class="detail-label">${d.name}的提問</p><h3>${d.title}</h3></div><div><p>${d.question}</p><p>${d.description}</p></div><a class="primary" id="domain-entry" href="courses.html?domain=${selected}">探索這個領域 <span aria-hidden="true">↗</span></a>`;
+ $('#domain-detail').innerHTML=`<div><p class="detail-label">${d.guild}的提問</p><h3>${d.title}</h3></div><div><p>${d.question}</p><p>${d.description}</p></div><a class="primary" id="domain-entry" href="courses.html?domain=${selected}">探索這個公會 <span aria-hidden="true">↗</span></a>`;
  $('#domain-position').textContent=`0${selected+1} / 04`;
  $('#domain-prev').disabled=selected===0;$('#domain-next').disabled=selected===3;
  if(scroll&&mobile.matches){const item=track.children[selected];track.scrollTo({left:item.offsetLeft-track.offsetLeft-(track.clientWidth-item.clientWidth)/2,behavior:reduced.matches?'instant':'smooth'});}

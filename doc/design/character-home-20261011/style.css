@@ -65,3 +65,20 @@ dialog::backdrop{opacity:0;transition:opacity 200ms var(--ease-out),overlay 200m
 dialog[open]::backdrop{opacity:1}
 @starting-style{dialog[open]{opacity:0;transform:scale(.97)}dialog[open]::backdrop{opacity:0}}
 @media(prefers-reduced-motion:reduce){dialog,dialog[open]{transform:none!important;transition:opacity 160ms var(--ease-out),overlay 160ms allow-discrete,display 160ms allow-discrete!important}.primary,.button-secondary,.arrow,.domain-tabs button{transition:background-color 120ms ease,color 120ms ease,border-color 120ms ease!important}}
+
+/* Guild landmarks establish the first visual layer; representatives remain in the foreground. */
+.portrait{height:360px;margin-bottom:20px}.portrait:before{width:88%;height:18%;bottom:4px;border-radius:50%;opacity:.45;transform:scale(.94)}
+.domain-card .portrait .guild-building,.domain-card .portrait .representative{position:absolute;object-fit:contain;object-position:center bottom;transform-origin:center bottom}
+.domain-card .portrait .guild-building{z-index:0;width:116%;height:100%;max-width:none;filter:drop-shadow(0 10px 7px #30302a1c);transition:transform 220ms var(--ease),filter 220ms var(--ease)}
+.domain-card .portrait .representative{z-index:1;right:5%;bottom:1%;height:47%;max-width:45%;filter:drop-shadow(0 6px 4px #30302a1c);transition:transform 220ms var(--ease)}
+.domain-card[aria-pressed=true] .guild-building{transform:scale(1.025)}.domain-card[aria-pressed=true] .representative{transform:translateY(-3px) scale(1.05)}
+.guild-name{font-size:22px;font-weight:700;letter-spacing:.12em;line-height:1.5}.domain-sub{margin-top:6px}
+@media(hover:hover) and (pointer:fine){.domain-card:hover .guild-building{transform:scale(1.025)}.domain-card:hover .representative{transform:translateY(-3px) scale(1.05)}}
+@media(max-width:1000px) and (min-width:701px){.portrait{height:310px}}
+@media(max-width:700px){.portrait{height:370px;max-width:300px;margin-bottom:16px}.guild-name{font-size:22px}.representative{right:3%;height:45%;max-width:44%}}
+@media(prefers-reduced-motion:reduce){.guild-building,.representative,.domain-card[aria-pressed=true] .guild-building,.domain-card[aria-pressed=true] .representative,.domain-card:hover .guild-building,.domain-card:hover .representative{transform:none!important}}
+
+/* Keep every guild landmark visually distinct instead of letting oversized cutouts merge together. */
+.domain-track{gap:48px}.domain-card .portrait .guild-building{width:100%}
+@media(max-width:1000px) and (min-width:701px){.domain-track{gap:20px}}
+@media(max-width:700px){.domain-track{gap:16px}}
