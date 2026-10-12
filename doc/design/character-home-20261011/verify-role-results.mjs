@@ -1,24 +1,24 @@
-import {createRequire} from 'node:module';
+import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
-const {chromium}=createRequire(import.meta.url)(process.argv[2]);
-const browser=await chromium.launch({channel:'chrome'});
+const browser=await chromium.launch();
 const context=await browser.newContext({viewport:{width:1440,height:1050}}),page=await context.newPage();
 const base='http://127.0.0.1:4175/doc/design/character-home-20261011/courses.html';
 const key='humanities-character-prototype:collection:v1',checks=[],errors=[];
 const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
 page.on('pageerror',e=>errors.push(e.message));
 let requests=0;page.on('request',r=>{if(r.url().endsWith('/role-data.json'))requests++;});
-async function seed(numbers){await page.evaluate(({key,numbers})=>localStorage.setItem(key,JSON.stringify({version:1,ids:numbers.map(n=>'course-'+String(n).padStart(3,'0'))})),{key,numbers});await page.goto(base+'?view=saved');await page.waitForFunction(()=>document.querySelector('#results-section').getAttribute('aria-busy')==='false');}
+async function seed(numbers){await page.evaluate(({key,numbers})=>localStorage.setItem(key,JSON.stringify({version:1,ids:numbers.map(n=>'course-'+String(n).padStart(3,'0'))})),{key,numbers});await page.goto(base+'?view=saved');await page.locator('#role-exploration:not([hidden])').waitFor();await page.waitForFunction(()=>document.querySelector('#results-section').getAttribute('aria-busy')==='false');if(numbers.length)await page.locator('#show-role-results:not([hidden])').waitFor();}
 async function show(){await page.locator('#show-role-results').click();await page.locator('#role-result-title').waitFor();}
 async function roles(){return page.locator('[data-character]').evaluateAll(es=>es.map(e=>e.dataset.character));}
 try{
  await page.goto(base);await page.locator('.course-card').first().waitFor();assert.ok(await page.locator('#role-exploration').isHidden());assert.equal(requests,0);
  await seed([13,31,32]);assert.equal(requests,0);assert.ok(await page.locator('#role-output').isHidden());checks.push('找課不顯示角色；我的探索未按查看前不載入、不配角色');
- const scenarios=[[[7,48,65],['P1']],[[14,45,54],['P2']],[[20,22,27],['P3']],[[19,40,68],['P4']],[[42,49],['P5']],[[51],['P6']],[[38,60],['P7']],[[10,36,39,64],['P8']],[[13,31,32],['P1','P2']],[[14,19,40,45,51],['P2','P4','P6']],[[4,55],[]],[[],[]],[[50,59,66],[]],[[49,68],['P4','P5']],[[24],['P8']]];
+ const scenarios=[[[7,48,65],['P1']],[[14,45,54],['P2']],[[20,22,27],['P3']],[[19,40,68],['P4']],[[42,49],['P5']],[[51],['P6']],[[38,60],['P7']],[[10,36,39,64],['P8']],[[13,31,32],['P1','P2']],[[14,19,40,45,51],['P2','P4','P6']],[[4,55],[]],[[50,59,66],[]],[[49,68],['P4','P5']],[[24],['P8']]];
  for(const [input,expected] of scenarios){await seed(input);await show();assert.deepEqual(await roles(),expected);const text=await page.locator('#role-output').textContent();for(const phrase of ['不是','不代表','不等於','未證實','注意：','暫定','沒有排名','限制'])assert.ok(!text.includes(phrase),`防禦性文字：${phrase}`);}
- checks.push('瀏覽器核對八角色、單向／雙向／多元／不足、零收藏、整合課程、P4 資料整理與 P8 社會設計；結果無防禦性文字');
+ checks.push('瀏覽器核對八角色、單向／雙向／多元／不足、整合課程、P4 資料整理與 P8 社會設計；結果無防禦性文字');
+ await seed([]);assert.ok(await page.locator('#show-role-results').isHidden());assert.ok(await page.locator('#start-role-exploration').isVisible());assert.ok((await page.locator('#role-status').textContent()).includes('先收藏一門'));checks.push('零收藏不強迫角色判讀，改為引導先探索課程');
  await seed([13,31,32]);await page.locator('#show-role-results').focus();await page.keyboard.press('Enter');await page.locator('#role-result-title').waitFor();assert.equal(await page.locator('#role-result-title').evaluate(e=>e===document.activeElement),true);
  await page.locator('.role-evidence summary').first().focus();await page.keyboard.press('Enter');const source=page.locator('.role-evidence [data-course]').first();await source.click();assert.ok(await page.locator('#course-dialog').evaluate(e=>e.open));await page.keyboard.press('Escape');assert.equal(await source.evaluate(e=>e===document.activeElement),true);checks.push('鍵盤查看移至結果標題，原生摘要可展開；課程詳情 Escape 返回來源');
  for(const width of [320,390,700,768,900,1024,1440]){await page.setViewportSize({width,height:1000});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert.ok(await page.locator('#show-role-results').evaluate(e=>e.getBoundingClientRect().height>=48));}
@@ -27,7 +27,7 @@ try{
  await page.emulateMedia({reducedMotion:'reduce'});await page.evaluate(()=>document.documentElement.style.fontSize='200%');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.evaluate(()=>document.documentElement.style.fontSize='');checks.push('減少動態與文字放大情境維持可操作、無溢出（非實體讀屏測試）');
  await page.locator('#results [data-save="course-031"]').click();assert.ok(await page.locator('#role-output').isHidden());assert.ok((await page.locator('#role-status').textContent()).includes('收藏已更新'));await show();assert.deepEqual(await roles(),['P1']);assert.equal(await page.locator('#role-output [data-course="course-031"]').count(),0);checks.push('取消收藏收起舊結果，不自動換角色；主動重看後移除依據');
  const other=await context.newPage();await other.goto(base);await other.locator('.course-card').first().waitFor();await other.locator('#results [data-save="course-051"]').click();await page.waitForFunction(()=>document.querySelector('#role-output').hidden);await show();assert.deepEqual(await roles(),['P1','P6']);await other.close();checks.push('其他分頁變更收藏後結果失效，重看採最新集合');
- await page.locator('#clear-collection').click();await page.locator('#confirm-clear').click();assert.ok(await page.locator('#role-output').isHidden());await show();assert.deepEqual(await roles(),[]);checks.push('確認清空後不殘留角色，零收藏仍可查看');
+ await page.locator('#clear-collection').click();await page.locator('#confirm-clear').click();assert.ok(await page.locator('#role-output').isHidden());assert.ok(await page.locator('#show-role-results').isHidden());assert.ok(await page.locator('#start-role-exploration').isVisible());assert.deepEqual(await roles(),[]);checks.push('確認清空後不殘留角色，回到先探索課程的空狀態');
  await seed([51]);await page.route('**/role-data.json',route=>route.abort());await page.locator('#show-role-results').click();await page.getByRole('button',{name:'重新讀取角色方向'}).waitFor();assert.ok((await page.locator('#role-status').textContent()).includes('無法讀取'));assert.ok(await page.locator('#role-output').isHidden());assert.equal(await page.locator('.course-card').count(),1);await page.unroute('**/role-data.json');await show();assert.deepEqual(await roles(),['P6']);checks.push('角色資料失敗明示錯誤，不冒充不足；收藏保留且可重試');
  await seed([51]);await page.route('**/role-data.json',route=>route.fulfill({contentType:'application/json',body:'{"schemaVersion":1}'}));await page.locator('#show-role-results').click();await page.getByRole('button',{name:'重新讀取角色方向'}).waitFor();assert.ok(await page.locator('#role-output').isHidden());await page.unroute('**/role-data.json');checks.push('不完整資料不進入判讀');
  await seed([13,31,32]);let release;const gate=new Promise(resolve=>release=resolve);let received;const arrived=new Promise(resolve=>received=resolve);await page.route('**/role-data.json',async route=>{received();await gate;await route.continue();});await page.locator('#show-role-results').click();await arrived;assert.equal(await page.locator('#show-role-results').isDisabled(),true);await page.locator('#results [data-save="course-031"]').click();release();await page.waitForFunction(()=>!document.querySelector('#show-role-results').disabled);assert.ok(await page.locator('#role-output').isHidden());assert.ok((await page.locator('#role-status').textContent()).includes('收藏已更新'));await page.unroute('**/role-data.json');await show();assert.deepEqual(await roles(),['P1']);checks.push('慢載入期間更新收藏拒絕舊快照，忙碌結束後可重看');

@@ -2,19 +2,20 @@ import {domains} from './domains.mjs';
 import {mountRoleResults} from './role-results.mjs';
 import {getSavedIds,getCollectionNotice,isVolatile,canClearCollection,toggleSaved,clearSaved,subscribeCollection} from './collection-store.mjs';
 const $=s=>document.querySelector(s);
+const reduced=matchMedia('(prefers-reduced-motion:reduce)');
 const params=new URLSearchParams(location.search);
 const savedView=params.get('view')==='saved';
 const initialDomains=(params.get('domains')??params.get('domain')??'').split(',').filter(v=>/^[0-3]$/.test(v)).map(Number);
 const state={domains:new Set(initialDomains),year:/^[1-4]$/.test(params.get('year'))?params.get('year'):'',type:['required','elective'].includes(params.get('type'))?params.get('type'):'',q:params.get('q')??'',ability:/^H(0[1-9]|1[0-4])$/.test(params.get('ability'))?params.get('ability'):''};
 const requestedCourse=/^course-\d{3}$/.test(params.get('course')??'')?params.get('course'):null;
-let courses=null,abilityData=null,opener=null,timer,loadingVersion=0;
+let courses=null,abilityData=null,opener=null,timer,loadingVersion=0,activeCourse=requestedCourse,courseHistory=false,removalFocusTarget=null;
 const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalize=value=>String(value).normalize('NFKC').toLocaleLowerCase().trim();
 const labels=['一','二','三','四'];
 const domainFor=course=>domains.find(d=>d.module===course.module);
 $('#domain-options').innerHTML=domains.map((d,i)=>`<label class="domain-option"><input type="checkbox" name="domain" value="${i}" ${state.domains.has(i)?'checked':''}><span><strong>${d.title}</strong><small>${d.name}的視角</small></span></label>`).join('');
 $('#search').value=state.q;$('#year').value=state.year;$('#type').value=state.type;
-function syncURL(){const p=new URLSearchParams();if(savedView)p.set('view','saved');else{if(state.domains.size)p.set('domains',[...state.domains].sort().join(','));if(state.year)p.set('year',state.year);if(state.type)p.set('type',state.type);if(state.ability)p.set('ability',state.ability);if(state.q.trim())p.set('q',state.q.trim());}history.replaceState(null,'',location.pathname+(p.size?'?'+p:''));}
+function syncURL(mode='replace'){const p=new URLSearchParams();if(savedView)p.set('view','saved');else{if(state.domains.size)p.set('domains',[...state.domains].sort().join(','));if(state.year)p.set('year',state.year);if(state.type)p.set('type',state.type);if(state.ability)p.set('ability',state.ability);if(state.q.trim())p.set('q',state.q.trim());}if(activeCourse)p.set('course',activeCourse);history[mode+'State'](null,'',location.pathname+(p.size?'?'+p:''));}
 function renderIntro(){
  const one=!savedView&&state.domains.size===1?domains[[...state.domains][0]]:null;
  $('#intro-side').innerHTML=one?`<div class="intro-domain"><img src="assets/${one.name}.webp" alt=""><div><p class="eyebrow">A DIFFERENT PERSPECTIVE</p><h2>${one.name}</h2><p>${one.question}</p></div></div>`:domains.map(d=>`<img class="mini-crew" src="assets/${d.name}.webp" alt="">`).join('');
@@ -60,8 +61,8 @@ $('.reset').addEventListener('click',reset);
 function abilityTags(id){const m=abilityData?.mappings[id];return m?`<ul class="ability-tags card-abilities" aria-label="主要培養能力">${m.primary.map(a=>`<li>${escapeHTML(abilityData.abilities[a].name)}</li>`).join('')}</ul>`:'';}
 function abilityBlock(id){const a=abilityData.abilities[id];return `<div class="ability-block"><h4>${escapeHTML(a.name)}</h4><p>${escapeHTML(a.definition)}</p><dl><div><dt>怎麼做</dt><dd>${escapeHTML(a.behavior)}</dd></div><div><dt>可以做出</dt><dd>${escapeHTML(a.outputs)}</dd></div></dl></div>`;}
 function openCourse(e){const button=e.target.closest('[data-course]');if(button)showCourse(button.dataset.course,button);}
-function showCourse(id,source){
- const c=courses.find(c=>c.id===id);if(!c)return;const d=domainFor(c),mapping=abilityData?.mappings[c.id];opener=source;
+function showCourse(id,source,push=true){
+ const c=courses.find(c=>c.id===id);if(!c)return;const d=domainFor(c),mapping=abilityData?.mappings[c.id];opener=source;activeCourse=id;if(push){syncURL('push');courseHistory=true;}
  $('#course-content').innerHTML=`<div class="course-heading"><img src="assets/${d.name}.webp" alt=""><div><p>${d.title}</p><h2 id="course-title">${escapeHTML(c.name)}</h2></div></div><dl class="facts"><div><dt>規劃年級</dt><dd>${labels[c.year-1]}年級</dd></div><div><dt>規劃學期</dt><dd>第 ${c.semester} 學期</dd></div><div><dt>課程學分</dt><dd>${c.credits} 學分</dd></div><div><dt>課程性質</dt><dd>${c.type==='required'?'必修':'選修'}</dd></div></dl><p class="detail-offering">${escapeHTML(c.offeringNote)} · ${escapeHTML(c.sourceVersion)}</p><section class="ability-section" aria-labelledby="ability-title"><h3 id="ability-title">這門課的能力連結</h3>${mapping?`<p class="mapping-rationale">${escapeHTML(mapping.rationale)}</p><div class="ability-primary"><h4 class="ability-group">主要培養</h4>${mapping.primary.map(abilityBlock).join('')}</div><div class="ability-secondary"><h4 class="ability-group">延伸練習</h4>${mapping.secondary.map(abilityBlock).join('')}</div>`:'<p>能力對照資料暫時無法讀取，課程基本資訊仍可正常查看。</p>'}</section>`;
  $('.detail-offering').insertAdjacentHTML('afterend',`<div class="detail-save-row">${saveButton(c)}<p>想再看一眼？把這門課留在「我的探索」。</p></div><p id="detail-save-feedback" class="detail-save-feedback" role="status" aria-live="polite"></p>`);
  $('#course-dialog').showModal();$('#close-course').focus();
@@ -69,9 +70,11 @@ function showCourse(id,source){
 $('#results').addEventListener('click',openCourse);
 $('#collection-summary').addEventListener('click',openCourse);
 $('#role-exploration').addEventListener('click',openCourse);
-$('#close-course').addEventListener('click',()=>$('#course-dialog').close());
-$('#course-dialog').addEventListener('close',()=>{const replacement=opener?.dataset.course?document.querySelector(`#results [data-course="${opener.dataset.course}"]`):null;if(opener?.isConnected)opener.focus({preventScroll:true});else if(replacement)replacement.focus({preventScroll:true});else $('#results-title').focus({preventScroll:true});});
-$('#course-dialog').addEventListener('click',e=>{const d=$('#course-dialog'),r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close();});
+function closeCourse(){if(courseHistory)history.back();else{activeCourse=null;syncURL();$('#course-dialog').close();}}
+$('#close-course').addEventListener('click',closeCourse);
+$('#course-dialog').addEventListener('cancel',e=>{e.preventDefault();closeCourse();});
+$('#course-dialog').addEventListener('close',()=>{const replacement=opener?.dataset.course?document.querySelector(`#results [data-course="${opener.dataset.course}"]`):null;if(opener?.isConnected&&!opener.closest('dialog'))opener.focus({preventScroll:true});else if(removalFocusTarget?.isConnected)removalFocusTarget.focus({preventScroll:true});else if(replacement)replacement.focus({preventScroll:true});else $('#results-title').focus({preventScroll:true});removalFocusTarget=null;});
+$('#course-dialog').addEventListener('click',e=>{const d=$('#course-dialog'),r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))closeCourse();});
 async function loadCourses(){
  const version=++loadingVersion;$('#results-section').setAttribute('aria-busy','true');$('#result-status').textContent='正在讀取課程資料…';$('#results').innerHTML='';$('#result-number').textContent='—';
  try{const response=await fetch('../../course/courses_v1.json');if(!response.ok)throw Error('Course request failed');const data=await response.json();if(!Array.isArray(data.courses)||data.courses.length!==69||data.courses.some(c=>!domainFor(c)))throw Error('Invalid course data');if(version!==loadingVersion)return;courses=data.courses;render();}
@@ -79,8 +82,8 @@ async function loadCourses(){
  finally{if(version===loadingVersion)$('#results-section').setAttribute('aria-busy','false');}
 }
 async function loadAbilities(){try{const response=await fetch('ability-data.json');if(!response.ok)throw Error('Ability request failed');const data=await response.json();if(!data.abilities||!data.mappings||Object.keys(data.abilities).length!==14||Object.keys(data.mappings).length!==69)throw Error('Invalid ability data');abilityData=data;$('#ability').insertAdjacentHTML('beforeend',Object.entries(data.abilities).map(([id,a])=>`<option value="${id}">${escapeHTML(a.name)}</option>`).join(''));$('#ability').value=state.ability;}catch{abilityData=null;$('#ability').disabled=true;}if(courses)render();else renderCollectionSummary();}
-let feedbackTimer;
-function feedback(message){clearTimeout(feedbackTimer);$('#collection-feedback').textContent=message;if($('#detail-save-feedback'))$('#detail-save-feedback').textContent=message;feedbackTimer=setTimeout(()=>$('#collection-feedback').textContent='',5000);}
+let feedbackTimer,feedbackClearTimer;
+function feedback(message){const toast=$('#collection-feedback');clearTimeout(feedbackTimer);clearTimeout(feedbackClearTimer);toast.textContent=message;toast.classList.add('is-visible');if($('#detail-save-feedback'))$('#detail-save-feedback').textContent=message;feedbackTimer=setTimeout(()=>{toast.classList.remove('is-visible');feedbackClearTimer=setTimeout(()=>toast.textContent='',reduced.matches?160:200)},5000);}
 document.addEventListener('click',e=>{
  const button=e.target.closest('[data-save]');if(!button||!courses)return;
  const course=courses.find(c=>c.id===button.dataset.save);if(!course)return;
@@ -90,7 +93,7 @@ document.addEventListener('click',e=>{
 subscribeCollection(()=>{
  const active=document.activeElement,saveId=active?.dataset.save;
  const oldButtons=[...document.querySelectorAll('#results [data-save]')],oldIndex=oldButtons.indexOf(active);
- if(savedView){render();if(saveId&&!$('#course-dialog').open&&!$('#clear-dialog').open){const replacement=document.querySelector(`#results [data-save="${saveId}"]`)||document.querySelectorAll('#results [data-save]')[Math.min(Math.max(oldIndex,0),getSavedIds().size-1)];(replacement||$('#results-title')).focus({preventScroll:true});}}
+ if(savedView){const detailIndex=opener?.dataset.course?[...document.querySelectorAll('#results [data-course]')].indexOf(opener):-1;render();if($('#course-dialog').open&&detailIndex>=0&&!getSavedIds().has(opener.dataset.course)){const remaining=document.querySelectorAll('#results [data-course]');removalFocusTarget=remaining[Math.min(detailIndex,remaining.length-1)]||$('#results-title');}if(saveId&&!$('#course-dialog').open&&!$('#clear-dialog').open){const replacement=document.querySelector(`#results [data-save="${saveId}"]`)||document.querySelectorAll('#results [data-save]')[Math.min(Math.max(oldIndex,0),getSavedIds().size-1)];(replacement||$('#results-title')).focus({preventScroll:true});}}
  else syncSaveUI();
 });
 $('#clear-collection').addEventListener('click',()=>{const n=getSavedIds().size;$('#clear-description').textContent=n?`即將移除目前 ${n} 門課程的收藏紀錄。`:'即將清除此樣張目前無法讀取的收藏紀錄。';$('#clear-dialog').showModal();$('#cancel-clear').focus();});
@@ -106,5 +109,6 @@ if(savedView){
 }else $('#browse-link').setAttribute('aria-current','page');
 if(savedView)mountRoleResults({getSavedIds,subscribeCollection,isCourseReady:()=>Boolean(courses)});
 window.addEventListener('pageshow',event=>{if(event.persisted){if(savedView)render();else syncSaveUI();}});
+window.addEventListener('popstate',()=>{const id=new URLSearchParams(location.search).get('course');activeCourse=id;if(id&&courses){courseHistory=true;showCourse(id,null,false);}else if($('#course-dialog').open){courseHistory=false;$('#course-dialog').close();}});
 render();await Promise.all([loadCourses(),loadAbilities()]);
-if(requestedCourse&&courses)showCourse(requestedCourse,null);
+if(requestedCourse&&courses)showCourse(requestedCourse,null,false);

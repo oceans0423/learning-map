@@ -1,9 +1,8 @@
-import {createRequire} from 'node:module';
+import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-const {chromium}=createRequire(import.meta.url)(process.argv[2]);
-const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage();
+const browser=await chromium.launch(),page=await browser.newPage();
 const base='http://127.0.0.1:4175/doc/design/character-home-20261011/courses.html';
 const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
 const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));

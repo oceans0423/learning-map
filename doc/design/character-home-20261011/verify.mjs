@@ -1,10 +1,9 @@
-import {createRequire} from 'node:module';
+import {chromium} from 'playwright';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-const {chromium}=createRequire(import.meta.url)(process.argv[2]);
 const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
-const browser=await chromium.launch({channel:'chrome',headless:true});
+const browser=await chromium.launch({headless:true});
 const checks=[],errors=[];const page=await browser.newPage();page.on('pageerror',e=>errors.push(e.message));
 const courses=JSON.parse(await readFile(new URL('../../course/courses_v1.json',import.meta.url),'utf8')).courses;
 const record=message=>checks.push(message);

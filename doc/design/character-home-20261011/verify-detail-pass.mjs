@@ -1,15 +1,14 @@
 // Detail pass 2026-10-11: hover feedback, secondary buttons, role course combinations, course–ability correspondence.
-import {createRequire} from 'node:module';
+import {chromium} from 'playwright';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
-const {chromium}=createRequire(import.meta.url)(process.argv[2]);
 const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
 const root='http://127.0.0.1:4175/doc/design/character-home-20261011/';
 const roleData=JSON.parse(await readFile(new URL('./role-data.json',import.meta.url),'utf8'));
 const ability=JSON.parse(await readFile(new URL('./ability-data.json',import.meta.url),'utf8'));
 const {courses}=JSON.parse(await readFile(new URL('../../course/courses_v1.json',import.meta.url),'utf8'));
-const browser=await chromium.launch({channel:'chrome'});
+const browser=await chromium.launch();
 const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
 const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));
 const scaleOf=locator=>locator.evaluate(e=>{const m=new DOMMatrix(getComputedStyle(e).transform);return Math.round(Math.hypot(m.a,m.b)*100)/100;});
@@ -17,12 +16,12 @@ const noCodes=async()=>assert.ok(!/H(0[1-9]|1[0-4])/.test(await page.locator('bo
 try{
  await page.goto(root+'index.html');await page.locator('.domain-card').first().waitFor();
  const second=page.locator('.domain-card').nth(1);await second.hover();await page.waitForTimeout(300);
- assert.equal(await scaleOf(second.locator('.portrait img')),1.12);
+ assert.equal(await scaleOf(second.locator('.portrait img')),1.04);
  await page.locator('#domain-detail').hover();
  const role=page.locator('.role-card').first();await role.scrollIntoViewIfNeeded();await role.hover();await page.waitForTimeout(300);
- assert.equal(await scaleOf(role.locator('img')),1.1);
+ assert.equal(await scaleOf(role.locator('img')),1.04);
  await second.hover();await page.waitForTimeout(300);await page.locator('#domains').screenshot({path:dir+'detail-hover-desktop.png'});
- checks.push('四領域人物觸碰放大 1.12 倍、八角色 1.1 倍（220ms）');
+ checks.push('四領域與八角色人物觸碰皆輕微放大 1.04 倍（220ms）');
  const header=page.locator('.masthead .button-secondary');assert.ok((await header.boundingBox()).height>=44);checks.push('首頁「全部課程」改為次要按鈕，高度至少 44px');
  for(let i=0;i<8;i++){
   const card=page.locator('.role-card').nth(i);await card.scrollIntoViewIfNeeded();await card.click();

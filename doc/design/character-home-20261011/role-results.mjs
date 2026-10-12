@@ -6,10 +6,12 @@ export function mountRoleResults({getSavedIds,subscribeCollection,isCourseReady}
  const section=document.querySelector('#role-exploration');
  section.hidden=false;
  const button=section.querySelector('#show-role-results');
+ const start=section.querySelector('#start-role-exploration');
  const status=section.querySelector('#role-status');
  const output=section.querySelector('#role-output');
  let data=null,result=null,busy=false,request=0;
  const snapshot=()=>[...getSavedIds()].sort().join(',');
+ function syncAvailability(){const empty=getSavedIds().size===0;button.hidden=empty;start.hidden=!empty;if(empty){result=null;output.hidden=true;output.innerHTML='';status.textContent='先收藏一門感興趣的課，再回來看看探索方向。';}}
  function validData(value) {
   if(value?.schemaVersion!==1||value.roles?.length!==8||value.relations?.length!==85||value.courseIds?.length!==69||value.pending?.length!==3||!value.abilityNames)throw Error('Invalid role data');
   const ids=new Set(value.courseIds),roles=new Map(value.roles.map(r=>[r.id,r]));
@@ -55,6 +57,7 @@ export function mountRoleResults({getSavedIds,subscribeCollection,isCourseReady}
  }
  button.addEventListener('click',show);
  subscribeCollection(()=>{
+  syncAvailability();
   if(result&&result.snapshot.join(',')===snapshot())return;
   if(result||busy){
    const hadFocus=output.contains(document.activeElement);result=null;output.hidden=true;output.innerHTML='';
@@ -62,5 +65,6 @@ export function mountRoleResults({getSavedIds,subscribeCollection,isCourseReady}
    if(hadFocus&&!document.querySelector('#course-dialog').open)button.focus({preventScroll:true});
   }
  });
+ syncAvailability();
  return {refresh:()=>{if(result&&result.snapshot.join(',')!==snapshot()){result=null;output.hidden=true;output.innerHTML='';status.textContent='收藏已更新，按「重新查看探索方向」看看新的組合。';}}};
 }

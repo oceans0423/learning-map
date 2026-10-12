@@ -1,13 +1,12 @@
-import {createRequire} from 'node:module';
+import {chromium} from 'playwright';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
-const {chromium}=createRequire(import.meta.url)(process.argv[2]);
 const {domains}=await import('./domains.mjs');
 const {courses}=JSON.parse(await readFile(new URL('../../course/courses_v1.json',import.meta.url),'utf8'));
 const ability=JSON.parse(await readFile(new URL('./ability-data.json',import.meta.url),'utf8'));
 const dir=fileURLToPath(new URL('./validation/',import.meta.url));await mkdir(dir,{recursive:true});
-const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1440,height:1050}});
+const browser=await chromium.launch(),page=await browser.newPage({viewport:{width:1440,height:1050}});
 const errors=[],checks=[];page.on('pageerror',e=>errors.push(e.message));
 const base='http://127.0.0.1:4175/doc/design/character-home-20261011/courses.html';
 async function ready(){await page.locator('.course-card').first().waitFor();}

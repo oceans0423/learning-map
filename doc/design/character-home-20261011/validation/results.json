@@ -14,6 +14,6 @@
     "無 JavaScript 執行錯誤"
   ],
   "errors": [],
-  "testedBrowser": "154.0.8037.98",
+  "testedBrowser": "156.0.8078.4",
   "limitations": "Chrome 自動化與模擬視窗；未進行實體手機、Safari、讀屏軟體或高中生使用者測試。"
 }

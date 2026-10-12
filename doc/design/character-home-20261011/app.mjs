@@ -18,6 +18,7 @@ const picture=name=>`assets/${name}.webp`;
 track.innerHTML=domains.map((d,i)=>`<button class="domain-card" aria-pressed="${i===0}" data-index="${i}" style="--tint:${d.tint}" aria-label="${d.name}，${d.title}"><span class="portrait"><img src="${picture(d.name)}" alt="" width="400" height="760" fetchpriority="${i===0?'high':'auto'}"></span><span class="character-name">${d.name}</span><span class="domain-sub">${d.title}</span><span class="selected-label">● 目前選取</span></button>`).join('');
 $('.domain-tabs').innerHTML=domains.map((d,i)=>`<button data-index="${i}" aria-pressed="${i===0}" aria-label="選取${d.title}">${d.name}</button>`).join('');
 roleTrack.innerHTML=roles.map(([name,tag],i)=>`<button class="role-card" data-role="${i}" aria-haspopup="dialog" aria-label="認識${name}：${tag}"><img src="${picture(name)}" alt="" width="400" height="760" loading="lazy"><h3>${name}</h3><p>${tag}</p></button>`).join('');
+function syncDomainControls(){for(const card of track.children){card.tabIndex=mobile.matches?-1:0;card.toggleAttribute('aria-hidden',mobile.matches);}}
 function select(index,scroll=false){
  selected=Math.max(0,Math.min(3,index));const d=domains[selected];
  document.querySelectorAll('[data-index]').forEach(el=>el.setAttribute('aria-pressed',String(Number(el.dataset.index)===selected)));
@@ -35,7 +36,7 @@ track.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTi
  const closest=distances.indexOf(Math.min(...distances));if(closest!==selected)select(closest);
 },140)});
 track.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();select(e.key==='Home'?0:e.key==='End'?3:selected+(e.key==='ArrowRight'?1:-1),true);track.children[selected].focus({preventScroll:true});});
-mobile.addEventListener('change',()=>select(selected,true));
+mobile.addEventListener('change',()=>{syncDomainControls();select(selected,true)});
 function openPreview(source,label,html){opener=source;$('#dialog-label').textContent=label;$('#dialog-content').innerHTML=html;if(!dialog.open)dialog.showModal();$('#close-dialog').focus();}
 // Role course combinations come from the role mapping; abilities show names only.
 let comboData=null;
@@ -76,7 +77,7 @@ document.addEventListener('click',e=>{
  const link=e.target.closest('a[href^="courses.html"]');if(!link)return;
  history.replaceState({...history.state,homepage:{selected,scrollY:window.scrollY,entry:link.id==='domain-entry'?'domain':'all'}},'');
 });
-select(history.state?.homepage?.selected??0);galleryControls();
+syncDomainControls();select(history.state?.homepage?.selected??0);galleryControls();
 window.addEventListener('pageshow',e=>{
  const saved=history.state?.homepage;
  if(!saved||(!e.persisted&&performance.getEntriesByType('navigation')[0]?.type!=='back_forward'))return;
