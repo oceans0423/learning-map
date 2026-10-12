@@ -5,7 +5,7 @@
   "reviewStatus": "proposed",
   "sourceHashes": {
     "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "9c758243e0928ad95c68b8c1768069a040c2dab2c0419e48236d7f6c9c2d6d26",
-    "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "43ecd58d82c333a827a82611f1d1f595b79a92a981184fadeada58f3069ff8d9",
+    "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "ec8927957610a88e6d732724d3d3898968bd14c47792ff37c655cd7706f5309b",
     "doc/course/courses_v1.json": "9a97cd17551a8f8e4218536afedecc843019f5cf4c8cad32c04d37a3fd744691",
     "doc/design/role-rules-20261011/annotations.mjs": "bea3d83e5eb11d1aa7d2b21c227a1c3c5860d1f5aa675e8e5948908bff43a604",
     "doc/design/role-rules-20261011/interpret.mjs": "3749957a8941b1511503b7d54f60f8ea12540ad00b2d5731b4a6c8861a06ee2e",

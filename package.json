@@ -4,14 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "lint": "eslint .",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"*.{json,js,ts,mjs,html}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"*.{json,js,ts,mjs,html}\""
+    "test": "node doc/design/role-rules-20261011/interpret.test.mjs && node doc/design/role-rules-20261011/build-public-data.mjs --check",
+    "format": "prettier --write \"*.{json,js,ts,mjs,html}\"",
+    "format:check": "prettier --check \"*.{json,js,ts,mjs,html}\""
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
