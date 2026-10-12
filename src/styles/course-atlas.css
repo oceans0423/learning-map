@@ -953,3 +953,86 @@
     opacity: 1;
   }
 }
+
+.ca-role-results {
+  display: grid;
+  gap: 1rem;
+  margin-block: 0 1.25rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border: 1px solid var(--ca-line);
+  border-radius: 0.75rem;
+  background: var(--ca-surface);
+}
+.ca-role-results h3,
+.ca-role-results h4,
+.ca-role-results p {
+  margin-block: 0;
+}
+.ca-role-kicker {
+  color: var(--ca-blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ca-role-output {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ca-line);
+}
+.ca-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.ca-role-card {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 1.125rem;
+  border: 1px solid var(--ca-line);
+  border-radius: 0.625rem;
+  background: var(--ca-night);
+}
+.ca-role-facets {
+  color: var(--ca-muted);
+  font-size: 0.875rem;
+}
+.ca-role-card summary,
+.ca-role-secondary summary {
+  min-height: 2.75rem;
+  cursor: pointer;
+  font-weight: 700;
+  padding-block: 0.75rem;
+}
+.ca-role-evidence {
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.25rem;
+}
+.ca-role-evidence button {
+  min-height: 2.75rem;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ca-blue);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ca-role-evidence small {
+  display: block;
+  color: var(--ca-muted);
+}
+.ca-role-secondary {
+  border-top: 1px solid var(--ca-line);
+}
+@media (max-width: 767px) {
+  .ca-role-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

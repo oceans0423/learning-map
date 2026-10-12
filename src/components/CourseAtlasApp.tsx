@@ -15,6 +15,7 @@ import { CourseDetailsDialog } from './CourseDetailsDialog'
 import { PersonalStorageControls } from './PersonalStorageControls'
 import { ConstellationEditor } from './ConstellationEditor'
 import { Button } from './Button'
+import { PersonalRoleResults } from './PersonalRoleResults'
 import { courses } from '../data/courses'
 import { COURSE_AREAS, YEAR_LABELS } from '../config/courseAreas'
 import { selectAtlasCourses, type AtlasScope } from '../lib/courseAtlas'
@@ -308,37 +309,43 @@ export function CourseAtlasApp() {
                 }
               >
                 {mine && (
-                  <div className="ca-mine-presentation">
-                    <p>課程清單是主角；星座是可選的探索方式。</p>
-                    <div className="ca-zodiac-actions">
-                      {personal.ids.length > 0 && (
-                        <>
-                          <Button
-                            id="atlas-mine-view"
-                            onClick={() =>
-                              navigate(
-                                { ...route, screen: constellation ? 'mine' : 'constellation' },
-                                'push',
-                                {
-                                  target: constellation
-                                    ? '#atlas-content-title'
-                                    : '#atlas-match-title',
-                                },
-                              )
-                            }
-                          >
-                            {constellation ? '返回課程清單' : '找到我的星座'}
-                          </Button>
-                        </>
-                      )}
-                      <Button
-                        id="atlas-explore-zodiac"
-                        onClick={() => exploreZodiac(profile.id)}
-                      >
-                        探索十二星座
-                      </Button>
+                  <>
+                    <PersonalRoleResults ids={personal.ids} onCourse={openCourse} />
+                    <div className="ca-mine-presentation">
+                      <p>課程清單是主角；角色方向與星座都是可選的探索方式。</p>
+                      <div className="ca-zodiac-actions">
+                        {personal.ids.length > 0 && (
+                          <>
+                            <Button
+                              id="atlas-mine-view"
+                              onClick={() =>
+                                navigate(
+                                  {
+                                    ...route,
+                                    screen: constellation ? 'mine' : 'constellation',
+                                  },
+                                  'push',
+                                  {
+                                    target: constellation
+                                      ? '#atlas-content-title'
+                                      : '#atlas-match-title',
+                                  },
+                                )
+                              }
+                            >
+                              {constellation ? '返回課程清單' : '找到我的星座'}
+                            </Button>
+                          </>
+                        )}
+                        <Button
+                          id="atlas-explore-zodiac"
+                          onClick={() => exploreZodiac(profile.id)}
+                        >
+                          探索十二星座
+                        </Button>
+                      </div>
                     </div>
-                  </div>
+                  </>
                 )}
                 {constellation && match && (
                   <>
