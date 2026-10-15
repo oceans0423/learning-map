@@ -51,7 +51,7 @@ async function loadComboData(){
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function comboHTML(index){
  const {roleData,abilityData,courseById}=comboData,roleId=`P${index+1}`;
- const rows=roleData.relations.filter(r=>r.characterId===roleId).map(r=>({...r,course:courseById.get(r.courseId)})).sort((a,b)=>a.course.year-b.course.year||a.course.semester-b.course.semester||a.courseId.localeCompare(b.courseId));
+ const rows=roleData.relations.filter(r=>r.characterId===roleId&&courseById.has(r.courseId)).map(r=>({...r,course:courseById.get(r.courseId)})).sort((a,b)=>a.course.year-b.course.year||a.course.semester-b.course.semester||a.courseId.localeCompare(b.courseId));
  const core=rows.filter(r=>r.relationType==='代表'),extra=rows.filter(r=>r.relationType==='支援');
  const abilityNames=[...new Set(core.flatMap(r=>r.abilityFacets.map(f=>f.abilityId)))].slice(0,4).map(id=>abilityData.abilities[id].name);
  const chip=r=>`<li><a class="course-chip" href="courses.html?course=${r.courseId}"><strong><span>${r.course.year}年級${r.course.semester===1?'上':'下'}</span>${esc(r.course.name)}</strong><ul class="ability-tags">${abilityData.mappings[r.courseId].primary.map(a=>`<li>${esc(abilityData.abilities[a].name)}</li>`).join('')}</ul></a></li>`;

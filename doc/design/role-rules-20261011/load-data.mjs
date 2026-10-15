@@ -68,8 +68,8 @@ export async function loadRoleData() {
   relations.push({courseId,courseName,characterId:roleId,relationType,abilityFacets,facetDescription,reason,limitations,sourceRefs,reviewStatus:'proposed'});
  }
  assert.equal(index.size,0,'Unused annotations');
- assert.equal(relations.length,85);
- assert.equal(pending.length,3);
+ assert.equal(relations.length,83);
+ assert.equal(pending.length,4);
  assert.equal(new Set([...relations,...pending].map(row=>row.courseId)).size,69);
  return {schemaVersion:1,mappingVersion:'2026-10-11-v0.2',annotationVersion:'2026-10-11-v0.2',reviewStatus:'proposed',
   sourceHashes:Object.fromEntries(sources.map((path,i)=>[path,createHash('sha256').update(contents[i]).digest('hex')])),

@@ -43,13 +43,12 @@ export const annotations = {
  ],
  P4: [
   '008:data@H08', '019:data@H08,interpretation@H02',
-  '040:data@H08,interpretation@H08', '049:data@H08', '068:data@H08,interpretation@H02',
+  '040:data@H08,interpretation@H08', '068:data@H08,interpretation@H02',
  ],
  P5: [
   '015:content@H05,experience@H11', '016:content@H01',
   '017:content@H12,experience@H11', '040:content@H04',
   '041:content@H05,experience@H11', '042:content@H06,experience@H11',
-  '049:content@H09,experience@H11',
  ],
  P6: [
   '005:review@H14', '008:making@H10', '024:need@H03',

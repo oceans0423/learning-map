@@ -1,13 +1,13 @@
 {
   "meta": {
     "department": "人文跨域與應用學系",
-    "scope": "大學部正式規劃課程（不含碩士班）",
+    "scope": "大學部最新修訂課程（不含碩士班）",
     "totalCourses": 69,
-    "required": 15,
-    "elective": 54,
+    "required": 14,
+    "elective": 55,
     "totalCredits": 138,
-    "sourceOfTruth": "course/人文跨域與應用學系必選修課清單.md",
-    "sourceVersion": "115學年度",
+    "sourceOfTruth": "人文系課程架構_最新修訂淨版.md",
+    "sourceVersion": "整併後最新修訂版（2026-10-15）",
     "tracks": [
       "敘事與創作",
       "數位人文與媒介",
@@ -24,15 +24,16 @@
       "文化創意與社會設計",
       "文學創作"
     ],
-    "approval": "課程與分類（basic、role、tracks、module）於 2026-10-08 由系所內容負責人定案，不另經課程委員會核定；日後異動由內容維護者更新本檔。summary、activities、possibleOutputs 尚未撰寫，維持 draft，前台不顯示。",
-    "normalizationNote": "name 為顯示用課名：已將原始清單中的 CJK 相容表意字（U+F900–U+FAFF）轉為標準字，並將全形英數轉為半形（course-068「ＩＰ」→「IP」）；標點符號維持原樣。sourceName 保留原始清單的逐字課名以供追溯。",
-    "idPolicy": "id 為永久識別碼，一經發布不得因排序、新增或刪除課程而重新編號；新增課程使用下一個未用編號，刪除課程不回收其編號。日後若取得正式課號，可另增欄位對照，不覆寫 id。"
+    "approval": "課名、年級、學期、學分與必選修依最新修訂淨版更新；四領域沿用既有核定分類，新增研究方法歸入人文思維與方法。碩士班與教師資料不納入網站。",
+    "normalizationNote": "課名依最新修訂淨版逐字呈現；sourceName 與 name 相同。網站不公開碩士班與教師相關欄位。",
+    "idPolicy": "id 為永久識別碼，一經發布不得因排序、新增或刪除課程而重新編號；新增課程使用下一個未用編號，刪除課程不回收其編號。日後若取得正式課號，可另增欄位對照，不覆寫 id。",
+    "reconciliationNote": "來源摘要稱大學部 70 門，但大學部表格實際 69 筆；本資料逐列採表格內容。新增 course-070 研究方法，course-049 數位策展：理論與實務退出現行清單，ID 不回收。"
   },
   "courses": [
     {
       "id": "course-001",
       "name": "人文學概論",
-      "sourceName": "人文學概論",
+      "sourceName": "人文學概論",
       "year": 1,
       "semester": 1,
       "credits": 2,
@@ -46,7 +47,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -59,8 +60,8 @@
     },
     {
       "id": "course-002",
-      "name": "人文地理學概論",
-      "sourceName": "人文地理學概論",
+      "name": "人文地理與地方學",
+      "sourceName": "人文地理與地方學",
       "year": 1,
       "semester": 1,
       "credits": 2,
@@ -76,7 +77,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -104,7 +105,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -134,7 +135,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -148,7 +149,7 @@
     {
       "id": "course-005",
       "name": "科技哲學與未來社會",
-      "sourceName": "科技哲學與未來社會",
+      "sourceName": "科技哲學與未來社會",
       "year": 1,
       "semester": 1,
       "credits": 2,
@@ -165,7 +166,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -179,7 +180,7 @@
     {
       "id": "course-006",
       "name": "文化創意產業概論",
-      "sourceName": "文化創意產業概論",
+      "sourceName": "文化創意產業概論",
       "year": 1,
       "semester": 1,
       "credits": 2,
@@ -193,7 +194,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -209,7 +210,7 @@
       "name": "文本分析與詮釋",
       "sourceName": "文本分析與詮釋",
       "year": 1,
-      "semester": 2,
+      "semester": 1,
       "credits": 2,
       "type": "required",
       "role": "foundation",
@@ -223,7 +224,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -237,7 +238,7 @@
     {
       "id": "course-008",
       "name": "數位人文方法與應用",
-      "sourceName": "數位人文方法與應用",
+      "sourceName": "數位人文方法與應用",
       "year": 1,
       "semester": 2,
       "credits": 2,
@@ -251,7 +252,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -266,7 +267,7 @@
       "id": "course-009",
       "name": "文化敘事與美學轉譯",
       "sourceName": "文化敘事與美學轉譯",
-      "year": 1,
+      "year": 2,
       "semester": 2,
       "credits": 2,
       "type": "elective",
@@ -281,7 +282,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -295,7 +296,7 @@
     {
       "id": "course-010",
       "name": "地方創生與數位敘事",
-      "sourceName": "地方創生與數位敘事",
+      "sourceName": "地方創生與數位敘事",
       "year": 1,
       "semester": 2,
       "credits": 2,
@@ -311,7 +312,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -325,7 +326,7 @@
     {
       "id": "course-011",
       "name": "臺灣民俗文化概論",
-      "sourceName": "臺灣民俗文化概論",
+      "sourceName": "臺灣民俗文化概論",
       "year": 1,
       "semester": 2,
       "credits": 2,
@@ -341,7 +342,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -369,7 +370,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -399,11 +400,39 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
         "tracks": "approved",
+        "module": "approved",
+        "summary": "draft",
+        "activities": "draft",
+        "possibleOutputs": "draft"
+      }
+    },
+    {
+      "id": "course-070",
+      "name": "研究方法",
+      "sourceName": "研究方法",
+      "year": 2,
+      "semester": 1,
+      "credits": 2,
+      "type": "required",
+      "role": "foundation",
+      "module": "人文思維與方法",
+      "primaryTrack": null,
+      "relatedTracks": [],
+      "subTags": [],
+      "summary": null,
+      "activities": [],
+      "possibleOutputs": [],
+      "offeringNote": "實際開課依當學年度課表",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
+      "verification": {
+        "basic": "approved",
+        "role": "draft",
+        "tracks": "draft",
         "module": "approved",
         "summary": "draft",
         "activities": "draft",
@@ -427,7 +456,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -441,7 +470,7 @@
     {
       "id": "course-015",
       "name": "文化旅行設計與書寫",
-      "sourceName": "文化旅行設計與書寫",
+      "sourceName": "文化旅行設計與書寫",
       "year": 2,
       "semester": 1,
       "credits": 2,
@@ -457,7 +486,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -487,7 +516,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -515,7 +544,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -543,7 +572,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -557,7 +586,7 @@
     {
       "id": "course-019",
       "name": "人文數據探勘與文本分析",
-      "sourceName": "人文數據探勘與文本分析",
+      "sourceName": "人文數據探勘與文本分析",
       "year": 2,
       "semester": 1,
       "credits": 2,
@@ -571,7 +600,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -599,7 +628,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -613,7 +642,7 @@
     {
       "id": "course-021",
       "name": "臺灣文學史概論",
-      "sourceName": "臺灣文學史概論",
+      "sourceName": "臺灣文學史概論",
       "year": 2,
       "semester": 1,
       "credits": 2,
@@ -629,7 +658,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -657,7 +686,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -671,7 +700,7 @@
     {
       "id": "course-023",
       "name": "古典文學經典選讀",
-      "sourceName": "古典文學經典選讀",
+      "sourceName": "古典文學經典選讀",
       "year": 2,
       "semester": 1,
       "credits": 2,
@@ -687,7 +716,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -701,7 +730,7 @@
     {
       "id": "course-024",
       "name": "人文議題探索與設計",
-      "sourceName": "人文議題探索與設計",
+      "sourceName": "人文議題探索與設計",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -715,7 +744,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -729,11 +758,11 @@
     {
       "id": "course-025",
       "name": "敘事學：從理論到應用",
-      "sourceName": "敘事學：從理論到應用",
+      "sourceName": "敘事學：從理論到應用",
       "year": 2,
       "semester": 2,
       "credits": 2,
-      "type": "required",
+      "type": "elective",
       "role": "foundation",
       "module": "人文思維與方法",
       "primaryTrack": null,
@@ -745,7 +774,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -759,7 +788,7 @@
     {
       "id": "course-026",
       "name": "臺灣宗教文學選讀",
-      "sourceName": "臺灣宗教文學選讀",
+      "sourceName": "臺灣宗教文學選讀",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -776,7 +805,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -804,7 +833,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -818,7 +847,7 @@
     {
       "id": "course-028",
       "name": "原住民文學影像紀錄",
-      "sourceName": "原住民文學影像紀錄",
+      "sourceName": "原住民文學影像紀錄",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -835,7 +864,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -849,7 +878,7 @@
     {
       "id": "course-029",
       "name": "文化資產影音記錄概論",
-      "sourceName": "文化資產影音記錄概論",
+      "sourceName": "文化資產影音記錄概論",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -865,7 +894,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -878,8 +907,8 @@
     },
     {
       "id": "course-030",
-      "name": "AI 輔助程式設計與應用開發",
-      "sourceName": "AI 輔助程式設計與應用開發",
+      "name": "AI輔助程式設計與應用開發",
+      "sourceName": "AI輔助程式設計與應用開發",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -893,7 +922,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -923,7 +952,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -937,7 +966,7 @@
     {
       "id": "course-032",
       "name": "口述歷史：理論與實作",
-      "sourceName": "口述歷史：理論與實作",
+      "sourceName": "口述歷史：理論與實作",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -953,7 +982,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -981,7 +1010,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -995,7 +1024,7 @@
     {
       "id": "course-034",
       "name": "臺灣民間文學概論",
-      "sourceName": "臺灣民間文學概論",
+      "sourceName": "臺灣民間文學概論",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -1012,7 +1041,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1026,7 +1055,7 @@
     {
       "id": "course-035",
       "name": "中國文學史概論",
-      "sourceName": "中國文學史概論",
+      "sourceName": "中國文學史概論",
       "year": 2,
       "semester": 2,
       "credits": 2,
@@ -1042,7 +1071,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1073,7 +1102,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1103,7 +1132,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1117,7 +1146,7 @@
     {
       "id": "course-038",
       "name": "品牌設計與故事行銷",
-      "sourceName": "品牌設計與故事行銷",
+      "sourceName": "品牌設計與故事行銷",
       "year": 3,
       "semester": 1,
       "credits": 2,
@@ -1133,7 +1162,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1161,7 +1190,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1175,7 +1204,7 @@
     {
       "id": "course-040",
       "name": "數位人文應用與空間人文",
-      "sourceName": "數位人文應用與空間人文",
+      "sourceName": "數位人文應用與空間人文",
       "year": 3,
       "semester": 1,
       "credits": 2,
@@ -1189,7 +1218,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1219,37 +1248,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
-      "verification": {
-        "basic": "approved",
-        "role": "approved",
-        "tracks": "approved",
-        "module": "approved",
-        "summary": "draft",
-        "activities": "draft",
-        "possibleOutputs": "draft"
-      }
-    },
-    {
-      "id": "course-042",
-      "name": "策展學：理論與實務",
-      "sourceName": "策展學：理論與實務",
-      "year": 3,
-      "semester": 1,
-      "credits": 2,
-      "type": "elective",
-      "role": "application",
-      "module": "文化創意與社會設計",
-      "primaryTrack": "文化與社會實踐",
-      "relatedTracks": [
-        "數位人文與媒介"
-      ],
-      "subTags": [],
-      "summary": null,
-      "activities": [],
-      "possibleOutputs": [],
-      "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1262,12 +1261,12 @@
     },
     {
       "id": "course-043",
-      "name": "文化資產保存與傳播",
-      "sourceName": "文化資產保存與傳播",
+      "name": "文化資產行銷與應用",
+      "sourceName": "文化資產行銷與應用",
       "year": 3,
       "semester": 1,
       "credits": 2,
-      "type": "elective",
+      "type": "required",
       "role": "application",
       "module": "文化創意與社會設計",
       "primaryTrack": "文化與社會實踐",
@@ -1279,7 +1278,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1309,7 +1308,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1323,7 +1322,7 @@
     {
       "id": "course-045",
       "name": "小說類型與創作",
-      "sourceName": "小說類型與創作",
+      "sourceName": "小說類型與創作",
       "year": 3,
       "semester": 1,
       "credits": 2,
@@ -1337,7 +1336,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1367,7 +1366,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1397,7 +1396,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1411,11 +1410,11 @@
     {
       "id": "course-048",
       "name": "現當代文學理論與實務",
-      "sourceName": "現當代文學理論與實務",
+      "sourceName": "現當代文學理論與實務",
       "year": 3,
       "semester": 2,
       "credits": 2,
-      "type": "required",
+      "type": "elective",
       "role": "foundation",
       "module": "文學創作",
       "primaryTrack": null,
@@ -1427,65 +1426,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
-      "verification": {
-        "basic": "approved",
-        "role": "approved",
-        "tracks": "approved",
-        "module": "approved",
-        "summary": "draft",
-        "activities": "draft",
-        "possibleOutputs": "draft"
-      }
-    },
-    {
-      "id": "course-049",
-      "name": "數位策展：理論與實務",
-      "sourceName": "數位策展：理論與實務",
-      "year": 3,
-      "semester": 2,
-      "credits": 2,
-      "type": "required",
-      "role": "application",
-      "module": "數位人文",
-      "primaryTrack": "數位人文與媒介",
-      "relatedTracks": [
-        "文化與社會實踐"
-      ],
-      "subTags": [],
-      "summary": null,
-      "activities": [],
-      "possibleOutputs": [],
-      "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
-      "verification": {
-        "basic": "approved",
-        "role": "approved",
-        "tracks": "approved",
-        "module": "approved",
-        "summary": "draft",
-        "activities": "draft",
-        "possibleOutputs": "draft"
-      }
-    },
-    {
-      "id": "course-050",
-      "name": "實務實習",
-      "sourceName": "實務實習",
-      "year": 3,
-      "semester": 2,
-      "credits": 2,
-      "type": "required",
-      "role": "integration",
-      "module": "文化創意與社會設計",
-      "primaryTrack": null,
-      "relatedTracks": [],
-      "subTags": [],
-      "summary": null,
-      "activities": [],
-      "possibleOutputs": [],
-      "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1498,8 +1439,8 @@
     },
     {
       "id": "course-051",
-      "name": "人本AI 產品提案與設計",
-      "sourceName": "人本AI 產品提案與設計",
+      "name": "人本AI產品提案與設計",
+      "sourceName": "人本AI產品提案與設計",
       "year": 3,
       "semester": 2,
       "credits": 2,
@@ -1515,7 +1456,37 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
+      "verification": {
+        "basic": "approved",
+        "role": "approved",
+        "tracks": "approved",
+        "module": "approved",
+        "summary": "draft",
+        "activities": "draft",
+        "possibleOutputs": "draft"
+      }
+    },
+    {
+      "id": "course-042",
+      "name": "策展理論與實務",
+      "sourceName": "策展理論與實務",
+      "year": 3,
+      "semester": 2,
+      "credits": 2,
+      "type": "required",
+      "role": "application",
+      "module": "文化創意與社會設計",
+      "primaryTrack": "文化與社會實踐",
+      "relatedTracks": [
+        "數位人文與媒介"
+      ],
+      "subTags": [],
+      "summary": null,
+      "activities": [],
+      "possibleOutputs": [],
+      "offeringNote": "實際開課依當學年度課表",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1529,7 +1500,7 @@
     {
       "id": "course-052",
       "name": "文化評論與傳播實務",
-      "sourceName": "文化評論與傳播實務",
+      "sourceName": "文化評論與傳播實務",
       "year": 3,
       "semester": 2,
       "credits": 2,
@@ -1545,7 +1516,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1559,7 +1530,7 @@
     {
       "id": "course-053",
       "name": "現當代小說專題",
-      "sourceName": "現當代小說專題",
+      "sourceName": "現當代小說專題",
       "year": 3,
       "semester": 2,
       "credits": 2,
@@ -1573,7 +1544,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1601,7 +1572,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1629,7 +1600,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1643,7 +1614,7 @@
     {
       "id": "course-056",
       "name": "客語文學閱讀與書寫",
-      "sourceName": "客語文學閱讀與書寫",
+      "sourceName": "客語文學閱讀與書寫",
       "year": 3,
       "semester": 2,
       "credits": 2,
@@ -1659,7 +1630,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1673,7 +1644,7 @@
     {
       "id": "course-057",
       "name": "臺語文學閱讀與書寫",
-      "sourceName": "臺語文學閱讀與書寫",
+      "sourceName": "臺語文學閱讀與書寫",
       "year": 3,
       "semester": 2,
       "credits": 2,
@@ -1689,7 +1660,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1719,7 +1690,35 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
+      "verification": {
+        "basic": "approved",
+        "role": "approved",
+        "tracks": "approved",
+        "module": "approved",
+        "summary": "draft",
+        "activities": "draft",
+        "possibleOutputs": "draft"
+      }
+    },
+    {
+      "id": "course-050",
+      "name": "實務實習",
+      "sourceName": "實務實習",
+      "year": 3,
+      "semester": 2,
+      "credits": 2,
+      "type": "elective",
+      "role": "integration",
+      "module": "文化創意與社會設計",
+      "primaryTrack": null,
+      "relatedTracks": [],
+      "subTags": [],
+      "summary": null,
+      "activities": [],
+      "possibleOutputs": [],
+      "offeringNote": "實際開課依當學年度課表",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1734,8 +1733,8 @@
       "id": "course-059",
       "name": "畢業專題製作(一)",
       "sourceName": "畢業專題製作(一)",
-      "year": 4,
-      "semester": 1,
+      "year": 3,
+      "semester": 2,
       "credits": 2,
       "type": "required",
       "role": "integration",
@@ -1747,7 +1746,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1760,8 +1759,8 @@
     },
     {
       "id": "course-060",
-      "name": "文化事業與管理概論",
-      "sourceName": "文化事業與管理概論",
+      "name": "文化事業管理概論",
+      "sourceName": "文化事業管理概論",
       "year": 4,
       "semester": 1,
       "credits": 2,
@@ -1775,7 +1774,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1803,7 +1802,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1833,7 +1832,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1847,7 +1846,7 @@
     {
       "id": "course-063",
       "name": "數位儒學與社群論理實踐",
-      "sourceName": "數位儒學與社群論理實踐",
+      "sourceName": "數位儒學與社群論理實踐",
       "year": 4,
       "semester": 1,
       "credits": 2,
@@ -1863,7 +1862,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1891,7 +1890,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1919,7 +1918,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1935,7 +1934,7 @@
       "name": "畢業專題製作(二)",
       "sourceName": "畢業專題製作(二)",
       "year": 4,
-      "semester": 2,
+      "semester": 1,
       "credits": 2,
       "type": "required",
       "role": "integration",
@@ -1947,7 +1946,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1977,7 +1976,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -1990,8 +1989,8 @@
     },
     {
       "id": "course-068",
-      "name": "古典文獻的數據化與文化IP轉譯",
-      "sourceName": "古典文獻的數據化與文化ＩＰ轉譯",
+      "name": "古典文獻的數據化與文化ＩＰ轉譯",
+      "sourceName": "古典文獻的數據化與文化ＩＰ轉譯",
       "year": 4,
       "semester": 2,
       "credits": 2,
@@ -2007,7 +2006,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",
@@ -2037,7 +2036,7 @@
       "activities": [],
       "possibleOutputs": [],
       "offeringNote": "實際開課依當學年度課表",
-      "sourceVersion": "115學年度",
+      "sourceVersion": "整併後最新修訂版（2026-10-15）",
       "verification": {
         "basic": "approved",
         "role": "approved",

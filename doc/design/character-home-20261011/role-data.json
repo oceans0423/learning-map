@@ -4,12 +4,12 @@
   "annotationVersion": "2026-10-11-v0.2",
   "reviewStatus": "proposed",
   "sourceHashes": {
-    "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "9c758243e0928ad95c68b8c1768069a040c2dab2c0419e48236d7f6c9c2d6d26",
-    "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "ec8927957610a88e6d732724d3d3898968bd14c47792ff37c655cd7706f5309b",
-    "doc/course/courses_v1.json": "9a97cd17551a8f8e4218536afedecc843019f5cf4c8cad32c04d37a3fd744691",
-    "doc/design/role-rules-20261011/annotations.mjs": "bea3d83e5eb11d1aa7d2b21c227a1c3c5860d1f5aa675e8e5948908bff43a604",
-    "doc/design/role-rules-20261011/interpret.mjs": "3749957a8941b1511503b7d54f60f8ea12540ad00b2d5731b4a6c8861a06ee2e",
-    "doc/CHARACTER_INTERPRETATION_RULES_2026-10-11.md": "848c3e094e7a4578d99dd25f33d7fed2fa5d329a290b262782cf843271990c18"
+    "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md": "0b15511d873995624ba109fc389d2779086863901cf8b3d8579c1b4ab66ef565",
+    "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md": "0e7ad89fd8f4b122d609f78137a5863d14c8c2321ce4e595ef94b41983b06042",
+    "doc/course/courses_v1.json": "60957dd72b228f3a84f55e8ae5c3bb9673ecb67fea1d501b8e19dcd11dce4c5b",
+    "doc/design/role-rules-20261011/annotations.mjs": "98512c34ff188f26442bb5bf4d38fc8db30a2f4ae6eeec2c4061f8ce8bded55d",
+    "doc/design/role-rules-20261011/interpret.mjs": "752c65101a86d733189fd9d3a5b7d8cbdcff9f4e9a55bb42f4f78077516c4e84",
+    "doc/CHARACTER_INTERPRETATION_RULES_2026-10-11.md": "1313ffd85ca5d61d78b24cdc773c290f23faed512e1b2b2d2ff039a39e714ae6"
   },
   "courseIds": [
     "course-001",
@@ -60,7 +60,6 @@
     "course-046",
     "course-047",
     "course-048",
-    "course-049",
     "course-050",
     "course-051",
     "course-052",
@@ -80,7 +79,8 @@
     "course-066",
     "course-067",
     "course-068",
-    "course-069"
+    "course-069",
+    "course-070"
   ],
   "roles": [
     {
@@ -1439,7 +1439,7 @@
     },
     {
       "courseId": "course-043",
-      "courseName": "文化資產保存與傳播",
+      "courseName": "文化資產行銷與應用",
       "characterId": "P3",
       "relationType": "代表",
       "abilityFacets": [
@@ -1750,36 +1750,8 @@
       "reviewStatus": "proposed"
     },
     {
-      "courseId": "course-049",
-      "courseName": "數位策展：理論與實務",
-      "characterId": "P4",
-      "relationType": "支援",
-      "abilityFacets": [
-        {
-          "facetId": "data",
-          "abilityId": "H08"
-        }
-      ],
-      "facetDescription": "H08 內容資料整理與分析、H09 數位呈現",
-      "reason": "整理與分析文化內容，作為數位展覽的材料基礎。",
-      "limitations": "主要方向在 P5",
-      "sourceRefs": [
-        {
-          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 117
-        },
-        {
-          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
-        },
-        {
-          "path": "doc/design/role-rules-20261011/annotations.mjs"
-        }
-      ],
-      "reviewStatus": "proposed"
-    },
-    {
       "courseId": "course-068",
-      "courseName": "古典文獻的數據化與文化IP轉譯",
+      "courseName": "古典文獻的數據化與文化ＩＰ轉譯",
       "characterId": "P4",
       "relationType": "代表",
       "abilityFacets": [
@@ -1798,7 +1770,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 118
+          "line": 117
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1830,7 +1802,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 124
+          "line": 123
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1858,7 +1830,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 125
+          "line": 124
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1890,7 +1862,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 126
+          "line": 125
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1918,7 +1890,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 127
+          "line": 126
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1950,7 +1922,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 128
+          "line": 127
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -1963,7 +1935,7 @@
     },
     {
       "courseId": "course-042",
-      "courseName": "策展學：理論與實務",
+      "courseName": "策展理論與實務",
       "characterId": "P5",
       "relationType": "代表",
       "abilityFacets": [
@@ -1982,39 +1954,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 129
-        },
-        {
-          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
-        },
-        {
-          "path": "doc/design/role-rules-20261011/annotations.mjs"
-        }
-      ],
-      "reviewStatus": "proposed"
-    },
-    {
-      "courseId": "course-049",
-      "courseName": "數位策展：理論與實務",
-      "characterId": "P5",
-      "relationType": "代表",
-      "abilityFacets": [
-        {
-          "facetId": "content",
-          "abilityId": "H09"
-        },
-        {
-          "facetId": "experience",
-          "abilityId": "H11"
-        }
-      ],
-      "facetDescription": "H11 觀看流程、H09 數位呈現",
-      "reason": "把文化內容轉成有觀看動線的數位展覽。",
-      "limitations": "資料面另見 P4",
-      "sourceRefs": [
-        {
-          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 130
+          "line": 128
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2042,7 +1982,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 136
+          "line": 134
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2070,7 +2010,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 137
+          "line": 135
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2098,7 +2038,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 138
+          "line": 136
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2111,7 +2051,7 @@
     },
     {
       "courseId": "course-030",
-      "courseName": "AI 輔助程式設計與應用開發",
+      "courseName": "AI輔助程式設計與應用開發",
       "characterId": "P6",
       "relationType": "代表",
       "abilityFacets": [
@@ -2130,7 +2070,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 139
+          "line": 137
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2158,7 +2098,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 140
+          "line": 138
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2171,7 +2111,7 @@
     },
     {
       "courseId": "course-051",
-      "courseName": "人本AI 產品提案與設計",
+      "courseName": "人本AI產品提案與設計",
       "characterId": "P6",
       "relationType": "代表",
       "abilityFacets": [
@@ -2194,7 +2134,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 141
+          "line": 139
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2226,7 +2166,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 147
+          "line": 145
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2254,7 +2194,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 148
+          "line": 146
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2286,7 +2226,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 149
+          "line": 147
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2318,7 +2258,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 150
+          "line": 148
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2350,7 +2290,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 151
+          "line": 149
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2363,7 +2303,7 @@
     },
     {
       "courseId": "course-042",
-      "courseName": "策展學：理論與實務",
+      "courseName": "策展理論與實務",
       "characterId": "P7",
       "relationType": "支援",
       "abilityFacets": [
@@ -2382,7 +2322,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 152
+          "line": 150
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2395,7 +2335,7 @@
     },
     {
       "courseId": "course-043",
-      "courseName": "文化資產保存與傳播",
+      "courseName": "文化資產行銷與應用",
       "characterId": "P7",
       "relationType": "支援",
       "abilityFacets": [
@@ -2414,7 +2354,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 153
+          "line": 151
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2427,7 +2367,7 @@
     },
     {
       "courseId": "course-060",
-      "courseName": "文化事業與管理概論",
+      "courseName": "文化事業管理概論",
       "characterId": "P7",
       "relationType": "代表",
       "abilityFacets": [
@@ -2446,7 +2386,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 154
+          "line": 152
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2459,7 +2399,7 @@
     },
     {
       "courseId": "course-002",
-      "courseName": "人文地理學概論",
+      "courseName": "人文地理與地方學",
       "characterId": "P8",
       "relationType": "支援",
       "abilityFacets": [
@@ -2474,7 +2414,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 160
+          "line": 158
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2510,7 +2450,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 161
+          "line": 159
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2538,7 +2478,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 162
+          "line": 160
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2566,7 +2506,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 163
+          "line": 161
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2598,7 +2538,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 164
+          "line": 162
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2630,7 +2570,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 165
+          "line": 163
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2666,7 +2606,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 166
+          "line": 164
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2698,7 +2638,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 167
+          "line": 165
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2726,7 +2666,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 168
+          "line": 166
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2758,7 +2698,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 169
+          "line": 167
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2794,7 +2734,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 170
+          "line": 168
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2820,7 +2760,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 178
+          "line": 176
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2843,7 +2783,27 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 179
+          "line": 177
+        },
+        {
+          "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
+        },
+        {
+          "path": "doc/design/role-rules-20261011/annotations.mjs"
+        }
+      ]
+    },
+    {
+      "courseId": "course-070",
+      "courseName": "研究方法",
+      "pendingReason": "方法基礎課程；具體能力對照待課綱確認",
+      "abilityIds": [
+        "H01"
+      ],
+      "sourceRefs": [
+        {
+          "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
+          "line": 178
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
@@ -2866,7 +2826,7 @@
       "sourceRefs": [
         {
           "path": "doc/CHARACTER_COURSE_ABILITY_MAPPING_2026-10-11.md",
-          "line": 180
+          "line": 179
         },
         {
           "path": "doc/DEPARTMENT_ABILITY_MAPPING_2026-10-11.md"
