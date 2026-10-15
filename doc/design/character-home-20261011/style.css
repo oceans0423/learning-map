@@ -74,7 +74,7 @@ dialog[open]::backdrop{opacity:1}
 .domain-card[aria-pressed=true] .portrait .guild-building{transform:scale(calc(var(--building-scale,1) * 1.04))}.domain-card[aria-pressed=true] .representative{transform:translateY(-3px) scale(1.05)}
 .domain-card:focus-visible .portrait .guild-building{transform:scale(var(--building-scale,1))}.domain-card:active .portrait .guild-building{transform:scale(calc(var(--building-scale,1) * .98))}
 .guild-name{font-size:22px;font-weight:700;letter-spacing:.12em;line-height:1.5}.domain-sub{margin-top:6px}
-@media(hover:hover) and (pointer:fine){.domain-card:hover .portrait .guild-building{transform:scale(calc(var(--building-scale,1) * 1.04))}.domain-card:hover .representative{transform:translateY(-3px) scale(1.05)}}
+@media(hover:hover) and (pointer:fine){.domain-card:hover .portrait .guild-building{transform:scale(calc(var(--building-scale,1) * 1.04))}.domain-card[aria-pressed=true]:hover .portrait .guild-building{transform:scale(calc(var(--building-scale,1) * 1.04 * 1.04))}.domain-card:hover .representative{transform:translateY(-3px) scale(1.05)}}
 @media(max-width:1000px) and (min-width:701px){.portrait{height:310px}}
 @media(max-width:700px){.portrait{height:370px;max-width:300px;margin-bottom:16px}.guild-name{font-size:22px}.representative{right:3%;height:45%;max-width:44%}}
 @media(prefers-reduced-motion:reduce){.guild-building,.domain-card[aria-pressed=true] .guild-building,.domain-card:hover .guild-building{transform:scale(var(--building-scale,1))!important}.representative,.domain-card[aria-pressed=true] .representative,.domain-card:hover .representative{transform:none!important}}
